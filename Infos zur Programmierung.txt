@@ -46,3 +46,5 @@ wenn eine LOG datei erstellt wird. Immer auf dem Desktop
 Programmteile die Funktionieren aber für weitere tests nicht benötigt werden nicht löschen sondern im Code lassen aber als Bemerkung makieren, damit man sie später einfach wieder aktivieren kann.
 
 programme möglichst in kleine .cs dateien teilen, dann braucht man nicht immer so viel neuen Code zu kopieren und es ist einfacher. Bitte dabei auch darauf achten, das dateinamen nicht einfach zwischendurch geändert werden.
+
+Mit dem kompilieren der .cs dateien werden immer alle dateien berücksichtigt, die in dem ordner sind.
