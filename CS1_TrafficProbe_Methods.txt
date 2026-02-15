@@ -1,0 +1,49 @@
+=== CS1 Traffic Probe ===
+2026-02-15 18:08:39
+Unity version: 5.6.7f1
+
+Assembly-CSharp: OK
+
+---- TYPE: PathFind ----
+Resolved: PathFind
+  Methods named: AddBufferItem
+    System.Void PathFind::AddBufferItem(PathFind+BufferItem, PathUnit+Position)
+  Methods named: ProcessItem
+    System.Void PathFind::ProcessItem(PathFind+BufferItem, System.UInt16, NetNode& (ref), System.Byte, System.Boolean)
+    System.Void PathFind::ProcessItem(PathFind+BufferItem, System.UInt16, System.Boolean, System.UInt16, NetSegment& (ref), System.UInt32, System.Byte, System.Byte)
+    System.Boolean PathFind::ProcessItem(PathFind+BufferItem, System.UInt16, System.UInt16, NetSegment& (ref), System.Int32& (ref), System.Byte, System.Boolean, System.Boolean)
+    System.Void PathFind::ProcessItem(PathFind+BufferItem, System.UInt16, System.UInt16, NetSegment& (ref), System.Byte, System.Byte, System.Int32, System.UInt32)
+  Methods named: CalculatePath
+    System.Boolean PathFind::CalculatePath(System.UInt32, System.Boolean)
+  Methods named: PathFindImplementation
+    System.Void PathFind::PathFindImplementation(System.UInt32, PathUnit& (ref))
+  Methods named: GetLaneDirection
+    System.Void PathFind::GetLaneDirection(PathUnit+Position, NetInfo+Direction& (out), NetInfo+LaneType& (out))
+
+---- TYPE: PathManager ----
+Resolved: PathManager
+  Methods named: CreatePath
+    System.Boolean PathManager::CreatePath(System.UInt32& (out), ColossalFramework.Math.Randomizer& (ref), System.UInt32, PathUnit+Position, PathUnit+Position, NetInfo+LaneType, VehicleInfo+VehicleType, VehicleInfo+VehicleCategory, System.Single)
+    System.Boolean PathManager::CreatePath(System.UInt32& (out), ColossalFramework.Math.Randomizer& (ref), System.UInt32, PathUnit+Position, PathUnit+Position, PathUnit+Position, PathUnit+Position, NetInfo+LaneType, VehicleInfo+VehicleType, VehicleInfo+VehicleCategory, System.Single)
+    System.Boolean PathManager::CreatePath(System.UInt32& (out), ColossalFramework.Math.Randomizer& (ref), System.UInt32, PathUnit+Position, PathUnit+Position, PathUnit+Position, PathUnit+Position, NetInfo+LaneType, VehicleInfo+VehicleType, VehicleInfo+VehicleCategory, System.Single, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
+    System.Boolean PathManager::CreatePath(System.UInt32& (out), ColossalFramework.Math.Randomizer& (ref), System.UInt32, PathUnit+Position, PathUnit+Position, PathUnit+Position, PathUnit+Position, PathUnit+Position, NetInfo+LaneType, VehicleInfo+VehicleType, VehicleInfo+VehicleCategory, System.Single, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
+    System.Boolean PathManager::CreatePath(System.UInt32& (out), ColossalFramework.Math.Randomizer& (ref), System.UInt32, PathUnit+Position, PathUnit+Position, PathUnit+Position, PathUnit+Position, PathUnit+Position, NetInfo+LaneType, VehicleInfo+VehicleType, VehicleInfo+VehicleCategory, System.Single, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
+    System.Boolean PathManager::CreatePath(System.UInt32& (out), ColossalFramework.Math.Randomizer& (ref), System.UInt32, PathUnit+Position, PathUnit+Position, PathUnit+Position, PathUnit+Position, PathUnit+Position, NetInfo+LaneType, VehicleInfo+VehicleType, VehicleInfo+VehicleCategory, System.Single, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
+    System.Boolean PathManager::CreatePath(System.UInt32& (out), ColossalFramework.Math.Randomizer& (ref), System.UInt32, PathUnit+Position, PathUnit+Position, PathUnit+Position, PathUnit+Position, PathUnit+Position, NetInfo+LaneType, VehicleInfo+VehicleType, VehicleInfo+VehicleCategory, System.Single, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean, System.Boolean)
+  Methods named: GetLaneID
+    System.UInt32 PathManager::GetLaneID(PathUnit+Position)
+  Methods named: ReleasePath
+    System.Void PathManager::ReleasePath(System.UInt32)
+  Methods named: WaitForAllPaths
+    System.Void PathManager::WaitForAllPaths()
+  Methods named: UpdateData
+    System.Void SimulationManagerBase`2[[PathManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[PathProperties, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]::UpdateData(SimulationManager+UpdateMode)
+
+---- TYPE: PathUnit ----
+Resolved: PathUnit
+  Methods named: CalculatePathPositionOffset
+    System.Boolean PathUnit::CalculatePathPositionOffset(System.Int32, UnityEngine.Vector3, System.Byte& (out))
+    System.Void PathUnit::CalculatePathPositionOffset(System.UInt32, UnityEngine.Vector3, System.Byte& (out))
+
+
+=== DONE ===
