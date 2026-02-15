@@ -1,0 +1,46 @@
+🧱 CS1 Legacy-Umgebung (wichtig für alle Mods)
+
+C# 5 + sehr alte Mono/.NET Runtime
+
+LoadingExtensionBase.managers NICHT verwenden → immer loading.managers aus OnCreated(ILoading)
+
+Kein lock / Monitor / Threading
+
+Kein == / != auf Type, MethodInfo, FieldInfo → nur object.ReferenceEquals
+
+Vorsicht mit System.Action, Func<>, modernen Delegates
+
+Rendering: OnGUI bevorzugen, GL/RenderOverlay vermeiden
+
+Kamera: nur ICamera über managers.camera, MoveCamera funktioniert
+
+Keine modernen C# Features (kein $"", kein Pattern Matching)
+
+Nach DLL-Änderung → Spiel komplett neu starten
+
+Schrittweise Debug-Logs statt Try & Error
+
+Wenn du das künftig mitschickst, vermeiden wir:
+
+Type-Operator-Crashes
+
+Monitor.Enter-Probleme
+
+falsche CameraController-Ansätze
+
+Render-Artefakte
+
+unnötige Runtime-Exceptions
+
+Und wir können direkt sauber arbeiten.
+
+Harmony1 ist vorhanden nicht version 2
+
+zum erstellen der DLL wird Framwwork genutzt. Bitte hier auch mit dem kompletten Kompilercode
+
+
+bitte nur die “alte/robuste” Variante beim codeerstellen nutzen, da das sicherer ist.Spiel-Mono/.NET eine sehr alte Path.Combine-Variante hast (max. 4 Argumente).
+
+wenn eine LOG datei erstellt wird. Immer auf dem Desktop
+
+Programmteile die Funktionieren aber für weitere tests nicht benötigt werden nicht löschen sondern im Code lassen aber als Bemerkung makieren, damit man sie später einfach wieder aktivieren kann.
