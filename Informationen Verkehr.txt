@@ -1,0 +1,144 @@
+CS1 LaneBalancer – Chronik der Versuche
+1) Basis-Infrastruktur (funktioniert)
+
+Eigene LOG-Datei auf Desktop: CS1_LaneBalancer.LOG
+
+Wunsch: immer überschreiben beim Start → umgesetzt (WriteAllText am Anfang).
+
+Runner (MonoBehaviour) wird erstellt und bleibt erhalten (DontDestroyOnLoad).
+
+HUD (UIPanel + UILabel) wird erstellt und angezeigt.
+
+Hotkeys
+
+F4 Toggle Enabled
+
+F5 Strength hochzählen (0..10)
+
+F6 Reset Counters
+
+HUD-Höhe wurde erhöht, damit die untere Zeile sichtbar ist.
+
+➡️ Ergebnis: HUD + Log + Hotkeys sind stabil und laufen.
+
+2) Erster Ansatz: PathFind direkt patchen (größtenteils nicht brauchbar)
+
+Ziel: an PathFind “nah dran” messen/ändern (Positionen/Lanes in der Pfadsuche).
+
+Probleme / Fehlversuche:
+
+PathFind.BufferItem ist nicht zugreifbar (private/nicht public):
+
+Compilerfehler:
+
+CS0122 Zugriff auf 'PathFind.BufferItem' nicht möglich
+
+CS0051 Inkonsistenter Zugriff
+
+Workaround: Prefix-Parameter als object statt BufferItem → kompilierbar, aber Patch-/Hook-Nutzen war trotzdem begrenzt.
+
+Harmony-Patch-Signatur passte nicht:
+
+Fehler: Patch nimmt 6 Argumente nicht an
+
+Folge: Patch-Methode musste “versionstolerant” per Reflection gefunden werden (3-Arg / 4-Arg Patch).
+
+AmbiguousMatchException bei GetMethod:
+
+System.Reflection.AmbiguousMatchException
+
+Fix: GetMethodExact() per manueller Parameterprüfung statt GetMethod(name).
+
+Symptom im Spiel:
+
+Obwohl Log sagt “Patched …”, blieben Zähler im HUD oft bei 0 → Patch wurde entweder nicht ausgeführt oder der Hookpunkt war nicht der, der tatsächlich im Verkehrspfad relevant ist.
+
+➡️ Fazit: PathFind direkt patchen ist riskant (private Typen, mehrere Overloads, fragile Hookpunkte).
+
+3) Ansatz: “LaneSpeed” manipulieren (funktionierte technisch, brachte aber keine sichtbare Änderung)
+
+Patch auf PathFind.CalculateLaneSpeed(..) mit leichtem Faktor abhängig von Strength (z.B. bis ~5%).
+
+Technisch: Patch konnte gesetzt werden.
+
+Praktisch: keine sichtbare Änderung im Lane-Verhalten / oder Zähler blieben wieder bei 0.
+
+➡️ Fazit: Selbst wenn LaneSpeed gepatcht ist, beeinflusst das Lane-Auswahl offenbar nicht so wie gedacht (oder der Hook wird nicht zuverlässig genutzt).
+
+4) Sicherer Ansatz: PathManager.CreatePath patchen (bestes Ergebnis bisher)
+
+Ziel: dort “einsteigen”, wo Pfade tatsächlich erzeugt werden.
+
+Was wir gemacht haben:
+
+PathManager.CreatePath alle Overloads gesucht und gepatcht.
+
+Wir haben geprüft, ob PathUnit.Position Felder existieren (segment/lane/offset) → Log:
+Position fields: segment=True lane=True offset=True
+
+Ergebnisse:
+
+In einer Version:
+Patched PathManager.CreatePath overloads: 7
+→ HUD zeigte Aktivität (CreatePath calls, Positions sampled, LaneSamples, LaneIndexHist).
+
+Späterer Lauf:
+WARN Patch CreatePath failed: TargetInvocationException ...
+Patched PathManager.CreatePath overloads: 0
+→ danach blieb alles wieder bei 0.
+
+➡️ Fazit: Das ist der bisher “sicherste” und sinnvollste Einstiegspunkt, aber wir haben noch ein Stabilitätsproblem beim Patchen (TargetInvocationException), das wir als Nächstes hart debuggen müssen (welcher Overload / welche Harmony-Parameter / welcher Patch-Methoden-Typ genau scheitert).
+
+5) Nebenkriegsschauplätze (die wir bewusst verworfen haben)
+
+ToolBase Raycast / RaycastInput / RaycastOutput:
+
+Typen nicht gefunden oder Methode nicht zugreifbar (ToolBase.RayCast(...) private)
+
+ItemClass.Layer.Elevated / Vehicle.Flags.None etc.:
+
+In deiner CS1-Version nicht vorhanden → Compilerfehler.
+
+UIView.AddUIComponent<T>() generisch:
+
+In deiner API nicht generisch → musste auf AddUIComponent(typeof(...)) umgestellt werden.
+
+Fehlende using ICities; etc.:
+
+Führte zu IUserMod, LoadingExtensionBase, LoadMode nicht gefunden → war nur Setup/Referenzen.
+
+Was “geht” (Stand jetzt)
+
+HUD läuft, reagiert auf Hotkeys.
+
+Log auf Desktop wird geschrieben und überschrieben.
+
+PathManager.CreatePath patchen hat schon nachweislich einmal korrekt gezählt (Calls/Positions/LaneIndexHist).
+
+Was “nicht geht” (oder nicht zuverlässig)
+
+PathFind.BufferItem direkt anfassen (private).
+
+Mehrere PathFind-Hookpoints liefern trotz “Patched” im Log keine Zähler (nicht zuverlässig getroffen).
+
+CreatePath-Patching kann je nach Lauf komplett fehlschlagen (TargetInvocationException), dann bleibt alles 0.
+
+Nächster sinnvoller Schritt (kurz, damit du es in die Datei schreiben kannst)
+
+Fokus bleibt auf PathManager.CreatePath (sicherster Ort).
+
+Wir müssen die TargetInvocationException beim Patchen hart auflösen:
+
+genau loggen: welcher Overload scheitert,
+
+welche Harmony-Patch-Signatur verwendet wird (3-Arg/4-Arg),
+
+und ob Prefix-Signatur exakt kompatibel ist (Parameterliste/Ref/Out).
+
+Wenn du willst, kann ich dir als nächstes eine Mini-Log-Erweiterung in den Code schreiben, die beim Patch-Versuch für jeden CreatePath-Overload:
+
+die vollständige Signatur in die LOG schreibt,
+
+und bei Exception zusätzlich ex.InnerException + Stacktrace ausgibt,
+
+damit wir sofort sehen, warum Harmony genau dort aussteigt.
