@@ -48,3 +48,6 @@ Programmteile die Funktionieren aber für weitere tests nicht benötigt werden n
 programme möglichst in kleine .cs dateien teilen, dann braucht man nicht immer so viel neuen Code zu kopieren und es ist einfacher. Bitte dabei auch darauf achten, das dateinamen nicht einfach zwischendurch geändert werden.
 
 Mit dem kompilieren der .cs dateien werden immer alle dateien berücksichtigt, die in dem ordner sind.
+
+
+Bei der Programmierung bitte immer den sichersten Weg nutzen.
