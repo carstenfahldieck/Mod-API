@@ -1,0 +1,4975 @@
+=== CS1 Harmony API Dump ===
+Timestamp: 2026-02-16 13:28:27
+Assembly: 0Harmony, Version=2.0.0.9, Culture=neutral, PublicKeyToken=null
+
+
+### NAMESPACE: 
+
+------------------------------------------------------------
+TYPE: <01a99e1d-5d13-4b85-8798-4eca5715c956><PrivateImplementationDetails>
+KIND: class
+ATTR: Sealed
+BASE: System.Object
+
+FIELDS:
+  internal static readonly <01a99e1d-5d13-4b85-8798-4eca5715c956><PrivateImplementationDetails>+__StaticArrayInitTypeSize=288 5BCD21C341BE6DDF8FFFAE1A23ABA24DCBB612BF
+
+NESTED TYPES:
+  - <01a99e1d-5d13-4b85-8798-4eca5715c956><PrivateImplementationDetails>+__StaticArrayInitTypeSize=288
+
+------------------------------------------------------------
+TYPE: <01a99e1d-5d13-4b85-8798-4eca5715c956><PrivateImplementationDetails>+__StaticArrayInitTypeSize=288
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+BASE: System.ValueType
+
+------------------------------------------------------------
+TYPE: <2c331b14-adbe-472c-ada7-fe4d27ef09f6><PrivateImplementationDetails>
+KIND: class
+ATTR: Sealed
+BASE: System.Object
+
+FIELDS:
+  internal static readonly <2c331b14-adbe-472c-ada7-fe4d27ef09f6><PrivateImplementationDetails>+__StaticArrayInitTypeSize=1790 11EFE417082EF85B0D9D6E3099593B910C1A506F
+  internal static readonly System.Int64 504BD08902B7EE1EA70852EE7B30B06CD4130E90
+  internal static readonly System.Int64 7460C27079517029EC4986406D3AD2253581764B
+  internal static readonly <2c331b14-adbe-472c-ada7-fe4d27ef09f6><PrivateImplementationDetails>+__StaticArrayInitTypeSize=160 EB237D93FA22EEE4936E8D363A0AD5117F5F3FB0
+  internal static readonly <2c331b14-adbe-472c-ada7-fe4d27ef09f6><PrivateImplementationDetails>+__StaticArrayInitTypeSize=128 F11665C8721466F78A96C106B08F17FC29A12F6C
+
+METHODS:
+  internal static System.UInt32 ComputeStringHash(System.String s)
+
+NESTED TYPES:
+  - <2c331b14-adbe-472c-ada7-fe4d27ef09f6><PrivateImplementationDetails>+__StaticArrayInitTypeSize=128
+  - <2c331b14-adbe-472c-ada7-fe4d27ef09f6><PrivateImplementationDetails>+__StaticArrayInitTypeSize=160
+  - <2c331b14-adbe-472c-ada7-fe4d27ef09f6><PrivateImplementationDetails>+__StaticArrayInitTypeSize=1790
+
+------------------------------------------------------------
+TYPE: <2c331b14-adbe-472c-ada7-fe4d27ef09f6><PrivateImplementationDetails>+__StaticArrayInitTypeSize=128
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+BASE: System.ValueType
+
+------------------------------------------------------------
+TYPE: <2c331b14-adbe-472c-ada7-fe4d27ef09f6><PrivateImplementationDetails>+__StaticArrayInitTypeSize=160
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+BASE: System.ValueType
+
+------------------------------------------------------------
+TYPE: <2c331b14-adbe-472c-ada7-fe4d27ef09f6><PrivateImplementationDetails>+__StaticArrayInitTypeSize=1790
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+BASE: System.ValueType
+
+------------------------------------------------------------
+TYPE: <PrivateImplementationDetails>
+KIND: class
+ATTR: Sealed
+BASE: System.Object
+
+FIELDS:
+  internal static readonly <PrivateImplementationDetails>+__StaticArrayInitTypeSize=76 56427242AE15E565558AA1EB43FEA9A390866F17DB2DDC583317DF8F6E895DF7
+  internal static readonly <PrivateImplementationDetails>+__StaticArrayInitTypeSize=20 5A87C2828C9C8F95C9E1046D4401F7A664B56380C15FA3DB813FDD1357D202BC
+  internal static readonly <PrivateImplementationDetails>+__StaticArrayInitTypeSize=44 5BA4FAAA55F2642376471F589754A1EDEE02600D63068B048091CF7B880A7B76
+  internal static readonly <PrivateImplementationDetails>+__StaticArrayInitTypeSize=16 E6A07840C7F49B626A978048DE0D281A304412B223BC936338A9402F8FC3B590
+
+NESTED TYPES:
+  - <PrivateImplementationDetails>+__StaticArrayInitTypeSize=16
+  - <PrivateImplementationDetails>+__StaticArrayInitTypeSize=20
+  - <PrivateImplementationDetails>+__StaticArrayInitTypeSize=44
+  - <PrivateImplementationDetails>+__StaticArrayInitTypeSize=76
+
+------------------------------------------------------------
+TYPE: <PrivateImplementationDetails>+__StaticArrayInitTypeSize=16
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+BASE: System.ValueType
+
+------------------------------------------------------------
+TYPE: <PrivateImplementationDetails>+__StaticArrayInitTypeSize=20
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+BASE: System.ValueType
+
+------------------------------------------------------------
+TYPE: <PrivateImplementationDetails>+__StaticArrayInitTypeSize=44
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+BASE: System.ValueType
+
+------------------------------------------------------------
+TYPE: <PrivateImplementationDetails>+__StaticArrayInitTypeSize=76
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+BASE: System.ValueType
+
+------------------------------------------------------------
+TYPE: Consts
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public static const System.String AssemblyName
+  public static const System.String PublicKey
+
+
+### NAMESPACE: HarmonyLib
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessCache
+KIND: class
+ATTR: BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  private static const System.Reflection.BindingFlags BasicFlags
+  private readonly System.Collections.Generic.Dictionary`2[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Reflection.FieldInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] declaredFields
+  private readonly System.Collections.Generic.Dictionary`2[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Reflection.MethodBase, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] declaredMethods
+  private static readonly System.Collections.Generic.Dictionary`2[[HarmonyLib.AccessCache+MemberType, 0Harmony, Version=2.0.0.9, Culture=neutral, PublicKeyToken=null],[System.Reflection.BindingFlags, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] declaredOnlyBindingFlags
+  private readonly System.Collections.Generic.Dictionary`2[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Reflection.PropertyInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] declaredProperties
+  private readonly System.Collections.Generic.Dictionary`2[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Reflection.FieldInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] inheritedFields
+  private readonly System.Collections.Generic.Dictionary`2[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Reflection.MethodBase, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] inheritedMethods
+  private readonly System.Collections.Generic.Dictionary`2[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Reflection.PropertyInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] inheritedProperties
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  private static T Get<T>(System.Collections.Generic.Dictionary`2[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[T]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] dict, System.Type type, System.String name, System.Type[] arguments, System.Func`1[[T]] fetcher)
+  private static T Get<T>(System.Collections.Generic.Dictionary`2[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[T]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] dict, System.Type type, System.String name, System.Func`1[[T]] fetcher)
+  internal System.Reflection.FieldInfo GetFieldInfo(System.Type type, System.String name, HarmonyLib.AccessCache+MemberType memberType, System.Boolean declaredOnly)
+  internal System.Reflection.MethodBase GetMethodInfo(System.Type type, System.String name, System.Type[] arguments, HarmonyLib.AccessCache+MemberType memberType, System.Boolean declaredOnly)
+  internal System.Reflection.PropertyInfo GetPropertyInfo(System.Type type, System.String name, HarmonyLib.AccessCache+MemberType memberType, System.Boolean declaredOnly)
+
+NESTED TYPES:
+  - HarmonyLib.AccessCache+<>c__DisplayClass11_0
+  - HarmonyLib.AccessCache+<>c__DisplayClass12_0
+  - HarmonyLib.AccessCache+<>c__DisplayClass13_0
+  - HarmonyLib.AccessCache+MemberType
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessCache+<>c__DisplayClass11_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.Func`2[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Reflection.FieldInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__2
+  public HarmonyLib.AccessCache+MemberType memberType
+  public System.String name
+  public System.Type type
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Reflection.FieldInfo <GetFieldInfo>b__0()
+  internal System.Reflection.FieldInfo <GetFieldInfo>b__1()
+  internal System.Reflection.FieldInfo <GetFieldInfo>b__2(System.Type t)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessCache+<>c__DisplayClass12_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.Func`2[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Reflection.PropertyInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__2
+  public HarmonyLib.AccessCache+MemberType memberType
+  public System.String name
+  public System.Type type
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Reflection.PropertyInfo <GetPropertyInfo>b__0()
+  internal System.Reflection.PropertyInfo <GetPropertyInfo>b__1()
+  internal System.Reflection.PropertyInfo <GetPropertyInfo>b__2(System.Type t)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessCache+<>c__DisplayClass13_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.Type[] arguments
+  public HarmonyLib.AccessCache+MemberType memberType
+  public System.String name
+  public System.Type type
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Reflection.MethodBase <GetMethodInfo>b__0()
+  internal System.Reflection.MethodBase <GetMethodInfo>b__1()
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessCache+MemberType
+KIND: enum
+ATTR: NestedAssembly, Sealed
+BASE: System.Enum
+INTERFACES:
+  - System.IFormattable
+  - System.IConvertible
+  - System.IComparable
+
+FIELDS:
+  public static const HarmonyLib.AccessCache+MemberType Any
+  public static const HarmonyLib.AccessCache+MemberType Instance
+  public static const HarmonyLib.AccessCache+MemberType Static
+  public System.Int32 value__
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  private static readonly System.Boolean <IsMonoRuntime>k__BackingField
+  private static readonly System.Boolean <IsNetCoreRuntime>k__BackingField
+  private static readonly System.Boolean <IsNetFrameworkRuntime>k__BackingField
+  private static readonly HarmonyLib.FastInvokeHandler PrepForRemoting
+  private static readonly System.Collections.Generic.Dictionary`2[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[HarmonyLib.FastInvokeHandler, 0Harmony, Version=2.0.0.9, Culture=neutral, PublicKeyToken=null]] addHandlerCache
+  private static readonly System.Threading.ReaderWriterLock addHandlerCacheLock
+  public static readonly System.Reflection.BindingFlags all
+  public static readonly System.Reflection.BindingFlags allDeclared
+  private static readonly System.Reflection.MethodInfo m_PrepForRemoting
+
+PROPERTIES:
+  public static System.Boolean IsMonoRuntime { get; }
+  public static System.Boolean IsNetCoreRuntime { get; }
+  public static System.Boolean IsNetFrameworkRuntime { get; }
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  public static System.Object[] ActualParameters(System.Reflection.MethodBase method, System.Object[] inputs)
+  public static System.Collections.Generic.IEnumerable`1[[System.Reflection.Assembly, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] AllAssemblies()
+  public static System.Collections.Generic.IEnumerable`1[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] AllTypes()
+  public static System.Int32 CombinedHashCode(System.Collections.Generic.IEnumerable`1[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] objects)
+  public static System.Reflection.ConstructorInfo Constructor(System.Type type, System.Type[] parameters, System.Boolean searchForStatic)
+  public static System.Object CreateInstance(System.Type type)
+  public static T CreateInstance<T>()
+  public static System.Reflection.ConstructorInfo DeclaredConstructor(System.Type type, System.Type[] parameters, System.Boolean searchForStatic)
+  public static System.Reflection.FieldInfo DeclaredField(System.Type type, System.Int32 idx)
+  public static System.Reflection.FieldInfo DeclaredField(System.Type type, System.String name)
+  public static System.Reflection.FieldInfo DeclaredField(System.String typeColonName)
+  public static System.Reflection.MethodInfo DeclaredMethod(System.Type type, System.String name, System.Type[] parameters, System.Type[] generics)
+  public static System.Reflection.MethodInfo DeclaredMethod(System.String typeColonName, System.Type[] parameters, System.Type[] generics)
+  public static System.Reflection.PropertyInfo DeclaredProperty(System.Type type, System.String name)
+  public static System.Reflection.PropertyInfo DeclaredProperty(System.String typeColonName)
+  public static System.Reflection.MethodInfo DeclaredPropertyGetter(System.Type type, System.String name)
+  public static System.Reflection.MethodInfo DeclaredPropertyGetter(System.String typeColonName)
+  public static System.Reflection.MethodInfo DeclaredPropertySetter(System.Type type, System.String name)
+  public static System.Reflection.MethodInfo DeclaredPropertySetter(System.String typeColonName)
+  public static System.Reflection.MethodInfo EnumeratorMoveNext(System.Reflection.MethodBase method)
+  public static System.Reflection.FieldInfo Field(System.String typeColonName)
+  public static System.Reflection.FieldInfo Field(System.Type type, System.String name)
+  public static HarmonyLib.AccessTools+FieldRef`2[[T],[F]] FieldRefAccess<T, F>(System.String fieldName)
+  public static HarmonyLib.AccessTools+FieldRef`2[[T],[F]] FieldRefAccess<T, F>(System.Reflection.FieldInfo fieldInfo)
+  public static F& FieldRefAccess<T, F>(T instance, System.Reflection.FieldInfo fieldInfo)
+  public static F& FieldRefAccess<T, F>(T instance, System.String fieldName)
+  public static HarmonyLib.AccessTools+FieldRef`2[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[F]] FieldRefAccess<F>(System.Type type, System.String fieldName)
+  public static HarmonyLib.AccessTools+FieldRef`2[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[F]] FieldRefAccess<F>(System.String typeColonName)
+  public static T FindIncludingBaseTypes<T>(System.Type type, System.Func`2[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[T]] func)
+  public static T FindIncludingInnerTypes<T>(System.Type type, System.Func`2[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[T]] func)
+  public static System.Reflection.ConstructorInfo FirstConstructor(System.Type type, System.Func`2[[System.Reflection.ConstructorInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] predicate)
+  public static System.Type FirstInner(System.Type type, System.Func`2[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] predicate)
+  public static System.Reflection.MethodInfo FirstMethod(System.Type type, System.Func`2[[System.Reflection.MethodInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] predicate)
+  public static System.Reflection.PropertyInfo FirstProperty(System.Type type, System.Func`2[[System.Reflection.PropertyInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] predicate)
+  public static System.Collections.Generic.List`1[[System.Reflection.ConstructorInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetDeclaredConstructors(System.Type type, System.Nullable`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] searchForStatic)
+  public static System.Collections.Generic.List`1[[System.Reflection.FieldInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetDeclaredFields(System.Type type)
+  public static T GetDeclaredMember<T>(T member)
+  public static System.Collections.Generic.List`1[[System.Reflection.MethodInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetDeclaredMethods(System.Type type)
+  public static System.Collections.Generic.List`1[[System.Reflection.PropertyInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetDeclaredProperties(System.Type type)
+  public static System.Object GetDefaultValue(System.Type type)
+  public static System.Collections.Generic.List`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetFieldNames(System.Object instance)
+  public static System.Collections.Generic.List`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetFieldNames(System.Type type)
+  public static System.Collections.Generic.List`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetMethodNames(System.Type type)
+  public static System.Collections.Generic.List`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetMethodNames(System.Object instance)
+  public static System.Reflection.MethodBase GetOutsideCaller()
+  public static System.Collections.Generic.List`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetPropertyNames(System.Type type)
+  public static System.Collections.Generic.List`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetPropertyNames(System.Object instance)
+  public static System.Type GetReturnedType(System.Reflection.MethodBase methodOrConstructor)
+  public static System.Type[] GetTypes(System.Object[] parameters)
+  public static System.Type[] GetTypesFromAssembly(System.Reflection.Assembly assembly)
+  public static System.Type GetUnderlyingType(System.Reflection.MemberInfo member)
+  public static DelegateType HarmonyDelegate<DelegateType>(System.Object instance)
+  public static System.Type Inner(System.Type type, System.String name)
+  public static System.Boolean IsClass(System.Type type)
+  public static System.Boolean IsDeclaredMember<T>(T member)
+  public static System.Boolean IsFloatingPoint(System.Type type)
+  public static System.Boolean IsInteger(System.Type type)
+  public static System.Boolean IsNumber(System.Type type)
+  public static System.Boolean IsOfNullableType<T>(T instance)
+  public static System.Boolean IsStatic(System.Reflection.MemberInfo member)
+  public static System.Boolean IsStatic(System.Reflection.EventInfo eventInfo)
+  public static System.Boolean IsStatic(System.Reflection.PropertyInfo propertyInfo)
+  public static System.Boolean IsStatic(System.Type type)
+  public static System.Boolean IsStruct(System.Type type)
+  public static System.Boolean IsValue(System.Type type)
+  public static System.Boolean IsVoid(System.Type type)
+  public static System.Object MakeDeepCopy(System.Object source, System.Type resultType, System.Func`4[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[HarmonyLib.Traverse, 0Harmony, Version=2.0.0.9, Culture=neutral, PublicKeyToken=null],[HarmonyLib.Traverse, 0Harmony, Version=2.0.0.9, Culture=neutral, PublicKeyToken=null],[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] processor, System.String pathRoot)
+  public static T MakeDeepCopy<T>(System.Object source)
+  public static System.Void MakeDeepCopy<T>(System.Object source, out T result, System.Func`4[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[HarmonyLib.Traverse, 0Harmony, Version=2.0.0.9, Culture=neutral, PublicKeyToken=null],[HarmonyLib.Traverse, 0Harmony, Version=2.0.0.9, Culture=neutral, PublicKeyToken=null],[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] processor, System.String pathRoot)
+  public static System.Reflection.MethodInfo Method(System.Type type, System.String name, System.Type[] parameters, System.Type[] generics)
+  public static System.Reflection.MethodInfo Method(System.String typeColonName, System.Type[] parameters, System.Type[] generics)
+  public static DelegateType MethodDelegate<DelegateType>(System.String typeColonName, System.Object instance, System.Boolean virtualCall)
+  public static DelegateType MethodDelegate<DelegateType>(System.Reflection.MethodInfo method, System.Object instance, System.Boolean virtualCall)
+  public static System.Reflection.PropertyInfo Property(System.Type type, System.String name)
+  public static System.Reflection.PropertyInfo Property(System.String typeColonName)
+  public static System.Reflection.MethodInfo PropertyGetter(System.String typeColonName)
+  public static System.Reflection.MethodInfo PropertyGetter(System.Type type, System.String name)
+  public static System.Reflection.MethodInfo PropertySetter(System.String typeColonName)
+  public static System.Reflection.MethodInfo PropertySetter(System.Type type, System.String name)
+  public static System.Void RethrowException(System.Exception exception)
+  public static F& StaticFieldRefAccess<F>(System.String typeColonName)
+  public static F& StaticFieldRefAccess<T, F>(System.Reflection.FieldInfo fieldInfo)
+  public static F& StaticFieldRefAccess<T, F>(System.String fieldName)
+  public static F& StaticFieldRefAccess<F>(System.Type type, System.String fieldName)
+  public static HarmonyLib.AccessTools+FieldRef`1[[F]] StaticFieldRefAccess<F>(System.Reflection.FieldInfo fieldInfo)
+  public static HarmonyLib.AccessTools+StructFieldRef`2[[T],[F]] StructFieldRefAccess<T, F>(System.Reflection.FieldInfo fieldInfo)
+  public static F& StructFieldRefAccess<T, F>(ref T instance, System.Reflection.FieldInfo fieldInfo)
+  public static HarmonyLib.AccessTools+StructFieldRef`2[[T],[F]] StructFieldRefAccess<T, F>(System.String fieldName)
+  public static F& StructFieldRefAccess<T, F>(ref T instance, System.String fieldName)
+  public static System.Void ThrowMissingMemberException(System.Type type, System.String[] names)
+  public static System.Type TypeByName(System.String name)
+  public static System.Boolean get_IsMonoRuntime()
+  public static System.Boolean get_IsNetCoreRuntime()
+  public static System.Boolean get_IsNetFrameworkRuntime()
+
+NESTED TYPES:
+  - HarmonyLib.AccessTools+<>c
+  - HarmonyLib.AccessTools+<>c__DisplayClass10_0
+  - HarmonyLib.AccessTools+<>c__DisplayClass11_0
+  - HarmonyLib.AccessTools+<>c__DisplayClass19_0
+  - HarmonyLib.AccessTools+<>c__DisplayClass20_0
+  - HarmonyLib.AccessTools+<>c__DisplayClass27_0
+  - HarmonyLib.AccessTools+<>c__DisplayClass3_0
+  - HarmonyLib.AccessTools+<>c__DisplayClass40_0
+  - HarmonyLib.AccessTools+<>c__DisplayClass41_0
+  - HarmonyLib.AccessTools+<>c__DisplayClass46_0
+  - HarmonyLib.AccessTools+<>c__DisplayClass47_0
+  - HarmonyLib.AccessTools+<>c__DisplayClass48_0
+  - HarmonyLib.AccessTools+<>c__DisplayClass49_0
+  - HarmonyLib.AccessTools+<>c__DisplayClass50_0
+  - HarmonyLib.AccessTools+<>c__DisplayClass52_0
+  - HarmonyLib.AccessTools+<>c__DisplayClass52_1
+  - HarmonyLib.AccessTools+<>c__DisplayClass95_0
+  - HarmonyLib.AccessTools+FieldRef`1
+  - HarmonyLib.AccessTools+FieldRef`2
+  - HarmonyLib.AccessTools+StructFieldRef`2
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public static readonly HarmonyLib.AccessTools+<>c <>9
+  public static System.Func`2[[System.Collections.Generic.KeyValuePair`2[[System.Reflection.Emit.OpCode, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__29_0
+  public static System.Func`2[[System.Reflection.Assembly, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__2_0
+  public static System.Func`2[[System.Reflection.MethodInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__30_0
+  public static System.Func`2[[System.Reflection.FieldInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__32_0
+  public static System.Func`2[[System.Reflection.PropertyInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__34_0
+  public static System.Func`2[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__4_0
+  public static System.Func`2[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__51_0
+  public static System.Func`2[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__52_0
+  public static System.Func`2[[System.Reflection.ParameterInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__52_1
+  public static System.Func`2[[System.Reflection.Assembly, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Collections.Generic.IEnumerable`1[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__5_0
+  public static System.Func`2[[System.Reflection.MethodInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__95_1
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.Type <ActualParameters>b__52_0(System.Object obj)
+  internal System.Type <ActualParameters>b__52_1(System.Reflection.ParameterInfo p)
+  internal System.Boolean <AllAssemblies>b__2_0(System.Reflection.Assembly a)
+  internal System.Collections.Generic.IEnumerable`1[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <AllTypes>b__5_0(System.Reflection.Assembly a)
+  internal System.Boolean <EnumeratorMoveNext>b__29_0(System.Collections.Generic.KeyValuePair`2[[System.Reflection.Emit.OpCode, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] pair)
+  internal System.String <GetFieldNames>b__32_0(System.Reflection.FieldInfo f)
+  internal System.String <GetMethodNames>b__30_0(System.Reflection.MethodInfo m)
+  internal System.String <GetPropertyNames>b__34_0(System.Reflection.PropertyInfo f)
+  internal System.Type <GetTypes>b__51_0(System.Object p)
+  internal System.Boolean <GetTypesFromAssembly>b__4_0(System.Type type)
+  internal System.Boolean <MakeDeepCopy>b__95_1(System.Reflection.MethodInfo m)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c__DisplayClass10_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.String name
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Reflection.FieldInfo <Field>b__0(System.Type t)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c__DisplayClass11_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public HarmonyLib.Tools+TypeAndName info
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Reflection.FieldInfo <Field>b__0(System.Type t)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c__DisplayClass19_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.String name
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Reflection.PropertyInfo <Property>b__0(System.Type t)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c__DisplayClass20_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public HarmonyLib.Tools+TypeAndName info
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Reflection.PropertyInfo <Property>b__0(System.Type t)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c__DisplayClass27_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.Reflection.ParameterModifier[] modifiers
+  public System.String name
+  public System.Type[] parameters
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Reflection.MethodInfo <Method>b__0(System.Type t)
+  internal System.Reflection.MethodInfo <Method>b__1(System.Type t)
+  internal System.Reflection.MethodInfo <Method>b__2(System.Type t)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c__DisplayClass3_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.String name
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <TypeByName>b__0(System.Type t)
+  internal System.Boolean <TypeByName>b__1(System.Type t)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c__DisplayClass40_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.Reflection.BindingFlags flags
+  public System.Type[] parameters
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Reflection.ConstructorInfo <Constructor>b__0(System.Type t)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c__DisplayClass41_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.Type type
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <GetDeclaredConstructors>b__0(System.Reflection.ConstructorInfo method)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c__DisplayClass46_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.String name
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Type <Inner>b__0(System.Type t)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c__DisplayClass47_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.Func`2[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] predicate
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <FirstInner>b__0(System.Type subType)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c__DisplayClass48_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.Func`2[[System.Reflection.MethodInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] predicate
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <FirstMethod>b__0(System.Reflection.MethodInfo method)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c__DisplayClass49_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.Func`2[[System.Reflection.ConstructorInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] predicate
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <FirstConstructor>b__0(System.Reflection.ConstructorInfo constructor)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c__DisplayClass50_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.Func`2[[System.Reflection.PropertyInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] predicate
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <FirstProperty>b__0(System.Reflection.PropertyInfo property)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c__DisplayClass52_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.Collections.Generic.List`1[[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] inputTypes
+  public System.Object[] inputs
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Object <ActualParameters>b__2(System.Type pType)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c__DisplayClass52_1
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.Type pType
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <ActualParameters>b__3(System.Type inType)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+<>c__DisplayClass95_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.String pathRoot
+  public System.Func`4[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[HarmonyLib.Traverse, 0Harmony, Version=2.0.0.9, Culture=neutral, PublicKeyToken=null],[HarmonyLib.Traverse, 0Harmony, Version=2.0.0.9, Culture=neutral, PublicKeyToken=null],[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] processor
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Void <MakeDeepCopy>b__0(System.String name, HarmonyLib.Traverse src, HarmonyLib.Traverse dst)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+FieldRef`1
+KIND: class
+ATTR: NestedPublic, Sealed
+BASE: System.MulticastDelegate
+INTERFACES:
+  - System.ICloneable
+  - System.Runtime.Serialization.ISerializable
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.AsyncCallback callback, System.Object object)
+  public virtual F& EndInvoke(System.IAsyncResult result)
+  public virtual F& Invoke()
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+FieldRef`2
+KIND: class
+ATTR: NestedPublic, Sealed
+BASE: System.MulticastDelegate
+INTERFACES:
+  - System.ICloneable
+  - System.Runtime.Serialization.ISerializable
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(T instance, System.AsyncCallback callback, System.Object object)
+  public virtual F& EndInvoke(System.IAsyncResult result)
+  public virtual F& Invoke(T instance)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AccessTools+StructFieldRef`2
+KIND: class
+ATTR: NestedPublic, Sealed
+BASE: System.MulticastDelegate
+INTERFACES:
+  - System.ICloneable
+  - System.Runtime.Serialization.ISerializable
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(ref T instance, System.AsyncCallback callback, System.Object object)
+  public virtual F& EndInvoke(ref T instance, System.IAsyncResult result)
+  public virtual F& Invoke(ref T instance)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.ArgumentType
+KIND: enum
+ATTR: Public, Sealed
+BASE: System.Enum
+INTERFACES:
+  - System.IFormattable
+  - System.IConvertible
+  - System.IComparable
+
+FIELDS:
+  public static const HarmonyLib.ArgumentType Normal
+  public static const HarmonyLib.ArgumentType Out
+  public static const HarmonyLib.ArgumentType Pointer
+  public static const HarmonyLib.ArgumentType Ref
+  public System.Int32 value__
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AttributePatch
+KIND: class
+ATTR: BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  private static readonly HarmonyLib.HarmonyPatchType[] allPatchTypes
+  private static readonly System.String harmonyAttributeName
+  internal HarmonyLib.HarmonyMethod info
+  internal System.Nullable`1[[HarmonyLib.HarmonyPatchType, 0Harmony, Version=2.0.0.9, Culture=neutral, PublicKeyToken=null]] type
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal static HarmonyLib.AttributePatch Create(System.Reflection.MethodInfo patch)
+  private static System.Nullable`1[[HarmonyLib.HarmonyPatchType, 0Harmony, Version=2.0.0.9, Culture=neutral, PublicKeyToken=null]] GetPatchType(System.String methodName, System.Object[] allAttributes)
+
+NESTED TYPES:
+  - HarmonyLib.AttributePatch+<>c
+
+------------------------------------------------------------
+TYPE: HarmonyLib.AttributePatch+<>c
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public static readonly HarmonyLib.AttributePatch+<>c <>9
+  public static System.Func`2[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__4_0
+  public static System.Func`2[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__4_1
+  public static System.Func`2[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[HarmonyLib.HarmonyMethod, 0Harmony, Version=2.0.0.9, Culture=neutral, PublicKeyToken=null]] <>9__4_2
+  public static System.Func`2[[System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__5_0
+  public static System.Func`2[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__5_1
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <Create>b__4_0(System.Object attr)
+  internal System.Object <Create>b__4_1(System.Object attr)
+  internal HarmonyLib.HarmonyMethod <Create>b__4_2(System.Object harmonyInfo)
+  internal System.String <GetPatchType>b__5_0(System.Object attr)
+  internal System.Boolean <GetPatchType>b__5_1(System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.ByteBuffer
+KIND: class
+ATTR: BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  internal System.Byte[] buffer
+  internal System.Int32 position
+
+CONSTRUCTORS:
+  internal .ctor(System.Byte[] buffer)
+
+METHODS:
+  private System.Void CheckCanRead(System.Int32 count)
+  internal System.Byte ReadByte()
+  internal System.Byte[] ReadBytes(System.Int32 length)
+  internal System.Double ReadDouble()
+  internal System.Int16 ReadInt16()
+  internal System.Int32 ReadInt32()
+  internal System.Int64 ReadInt64()
+  internal System.Single ReadSingle()
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+BASE: System.Object
+
+PROPERTIES:
+  public static HarmonyLib.Code+Add_ Add { get; }
+  public static HarmonyLib.Code+Add_Ovf_ Add_Ovf { get; }
+  public static HarmonyLib.Code+Add_Ovf_Un_ Add_Ovf_Un { get; }
+  public static HarmonyLib.Code+And_ And { get; }
+  public static HarmonyLib.Code+Arglist_ Arglist { get; }
+  public static HarmonyLib.Code+Beq_ Beq { get; }
+  public static HarmonyLib.Code+Beq_S_ Beq_S { get; }
+  public static HarmonyLib.Code+Bge_ Bge { get; }
+  public static HarmonyLib.Code+Bge_S_ Bge_S { get; }
+  public static HarmonyLib.Code+Bge_Un_ Bge_Un { get; }
+  public static HarmonyLib.Code+Bge_Un_S_ Bge_Un_S { get; }
+  public static HarmonyLib.Code+Bgt_ Bgt { get; }
+  public static HarmonyLib.Code+Bgt_S_ Bgt_S { get; }
+  public static HarmonyLib.Code+Bgt_Un_ Bgt_Un { get; }
+  public static HarmonyLib.Code+Bgt_Un_S_ Bgt_Un_S { get; }
+  public static HarmonyLib.Code+Ble_ Ble { get; }
+  public static HarmonyLib.Code+Ble_S_ Ble_S { get; }
+  public static HarmonyLib.Code+Ble_Un_ Ble_Un { get; }
+  public static HarmonyLib.Code+Ble_Un_S_ Ble_Un_S { get; }
+  public static HarmonyLib.Code+Blt_ Blt { get; }
+  public static HarmonyLib.Code+Blt_S_ Blt_S { get; }
+  public static HarmonyLib.Code+Blt_Un_ Blt_Un { get; }
+  public static HarmonyLib.Code+Blt_Un_S_ Blt_Un_S { get; }
+  public static HarmonyLib.Code+Bne_Un_ Bne_Un { get; }
+  public static HarmonyLib.Code+Bne_Un_S_ Bne_Un_S { get; }
+  public static HarmonyLib.Code+Box_ Box { get; }
+  public static HarmonyLib.Code+Br_ Br { get; }
+  public static HarmonyLib.Code+Br_S_ Br_S { get; }
+  public static HarmonyLib.Code+Break_ Break { get; }
+  public static HarmonyLib.Code+Brfalse_ Brfalse { get; }
+  public static HarmonyLib.Code+Brfalse_S_ Brfalse_S { get; }
+  public static HarmonyLib.Code+Brtrue_ Brtrue { get; }
+  public static HarmonyLib.Code+Brtrue_S_ Brtrue_S { get; }
+  public static HarmonyLib.Code+Call_ Call { get; }
+  public static HarmonyLib.Code+Calli_ Calli { get; }
+  public static HarmonyLib.Code+Callvirt_ Callvirt { get; }
+  public static HarmonyLib.Code+Castclass_ Castclass { get; }
+  public static HarmonyLib.Code+Ceq_ Ceq { get; }
+  public static HarmonyLib.Code+Cgt_ Cgt { get; }
+  public static HarmonyLib.Code+Cgt_Un_ Cgt_Un { get; }
+  public static HarmonyLib.Code+Ckfinite_ Ckfinite { get; }
+  public static HarmonyLib.Code+Clt_ Clt { get; }
+  public static HarmonyLib.Code+Clt_Un_ Clt_Un { get; }
+  public static HarmonyLib.Code+Constrained_ Constrained { get; }
+  public static HarmonyLib.Code+Conv_I_ Conv_I { get; }
+  public static HarmonyLib.Code+Conv_I1_ Conv_I1 { get; }
+  public static HarmonyLib.Code+Conv_I2_ Conv_I2 { get; }
+  public static HarmonyLib.Code+Conv_I4_ Conv_I4 { get; }
+  public static HarmonyLib.Code+Conv_I8_ Conv_I8 { get; }
+  public static HarmonyLib.Code+Conv_Ovf_I_ Conv_Ovf_I { get; }
+  public static HarmonyLib.Code+Conv_Ovf_I1_ Conv_Ovf_I1 { get; }
+  public static HarmonyLib.Code+Conv_Ovf_I1_Un_ Conv_Ovf_I1_Un { get; }
+  public static HarmonyLib.Code+Conv_Ovf_I2_ Conv_Ovf_I2 { get; }
+  public static HarmonyLib.Code+Conv_Ovf_I2_Un_ Conv_Ovf_I2_Un { get; }
+  public static HarmonyLib.Code+Conv_Ovf_I4_ Conv_Ovf_I4 { get; }
+  public static HarmonyLib.Code+Conv_Ovf_I4_Un_ Conv_Ovf_I4_Un { get; }
+  public static HarmonyLib.Code+Conv_Ovf_I8_ Conv_Ovf_I8 { get; }
+  public static HarmonyLib.Code+Conv_Ovf_I8_Un_ Conv_Ovf_I8_Un { get; }
+  public static HarmonyLib.Code+Conv_Ovf_I_Un_ Conv_Ovf_I_Un { get; }
+  public static HarmonyLib.Code+Conv_Ovf_U_ Conv_Ovf_U { get; }
+  public static HarmonyLib.Code+Conv_Ovf_U1_ Conv_Ovf_U1 { get; }
+  public static HarmonyLib.Code+Conv_Ovf_U1_Un_ Conv_Ovf_U1_Un { get; }
+  public static HarmonyLib.Code+Conv_Ovf_U2_ Conv_Ovf_U2 { get; }
+  public static HarmonyLib.Code+Conv_Ovf_U2_Un_ Conv_Ovf_U2_Un { get; }
+  public static HarmonyLib.Code+Conv_Ovf_U4_ Conv_Ovf_U4 { get; }
+  public static HarmonyLib.Code+Conv_Ovf_U4_Un_ Conv_Ovf_U4_Un { get; }
+  public static HarmonyLib.Code+Conv_Ovf_U8_ Conv_Ovf_U8 { get; }
+  public static HarmonyLib.Code+Conv_Ovf_U8_Un_ Conv_Ovf_U8_Un { get; }
+  public static HarmonyLib.Code+Conv_Ovf_U_Un_ Conv_Ovf_U_Un { get; }
+  public static HarmonyLib.Code+Conv_R4_ Conv_R4 { get; }
+  public static HarmonyLib.Code+Conv_R8_ Conv_R8 { get; }
+  public static HarmonyLib.Code+Conv_R_Un_ Conv_R_Un { get; }
+  public static HarmonyLib.Code+Conv_U_ Conv_U { get; }
+  public static HarmonyLib.Code+Conv_U1_ Conv_U1 { get; }
+  public static HarmonyLib.Code+Conv_U2_ Conv_U2 { get; }
+  public static HarmonyLib.Code+Conv_U4_ Conv_U4 { get; }
+  public static HarmonyLib.Code+Conv_U8_ Conv_U8 { get; }
+  public static HarmonyLib.Code+Cpblk_ Cpblk { get; }
+  public static HarmonyLib.Code+Cpobj_ Cpobj { get; }
+  public static HarmonyLib.Code+Div_ Div { get; }
+  public static HarmonyLib.Code+Div_Un_ Div_Un { get; }
+  public static HarmonyLib.Code+Dup_ Dup { get; }
+  public static HarmonyLib.Code+Endfilter_ Endfilter { get; }
+  public static HarmonyLib.Code+Endfinally_ Endfinally { get; }
+  public static HarmonyLib.Code+Initblk_ Initblk { get; }
+  public static HarmonyLib.Code+Initobj_ Initobj { get; }
+  public static HarmonyLib.Code+Isinst_ Isinst { get; }
+  public static HarmonyLib.Code+Jmp_ Jmp { get; }
+  public static HarmonyLib.Code+Ldarg_ Ldarg { get; }
+  public static HarmonyLib.Code+Ldarg_0_ Ldarg_0 { get; }
+  public static HarmonyLib.Code+Ldarg_1_ Ldarg_1 { get; }
+  public static HarmonyLib.Code+Ldarg_2_ Ldarg_2 { get; }
+  public static HarmonyLib.Code+Ldarg_3_ Ldarg_3 { get; }
+  public static HarmonyLib.Code+Ldarg_S_ Ldarg_S { get; }
+  public static HarmonyLib.Code+Ldarga_ Ldarga { get; }
+  public static HarmonyLib.Code+Ldarga_S_ Ldarga_S { get; }
+  public static HarmonyLib.Code+Ldc_I4_ Ldc_I4 { get; }
+  public static HarmonyLib.Code+Ldc_I4_0_ Ldc_I4_0 { get; }
+  public static HarmonyLib.Code+Ldc_I4_1_ Ldc_I4_1 { get; }
+  public static HarmonyLib.Code+Ldc_I4_2_ Ldc_I4_2 { get; }
+  public static HarmonyLib.Code+Ldc_I4_3_ Ldc_I4_3 { get; }
+  public static HarmonyLib.Code+Ldc_I4_4_ Ldc_I4_4 { get; }
+  public static HarmonyLib.Code+Ldc_I4_5_ Ldc_I4_5 { get; }
+  public static HarmonyLib.Code+Ldc_I4_6_ Ldc_I4_6 { get; }
+  public static HarmonyLib.Code+Ldc_I4_7_ Ldc_I4_7 { get; }
+  public static HarmonyLib.Code+Ldc_I4_8_ Ldc_I4_8 { get; }
+  public static HarmonyLib.Code+Ldc_I4_M1_ Ldc_I4_M1 { get; }
+  public static HarmonyLib.Code+Ldc_I4_S_ Ldc_I4_S { get; }
+  public static HarmonyLib.Code+Ldc_I8_ Ldc_I8 { get; }
+  public static HarmonyLib.Code+Ldc_R4_ Ldc_R4 { get; }
+  public static HarmonyLib.Code+Ldc_R8_ Ldc_R8 { get; }
+  public static HarmonyLib.Code+Ldelem_ Ldelem { get; }
+  public static HarmonyLib.Code+Ldelem_I_ Ldelem_I { get; }
+  public static HarmonyLib.Code+Ldelem_I1_ Ldelem_I1 { get; }
+  public static HarmonyLib.Code+Ldelem_I2_ Ldelem_I2 { get; }
+  public static HarmonyLib.Code+Ldelem_I4_ Ldelem_I4 { get; }
+  public static HarmonyLib.Code+Ldelem_I8_ Ldelem_I8 { get; }
+  public static HarmonyLib.Code+Ldelem_R4_ Ldelem_R4 { get; }
+  public static HarmonyLib.Code+Ldelem_R8_ Ldelem_R8 { get; }
+  public static HarmonyLib.Code+Ldelem_Ref_ Ldelem_Ref { get; }
+  public static HarmonyLib.Code+Ldelem_U1_ Ldelem_U1 { get; }
+  public static HarmonyLib.Code+Ldelem_U2_ Ldelem_U2 { get; }
+  public static HarmonyLib.Code+Ldelem_U4_ Ldelem_U4 { get; }
+  public static HarmonyLib.Code+Ldelema_ Ldelema { get; }
+  public static HarmonyLib.Code+Ldfld_ Ldfld { get; }
+  public static HarmonyLib.Code+Ldflda_ Ldflda { get; }
+  public static HarmonyLib.Code+Ldftn_ Ldftn { get; }
+  public static HarmonyLib.Code+Ldind_I_ Ldind_I { get; }
+  public static HarmonyLib.Code+Ldind_I1_ Ldind_I1 { get; }
+  public static HarmonyLib.Code+Ldind_I2_ Ldind_I2 { get; }
+  public static HarmonyLib.Code+Ldind_I4_ Ldind_I4 { get; }
+  public static HarmonyLib.Code+Ldind_I8_ Ldind_I8 { get; }
+  public static HarmonyLib.Code+Ldind_R4_ Ldind_R4 { get; }
+  public static HarmonyLib.Code+Ldind_R8_ Ldind_R8 { get; }
+  public static HarmonyLib.Code+Ldind_Ref_ Ldind_Ref { get; }
+  public static HarmonyLib.Code+Ldind_U1_ Ldind_U1 { get; }
+  public static HarmonyLib.Code+Ldind_U2_ Ldind_U2 { get; }
+  public static HarmonyLib.Code+Ldind_U4_ Ldind_U4 { get; }
+  public static HarmonyLib.Code+Ldlen_ Ldlen { get; }
+  public static HarmonyLib.Code+Ldloc_ Ldloc { get; }
+  public static HarmonyLib.Code+Ldloc_0_ Ldloc_0 { get; }
+  public static HarmonyLib.Code+Ldloc_1_ Ldloc_1 { get; }
+  public static HarmonyLib.Code+Ldloc_2_ Ldloc_2 { get; }
+  public static HarmonyLib.Code+Ldloc_3_ Ldloc_3 { get; }
+  public static HarmonyLib.Code+Ldloc_S_ Ldloc_S { get; }
+  public static HarmonyLib.Code+Ldloca_ Ldloca { get; }
+  public static HarmonyLib.Code+Ldloca_S_ Ldloca_S { get; }
+  public static HarmonyLib.Code+Ldnull_ Ldnull { get; }
+  public static HarmonyLib.Code+Ldobj_ Ldobj { get; }
+  public static HarmonyLib.Code+Ldsfld_ Ldsfld { get; }
+  public static HarmonyLib.Code+Ldsflda_ Ldsflda { get; }
+  public static HarmonyLib.Code+Ldstr_ Ldstr { get; }
+  public static HarmonyLib.Code+Ldtoken_ Ldtoken { get; }
+  public static HarmonyLib.Code+Ldvirtftn_ Ldvirtftn { get; }
+  public static HarmonyLib.Code+Leave_ Leave { get; }
+  public static HarmonyLib.Code+Leave_S_ Leave_S { get; }
+  public static HarmonyLib.Code+Localloc_ Localloc { get; }
+  public static HarmonyLib.Code+Mkrefany_ Mkrefany { get; }
+  public static HarmonyLib.Code+Mul_ Mul { get; }
+  public static HarmonyLib.Code+Mul_Ovf_ Mul_Ovf { get; }
+  public static HarmonyLib.Code+Mul_Ovf_Un_ Mul_Ovf_Un { get; }
+  public static HarmonyLib.Code+Neg_ Neg { get; }
+  public static HarmonyLib.Code+Newarr_ Newarr { get; }
+  public static HarmonyLib.Code+Newobj_ Newobj { get; }
+  public static HarmonyLib.Code+Nop_ Nop { get; }
+  public static HarmonyLib.Code+Not_ Not { get; }
+  public static HarmonyLib.Code+Operand_ Operand { get; }
+  public static HarmonyLib.Code+Or_ Or { get; }
+  public static HarmonyLib.Code+Pop_ Pop { get; }
+  public static HarmonyLib.Code+Prefix1_ Prefix1 { get; }
+  public static HarmonyLib.Code+Prefix2_ Prefix2 { get; }
+  public static HarmonyLib.Code+Prefix3_ Prefix3 { get; }
+  public static HarmonyLib.Code+Prefix4_ Prefix4 { get; }
+  public static HarmonyLib.Code+Prefix5_ Prefix5 { get; }
+  public static HarmonyLib.Code+Prefix6_ Prefix6 { get; }
+  public static HarmonyLib.Code+Prefix7_ Prefix7 { get; }
+  public static HarmonyLib.Code+Prefixref_ Prefixref { get; }
+  public static HarmonyLib.Code+Readonly_ Readonly { get; }
+  public static HarmonyLib.Code+Refanytype_ Refanytype { get; }
+  public static HarmonyLib.Code+Refanyval_ Refanyval { get; }
+  public static HarmonyLib.Code+Rem_ Rem { get; }
+  public static HarmonyLib.Code+Rem_Un_ Rem_Un { get; }
+  public static HarmonyLib.Code+Ret_ Ret { get; }
+  public static HarmonyLib.Code+Rethrow_ Rethrow { get; }
+  public static HarmonyLib.Code+Shl_ Shl { get; }
+  public static HarmonyLib.Code+Shr_ Shr { get; }
+  public static HarmonyLib.Code+Shr_Un_ Shr_Un { get; }
+  public static HarmonyLib.Code+Sizeof_ Sizeof { get; }
+  public static HarmonyLib.Code+Starg_ Starg { get; }
+  public static HarmonyLib.Code+Starg_S_ Starg_S { get; }
+  public static HarmonyLib.Code+Stelem_ Stelem { get; }
+  public static HarmonyLib.Code+Stelem_I_ Stelem_I { get; }
+  public static HarmonyLib.Code+Stelem_I1_ Stelem_I1 { get; }
+  public static HarmonyLib.Code+Stelem_I2_ Stelem_I2 { get; }
+  public static HarmonyLib.Code+Stelem_I4_ Stelem_I4 { get; }
+  public static HarmonyLib.Code+Stelem_I8_ Stelem_I8 { get; }
+  public static HarmonyLib.Code+Stelem_R4_ Stelem_R4 { get; }
+  public static HarmonyLib.Code+Stelem_R8_ Stelem_R8 { get; }
+  public static HarmonyLib.Code+Stelem_Ref_ Stelem_Ref { get; }
+  public static HarmonyLib.Code+Stfld_ Stfld { get; }
+  public static HarmonyLib.Code+Stind_I_ Stind_I { get; }
+  public static HarmonyLib.Code+Stind_I1_ Stind_I1 { get; }
+  public static HarmonyLib.Code+Stind_I2_ Stind_I2 { get; }
+  public static HarmonyLib.Code+Stind_I4_ Stind_I4 { get; }
+  public static HarmonyLib.Code+Stind_I8_ Stind_I8 { get; }
+  public static HarmonyLib.Code+Stind_R4_ Stind_R4 { get; }
+  public static HarmonyLib.Code+Stind_R8_ Stind_R8 { get; }
+  public static HarmonyLib.Code+Stind_Ref_ Stind_Ref { get; }
+  public static HarmonyLib.Code+Stloc_ Stloc { get; }
+  public static HarmonyLib.Code+Stloc_0_ Stloc_0 { get; }
+  public static HarmonyLib.Code+Stloc_1_ Stloc_1 { get; }
+  public static HarmonyLib.Code+Stloc_2_ Stloc_2 { get; }
+  public static HarmonyLib.Code+Stloc_3_ Stloc_3 { get; }
+  public static HarmonyLib.Code+Stloc_S_ Stloc_S { get; }
+  public static HarmonyLib.Code+Stobj_ Stobj { get; }
+  public static HarmonyLib.Code+Stsfld_ Stsfld { get; }
+  public static HarmonyLib.Code+Sub_ Sub { get; }
+  public static HarmonyLib.Code+Sub_Ovf_ Sub_Ovf { get; }
+  public static HarmonyLib.Code+Sub_Ovf_Un_ Sub_Ovf_Un { get; }
+  public static HarmonyLib.Code+Switch_ Switch { get; }
+  public static HarmonyLib.Code+Tailcall_ Tailcall { get; }
+  public static HarmonyLib.Code+Throw_ Throw { get; }
+  public static HarmonyLib.Code+Unaligned_ Unaligned { get; }
+  public static HarmonyLib.Code+Unbox_ Unbox { get; }
+  public static HarmonyLib.Code+Unbox_Any_ Unbox_Any { get; }
+  public static HarmonyLib.Code+Volatile_ Volatile { get; }
+  public static HarmonyLib.Code+Xor_ Xor { get; }
+
+METHODS:
+  public static HarmonyLib.Code+Add_ get_Add()
+  public static HarmonyLib.Code+Add_Ovf_ get_Add_Ovf()
+  public static HarmonyLib.Code+Add_Ovf_Un_ get_Add_Ovf_Un()
+  public static HarmonyLib.Code+And_ get_And()
+  public static HarmonyLib.Code+Arglist_ get_Arglist()
+  public static HarmonyLib.Code+Beq_ get_Beq()
+  public static HarmonyLib.Code+Beq_S_ get_Beq_S()
+  public static HarmonyLib.Code+Bge_ get_Bge()
+  public static HarmonyLib.Code+Bge_S_ get_Bge_S()
+  public static HarmonyLib.Code+Bge_Un_ get_Bge_Un()
+  public static HarmonyLib.Code+Bge_Un_S_ get_Bge_Un_S()
+  public static HarmonyLib.Code+Bgt_ get_Bgt()
+  public static HarmonyLib.Code+Bgt_S_ get_Bgt_S()
+  public static HarmonyLib.Code+Bgt_Un_ get_Bgt_Un()
+  public static HarmonyLib.Code+Bgt_Un_S_ get_Bgt_Un_S()
+  public static HarmonyLib.Code+Ble_ get_Ble()
+  public static HarmonyLib.Code+Ble_S_ get_Ble_S()
+  public static HarmonyLib.Code+Ble_Un_ get_Ble_Un()
+  public static HarmonyLib.Code+Ble_Un_S_ get_Ble_Un_S()
+  public static HarmonyLib.Code+Blt_ get_Blt()
+  public static HarmonyLib.Code+Blt_S_ get_Blt_S()
+  public static HarmonyLib.Code+Blt_Un_ get_Blt_Un()
+  public static HarmonyLib.Code+Blt_Un_S_ get_Blt_Un_S()
+  public static HarmonyLib.Code+Bne_Un_ get_Bne_Un()
+  public static HarmonyLib.Code+Bne_Un_S_ get_Bne_Un_S()
+  public static HarmonyLib.Code+Box_ get_Box()
+  public static HarmonyLib.Code+Br_ get_Br()
+  public static HarmonyLib.Code+Br_S_ get_Br_S()
+  public static HarmonyLib.Code+Break_ get_Break()
+  public static HarmonyLib.Code+Brfalse_ get_Brfalse()
+  public static HarmonyLib.Code+Brfalse_S_ get_Brfalse_S()
+  public static HarmonyLib.Code+Brtrue_ get_Brtrue()
+  public static HarmonyLib.Code+Brtrue_S_ get_Brtrue_S()
+  public static HarmonyLib.Code+Call_ get_Call()
+  public static HarmonyLib.Code+Calli_ get_Calli()
+  public static HarmonyLib.Code+Callvirt_ get_Callvirt()
+  public static HarmonyLib.Code+Castclass_ get_Castclass()
+  public static HarmonyLib.Code+Ceq_ get_Ceq()
+  public static HarmonyLib.Code+Cgt_ get_Cgt()
+  public static HarmonyLib.Code+Cgt_Un_ get_Cgt_Un()
+  public static HarmonyLib.Code+Ckfinite_ get_Ckfinite()
+  public static HarmonyLib.Code+Clt_ get_Clt()
+  public static HarmonyLib.Code+Clt_Un_ get_Clt_Un()
+  public static HarmonyLib.Code+Constrained_ get_Constrained()
+  public static HarmonyLib.Code+Conv_I_ get_Conv_I()
+  public static HarmonyLib.Code+Conv_I1_ get_Conv_I1()
+  public static HarmonyLib.Code+Conv_I2_ get_Conv_I2()
+  public static HarmonyLib.Code+Conv_I4_ get_Conv_I4()
+  public static HarmonyLib.Code+Conv_I8_ get_Conv_I8()
+  public static HarmonyLib.Code+Conv_Ovf_I_ get_Conv_Ovf_I()
+  public static HarmonyLib.Code+Conv_Ovf_I1_ get_Conv_Ovf_I1()
+  public static HarmonyLib.Code+Conv_Ovf_I1_Un_ get_Conv_Ovf_I1_Un()
+  public static HarmonyLib.Code+Conv_Ovf_I2_ get_Conv_Ovf_I2()
+  public static HarmonyLib.Code+Conv_Ovf_I2_Un_ get_Conv_Ovf_I2_Un()
+  public static HarmonyLib.Code+Conv_Ovf_I4_ get_Conv_Ovf_I4()
+  public static HarmonyLib.Code+Conv_Ovf_I4_Un_ get_Conv_Ovf_I4_Un()
+  public static HarmonyLib.Code+Conv_Ovf_I8_ get_Conv_Ovf_I8()
+  public static HarmonyLib.Code+Conv_Ovf_I8_Un_ get_Conv_Ovf_I8_Un()
+  public static HarmonyLib.Code+Conv_Ovf_I_Un_ get_Conv_Ovf_I_Un()
+  public static HarmonyLib.Code+Conv_Ovf_U_ get_Conv_Ovf_U()
+  public static HarmonyLib.Code+Conv_Ovf_U1_ get_Conv_Ovf_U1()
+  public static HarmonyLib.Code+Conv_Ovf_U1_Un_ get_Conv_Ovf_U1_Un()
+  public static HarmonyLib.Code+Conv_Ovf_U2_ get_Conv_Ovf_U2()
+  public static HarmonyLib.Code+Conv_Ovf_U2_Un_ get_Conv_Ovf_U2_Un()
+  public static HarmonyLib.Code+Conv_Ovf_U4_ get_Conv_Ovf_U4()
+  public static HarmonyLib.Code+Conv_Ovf_U4_Un_ get_Conv_Ovf_U4_Un()
+  public static HarmonyLib.Code+Conv_Ovf_U8_ get_Conv_Ovf_U8()
+  public static HarmonyLib.Code+Conv_Ovf_U8_Un_ get_Conv_Ovf_U8_Un()
+  public static HarmonyLib.Code+Conv_Ovf_U_Un_ get_Conv_Ovf_U_Un()
+  public static HarmonyLib.Code+Conv_R4_ get_Conv_R4()
+  public static HarmonyLib.Code+Conv_R8_ get_Conv_R8()
+  public static HarmonyLib.Code+Conv_R_Un_ get_Conv_R_Un()
+  public static HarmonyLib.Code+Conv_U_ get_Conv_U()
+  public static HarmonyLib.Code+Conv_U1_ get_Conv_U1()
+  public static HarmonyLib.Code+Conv_U2_ get_Conv_U2()
+  public static HarmonyLib.Code+Conv_U4_ get_Conv_U4()
+  public static HarmonyLib.Code+Conv_U8_ get_Conv_U8()
+  public static HarmonyLib.Code+Cpblk_ get_Cpblk()
+  public static HarmonyLib.Code+Cpobj_ get_Cpobj()
+  public static HarmonyLib.Code+Div_ get_Div()
+  public static HarmonyLib.Code+Div_Un_ get_Div_Un()
+  public static HarmonyLib.Code+Dup_ get_Dup()
+  public static HarmonyLib.Code+Endfilter_ get_Endfilter()
+  public static HarmonyLib.Code+Endfinally_ get_Endfinally()
+  public static HarmonyLib.Code+Initblk_ get_Initblk()
+  public static HarmonyLib.Code+Initobj_ get_Initobj()
+  public static HarmonyLib.Code+Isinst_ get_Isinst()
+  public static HarmonyLib.Code+Jmp_ get_Jmp()
+  public static HarmonyLib.Code+Ldarg_ get_Ldarg()
+  public static HarmonyLib.Code+Ldarg_0_ get_Ldarg_0()
+  public static HarmonyLib.Code+Ldarg_1_ get_Ldarg_1()
+  public static HarmonyLib.Code+Ldarg_2_ get_Ldarg_2()
+  public static HarmonyLib.Code+Ldarg_3_ get_Ldarg_3()
+  public static HarmonyLib.Code+Ldarg_S_ get_Ldarg_S()
+  public static HarmonyLib.Code+Ldarga_ get_Ldarga()
+  public static HarmonyLib.Code+Ldarga_S_ get_Ldarga_S()
+  public static HarmonyLib.Code+Ldc_I4_ get_Ldc_I4()
+  public static HarmonyLib.Code+Ldc_I4_0_ get_Ldc_I4_0()
+  public static HarmonyLib.Code+Ldc_I4_1_ get_Ldc_I4_1()
+  public static HarmonyLib.Code+Ldc_I4_2_ get_Ldc_I4_2()
+  public static HarmonyLib.Code+Ldc_I4_3_ get_Ldc_I4_3()
+  public static HarmonyLib.Code+Ldc_I4_4_ get_Ldc_I4_4()
+  public static HarmonyLib.Code+Ldc_I4_5_ get_Ldc_I4_5()
+  public static HarmonyLib.Code+Ldc_I4_6_ get_Ldc_I4_6()
+  public static HarmonyLib.Code+Ldc_I4_7_ get_Ldc_I4_7()
+  public static HarmonyLib.Code+Ldc_I4_8_ get_Ldc_I4_8()
+  public static HarmonyLib.Code+Ldc_I4_M1_ get_Ldc_I4_M1()
+  public static HarmonyLib.Code+Ldc_I4_S_ get_Ldc_I4_S()
+  public static HarmonyLib.Code+Ldc_I8_ get_Ldc_I8()
+  public static HarmonyLib.Code+Ldc_R4_ get_Ldc_R4()
+  public static HarmonyLib.Code+Ldc_R8_ get_Ldc_R8()
+  public static HarmonyLib.Code+Ldelem_ get_Ldelem()
+  public static HarmonyLib.Code+Ldelem_I_ get_Ldelem_I()
+  public static HarmonyLib.Code+Ldelem_I1_ get_Ldelem_I1()
+  public static HarmonyLib.Code+Ldelem_I2_ get_Ldelem_I2()
+  public static HarmonyLib.Code+Ldelem_I4_ get_Ldelem_I4()
+  public static HarmonyLib.Code+Ldelem_I8_ get_Ldelem_I8()
+  public static HarmonyLib.Code+Ldelem_R4_ get_Ldelem_R4()
+  public static HarmonyLib.Code+Ldelem_R8_ get_Ldelem_R8()
+  public static HarmonyLib.Code+Ldelem_Ref_ get_Ldelem_Ref()
+  public static HarmonyLib.Code+Ldelem_U1_ get_Ldelem_U1()
+  public static HarmonyLib.Code+Ldelem_U2_ get_Ldelem_U2()
+  public static HarmonyLib.Code+Ldelem_U4_ get_Ldelem_U4()
+  public static HarmonyLib.Code+Ldelema_ get_Ldelema()
+  public static HarmonyLib.Code+Ldfld_ get_Ldfld()
+  public static HarmonyLib.Code+Ldflda_ get_Ldflda()
+  public static HarmonyLib.Code+Ldftn_ get_Ldftn()
+  public static HarmonyLib.Code+Ldind_I_ get_Ldind_I()
+  public static HarmonyLib.Code+Ldind_I1_ get_Ldind_I1()
+  public static HarmonyLib.Code+Ldind_I2_ get_Ldind_I2()
+  public static HarmonyLib.Code+Ldind_I4_ get_Ldind_I4()
+  public static HarmonyLib.Code+Ldind_I8_ get_Ldind_I8()
+  public static HarmonyLib.Code+Ldind_R4_ get_Ldind_R4()
+  public static HarmonyLib.Code+Ldind_R8_ get_Ldind_R8()
+  public static HarmonyLib.Code+Ldind_Ref_ get_Ldind_Ref()
+  public static HarmonyLib.Code+Ldind_U1_ get_Ldind_U1()
+  public static HarmonyLib.Code+Ldind_U2_ get_Ldind_U2()
+  public static HarmonyLib.Code+Ldind_U4_ get_Ldind_U4()
+  public static HarmonyLib.Code+Ldlen_ get_Ldlen()
+  public static HarmonyLib.Code+Ldloc_ get_Ldloc()
+  public static HarmonyLib.Code+Ldloc_0_ get_Ldloc_0()
+  public static HarmonyLib.Code+Ldloc_1_ get_Ldloc_1()
+  public static HarmonyLib.Code+Ldloc_2_ get_Ldloc_2()
+  public static HarmonyLib.Code+Ldloc_3_ get_Ldloc_3()
+  public static HarmonyLib.Code+Ldloc_S_ get_Ldloc_S()
+  public static HarmonyLib.Code+Ldloca_ get_Ldloca()
+  public static HarmonyLib.Code+Ldloca_S_ get_Ldloca_S()
+  public static HarmonyLib.Code+Ldnull_ get_Ldnull()
+  public static HarmonyLib.Code+Ldobj_ get_Ldobj()
+  public static HarmonyLib.Code+Ldsfld_ get_Ldsfld()
+  public static HarmonyLib.Code+Ldsflda_ get_Ldsflda()
+  public static HarmonyLib.Code+Ldstr_ get_Ldstr()
+  public static HarmonyLib.Code+Ldtoken_ get_Ldtoken()
+  public static HarmonyLib.Code+Ldvirtftn_ get_Ldvirtftn()
+  public static HarmonyLib.Code+Leave_ get_Leave()
+  public static HarmonyLib.Code+Leave_S_ get_Leave_S()
+  public static HarmonyLib.Code+Localloc_ get_Localloc()
+  public static HarmonyLib.Code+Mkrefany_ get_Mkrefany()
+  public static HarmonyLib.Code+Mul_ get_Mul()
+  public static HarmonyLib.Code+Mul_Ovf_ get_Mul_Ovf()
+  public static HarmonyLib.Code+Mul_Ovf_Un_ get_Mul_Ovf_Un()
+  public static HarmonyLib.Code+Neg_ get_Neg()
+  public static HarmonyLib.Code+Newarr_ get_Newarr()
+  public static HarmonyLib.Code+Newobj_ get_Newobj()
+  public static HarmonyLib.Code+Nop_ get_Nop()
+  public static HarmonyLib.Code+Not_ get_Not()
+  public static HarmonyLib.Code+Operand_ get_Operand()
+  public static HarmonyLib.Code+Or_ get_Or()
+  public static HarmonyLib.Code+Pop_ get_Pop()
+  public static HarmonyLib.Code+Prefix1_ get_Prefix1()
+  public static HarmonyLib.Code+Prefix2_ get_Prefix2()
+  public static HarmonyLib.Code+Prefix3_ get_Prefix3()
+  public static HarmonyLib.Code+Prefix4_ get_Prefix4()
+  public static HarmonyLib.Code+Prefix5_ get_Prefix5()
+  public static HarmonyLib.Code+Prefix6_ get_Prefix6()
+  public static HarmonyLib.Code+Prefix7_ get_Prefix7()
+  public static HarmonyLib.Code+Prefixref_ get_Prefixref()
+  public static HarmonyLib.Code+Readonly_ get_Readonly()
+  public static HarmonyLib.Code+Refanytype_ get_Refanytype()
+  public static HarmonyLib.Code+Refanyval_ get_Refanyval()
+  public static HarmonyLib.Code+Rem_ get_Rem()
+  public static HarmonyLib.Code+Rem_Un_ get_Rem_Un()
+  public static HarmonyLib.Code+Ret_ get_Ret()
+  public static HarmonyLib.Code+Rethrow_ get_Rethrow()
+  public static HarmonyLib.Code+Shl_ get_Shl()
+  public static HarmonyLib.Code+Shr_ get_Shr()
+  public static HarmonyLib.Code+Shr_Un_ get_Shr_Un()
+  public static HarmonyLib.Code+Sizeof_ get_Sizeof()
+  public static HarmonyLib.Code+Starg_ get_Starg()
+  public static HarmonyLib.Code+Starg_S_ get_Starg_S()
+  public static HarmonyLib.Code+Stelem_ get_Stelem()
+  public static HarmonyLib.Code+Stelem_I_ get_Stelem_I()
+  public static HarmonyLib.Code+Stelem_I1_ get_Stelem_I1()
+  public static HarmonyLib.Code+Stelem_I2_ get_Stelem_I2()
+  public static HarmonyLib.Code+Stelem_I4_ get_Stelem_I4()
+  public static HarmonyLib.Code+Stelem_I8_ get_Stelem_I8()
+  public static HarmonyLib.Code+Stelem_R4_ get_Stelem_R4()
+  public static HarmonyLib.Code+Stelem_R8_ get_Stelem_R8()
+  public static HarmonyLib.Code+Stelem_Ref_ get_Stelem_Ref()
+  public static HarmonyLib.Code+Stfld_ get_Stfld()
+  public static HarmonyLib.Code+Stind_I_ get_Stind_I()
+  public static HarmonyLib.Code+Stind_I1_ get_Stind_I1()
+  public static HarmonyLib.Code+Stind_I2_ get_Stind_I2()
+  public static HarmonyLib.Code+Stind_I4_ get_Stind_I4()
+  public static HarmonyLib.Code+Stind_I8_ get_Stind_I8()
+  public static HarmonyLib.Code+Stind_R4_ get_Stind_R4()
+  public static HarmonyLib.Code+Stind_R8_ get_Stind_R8()
+  public static HarmonyLib.Code+Stind_Ref_ get_Stind_Ref()
+  public static HarmonyLib.Code+Stloc_ get_Stloc()
+  public static HarmonyLib.Code+Stloc_0_ get_Stloc_0()
+  public static HarmonyLib.Code+Stloc_1_ get_Stloc_1()
+  public static HarmonyLib.Code+Stloc_2_ get_Stloc_2()
+  public static HarmonyLib.Code+Stloc_3_ get_Stloc_3()
+  public static HarmonyLib.Code+Stloc_S_ get_Stloc_S()
+  public static HarmonyLib.Code+Stobj_ get_Stobj()
+  public static HarmonyLib.Code+Stsfld_ get_Stsfld()
+  public static HarmonyLib.Code+Sub_ get_Sub()
+  public static HarmonyLib.Code+Sub_Ovf_ get_Sub_Ovf()
+  public static HarmonyLib.Code+Sub_Ovf_Un_ get_Sub_Ovf_Un()
+  public static HarmonyLib.Code+Switch_ get_Switch()
+  public static HarmonyLib.Code+Tailcall_ get_Tailcall()
+  public static HarmonyLib.Code+Throw_ get_Throw()
+  public static HarmonyLib.Code+Unaligned_ get_Unaligned()
+  public static HarmonyLib.Code+Unbox_ get_Unbox()
+  public static HarmonyLib.Code+Unbox_Any_ get_Unbox_Any()
+  public static HarmonyLib.Code+Volatile_ get_Volatile()
+  public static HarmonyLib.Code+Xor_ get_Xor()
+
+NESTED TYPES:
+  - HarmonyLib.Code+Add_
+  - HarmonyLib.Code+Add_Ovf_
+  - HarmonyLib.Code+Add_Ovf_Un_
+  - HarmonyLib.Code+And_
+  - HarmonyLib.Code+Arglist_
+  - HarmonyLib.Code+Beq_
+  - HarmonyLib.Code+Beq_S_
+  - HarmonyLib.Code+Bge_
+  - HarmonyLib.Code+Bge_S_
+  - HarmonyLib.Code+Bge_Un_
+  - HarmonyLib.Code+Bge_Un_S_
+  - HarmonyLib.Code+Bgt_
+  - HarmonyLib.Code+Bgt_S_
+  - HarmonyLib.Code+Bgt_Un_
+  - HarmonyLib.Code+Bgt_Un_S_
+  - HarmonyLib.Code+Ble_
+  - HarmonyLib.Code+Ble_S_
+  - HarmonyLib.Code+Ble_Un_
+  - HarmonyLib.Code+Ble_Un_S_
+  - HarmonyLib.Code+Blt_
+  - HarmonyLib.Code+Blt_S_
+  - HarmonyLib.Code+Blt_Un_
+  - HarmonyLib.Code+Blt_Un_S_
+  - HarmonyLib.Code+Bne_Un_
+  - HarmonyLib.Code+Bne_Un_S_
+  - HarmonyLib.Code+Box_
+  - HarmonyLib.Code+Br_
+  - HarmonyLib.Code+Br_S_
+  - HarmonyLib.Code+Break_
+  - HarmonyLib.Code+Brfalse_
+  - HarmonyLib.Code+Brfalse_S_
+  - HarmonyLib.Code+Brtrue_
+  - HarmonyLib.Code+Brtrue_S_
+  - HarmonyLib.Code+Call_
+  - HarmonyLib.Code+Calli_
+  - HarmonyLib.Code+Callvirt_
+  - HarmonyLib.Code+Castclass_
+  - HarmonyLib.Code+Ceq_
+  - HarmonyLib.Code+Cgt_
+  - HarmonyLib.Code+Cgt_Un_
+  - HarmonyLib.Code+Ckfinite_
+  - HarmonyLib.Code+Clt_
+  - HarmonyLib.Code+Clt_Un_
+  - HarmonyLib.Code+Constrained_
+  - HarmonyLib.Code+Conv_I1_
+  - HarmonyLib.Code+Conv_I2_
+  - HarmonyLib.Code+Conv_I4_
+  - HarmonyLib.Code+Conv_I8_
+  - HarmonyLib.Code+Conv_I_
+  - HarmonyLib.Code+Conv_Ovf_I1_
+  - HarmonyLib.Code+Conv_Ovf_I1_Un_
+  - HarmonyLib.Code+Conv_Ovf_I2_
+  - HarmonyLib.Code+Conv_Ovf_I2_Un_
+  - HarmonyLib.Code+Conv_Ovf_I4_
+  - HarmonyLib.Code+Conv_Ovf_I4_Un_
+  - HarmonyLib.Code+Conv_Ovf_I8_
+  - HarmonyLib.Code+Conv_Ovf_I8_Un_
+  - HarmonyLib.Code+Conv_Ovf_I_
+  - HarmonyLib.Code+Conv_Ovf_I_Un_
+  - HarmonyLib.Code+Conv_Ovf_U1_
+  - HarmonyLib.Code+Conv_Ovf_U1_Un_
+  - HarmonyLib.Code+Conv_Ovf_U2_
+  - HarmonyLib.Code+Conv_Ovf_U2_Un_
+  - HarmonyLib.Code+Conv_Ovf_U4_
+  - HarmonyLib.Code+Conv_Ovf_U4_Un_
+  - HarmonyLib.Code+Conv_Ovf_U8_
+  - HarmonyLib.Code+Conv_Ovf_U8_Un_
+  - HarmonyLib.Code+Conv_Ovf_U_
+  - HarmonyLib.Code+Conv_Ovf_U_Un_
+  - HarmonyLib.Code+Conv_R4_
+  - HarmonyLib.Code+Conv_R8_
+  - HarmonyLib.Code+Conv_R_Un_
+  - HarmonyLib.Code+Conv_U1_
+  - HarmonyLib.Code+Conv_U2_
+  - HarmonyLib.Code+Conv_U4_
+  - HarmonyLib.Code+Conv_U8_
+  - HarmonyLib.Code+Conv_U_
+  - HarmonyLib.Code+Cpblk_
+  - HarmonyLib.Code+Cpobj_
+  - HarmonyLib.Code+Div_
+  - HarmonyLib.Code+Div_Un_
+  - HarmonyLib.Code+Dup_
+  - HarmonyLib.Code+Endfilter_
+  - HarmonyLib.Code+Endfinally_
+  - HarmonyLib.Code+Initblk_
+  - HarmonyLib.Code+Initobj_
+  - HarmonyLib.Code+Isinst_
+  - HarmonyLib.Code+Jmp_
+  - HarmonyLib.Code+Ldarg_
+  - HarmonyLib.Code+Ldarg_0_
+  - HarmonyLib.Code+Ldarg_1_
+  - HarmonyLib.Code+Ldarg_2_
+  - HarmonyLib.Code+Ldarg_3_
+  - HarmonyLib.Code+Ldarg_S_
+  - HarmonyLib.Code+Ldarga_
+  - HarmonyLib.Code+Ldarga_S_
+  - HarmonyLib.Code+Ldc_I4_
+  - HarmonyLib.Code+Ldc_I4_0_
+  - HarmonyLib.Code+Ldc_I4_1_
+  - HarmonyLib.Code+Ldc_I4_2_
+  - HarmonyLib.Code+Ldc_I4_3_
+  - HarmonyLib.Code+Ldc_I4_4_
+  - HarmonyLib.Code+Ldc_I4_5_
+  - HarmonyLib.Code+Ldc_I4_6_
+  - HarmonyLib.Code+Ldc_I4_7_
+  - HarmonyLib.Code+Ldc_I4_8_
+  - HarmonyLib.Code+Ldc_I4_M1_
+  - HarmonyLib.Code+Ldc_I4_S_
+  - HarmonyLib.Code+Ldc_I8_
+  - HarmonyLib.Code+Ldc_R4_
+  - HarmonyLib.Code+Ldc_R8_
+  - HarmonyLib.Code+Ldelem_
+  - HarmonyLib.Code+Ldelem_I1_
+  - HarmonyLib.Code+Ldelem_I2_
+  - HarmonyLib.Code+Ldelem_I4_
+  - HarmonyLib.Code+Ldelem_I8_
+  - HarmonyLib.Code+Ldelem_I_
+  - HarmonyLib.Code+Ldelem_R4_
+  - HarmonyLib.Code+Ldelem_R8_
+  - HarmonyLib.Code+Ldelem_Ref_
+  - HarmonyLib.Code+Ldelem_U1_
+  - HarmonyLib.Code+Ldelem_U2_
+  - HarmonyLib.Code+Ldelem_U4_
+  - HarmonyLib.Code+Ldelema_
+  - HarmonyLib.Code+Ldfld_
+  - HarmonyLib.Code+Ldflda_
+  - HarmonyLib.Code+Ldftn_
+  - HarmonyLib.Code+Ldind_I1_
+  - HarmonyLib.Code+Ldind_I2_
+  - HarmonyLib.Code+Ldind_I4_
+  - HarmonyLib.Code+Ldind_I8_
+  - HarmonyLib.Code+Ldind_I_
+  - HarmonyLib.Code+Ldind_R4_
+  - HarmonyLib.Code+Ldind_R8_
+  - HarmonyLib.Code+Ldind_Ref_
+  - HarmonyLib.Code+Ldind_U1_
+  - HarmonyLib.Code+Ldind_U2_
+  - HarmonyLib.Code+Ldind_U4_
+  - HarmonyLib.Code+Ldlen_
+  - HarmonyLib.Code+Ldloc_
+  - HarmonyLib.Code+Ldloc_0_
+  - HarmonyLib.Code+Ldloc_1_
+  - HarmonyLib.Code+Ldloc_2_
+  - HarmonyLib.Code+Ldloc_3_
+  - HarmonyLib.Code+Ldloc_S_
+  - HarmonyLib.Code+Ldloca_
+  - HarmonyLib.Code+Ldloca_S_
+  - HarmonyLib.Code+Ldnull_
+  - HarmonyLib.Code+Ldobj_
+  - HarmonyLib.Code+Ldsfld_
+  - HarmonyLib.Code+Ldsflda_
+  - HarmonyLib.Code+Ldstr_
+  - HarmonyLib.Code+Ldtoken_
+  - HarmonyLib.Code+Ldvirtftn_
+  - HarmonyLib.Code+Leave_
+  - HarmonyLib.Code+Leave_S_
+  - HarmonyLib.Code+Localloc_
+  - HarmonyLib.Code+Mkrefany_
+  - HarmonyLib.Code+Mul_
+  - HarmonyLib.Code+Mul_Ovf_
+  - HarmonyLib.Code+Mul_Ovf_Un_
+  - HarmonyLib.Code+Neg_
+  - HarmonyLib.Code+Newarr_
+  - HarmonyLib.Code+Newobj_
+  - HarmonyLib.Code+Nop_
+  - HarmonyLib.Code+Not_
+  - HarmonyLib.Code+Operand_
+  - HarmonyLib.Code+Or_
+  - HarmonyLib.Code+Pop_
+  - HarmonyLib.Code+Prefix1_
+  - HarmonyLib.Code+Prefix2_
+  - HarmonyLib.Code+Prefix3_
+  - HarmonyLib.Code+Prefix4_
+  - HarmonyLib.Code+Prefix5_
+  - HarmonyLib.Code+Prefix6_
+  - HarmonyLib.Code+Prefix7_
+  - HarmonyLib.Code+Prefixref_
+  - HarmonyLib.Code+Readonly_
+  - HarmonyLib.Code+Refanytype_
+  - HarmonyLib.Code+Refanyval_
+  - HarmonyLib.Code+Rem_
+  - HarmonyLib.Code+Rem_Un_
+  - HarmonyLib.Code+Ret_
+  - HarmonyLib.Code+Rethrow_
+  - HarmonyLib.Code+Shl_
+  - HarmonyLib.Code+Shr_
+  - HarmonyLib.Code+Shr_Un_
+  - HarmonyLib.Code+Sizeof_
+  - HarmonyLib.Code+Starg_
+  - HarmonyLib.Code+Starg_S_
+  - HarmonyLib.Code+Stelem_
+  - HarmonyLib.Code+Stelem_I1_
+  - HarmonyLib.Code+Stelem_I2_
+  - HarmonyLib.Code+Stelem_I4_
+  - HarmonyLib.Code+Stelem_I8_
+  - HarmonyLib.Code+Stelem_I_
+  - HarmonyLib.Code+Stelem_R4_
+  - HarmonyLib.Code+Stelem_R8_
+  - HarmonyLib.Code+Stelem_Ref_
+  - HarmonyLib.Code+Stfld_
+  - HarmonyLib.Code+Stind_I1_
+  - HarmonyLib.Code+Stind_I2_
+  - HarmonyLib.Code+Stind_I4_
+  - HarmonyLib.Code+Stind_I8_
+  - HarmonyLib.Code+Stind_I_
+  - HarmonyLib.Code+Stind_R4_
+  - HarmonyLib.Code+Stind_R8_
+  - HarmonyLib.Code+Stind_Ref_
+  - HarmonyLib.Code+Stloc_
+  - HarmonyLib.Code+Stloc_0_
+  - HarmonyLib.Code+Stloc_1_
+  - HarmonyLib.Code+Stloc_2_
+  - HarmonyLib.Code+Stloc_3_
+  - HarmonyLib.Code+Stloc_S_
+  - HarmonyLib.Code+Stobj_
+  - HarmonyLib.Code+Stsfld_
+  - HarmonyLib.Code+Sub_
+  - HarmonyLib.Code+Sub_Ovf_
+  - HarmonyLib.Code+Sub_Ovf_Un_
+  - HarmonyLib.Code+Switch_
+  - HarmonyLib.Code+Tailcall_
+  - HarmonyLib.Code+Throw_
+  - HarmonyLib.Code+Unaligned_
+  - HarmonyLib.Code+Unbox_
+  - HarmonyLib.Code+Unbox_Any_
+  - HarmonyLib.Code+Volatile_
+  - HarmonyLib.Code+Xor_
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Add_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Add_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Add_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Add_Ovf_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Add_Ovf_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Add_Ovf_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Add_Ovf_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Add_Ovf_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Add_Ovf_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+And_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+And_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+And_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Arglist_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Arglist_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Arglist_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Beq_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Beq_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Beq_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Beq_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Beq_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Beq_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Bge_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Bge_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Bge_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Bge_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Bge_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Bge_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Bge_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Bge_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Bge_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Bge_Un_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Bge_Un_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Bge_Un_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Bgt_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Bgt_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Bgt_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Bgt_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Bgt_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Bgt_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Bgt_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Bgt_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Bgt_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Bgt_Un_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Bgt_Un_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Bgt_Un_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ble_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ble_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ble_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ble_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ble_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ble_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ble_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ble_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ble_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ble_Un_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ble_Un_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ble_Un_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Blt_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Blt_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Blt_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Blt_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Blt_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Blt_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Blt_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Blt_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Blt_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Blt_Un_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Blt_Un_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Blt_Un_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Bne_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Bne_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Bne_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Bne_Un_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Bne_Un_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Bne_Un_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Box_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Box_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Box_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Br_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Br_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Br_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Br_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Br_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Br_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Break_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Break_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Break_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Brfalse_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Brfalse_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Brfalse_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Brfalse_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Brfalse_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Brfalse_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Brtrue_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Brtrue_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Brtrue_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Brtrue_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Brtrue_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Brtrue_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Call_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Call_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Call_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Calli_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Calli_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Calli_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Callvirt_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Callvirt_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Callvirt_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Castclass_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Castclass_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Castclass_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ceq_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ceq_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ceq_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Cgt_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Cgt_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Cgt_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Cgt_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Cgt_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Cgt_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ckfinite_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ckfinite_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ckfinite_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Clt_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Clt_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Clt_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Clt_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Clt_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Clt_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Constrained_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Constrained_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Constrained_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_I1_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_I1_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_I1_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_I2_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_I2_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_I2_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_I4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_I4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_I4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_I8_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_I8_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_I8_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_I_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_I_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_I_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_I1_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_I1_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_I1_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_I1_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_I1_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_I1_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_I2_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_I2_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_I2_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_I2_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_I2_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_I2_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_I4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_I4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_I4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_I4_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_I4_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_I4_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_I8_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_I8_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_I8_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_I8_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_I8_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_I8_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_I_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_I_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_I_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_I_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_I_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_I_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_U1_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_U1_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_U1_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_U1_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_U1_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_U1_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_U2_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_U2_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_U2_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_U2_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_U2_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_U2_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_U4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_U4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_U4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_U4_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_U4_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_U4_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_U8_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_U8_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_U8_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_U8_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_U8_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_U8_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_U_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_U_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_U_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_Ovf_U_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_Ovf_U_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_Ovf_U_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_R4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_R4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_R4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_R8_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_R8_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_R8_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_R_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_R_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_R_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_U1_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_U1_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_U1_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_U2_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_U2_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_U2_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_U4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_U4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_U4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_U8_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_U8_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_U8_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Conv_U_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Conv_U_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Conv_U_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Cpblk_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Cpblk_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Cpblk_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Cpobj_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Cpobj_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Cpobj_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Div_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Div_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Div_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Div_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Div_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Div_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Dup_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Dup_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Dup_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Endfilter_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Endfilter_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Endfilter_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Endfinally_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Endfinally_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Endfinally_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Initblk_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Initblk_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Initblk_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Initobj_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Initobj_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Initobj_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Isinst_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Isinst_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Isinst_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Jmp_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Jmp_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Jmp_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldarg_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldarg_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldarg_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldarg_0_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldarg_0_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldarg_0_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldarg_1_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldarg_1_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldarg_1_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldarg_2_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldarg_2_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldarg_2_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldarg_3_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldarg_3_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldarg_3_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldarg_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldarg_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldarg_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldarga_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldarga_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldarga_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldarga_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldarga_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldarga_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldc_I4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldc_I4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldc_I4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldc_I4_0_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldc_I4_0_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldc_I4_0_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldc_I4_1_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldc_I4_1_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldc_I4_1_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldc_I4_2_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldc_I4_2_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldc_I4_2_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldc_I4_3_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldc_I4_3_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldc_I4_3_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldc_I4_4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldc_I4_4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldc_I4_4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldc_I4_5_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldc_I4_5_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldc_I4_5_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldc_I4_6_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldc_I4_6_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldc_I4_6_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldc_I4_7_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldc_I4_7_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldc_I4_7_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldc_I4_8_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldc_I4_8_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldc_I4_8_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldc_I4_M1_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldc_I4_M1_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldc_I4_M1_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldc_I4_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldc_I4_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldc_I4_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldc_I8_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldc_I8_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldc_I8_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldc_R4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldc_R4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldc_R4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldc_R8_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldc_R8_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldc_R8_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldelem_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldelem_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldelem_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldelem_I1_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldelem_I1_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldelem_I1_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldelem_I2_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldelem_I2_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldelem_I2_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldelem_I4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldelem_I4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldelem_I4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldelem_I8_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldelem_I8_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldelem_I8_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldelem_I_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldelem_I_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldelem_I_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldelem_R4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldelem_R4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldelem_R4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldelem_R8_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldelem_R8_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldelem_R8_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldelem_Ref_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldelem_Ref_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldelem_Ref_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldelem_U1_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldelem_U1_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldelem_U1_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldelem_U2_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldelem_U2_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldelem_U2_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldelem_U4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldelem_U4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldelem_U4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldelema_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldelema_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldelema_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldfld_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldfld_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldfld_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldflda_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldflda_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldflda_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldftn_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldftn_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldftn_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldind_I1_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldind_I1_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldind_I1_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldind_I2_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldind_I2_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldind_I2_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldind_I4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldind_I4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldind_I4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldind_I8_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldind_I8_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldind_I8_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldind_I_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldind_I_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldind_I_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldind_R4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldind_R4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldind_R4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldind_R8_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldind_R8_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldind_R8_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldind_Ref_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldind_Ref_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldind_Ref_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldind_U1_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldind_U1_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldind_U1_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldind_U2_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldind_U2_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldind_U2_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldind_U4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldind_U4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldind_U4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldlen_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldlen_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldlen_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldloc_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldloc_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldloc_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldloc_0_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldloc_0_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldloc_0_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldloc_1_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldloc_1_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldloc_1_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldloc_2_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldloc_2_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldloc_2_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldloc_3_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldloc_3_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldloc_3_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldloc_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldloc_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldloc_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldloca_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldloca_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldloca_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldloca_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldloca_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldloca_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldnull_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldnull_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldnull_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldobj_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldobj_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldobj_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldsfld_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldsfld_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldsfld_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldsflda_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldsflda_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldsflda_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldstr_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldstr_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldstr_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldtoken_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldtoken_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldtoken_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ldvirtftn_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ldvirtftn_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ldvirtftn_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Leave_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Leave_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Leave_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Leave_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Leave_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Leave_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Localloc_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Localloc_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Localloc_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Mkrefany_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Mkrefany_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Mkrefany_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Mul_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Mul_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Mul_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Mul_Ovf_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Mul_Ovf_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Mul_Ovf_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Mul_Ovf_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Mul_Ovf_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Mul_Ovf_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Neg_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Neg_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Neg_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Newarr_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Newarr_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Newarr_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Newobj_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Newobj_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Newobj_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Nop_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Nop_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Nop_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Not_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Not_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Not_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Operand_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Operand_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Operand_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Or_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Or_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Or_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Pop_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Pop_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Pop_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Prefix1_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Prefix1_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Prefix1_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Prefix2_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Prefix2_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Prefix2_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Prefix3_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Prefix3_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Prefix3_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Prefix4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Prefix4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Prefix4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Prefix5_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Prefix5_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Prefix5_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Prefix6_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Prefix6_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Prefix6_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Prefix7_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Prefix7_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Prefix7_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Prefixref_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Prefixref_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Prefixref_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Readonly_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Readonly_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Readonly_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Refanytype_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Refanytype_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Refanytype_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Refanyval_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Refanyval_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Refanyval_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Rem_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Rem_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Rem_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Rem_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Rem_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Rem_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Ret_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Ret_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Ret_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Rethrow_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Rethrow_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Rethrow_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Shl_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Shl_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Shl_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Shr_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Shr_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Shr_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Shr_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Shr_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Shr_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Sizeof_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Sizeof_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Sizeof_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Starg_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Starg_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Starg_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Starg_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Starg_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Starg_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stelem_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stelem_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stelem_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stelem_I1_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stelem_I1_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stelem_I1_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stelem_I2_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stelem_I2_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stelem_I2_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stelem_I4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stelem_I4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stelem_I4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stelem_I8_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stelem_I8_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stelem_I8_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stelem_I_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stelem_I_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stelem_I_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stelem_R4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stelem_R4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stelem_R4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stelem_R8_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stelem_R8_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stelem_R8_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stelem_Ref_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stelem_Ref_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stelem_Ref_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stfld_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stfld_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stfld_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stind_I1_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stind_I1_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stind_I1_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stind_I2_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stind_I2_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stind_I2_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stind_I4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stind_I4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stind_I4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stind_I8_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stind_I8_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stind_I8_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stind_I_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stind_I_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stind_I_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stind_R4_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stind_R4_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stind_R4_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stind_R8_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stind_R8_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stind_R8_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stind_Ref_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stind_Ref_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stind_Ref_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stloc_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stloc_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stloc_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stloc_0_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stloc_0_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stloc_0_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stloc_1_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stloc_1_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stloc_1_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stloc_2_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stloc_2_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stloc_2_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stloc_3_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stloc_3_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stloc_3_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stloc_S_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stloc_S_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stloc_S_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stobj_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stobj_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stobj_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Stsfld_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Stsfld_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Stsfld_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Sub_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Sub_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Sub_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Sub_Ovf_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Sub_Ovf_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Sub_Ovf_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Sub_Ovf_Un_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Sub_Ovf_Un_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Sub_Ovf_Un_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Switch_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Switch_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Switch_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Tailcall_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Tailcall_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Tailcall_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Throw_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Throw_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Throw_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Unaligned_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Unaligned_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Unaligned_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Unbox_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Unbox_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Unbox_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Unbox_Any_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Unbox_Any_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Unbox_Any_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Volatile_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Volatile_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Volatile_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.Code+Xor_
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+BASE: HarmonyLib.CodeMatch
+
+PROPERTIES:
+  public HarmonyLib.Code+Xor_ Item { get; }
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public HarmonyLib.Code+Xor_ get_Item(System.Object operand, System.String name)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.CodeInstruction
+KIND: class
+ATTR: Public, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public System.Collections.Generic.List`1[[HarmonyLib.ExceptionBlock, 0Harmony, Version=2.0.0.9, Culture=neutral, PublicKeyToken=null]] blocks
+  public System.Collections.Generic.List`1[[System.Reflection.Emit.Label, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] labels
+  public System.Reflection.Emit.OpCode opcode
+  public System.Object operand
+
+CONSTRUCTORS:
+  public .ctor(HarmonyLib.CodeInstruction instruction)
+  public .ctor(System.Reflection.Emit.OpCode opcode, System.Object operand)
+  internal .ctor()
+
+METHODS:
+  public static HarmonyLib.CodeInstruction Call<T>(System.Linq.Expressions.Expression`1[[System.Action`1[[T]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] expression)
+  public static HarmonyLib.CodeInstruction Call(System.Linq.Expressions.Expression`1[[System.Action, System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] expression)
+  public static HarmonyLib.CodeInstruction Call(System.Linq.Expressions.LambdaExpression expression)
+  public static HarmonyLib.CodeInstruction Call<T, TResult>(System.Linq.Expressions.Expression`1[[System.Func`2[[T],[TResult]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] expression)
+  public static HarmonyLib.CodeInstruction Call(System.String typeColonMethodname, System.Type[] parameters, System.Type[] generics)
+  public static HarmonyLib.CodeInstruction Call(System.Type type, System.String name, System.Type[] parameters, System.Type[] generics)
+  public static HarmonyLib.CodeInstruction CallClosure<T>(T closure)
+  public HarmonyLib.CodeInstruction Clone()
+  public HarmonyLib.CodeInstruction Clone(System.Object operand)
+  public HarmonyLib.CodeInstruction Clone(System.Reflection.Emit.OpCode opcode)
+  public static HarmonyLib.CodeInstruction LoadField(System.Type type, System.String name, System.Boolean useAddress)
+  public static HarmonyLib.CodeInstruction StoreField(System.Type type, System.String name)
+  public virtual System.String ToString()
+
+NESTED TYPES:
+  - HarmonyLib.CodeInstruction+<>c__17`1
+  - HarmonyLib.CodeInstruction+State
+
+------------------------------------------------------------
+TYPE: HarmonyLib.CodeInstruction+<>c__17`1
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  public static readonly HarmonyLib.CodeInstruction+<>c__17`1 <>9
+  public static System.Func`2[[System.Reflection.ParameterInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Type, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__17_0
+  public static System.Func`2[[System.Reflection.FieldInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__17_1
+  public static System.Func`2[[System.Reflection.ConstructorInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] <>9__17_2
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.Type <CallClosure>b__17_0(System.Reflection.ParameterInfo x)
+  internal System.Boolean <CallClosure>b__17_1(System.Reflection.FieldInfo x)
+  internal System.Boolean <CallClosure>b__17_2(System.Reflection.ConstructorInfo x)
+
+------------------------------------------------------------
+TYPE: HarmonyLib.CodeInstruction+State
+KIND: class
+ATTR: NestedAssembly, Abstract, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  internal static readonly System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Delegate, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] closureCache
+
+CONSTRUCTORS:
+  private static .cctor()
+
+------------------------------------------------------------
+TYPE: HarmonyLib.CodeInstructionExtensions
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+BASE: System.Object
+
+FIELDS:
+  private static readonly System.Collections.Generic.HashSet`1[[System.Reflection.Emit.OpCode, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] branchCodes
+  private static readonly System.Collections.Generic.HashSet`1[[System.Reflection.Emit.OpCode, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] constantLoadingCodes
+  private static readonly System.Collections.Generic.HashSet`1[[System.Reflection.Emit.OpCode, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] loadVarCodes
+  private static readonly System.Collections.Generic.HashSet`1[[System.Reflection.Emit.OpCode, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] storeVarCodes
+
+CONSTRUCTORS:
+  private static .cctor()
