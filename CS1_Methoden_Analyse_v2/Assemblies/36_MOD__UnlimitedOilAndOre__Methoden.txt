@@ -1,0 +1,36 @@
+=== CS1 Methoden Analyse v2 - Assembly Dump ===
+Timestamp: 2026-02-17 16:06:38
+Bucket: MOD
+Assembly Simple: UnlimitedOilAndOre
+Assembly Full: UnlimitedOilAndOre, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly Location: 
+Plugin/Mod Name: UnlimitedOilAndOre
+Plugin/Mod Path: G:\SteamLibrary\steamapps\common\Cities_Skylines\Files\Mods\UnlimitedOilAndOre
+DeclaredOnly Methods: YES
+
+
+### NAMESPACE: UnlimitedOilAndOreMod
+
+------------------------------------------------------------
+TYPE: UnlimitedOilAndOreMod.UnlimitedOilAndOre
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.String get_Description()
+  public System.String get_Name()
+
+------------------------------------------------------------
+TYPE: UnlimitedOilAndOreMod.UnlimitedOilAndOreResource
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Void OnAfterResourcesModified(System.Int32 x, System.Int32 z, ICities.NaturalResource type, System.Int32 amount)
+

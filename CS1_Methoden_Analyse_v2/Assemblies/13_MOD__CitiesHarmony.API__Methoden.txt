@@ -1,0 +1,45 @@
+=== CS1 Methoden Analyse v2 - Assembly Dump ===
+Timestamp: 2026-02-17 16:06:38
+Bucket: MOD
+Assembly Simple: CitiesHarmony.API
+Assembly Full: CitiesHarmony.API, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly Location: 
+Plugin/Mod Name: 2594569657
+Plugin/Mod Path: G:\SteamLibrary\steamapps\workshop\content\255710\2594569657
+DeclaredOnly Methods: YES
+
+
+### NAMESPACE: CitiesHarmony.API
+
+------------------------------------------------------------
+TYPE: CitiesHarmony.API.HarmonyHelper
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  public static System.Void DoOnHarmonyReady(System.Action action)
+  public static System.Void EnsureHarmonyInstalled()
+  private static System.Boolean InvokeHarmonyInstaller()
+  private static System.Void OnWorkshopItemInstalled(ColossalFramework.PlatformServices.PublishedFileId id)
+  private static System.Void RunHarmonyReadyAction(System.Action action)
+  internal static System.Boolean get_IsCitiesHarmonyWorkshopItemSubscribed()
+  public static System.Boolean get_IsHarmonyInstalled()
+  private static System.Boolean get_SteamWorkshopAvailable()
+
+------------------------------------------------------------
+TYPE: CitiesHarmony.API.SubscriptionPrompt
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  private static System.Void OnConfirm(ColossalFramework.UI.UIComponent component, System.Int32 result)
+  private static System.Void OnIntroLoaded()
+  private static System.Void OnLevelLoaded(SimulationManager+UpdateMode updateMode)
+  private static System.Boolean RequiresHarmony2(System.Reflection.Assembly assembly)
+  private static System.Void Show()
+  private static System.Void ShowError(System.String reason, System.String solution)
+  public static System.Void ShowOnce()
+

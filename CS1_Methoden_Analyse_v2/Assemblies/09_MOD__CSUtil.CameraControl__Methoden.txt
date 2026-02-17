@@ -1,0 +1,44 @@
+=== CS1 Methoden Analyse v2 - Assembly Dump ===
+Timestamp: 2026-02-17 16:06:38
+Bucket: MOD
+Assembly Simple: CSUtil.CameraControl
+Assembly Full: CSUtil.CameraControl, Version=1.0.9410.476, Culture=neutral, PublicKeyToken=null
+Assembly Location: 
+Plugin/Mod Name: 1637663252
+Plugin/Mod Path: G:\SteamLibrary\steamapps\workshop\content\255710\1637663252
+DeclaredOnly Methods: YES
+
+
+### NAMESPACE: CSUtil.CameraControl
+
+------------------------------------------------------------
+TYPE: CSUtil.CameraControl.CameraController
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  public System.Void ClearPos()
+  public System.Void GoToBuilding(System.UInt16 buildingId, System.Boolean openInfoPanel)
+  public System.Void GoToCitizenInstance(System.UInt16 citizenInstanceId, System.Boolean openInfoPanel)
+  public System.Void GoToInstance(InstanceID id, UnityEngine.Vector3 pos, System.Boolean openInfoPanel)
+  public System.Void GoToNode(System.UInt16 nodeId, System.Boolean openInfoPanel)
+  public System.Void GoToParkedVehicle(System.UInt16 parkedVehicleId, System.Boolean openInfoPanel)
+  public System.Void GoToPos(UnityEngine.Vector3 pos)
+  public System.Void GoToSegment(System.UInt16 segmentId, System.Boolean openInfoPanel)
+  public System.Void GoToVehicle(System.UInt16 vehicleId, System.Boolean openInfoPanel)
+
+------------------------------------------------------------
+TYPE: CSUtil.CameraControl.CameraController+<>c__DisplayClass9_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Void <GoToInstance>b__0()
+

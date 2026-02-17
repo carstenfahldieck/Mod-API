@@ -1,0 +1,10 @@
+=== CS1 Methoden Analyse v2 - MOD Aggregation ===
+Mod: UnlimitedSoil
+Enthält Treffer aus allen Assemblies dieser Mod (via PluginManager).
+
+[UnlimitedSoil] UnlimitedSoilMod.UnlimitedSoil ::   public .ctor()
+[UnlimitedSoil] UnlimitedSoilMod.UnlimitedSoil ::   public System.String get_Description()
+[UnlimitedSoil] UnlimitedSoilMod.UnlimitedSoil ::   public System.String get_Name()
+[UnlimitedSoil] UnlimitedSoilMod.UnlimitedSoilResource ::   public .ctor()
+[UnlimitedSoil] UnlimitedSoilMod.UnlimitedSoilResource ::   public virtual System.Void OnCreated(ICities.IResource resource)
+[UnlimitedSoil] UnlimitedSoilMod.UnlimitedSoilResource ::   public virtual System.Int32 OnGetDirt(System.Int32 amount)

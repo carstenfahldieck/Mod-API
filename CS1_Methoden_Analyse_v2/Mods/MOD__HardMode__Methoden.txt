@@ -1,0 +1,21 @@
+=== CS1 Methoden Analyse v2 - MOD Aggregation ===
+Mod: HardMode
+Enthält Treffer aus allen Assemblies dieser Mod (via PluginManager).
+
+[HardMode0] HardModeMod.HardMode ::   public .ctor()
+[HardMode0] HardModeMod.HardMode ::   public System.String get_Description()
+[HardMode0] HardModeMod.HardMode ::   public System.String get_Name()
+[HardMode0] HardModeMod.HardModeDemand ::   public .ctor()
+[HardMode0] HardModeMod.HardModeDemand ::   public virtual System.Int32 OnCalculateCommercialDemand(System.Int32 originalDemand)
+[HardMode0] HardModeMod.HardModeDemand ::   public virtual System.Int32 OnCalculateResidentialDemand(System.Int32 originalDemand)
+[HardMode0] HardModeMod.HardModeDemand ::   public virtual System.Int32 OnCalculateWorkplaceDemand(System.Int32 originalDemand)
+[HardMode0] HardModeMod.HardModeEconomy ::   public .ctor()
+[HardMode0] HardModeMod.HardModeEconomy ::   public virtual System.Int32 OnGetConstructionCost(System.Int32 originalConstructionCost, ICities.Service service, ICities.SubService subService, ICities.Level level)
+[HardMode0] HardModeMod.HardModeEconomy ::   public virtual System.Int32 OnGetMaintenanceCost(System.Int32 originalMaintenanceCost, ICities.Service service, ICities.SubService subService, ICities.Level level)
+[HardMode0] HardModeMod.HardModeEconomy ::   public virtual System.Int32 OnGetRefundAmount(System.Int32 constructionCost, System.Int32 refundAmount, ICities.Service service, ICities.SubService subService, ICities.Level level)
+[HardMode0] HardModeMod.HardModeEconomy ::   public virtual System.Int32 OnGetRelocationCost(System.Int32 constructionCost, System.Int32 relocationCost, ICities.Service service, ICities.SubService subService, ICities.Level level)
+[HardMode0] HardModeMod.HardModeLevelUp ::   public .ctor()
+[HardMode0] HardModeMod.HardModeLevelUp ::   public virtual ICities.CommercialLevelUp OnCalculateCommercialLevelUp(ICities.CommercialLevelUp levelUp, System.Int32 averageWealth, System.Int32 landValue, System.UInt16 buildingID, ICities.Service service, ICities.SubService subService, ICities.Level currentLevel)
+[HardMode0] HardModeMod.HardModeLevelUp ::   public virtual ICities.IndustrialLevelUp OnCalculateIndustrialLevelUp(ICities.IndustrialLevelUp levelUp, System.Int32 averageEducation, System.Int32 serviceScore, System.UInt16 buildingID, ICities.Service service, ICities.SubService subService, ICities.Level currentLevel)
+[HardMode0] HardModeMod.HardModeLevelUp ::   public virtual ICities.OfficeLevelUp OnCalculateOfficeLevelUp(ICities.OfficeLevelUp levelUp, System.Int32 averageEducation, System.Int32 serviceScore, System.UInt16 buildingID, ICities.Service service, ICities.SubService subService, ICities.Level currentLevel)
+[HardMode0] HardModeMod.HardModeLevelUp ::   public virtual ICities.ResidentialLevelUp OnCalculateResidentialLevelUp(ICities.ResidentialLevelUp levelUp, System.Int32 averageEducation, System.Int32 landValue, System.UInt16 buildingID, ICities.Service service, ICities.SubService subService, ICities.Level currentLevel)

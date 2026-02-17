@@ -1,0 +1,316 @@
+=== CS1 Methoden Analyse v2 - INDEX Assemblies ===
+Timestamp: 2026-02-17 16:06:38
+Output: C:\Users\carst\Desktop\CS1_Methoden_Analyse_v2
+
+- 0Harmony
+  Bucket: MOD
+  Location: 
+  Mod: 2040656402
+  Types: 1171
+  Declared Methods: 5333
+  File: Assemblies\01_MOD__0Harmony__Methoden.txt
+
+- 0Harmony
+  Bucket: MOD
+  Location: 
+  Mod: 2040656402
+  Types: 1171
+  Declared Methods: 5333
+  File: Assemblies\02_MOD__0Harmony__Methoden.txt
+
+- 0Harmony
+  Bucket: MOD
+  Location: 
+  Mod: 2040656402
+  Types: 1171
+  Declared Methods: 5333
+  File: Assemblies\03_MOD__0Harmony__Methoden.txt
+
+- Anonymously Hosted DynamicMethods Assembly
+  Bucket: SYSTEM
+  Location: 
+  Mod: (none)
+  Types: 0
+  Declared Methods: 0
+  File: Assemblies\04_SYSTEM__Anonymously Hosted DynamicMethods Assembly__Methoden.txt
+
+- Assembly-CSharp
+  Bucket: VANILLA
+  Location: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\Assembly-CSharp.dll
+  Mod: (none)
+  Types: 3256
+  Declared Methods: 26072
+  File: Assemblies\05_VANILLA__Assembly-CSharp__Methoden.txt
+
+- Assembly-CSharp-firstpass
+  Bucket: VANILLA
+  Location: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\Assembly-CSharp-firstpass.dll
+  Mod: (none)
+  Types: 69
+  Declared Methods: 168
+  File: Assemblies\06_VANILLA__Assembly-CSharp-firstpass__Methoden.txt
+
+- AutoWaterPipes
+  Bucket: MOD
+  Location: 
+  Mod: 3664545564
+  Types: 3
+  Declared Methods: 16
+  File: Assemblies\07_MOD__AutoWaterPipes__Methoden.txt
+
+- CHSharedState
+  Bucket: SYSTEM
+  Location: 
+  Mod: (none)
+  Types: 1
+  Declared Methods: 0
+  File: Assemblies\08_SYSTEM__CHSharedState__Methoden.txt
+
+- CSUtil.CameraControl
+  Bucket: MOD
+  Location: 
+  Mod: 1637663252
+  Types: 2
+  Declared Methods: 10
+  File: Assemblies\09_MOD__CSUtil.CameraControl__Methoden.txt
+
+- CSUtil.Commons
+  Bucket: MOD
+  Location: 
+  Mod: 1637663252
+  Types: 14
+  Declared Methods: 29
+  File: Assemblies\10_MOD__CSUtil.Commons__Methoden.txt
+
+- CitiesHarmony
+  Bucket: MOD
+  Location: 
+  Mod: 2040656402
+  Types: 21
+  Declared Methods: 95
+  File: Assemblies\11_MOD__CitiesHarmony__Methoden.txt
+
+- CitiesHarmony.API
+  Bucket: MOD
+  Location: 
+  Mod: 2594569657
+  Types: 2
+  Declared Methods: 25
+  File: Assemblies\12_MOD__CitiesHarmony.API__Methoden.txt
+
+- CitiesHarmony.API
+  Bucket: MOD
+  Location: 
+  Mod: 2594569657
+  Types: 2
+  Declared Methods: 15
+  File: Assemblies\13_MOD__CitiesHarmony.API__Methoden.txt
+
+- CitiesHarmony.Harmony
+  Bucket: MOD
+  Location: 
+  Mod: 2040656402
+  Types: 1173
+  Declared Methods: 5333
+  File: Assemblies\14_MOD__CitiesHarmony.Harmony__Methoden.txt
+
+- CityVitalsWatch
+  Bucket: MOD
+  Location: 
+  Mod: 410151616
+  Types: 9
+  Declared Methods: 43
+  File: Assemblies\15_MOD__CityVitalsWatch__Methoden.txt
+
+- ColossalManaged
+  Bucket: VANILLA
+  Location: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\ColossalManaged.dll
+  Mod: (none)
+  Types: 556
+  Declared Methods: 5276
+  File: Assemblies\16_VANILLA__ColossalManaged__Methoden.txt
+
+- HardMode0
+  Bucket: MOD
+  Location: 
+  Mod: HardMode
+  Types: 4
+  Declared Methods: 13
+  File: Assemblies\17_MOD__HardMode0__Methoden.txt
+
+- ICSharpCode.SharpZipLib
+  Bucket: VANILLA
+  Location: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\ICSharpCode.SharpZipLib.dll
+  Mod: (none)
+  Types: 135
+  Declared Methods: 1081
+  File: Assemblies\18_VANILLA__ICSharpCode.SharpZipLib__Methoden.txt
+
+- ICities
+  Bucket: VANILLA
+  Location: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\ICities.dll
+  Mod: (none)
+  Types: 78
+  Declared Methods: 449
+  File: Assemblies\19_VANILLA__ICities__Methoden.txt
+
+- Mono.Security
+  Bucket: VANILLA
+  Location: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\Mono.Security.dll
+  Mod: (none)
+  Types: 221
+  Declared Methods: 1523
+  File: Assemblies\20_VANILLA__Mono.Security__Methoden.txt
+
+- MoveItIntegration
+  Bucket: MOD
+  Location: 
+  Mod: 1637663252
+  Types: 4
+  Declared Methods: 18
+  File: Assemblies\21_MOD__MoveItIntegration__Methoden.txt
+
+- ParkingLotSnapping
+  Bucket: MOD
+  Location: 
+  Mod: 2594569657
+  Types: 12
+  Declared Methods: 146
+  File: Assemblies\22_MOD__ParkingLotSnapping__Methoden.txt
+
+- PopsApiWrapper
+  Bucket: VANILLA
+  Location: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\PopsApiWrapper.dll
+  Mod: (none)
+  Types: 296
+  Declared Methods: 767
+  File: Assemblies\23_VANILLA__PopsApiWrapper__Methoden.txt
+
+- System
+  Bucket: VANILLA
+  Location: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\System.dll
+  Mod: (none)
+  Types: 1336
+  Declared Methods: 9804
+  File: Assemblies\24_VANILLA__System__Methoden.txt
+
+- System.Configuration
+  Bucket: VANILLA
+  Location: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\System.Configuration.dll
+  Mod: (none)
+  Types: 133
+  Declared Methods: 938
+  File: Assemblies\25_VANILLA__System.Configuration__Methoden.txt
+
+- System.Core
+  Bucket: VANILLA
+  Location: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\System.Core.dll
+  Mod: (none)
+  Types: 208
+  Declared Methods: 1685
+  File: Assemblies\26_VANILLA__System.Core__Methoden.txt
+
+- System.Xml
+  Bucket: VANILLA
+  Location: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\System.Xml.dll
+  Mod: (none)
+  Types: 762
+  Declared Methods: 6934
+  File: Assemblies\27_VANILLA__System.Xml__Methoden.txt
+
+- TMPE.API
+  Bucket: MOD
+  Location: 
+  Mod: 1637663252
+  Types: 99
+  Declared Methods: 402
+  File: Assemblies\28_MOD__TMPE.API__Methoden.txt
+
+- Test
+  Bucket: MOD
+  Location: 
+  Mod: taxi
+  Types: 7
+  Declared Methods: 37
+  File: Assemblies\29_MOD__Test__Methoden.txt
+
+- TrafficManager
+  Bucket: MOD
+  Location: 
+  Mod: 1637663252
+  Types: 723
+  Declared Methods: 3793
+  File: Assemblies\30_MOD__TrafficManager__Methoden.txt
+
+- UnifiedUILib
+  Bucket: MOD
+  Location: 
+  Mod: 1637663252
+  Types: 135
+  Declared Methods: 971
+  File: Assemblies\31_MOD__UnifiedUILib__Methoden.txt
+
+- UnityEngine
+  Bucket: VANILLA
+  Location: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\UnityEngine.dll
+  Mod: (none)
+  Types: 1118
+  Declared Methods: 12776
+  File: Assemblies\32_VANILLA__UnityEngine__Methoden.txt
+
+- UnityEngine.Networking
+  Bucket: VANILLA
+  Location: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\UnityEngine.Networking.dll
+  Mod: (none)
+  Types: 117
+  Declared Methods: 1281
+  File: Assemblies\33_VANILLA__UnityEngine.Networking__Methoden.txt
+
+- UnityEngine.UI
+  Bucket: VANILLA
+  Location: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\UnityEngine.UI.dll
+  Mod: (none)
+  Types: 184
+  Declared Methods: 1509
+  File: Assemblies\34_VANILLA__UnityEngine.UI__Methoden.txt
+
+- UnlimitedMoney2
+  Bucket: MOD
+  Location: 
+  Mod: UnlimitedMoney
+  Types: 2
+  Declared Methods: 5
+  File: Assemblies\35_MOD__UnlimitedMoney2__Methoden.txt
+
+- UnlimitedOilAndOre
+  Bucket: MOD
+  Location: 
+  Mod: UnlimitedOilAndOre
+  Types: 2
+  Declared Methods: 3
+  File: Assemblies\36_MOD__UnlimitedOilAndOre__Methoden.txt
+
+- UnlimitedSoil
+  Bucket: MOD
+  Location: 
+  Mod: UnlimitedSoil
+  Types: 2
+  Declared Methods: 4
+  File: Assemblies\37_MOD__UnlimitedSoil__Methoden.txt
+
+- UnlockAll
+  Bucket: MOD
+  Location: 
+  Mod: UnlockAll
+  Types: 2
+  Declared Methods: 4
+  File: Assemblies\38_MOD__UnlockAll__Methoden.txt
+
+- mscorlib
+  Bucket: VANILLA
+  Location: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\mscorlib.dll
+  Mod: (none)
+  Types: 1827
+  Declared Methods: 15025
+  File: Assemblies\39_VANILLA__mscorlib__Methoden.txt
+

@@ -1,0 +1,62 @@
+=== CS1 Methoden Analyse v2 - Assembly Dump ===
+Timestamp: 2026-02-17 16:06:38
+Bucket: MOD
+Assembly Simple: MoveItIntegration
+Assembly Full: MoveItIntegration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly Location: 
+Plugin/Mod Name: 1637663252
+Plugin/Mod Path: G:\SteamLibrary\steamapps\workshop\content\255710\1637663252
+DeclaredOnly Methods: YES
+
+
+### NAMESPACE: MoveItIntegration
+
+------------------------------------------------------------
+TYPE: MoveItIntegration.EncodeUtil
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.Object BinaryDecode64(System.String base64Data)
+  public static System.String BinaryEncode64(System.Object obj)
+  internal static System.Object Deserialize(System.Byte[] data)
+  internal static System.Byte[] Serialize(System.Object obj)
+  public static System.String XMLDecode(System.Object obj)
+  public static System.Object XMLEncode(System.String data, System.Type dataType)
+  internal static System.Runtime.Serialization.Formatters.Binary.BinaryFormatter get_GetBinaryFormatter()
+
+------------------------------------------------------------
+TYPE: MoveItIntegration.IMoveItIntegrationFactory
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract MoveItIntegration.MoveItIntegrationBase GetInstance()
+
+------------------------------------------------------------
+TYPE: MoveItIntegration.IntegrationHelper
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.Collections.Generic.List`1[[MoveItIntegration.MoveItIntegrationBase, MoveItIntegration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] GetIntegrations()
+
+------------------------------------------------------------
+TYPE: MoveItIntegration.MoveItIntegrationBase
+KIND: class
+ATTR: Public, Abstract, BeforeFieldInit
+
+CONSTRUCTORS:
+  protected .ctor()
+
+METHODS:
+  public abstract System.Object Copy(InstanceID sourceInstanceID)
+  public abstract System.Object Decode64(System.String base64Data, System.Version dataVersion)
+  public abstract System.String Encode64(System.Object record)
+  public virtual System.Void Mirror(InstanceID targetInstanceID, System.Object record, System.Collections.Generic.Dictionary`2[[InstanceID, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[InstanceID, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] map)
+  public abstract System.Void Paste(InstanceID targetInstanceID, System.Object record, System.Collections.Generic.Dictionary`2[[InstanceID, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[InstanceID, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] map)
+  public abstract System.Version get_DataVersion()
+  public virtual System.String get_Description()
+  public abstract System.String get_ID()
+  public virtual System.String get_Name()
+

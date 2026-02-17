@@ -1,0 +1,1124 @@
+=== CS1 Methoden Analyse v2 - Assembly Dump ===
+Timestamp: 2026-02-17 16:06:38
+Bucket: MOD
+Assembly Simple: TMPE.API
+Assembly Full: TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null
+Assembly Location: 
+Plugin/Mod Name: 1637663252
+Plugin/Mod Path: G:\SteamLibrary\steamapps\workshop\content\255710\1637663252
+DeclaredOnly Methods: YES
+
+
+### NAMESPACE: Microsoft.CodeAnalysis
+
+------------------------------------------------------------
+TYPE: Microsoft.CodeAnalysis.EmbeddedAttribute
+KIND: class
+ATTR: Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+
+### NAMESPACE: System.Runtime.CompilerServices
+
+------------------------------------------------------------
+TYPE: System.Runtime.CompilerServices.IsReadOnlyAttribute
+KIND: class
+ATTR: Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: System.Runtime.CompilerServices.RefSafetyRulesAttribute
+KIND: class
+ATTR: Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32)
+
+
+### NAMESPACE: TrafficManager.API.Geometry
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Geometry.SegmentEndReplacement
+KIND: struct
+ATTR: Public, SequentialLayout, Sealed, BeforeFieldInit
+
+METHODS:
+  public System.Boolean IsDefined()
+  public virtual System.String ToString()
+
+
+### NAMESPACE: TrafficManager.API
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Harmony
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Implementations
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  private static T GetImplementation<T>()
+  public static System.Void Reset()
+  public static TrafficManager.API.Manager.IManagerFactory get_ManagerFactory()
+  public static TrafficManager.API.Notifier.INotifier get_Notifier()
+  public static TrafficManager.API.UI.IUIFactory get_UIFactory()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Implementations+<>c__11`1
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <GetImplementation>b__11_0(System.Reflection.PropertyInfo item)
+
+
+### NAMESPACE: TrafficManager.API.Manager
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.GeometryUpdate
+KIND: struct
+ATTR: Public, SequentialLayout, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(TrafficManager.API.Geometry.SegmentEndReplacement replacement)
+  public .ctor(System.UInt16 nodeId)
+  public .ctor(ref TrafficManager.API.Traffic.Data.ExtSegment segment)
+
+METHODS:
+  public System.Nullable`1[[System.UInt16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] get_nodeId()
+  public TrafficManager.API.Geometry.SegmentEndReplacement get_replacement()
+  public System.Nullable`1[[TrafficManager.API.Traffic.Data.ExtSegment, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] get_segment()
+  private System.Void set_nodeId(System.Nullable`1[[System.UInt16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] value)
+  private System.Void set_replacement(TrafficManager.API.Geometry.SegmentEndReplacement value)
+  private System.Void set_segment(System.Nullable`1[[TrafficManager.API.Traffic.Data.ExtSegment, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] value)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IAdvancedParkingManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract TrafficManager.API.Traffic.Enums.ParkedCarApproachState CitizenApproachingParkedCarSimulationStep(System.UInt16 instanceId, ref CitizenInstance instanceData, ref TrafficManager.API.Traffic.Data.ExtCitizenInstance extInstance, UnityEngine.Vector3 physicsLodRefPos, ref VehicleParked parkedCar)
+  public abstract System.Boolean CitizenApproachingTargetSimulationStep(System.UInt16 instanceId, ref CitizenInstance instanceData, ref TrafficManager.API.Traffic.Data.ExtCitizenInstance extInstance)
+  public abstract System.String EnrichLocalizedCarStatus(System.String ret, ref TrafficManager.API.Traffic.Data.ExtCitizenInstance driverExtInstance)
+  public abstract System.String EnrichLocalizedCitizenStatus(System.String ret, ref TrafficManager.API.Traffic.Data.ExtCitizenInstance extInstance, ref TrafficManager.API.Traffic.Data.ExtCitizen extCitizen)
+  public abstract System.Boolean EnterParkedCar(System.UInt16 instanceID, ref CitizenInstance instanceData, ref Citizen citizen, System.UInt16 parkedVehicleId, out System.UInt16 vehicleId)
+  public abstract System.Boolean FindParkingSpaceBuilding(VehicleInfo vehicleInfo, System.UInt16 homeID, System.UInt16 ignoreParked, System.UInt16 segmentId, UnityEngine.Vector3 refPos, System.Single maxBuildingDistance, System.Single maxParkingSpaceDistance, out UnityEngine.Vector3 parkPos, out UnityEngine.Quaternion parkRot, out System.Single parkOffset)
+  public abstract System.Boolean FindParkingSpaceForCitizen(UnityEngine.Vector3 endPos, VehicleInfo vehicleInfo, ref CitizenInstance driverInstance, ref TrafficManager.API.Traffic.Data.ExtCitizenInstance extDriverInstance, System.UInt16 homeId, System.Boolean goingHome, System.UInt16 vehicleId, System.Boolean allowTourists, out UnityEngine.Vector3 parkPos, ref PathUnit+Position endPathPos, out System.Boolean calculateEndPos)
+  public abstract System.Boolean FindParkingSpaceInVicinity(UnityEngine.Vector3 targetPos, UnityEngine.Vector3 searchDir, VehicleInfo vehicleInfo, System.UInt16 homeId, System.UInt16 vehicleId, System.Single maxDist, out TrafficManager.API.Traffic.Enums.ExtParkingSpaceLocation parkingSpaceLocation, out System.UInt16 parkingSpaceLocationId, out UnityEngine.Vector3 parkPos, out UnityEngine.Quaternion parkRot, out System.Single parkOffset)
+  public abstract System.Boolean FindParkingSpacePropAtBuilding(VehicleInfo vehicleInfo, System.UInt16 homeID, System.UInt16 ignoreParked, System.UInt16 buildingID, ref Building building, System.UInt16 segmentId, UnityEngine.Vector3 refPos, ref System.Single maxDistance, System.Boolean randomize, out UnityEngine.Vector3 parkPos, out UnityEngine.Quaternion parkRot, out System.Single parkOffset)
+  public abstract System.Boolean FindParkingSpaceRoadSide(System.UInt16 ignoreParked, UnityEngine.Vector3 refPos, System.Single width, System.Single length, System.Single maxDistance, out UnityEngine.Vector3 parkPos, out UnityEngine.Quaternion parkRot, out System.Single parkOffset)
+  public abstract System.Boolean FindParkingSpaceRoadSideForVehiclePos(VehicleInfo vehicleInfo, System.UInt16 ignoreParked, System.UInt16 segmentId, UnityEngine.Vector3 refPos, out UnityEngine.Vector3 parkPos, out UnityEngine.Quaternion parkRot, out System.Single parkOffset, out System.UInt32 laneId, out System.Int32 laneIndex)
+  public abstract System.Boolean GetBuildingInfoViewColor(System.UInt16 buildingId, ref Building buildingData, ref TrafficManager.API.Traffic.Data.ExtBuilding extBuilding, InfoManager+InfoMode infoMode, out System.Nullable`1[[UnityEngine.Color, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] color)
+  public abstract System.Boolean TryMoveParkedVehicle(System.UInt16 parkedVehicleId, ref VehicleParked parkedVehicle, UnityEngine.Vector3 refPos, System.Single maxDistance, System.UInt16 homeId)
+  public abstract System.Boolean TrySpawnParkedPassengerCar(System.UInt32 citizenId, ref Citizen citizen, System.UInt16 homeId, UnityEngine.Vector3 refPos, VehicleInfo vehicleInfo, out UnityEngine.Vector3 parkPos, out TrafficManager.API.Traffic.Enums.ParkingError reason)
+  public abstract System.Boolean TrySpawnParkedPassengerCarBuilding(System.UInt32 citizenId, ref Citizen citizen, System.UInt16 homeId, UnityEngine.Vector3 refPos, VehicleInfo vehicleInfo, out UnityEngine.Vector3 parkPos, out TrafficManager.API.Traffic.Enums.ParkingError reason)
+  public abstract System.Boolean TrySpawnParkedPassengerCarRoadSide(System.UInt32 citizenId, UnityEngine.Vector3 refPos, VehicleInfo vehicleInfo, out UnityEngine.Vector3 parkPos, out TrafficManager.API.Traffic.Enums.ParkingError reason)
+  public abstract TrafficManager.API.Traffic.Enums.ExtSoftPathState UpdateCarPathState(System.UInt16 vehicleId, ref Vehicle vehicleData, ref CitizenInstance driverInstance, ref TrafficManager.API.Traffic.Data.ExtCitizenInstance driverExtInstance, TrafficManager.API.Traffic.Enums.ExtPathState mainPathState)
+  public abstract TrafficManager.API.Traffic.Enums.ExtSoftPathState UpdateCitizenPathState(System.UInt16 citizenInstanceId, ref CitizenInstance citizenInstance, ref TrafficManager.API.Traffic.Data.ExtCitizenInstance extInstance, ref TrafficManager.API.Traffic.Data.ExtCitizen extCitizen, ref Citizen citizen, TrafficManager.API.Traffic.Enums.ExtPathState mainPathState)
+  public abstract System.Boolean VanillaFindParkingSpaceWithoutRestrictions(System.Boolean isElectric, System.UInt16 homeId, UnityEngine.Vector3 refPos, UnityEngine.Vector3 searchDir, System.UInt16 segment, System.Single width, System.Single length, out UnityEngine.Vector3 parkPos, out UnityEngine.Quaternion parkRot, out System.Single parkOffset)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.ICustomDataManager`1
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Boolean LoadData(T data)
+  public abstract T SaveData(ref System.Boolean success)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.ICustomManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Void OnAfterLoadData()
+  public abstract System.Void OnAfterSaveData()
+  public abstract System.Void OnBeforeLoadData()
+  public abstract System.Void OnBeforeSaveData()
+  public abstract System.Void OnLevelLoading()
+  public abstract System.Void OnLevelUnloading()
+  public abstract System.Void PrintDebugInfo()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.ICustomSegmentLightsManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IExtBuildingManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Void AddParkingSpaceDemand(ref TrafficManager.API.Traffic.Data.ExtBuilding extBuilding, System.UInt32 delta)
+  public abstract System.Void AddPublicTransportDemand(ref TrafficManager.API.Traffic.Data.ExtBuilding extBuilding, System.UInt32 delta, System.Boolean outgoing)
+  public abstract System.Void ModifyParkingSpaceDemand(ref TrafficManager.API.Traffic.Data.ExtBuilding extBuilding, UnityEngine.Vector3 parkPos, System.Int32 minDelta, System.Int32 maxDelta)
+  public abstract System.Void OnBeforeSimulationStep(System.UInt16 buildingId, ref Building data)
+  public abstract System.Void RemoveParkingSpaceDemand(ref TrafficManager.API.Traffic.Data.ExtBuilding extBuilding, System.UInt32 delta)
+  public abstract System.Void RemovePublicTransportDemand(ref TrafficManager.API.Traffic.Data.ExtBuilding extBuilding, System.UInt32 delta, System.Boolean outgoing)
+  public abstract System.Void Reset(ref TrafficManager.API.Traffic.Data.ExtBuilding extBuilding)
+  public abstract TrafficManager.API.Traffic.Data.ExtBuilding[] get_ExtBuildings()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IExtCitizenInstanceManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Boolean CalculateReturnPath(ref TrafficManager.API.Traffic.Data.ExtCitizenInstance extInstance, UnityEngine.Vector3 parkPos, UnityEngine.Vector3 targetPos)
+  public abstract System.Boolean FindPathPosition(System.UInt16 instanceID, ref CitizenInstance instanceData, UnityEngine.Vector3 pos, NetInfo+LaneType laneTypes, VehicleInfo+VehicleType vehicleTypes, System.Boolean allowUnderground, out PathUnit+Position position)
+  public abstract System.String GetResidentLocalizedStatus(System.UInt16 instanceID, ref CitizenInstance data, out System.Boolean mayAddCustomStatus, out InstanceID target)
+  public abstract System.String GetTouristLocalizedStatus(System.UInt16 instanceID, ref CitizenInstance data, out System.Boolean mayAddCustomStatus, out InstanceID target)
+  public abstract System.Boolean IsAtOutsideConnection(System.UInt16 instanceId, ref CitizenInstance instanceData, ref TrafficManager.API.Traffic.Data.ExtCitizenInstance extInstance, UnityEngine.Vector3 startPos)
+  public abstract System.Void OnReleaseInstance(System.UInt16 instanceId)
+  public abstract System.Void ReleaseReturnPath(ref TrafficManager.API.Traffic.Data.ExtCitizenInstance extInstance)
+  public abstract System.Void Reset(ref TrafficManager.API.Traffic.Data.ExtCitizenInstance extInstance)
+  public abstract System.Void ResetInstance(System.UInt16 instanceId)
+  public abstract System.Boolean StartPathFind(System.UInt16 instanceID, ref CitizenInstance instanceData, ref TrafficManager.API.Traffic.Data.ExtCitizenInstance extInstance, ref TrafficManager.API.Traffic.Data.ExtCitizen extCitizen, UnityEngine.Vector3 startPos, UnityEngine.Vector3 endPos, VehicleInfo vehicleInfo, System.Boolean enableTransport, System.Boolean ignoreCost)
+  public abstract System.Void UpdateReturnPathState(ref TrafficManager.API.Traffic.Data.ExtCitizenInstance extInstance)
+  public abstract TrafficManager.API.Traffic.Data.ExtCitizenInstance[] get_ExtInstances()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IExtCitizenManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract Citizen+AgeGroup GetAgeGroup(Citizen+AgePhase agePhase)
+  public abstract System.Void OnArriveAtDestination(System.UInt32 citizenId, ref Citizen citizenData, ref CitizenInstance instanceData)
+  public abstract System.Void OnReleaseCitizen(System.UInt32 citizenId)
+  public abstract System.Void ResetCitizen(System.UInt32 citizenId)
+  public abstract TrafficManager.API.Traffic.Data.ExtCitizen[] get_ExtCitizens()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IExtLaneManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Int32 GetLaneIndex(System.UInt32 laneId)
+  public abstract NetInfo+Lane GetLaneInfo(System.UInt32 laneId)
+  public abstract System.Boolean GetSegmentAndIndex(System.UInt32 laneId, out System.UInt16 segmentId, out System.Int32 laneIndex)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IExtNodeManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Void AddSegment(System.UInt16 nodeId, System.UInt16 segmentId)
+  public abstract System.Void RemoveSegment(System.UInt16 nodeId, System.UInt16 segmentId)
+  public abstract TrafficManager.API.Traffic.Data.ExtNode[] get_ExtNodes()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IExtPathManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Boolean FindPathPositionWithSpiralLoop(UnityEngine.Vector3 position, System.Nullable`1[[UnityEngine.Vector3, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] secondaryPosition, ItemClass+Service service, NetInfo+LaneType laneType, VehicleInfo+VehicleType vehicleType, NetInfo+LaneType otherLaneType, VehicleInfo+VehicleType otherVehicleType, System.Boolean allowUnderground, System.Boolean requireConnect, System.Single maxDistance, System.Boolean excludeLaneWidth, System.Boolean checkPedestrianStreet, out PathUnit+Position pathPosA, out PathUnit+Position pathPosB, out System.Single distanceSqrA, out System.Single distanceSqrB)
+  public abstract System.Boolean FindPathPositionWithSpiralLoop(UnityEngine.Vector3 position, ItemClass+Service service, NetInfo+LaneType laneType, VehicleInfo+VehicleType vehicleType, NetInfo+LaneType otherLaneType, VehicleInfo+VehicleType otherVehicleType, System.Boolean allowUnderground, System.Boolean requireConnect, System.Single maxDistance, System.Boolean excludeLaneWidth, System.Boolean checkPedestrianStreet, out PathUnit+Position pathPosA, out PathUnit+Position pathPosB, out System.Single distanceSqrA, out System.Single distanceSqrB)
+  public abstract System.Boolean FindPathPositionWithSpiralLoop(UnityEngine.Vector3 position, System.Nullable`1[[UnityEngine.Vector3, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] secondaryPosition, ItemClass+Service service, NetInfo+LaneType laneType, VehicleInfo+VehicleType vehicleType, VehicleInfo+VehicleCategory vehicleCategory, NetInfo+LaneType otherLaneType, VehicleInfo+VehicleType otherVehicleType, VehicleInfo+VehicleType stopType, System.Boolean allowUnderground, System.Boolean requireConnect, System.Single maxDistance, System.Boolean excludeLaneWidth, System.Boolean checkPedestrianStreet, out PathUnit+Position pathPosA, out PathUnit+Position pathPosB, out System.Single distanceSqrA, out System.Single distanceSqrB)
+  public abstract System.Boolean FindPathPositionWithSpiralLoop(UnityEngine.Vector3 position, ItemClass+Service service, NetInfo+LaneType laneType, VehicleInfo+VehicleType vehicleType, NetInfo+LaneType otherLaneType, VehicleInfo+VehicleType otherVehicleType, VehicleInfo+VehicleType stopType, System.Boolean allowUnderground, System.Boolean requireConnect, System.Single maxDistance, System.Boolean excludeLaneWidth, System.Boolean checkPedestrianStreet, out PathUnit+Position pathPosA, out PathUnit+Position pathPosB, out System.Single distanceSqrA, out System.Single distanceSqrB)
+  public abstract System.Boolean FindPathPositionWithSpiralLoop(UnityEngine.Vector3 position, ItemClass+Service service, NetInfo+LaneType laneType, VehicleInfo+VehicleType vehicleType, VehicleInfo+VehicleCategory vehicleCategory, NetInfo+LaneType otherLaneType, VehicleInfo+VehicleType otherVehicleType, System.Boolean allowUnderground, System.Boolean requireConnect, System.Single maxDistance, System.Boolean excludeLaneWidth, System.Boolean checkPedestrianStreet, out PathUnit+Position pathPos)
+  public abstract System.Boolean FindPathPositionWithSpiralLoop(UnityEngine.Vector3 position, ItemClass+Service service, NetInfo+LaneType laneType, VehicleInfo+VehicleType vehicleType, NetInfo+LaneType otherLaneType, VehicleInfo+VehicleType otherVehicleType, System.Boolean allowUnderground, System.Boolean requireConnect, System.Single maxDistance, System.Boolean excludeLaneWidth, System.Boolean checkPedestrianStreet, out PathUnit+Position pathPos)
+  public abstract System.Boolean FindPathPositionWithSpiralLoop(UnityEngine.Vector3 position, System.Nullable`1[[UnityEngine.Vector3, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] secondaryPosition, ItemClass+Service service, NetInfo+LaneType laneType, VehicleInfo+VehicleType vehicleType, VehicleInfo+VehicleCategory vehicleCategory, NetInfo+LaneType otherLaneType, VehicleInfo+VehicleType otherVehicleType, System.Boolean allowUnderground, System.Boolean requireConnect, System.Single maxDistance, System.Boolean excludeLaneWidth, System.Boolean checkPedestrianStreet, out PathUnit+Position pathPos)
+  public abstract System.Boolean FindPathPositionWithSpiralLoop(UnityEngine.Vector3 position, System.Nullable`1[[UnityEngine.Vector3, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] secondaryPosition, ItemClass+Service service, NetInfo+LaneType laneType, VehicleInfo+VehicleType vehicleType, NetInfo+LaneType otherLaneType, VehicleInfo+VehicleType otherVehicleType, System.Boolean allowUnderground, System.Boolean requireConnect, System.Single maxDistance, System.Boolean excludeLaneWidth, System.Boolean checkPedestrianStreet, out PathUnit+Position pathPos)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IExtSegmentEndManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Boolean CalculateOnlyHighways(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Void CalculateOutgoingLeftStraightRightSegments(ref TrafficManager.API.Traffic.Data.ExtSegmentEnd segEnd, ref NetNode node, out System.Boolean left, out System.Boolean straight, out System.Boolean right)
+  public abstract CSUtil.Commons.ArrowDirection GetDirection(System.UInt16 segmentId0, System.UInt16 segmentId1, System.UInt16 nodeId)
+  public abstract CSUtil.Commons.ArrowDirection GetDirection(ref TrafficManager.API.Traffic.Data.ExtSegmentEnd sourceEnd, System.UInt16 targetSegmentId)
+  public abstract TrafficManager.API.Traffic.Data.ExtSegmentEnd& GetEnd(System.UInt16 segmentId, System.UInt16 nodeID)
+  public abstract TrafficManager.API.Traffic.Data.ExtSegmentEnd& GetEnd(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Int32 GetIndex(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Int32 GetIndex(System.UInt16 segmentId, System.UInt16 nodeId)
+  public abstract System.UInt32 GetRegisteredVehicleCount(ref TrafficManager.API.Traffic.Data.ExtSegmentEnd end)
+  public abstract System.Void Recalculate(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Void Recalculate(System.UInt16 segmentId)
+  public abstract System.Void Reset(System.UInt16 segmentId)
+  public abstract TrafficManager.API.Traffic.Data.ExtSegmentEnd[] get_ExtSegmentEnds()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IExtSegmentManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Boolean CalculateHasBusLane(System.UInt16 segmentId)
+  public abstract System.Boolean CalculateIsHighway(System.UInt16 segmentId)
+  public abstract System.Boolean CalculateIsOneWay(System.UInt16 segmentId)
+  public abstract System.UInt32 GetLaneId(System.UInt16 segmentId, System.Int32 laneIndex)
+  public abstract System.Void Recalculate(System.UInt16 segmentId)
+  public abstract TrafficManager.API.Traffic.Data.ExtSegment[] get_ExtSegments()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IExtVehicleManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.UInt16 GetDriverInstanceId(System.UInt16 vehicleId, ref Vehicle data)
+  public abstract System.UInt32 GetStaticVehicleRand(System.UInt16 vehicleId)
+  public abstract System.UInt32 GetTimedVehicleRand(System.UInt16 vehicleId)
+  public abstract System.Boolean IsJunctionTransitStateNew(ref TrafficManager.API.Traffic.Data.ExtVehicle extVehicle)
+  public abstract System.Void LogTraffic(System.UInt16 vehicleId, ref Vehicle vehicle)
+  public abstract System.Void OnCreate(ref TrafficManager.API.Traffic.Data.ExtVehicle extVehicle, ref Vehicle vehicleData)
+  public abstract System.Void OnCreateVehicle(System.UInt16 vehicleId, ref Vehicle vehicleData)
+  public abstract System.Void OnDespawn(ref TrafficManager.API.Traffic.Data.ExtVehicle extVehicle)
+  public abstract System.Void OnDespawnVehicle(System.UInt16 vehicleId, ref Vehicle vehicleData)
+  public abstract System.Void OnRelease(ref TrafficManager.API.Traffic.Data.ExtVehicle extVehicle, ref Vehicle vehicleData)
+  public abstract System.Void OnReleaseVehicle(System.UInt16 vehicleId, ref Vehicle vehicleData)
+  public abstract System.Void OnSpawn(ref TrafficManager.API.Traffic.Data.ExtVehicle extVehicle, ref Vehicle vehicleData)
+  public abstract System.Void OnSpawnVehicle(System.UInt16 vehicleId, ref Vehicle vehicleData)
+  public abstract TrafficManager.API.Traffic.Enums.ExtVehicleType OnStartPathFind(ref TrafficManager.API.Traffic.Data.ExtVehicle extVehicle, ref Vehicle vehicleData, System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] vehicleType)
+  public abstract TrafficManager.API.Traffic.Enums.ExtVehicleType OnStartPathFind(System.UInt16 vehicleId, ref Vehicle vehicleData, System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] vehicleType)
+  public abstract System.Void SetJunctionTransitState(ref TrafficManager.API.Traffic.Data.ExtVehicle extVehicle, TrafficManager.API.Traffic.Enums.VehicleJunctionTransitState transitState)
+  public abstract System.Void StepRand(ref TrafficManager.API.Traffic.Data.ExtVehicle extVehicle, System.Boolean force)
+  public abstract System.Void Unlink(ref TrafficManager.API.Traffic.Data.ExtVehicle extVehicle)
+  public abstract System.Void UpdateDynamicLaneSelectionParameters(ref TrafficManager.API.Traffic.Data.ExtVehicle extVehicle)
+  public abstract System.Void UpdatePosition(ref TrafficManager.API.Traffic.Data.ExtVehicle extVehicle, ref Vehicle vehicleData, ref TrafficManager.API.Traffic.Data.ExtSegmentEnd segEnd, ref PathUnit+Position curPos, ref PathUnit+Position nextPos)
+  public abstract System.Void UpdateVehiclePosition(System.UInt16 vehicleId, ref Vehicle vehicleData)
+  public abstract TrafficManager.API.Traffic.Data.ExtVehicle[] get_ExtVehicles()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IFeatureManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Void OnDisableFeature()
+  public abstract System.Void OnEnableFeature()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IGeometryManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Void MarkAllAsUpdated()
+  public abstract System.Void MarkAsUpdated(System.UInt16 nodeId, System.Boolean updateSegments)
+  public abstract System.Void MarkAsUpdated(ref TrafficManager.API.Traffic.Data.ExtSegment segment, System.Boolean updateNodes)
+  public abstract System.Void OnSegmentEndReplacement(TrafficManager.API.Geometry.SegmentEndReplacement replacement)
+  public abstract System.Void OnUpdateSegment(ref TrafficManager.API.Traffic.Data.ExtSegment segment)
+  public abstract System.Void SimulationStep(System.Boolean onylFirstPass)
+  public abstract System.IDisposable Subscribe(TrafficManager.API.Util.IObserver`1[[TrafficManager.API.Manager.GeometryUpdate, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] observer)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IJunctionRestrictionsManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Boolean ClearSegmentEnd(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean GetDefaultEnteringBlockedJunctionAllowed(System.UInt16 segmentId, System.Boolean startNode, ref NetNode node)
+  public abstract System.Boolean GetDefaultFarTurnOnRedAllowed(System.UInt16 segmentId, System.Boolean startNode, ref NetNode node)
+  public abstract System.Boolean GetDefaultLaneChangingAllowedWhenGoingStraight(System.UInt16 segmentId, System.Boolean startNode, ref NetNode node)
+  public abstract System.Boolean GetDefaultNearTurnOnRedAllowed(System.UInt16 segmentId, System.Boolean startNode, ref NetNode node)
+  public abstract System.Boolean GetDefaultPedestrianCrossingAllowed(System.UInt16 segmentId, System.Boolean startNode, ref NetNode node)
+  public abstract System.Boolean GetDefaultTurnOnRedAllowed(System.Boolean near, System.UInt16 segmentId, System.Boolean startNode, ref NetNode node)
+  public abstract System.Boolean GetDefaultUturnAllowed(System.UInt16 segmentId, System.Boolean startNode, ref NetNode node)
+  public abstract CSUtil.Commons.TernaryBool GetEnteringBlockedJunctionAllowed(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract CSUtil.Commons.TernaryBool GetFarTurnOnRedAllowed(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract CSUtil.Commons.TernaryBool GetLaneChangingAllowedWhenGoingStraight(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract CSUtil.Commons.TernaryBool GetNearTurnOnRedAllowed(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract CSUtil.Commons.TernaryBool GetPedestrianCrossingAllowed(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract CSUtil.Commons.TernaryBool GetTurnOnRedAllowed(System.Boolean near, System.UInt16 segmentId, System.Boolean startNode)
+  public abstract CSUtil.Commons.TernaryBool GetUturnAllowed(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean IsEnteringBlockedJunctionAllowed(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean IsEnteringBlockedJunctionAllowedConfigurable(System.UInt16 segmentId, System.Boolean startNode, ref NetNode node)
+  public abstract System.Boolean IsFarTurnOnRedAllowed(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean IsFarTurnOnRedAllowedConfigurable(System.UInt16 segmentId, System.Boolean startNode, ref NetNode node)
+  public abstract System.Boolean IsLaneChangingAllowedWhenGoingStraight(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean IsLaneChangingAllowedWhenGoingStraightConfigurable(System.UInt16 segmentId, System.Boolean startNode, ref NetNode node)
+  public abstract System.Boolean IsNearTurnOnRedAllowed(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean IsNearTurnOnRedAllowedConfigurable(System.UInt16 segmentId, System.Boolean startNode, ref NetNode node)
+  public abstract System.Boolean IsPedestrianCrossingAllowed(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean IsPedestrianCrossingAllowedConfigurable(System.UInt16 segmentId, System.Boolean startNode, ref NetNode node)
+  public abstract System.Boolean IsTurnOnRedAllowed(System.Boolean near, System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean IsTurnOnRedAllowedConfigurable(System.Boolean near, System.UInt16 segmentId, System.Boolean startNode, ref NetNode node)
+  public abstract System.Boolean IsUturnAllowed(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean IsUturnAllowedConfigurable(System.UInt16 segmentId, System.Boolean startNode, ref NetNode node)
+  public abstract System.Boolean SetEnteringBlockedJunctionAllowed(System.UInt16 segmentId, System.Boolean startNode, System.Boolean value)
+  public abstract System.Boolean SetEnteringBlockedJunctionAllowed(System.UInt16 segmentId, System.Boolean startNode, CSUtil.Commons.TernaryBool value)
+  public abstract System.Boolean SetFarTurnOnRedAllowed(System.UInt16 segmentId, System.Boolean startNode, CSUtil.Commons.TernaryBool value)
+  public abstract System.Boolean SetFarTurnOnRedAllowed(System.UInt16 segmentId, System.Boolean startNode, System.Boolean value)
+  public abstract System.Boolean SetLaneChangingAllowedWhenGoingStraight(System.UInt16 segmentId, System.Boolean startNode, System.Boolean value)
+  public abstract System.Boolean SetLaneChangingAllowedWhenGoingStraight(System.UInt16 segmentId, System.Boolean startNode, CSUtil.Commons.TernaryBool value)
+  public abstract System.Boolean SetNearTurnOnRedAllowed(System.UInt16 segmentId, System.Boolean startNode, CSUtil.Commons.TernaryBool value)
+  public abstract System.Boolean SetNearTurnOnRedAllowed(System.UInt16 segmentId, System.Boolean startNode, System.Boolean value)
+  public abstract System.Boolean SetPedestrianCrossingAllowed(System.UInt16 segmentId, System.Boolean startNode, System.Boolean value)
+  public abstract System.Boolean SetPedestrianCrossingAllowed(System.UInt16 segmentId, System.Boolean startNode, CSUtil.Commons.TernaryBool value)
+  public abstract System.Boolean SetTurnOnRedAllowed(System.Boolean near, System.UInt16 segmentId, System.Boolean startNode, CSUtil.Commons.TernaryBool value)
+  public abstract System.Boolean SetTurnOnRedAllowed(System.Boolean near, System.UInt16 segmentId, System.Boolean startNode, System.Boolean value)
+  public abstract System.Boolean SetUturnAllowed(System.UInt16 segmentId, System.Boolean startNode, System.Boolean value)
+  public abstract System.Boolean SetUturnAllowed(System.UInt16 segmentId, System.Boolean startNode, CSUtil.Commons.TernaryBool value)
+  public abstract System.Boolean ToggleEnteringBlockedJunctionAllowed(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean ToggleFarTurnOnRedAllowed(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean ToggleLaneChangingAllowedWhenGoingStraight(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean ToggleNearTurnOnRedAllowed(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean TogglePedestrianCrossingAllowed(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean ToggleTurnOnRedAllowed(System.Boolean near, System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean ToggleUturnAllowed(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Void UpdateAllDefaults()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.ILaneArrowManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract TrafficManager.API.Traffic.Enums.LaneArrows GetFinalLaneArrows(System.UInt32 laneId)
+  public abstract NetInfo+LaneType get_LaneTypes()
+  public abstract VehicleInfo+VehicleType get_VehicleTypes()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.ILaneConnectionManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Boolean AreLanesConnected(System.UInt32 sourceLaneId, System.UInt32 targetLaneId, System.Boolean sourceStartNode)
+  public abstract System.Boolean HasConnections(System.UInt32 sourceLaneId, System.Boolean startNode)
+  public abstract System.Boolean HasNodeConnections(System.UInt16 nodeId)
+  public abstract System.Boolean HasUturnConnections(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract NetInfo+LaneType get_LaneTypes()
+  public abstract VehicleInfo+VehicleType get_VehicleTypes()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IManagerFactory
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract TrafficManager.API.Manager.IAdvancedParkingManager get_AdvancedParkingManager()
+  public abstract TrafficManager.API.Manager.ICustomSegmentLightsManager get_CustomSegmentLightsManager()
+  public abstract TrafficManager.API.Manager.IExtBuildingManager get_ExtBuildingManager()
+  public abstract TrafficManager.API.Manager.IExtCitizenInstanceManager get_ExtCitizenInstanceManager()
+  public abstract TrafficManager.API.Manager.IExtCitizenManager get_ExtCitizenManager()
+  public abstract TrafficManager.API.Manager.IExtNodeManager get_ExtNodeManager()
+  public abstract TrafficManager.API.Manager.IExtPathManager get_ExtPathManager()
+  public abstract TrafficManager.API.Manager.IExtSegmentEndManager get_ExtSegmentEndManager()
+  public abstract TrafficManager.API.Manager.IExtSegmentManager get_ExtSegmentManager()
+  public abstract TrafficManager.API.Manager.IExtVehicleManager get_ExtVehicleManager()
+  public abstract TrafficManager.API.Manager.IGeometryManager get_GeometryManager()
+  public abstract TrafficManager.API.Manager.IJunctionRestrictionsManager get_JunctionRestrictionsManager()
+  public abstract TrafficManager.API.Manager.ILaneArrowManager get_LaneArrowManager()
+  public abstract TrafficManager.API.Manager.ILaneConnectionManager get_LaneConnectionManager()
+  public abstract TrafficManager.API.Manager.IOptionsManager get_OptionsManager()
+  public abstract TrafficManager.API.Manager.IParkingRestrictionsManager get_ParkingRestrictionsManager()
+  public abstract TrafficManager.API.Manager.IRoutingManager get_RoutingManager()
+  public abstract TrafficManager.API.Manager.ISegmentEndManager get_SegmentEndManager()
+  public abstract TrafficManager.API.Manager.ISpeedLimitManager get_SpeedLimitManager()
+  public abstract TrafficManager.API.Manager.ITrafficLightManager get_TrafficLightManager()
+  public abstract TrafficManager.API.Manager.ITrafficLightSimulationManager get_TrafficLightSimulationManager()
+  public abstract TrafficManager.API.Manager.ITrafficMeasurementManager get_TrafficMeasurementManager()
+  public abstract TrafficManager.API.Manager.ITrafficPriorityManager get_TrafficPriorityManager()
+  public abstract TrafficManager.API.Manager.ITurnOnRedManager get_TurnOnRedManager()
+  public abstract TrafficManager.API.Manager.IUtilityManager get_UtilityManager()
+  public abstract TrafficManager.API.Manager.IVehicleBehaviorManager get_VehicleBehaviorManager()
+  public abstract TrafficManager.API.Manager.IVehicleRestrictionsManager get_VehicleRestrictionsManager()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IOptionsManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Boolean MayPublishSegmentChanges()
+  public abstract System.Boolean TryGetOptionByName<TVal>(System.String optionName, out TVal value)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IParkingRestrictionsManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Boolean IsParkingAllowed(System.UInt16 segmentId, NetInfo+Direction finalDir)
+  public abstract System.Boolean MayHaveParkingRestriction(System.UInt16 segmentId)
+  public abstract System.Boolean SetParkingAllowed(System.UInt16 segmentId, NetInfo+Direction finalDir, System.Boolean flag)
+  public abstract System.Boolean ToggleParkingAllowed(System.UInt16 segmentId, NetInfo+Direction finalDir)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IRoutingManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Int32 CalcInnerSimilarLaneIndex(NetInfo+Lane laneInfo)
+  public abstract System.Int32 CalcInnerSimilarLaneIndex(System.UInt16 segmentId, System.Int32 laneIndex)
+  public abstract System.Int32 CalcOuterSimilarLaneIndex(NetInfo+Lane laneInfo)
+  public abstract System.Int32 CalcOuterSimilarLaneIndex(System.UInt16 segmentId, System.Int32 laneIndex)
+  public abstract System.UInt32 GetLaneEndRoutingIndex(System.UInt32 laneId, System.Boolean startNode)
+  public abstract System.Void RequestFullRecalculation()
+  public abstract System.Void RequestRecalculation(System.UInt16 segmentId, System.Boolean propagate)
+  public abstract System.Void SimulationStep()
+  public abstract TrafficManager.API.Manager.LaneEndRoutingData[] get_LaneEndBackwardRoutings()
+  public abstract TrafficManager.API.Manager.LaneEndRoutingData[] get_LaneEndForwardRoutings()
+  public abstract TrafficManager.API.Manager.SegmentRoutingData[] get_SegmentRoutings()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.ISegmentEndManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract TrafficManager.API.Traffic.ISegmentEnd GetOrAddSegmentEnd(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract TrafficManager.API.Traffic.ISegmentEnd GetOrAddSegmentEnd(TrafficManager.API.Traffic.ISegmentEndId endId)
+  public abstract TrafficManager.API.Traffic.ISegmentEnd GetSegmentEnd(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract TrafficManager.API.Traffic.ISegmentEnd GetSegmentEnd(TrafficManager.API.Traffic.ISegmentEndId endId)
+  public abstract System.Void RemoveSegmentEnd(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Void RemoveSegmentEnd(TrafficManager.API.Traffic.ISegmentEndId endId)
+  public abstract System.Void RemoveSegmentEnds(System.UInt16 segmentId)
+  public abstract System.Boolean UpdateSegmentEnd(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean UpdateSegmentEnd(TrafficManager.API.Traffic.ISegmentEndId endId)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.ISpeedLimitManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Single GetGameSpeedLimit(System.UInt32 laneId)
+  public abstract System.Single GetGameSpeedLimit(System.UInt32 laneId, NetInfo+Lane laneInfo)
+  public abstract NetInfo+LaneType get_LaneTypes()
+  public abstract VehicleInfo+VehicleType get_VehicleTypes()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.ITrafficLightManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Boolean CanToggleTrafficLight(System.UInt16 nodeId)
+  public abstract System.Boolean HasTrafficLight(System.UInt16 nodeId)
+  public abstract System.Boolean ToggleTrafficLight(System.UInt16 nodeId)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.ITrafficLightSimulationManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Boolean HasActiveTimedSimulation(System.UInt16 nodeId)
+  public abstract System.Boolean HasTimedSimulation(System.UInt16 nodeId)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.ITrafficMeasurementManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Void AddTraffic(System.UInt16 segmentId, System.Byte laneIndex, System.UInt16 speed)
+  public abstract System.UInt16 CalcLaneRelativeMeanSpeed(System.UInt16 segmentId, System.Byte laneIndex, System.UInt32 laneId, NetInfo+Lane laneInfo)
+  public abstract System.Void DestroySegmentStats(System.UInt16 segmentId)
+  public abstract System.Int32 GetDirIndex(System.UInt16 segmentId, NetInfo+Direction dir)
+  public abstract System.Int32 GetDirIndex(NetInfo+Direction dir)
+  public abstract System.Boolean GetLaneTrafficData(System.UInt16 segmentId, System.Byte laneIndex, out TrafficManager.API.Traffic.Data.LaneTrafficData trafficData)
+  public abstract System.Void OnBeforeSimulationStep(System.UInt16 segmentId, ref NetSegment segment)
+  public abstract System.Void ResetTrafficStats()
+  public abstract TrafficManager.API.Traffic.Data.LaneTrafficData[][] get_LaneTrafficData()
+  public abstract TrafficManager.API.Traffic.Data.SegmentDirTrafficData[] get_SegmentDirTrafficData()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.ITrafficPriorityManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract TrafficManager.API.Traffic.Enums.PriorityType GetPrioritySign(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.Boolean HasNodePrioritySign(System.UInt16 nodeId)
+  public abstract System.Boolean HasPriority(System.UInt16 vehicleId, ref Vehicle vehicle, ref PathUnit+Position curPos, ref TrafficManager.API.Traffic.Data.ExtSegmentEnd curEnd, System.UInt16 transitNodeId, System.Boolean startNode, ref PathUnit+Position nextPos, ref NetNode transitNode)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.ITurnOnRedManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Int32 GetIndex(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract TrafficManager.API.Traffic.Data.TurnOnRedSegments[] get_TurnOnRedSegments()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IUtilityManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IVehicleBehaviorManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Single ApplyRealisticSpeeds(System.Single speed, System.UInt16 vehicleId, ref TrafficManager.API.Traffic.Data.ExtVehicle extVehicle, VehicleInfo vehicleInfo)
+  public abstract System.Single CalcMaxSpeed(System.UInt16 vehicleId, ref TrafficManager.API.Traffic.Data.ExtVehicle extVehicle, VehicleInfo vehicleInfo, PathUnit+Position position, ref NetSegment segment, UnityEngine.Vector3 pos, System.Single maxSpeed, System.Boolean emergency)
+  public abstract System.Int32 FindBestLane(System.UInt16 vehicleId, ref Vehicle vehicleData, ref TrafficManager.API.Traffic.Data.ExtVehicle vehicleState, System.UInt32 currentLaneId, PathUnit+Position currentPathPos, NetInfo currentSegInfo, PathUnit+Position next1PathPos, NetInfo next1SegInfo, PathUnit+Position next2PathPos, NetInfo next2SegInfo, PathUnit+Position next3PathPos, NetInfo next3SegInfo, PathUnit+Position next4PathPos)
+  public abstract System.Boolean IsRecklessDriver(System.UInt16 vehicleId, ref Vehicle vehicleData)
+  public abstract System.Boolean IsSpaceReservationAllowed(System.UInt16 transitNodeId, PathUnit+Position sourcePos, PathUnit+Position targetPos)
+  public abstract System.Boolean MayFindBestLane(System.UInt16 vehicleId, ref Vehicle vehicleData, ref TrafficManager.API.Traffic.Data.ExtVehicle vehicleState)
+  public abstract System.Boolean ParkPassengerCar(System.UInt16 vehicleID, ref Vehicle vehicleData, VehicleInfo vehicleInfo, System.UInt32 driverCitizenId, ref Citizen driverCitizen, System.UInt16 driverCitizenInstanceId, ref CitizenInstance driverInstance, ref TrafficManager.API.Traffic.Data.ExtCitizenInstance driverExtInstance, System.UInt16 targetBuildingId, PathUnit+Position pathPos, System.UInt32 nextPath, System.Int32 nextPositionIndex, out System.Byte segmentOffset)
+  public abstract System.Boolean StartPassengerCarPathFind(System.UInt16 vehicleID, ref Vehicle vehicleData, VehicleInfo vehicleInfo, System.UInt16 driverInstanceId, ref CitizenInstance driverInstanceData, ref TrafficManager.API.Traffic.Data.ExtCitizenInstance driverExtInstance, UnityEngine.Vector3 startPos, UnityEngine.Vector3 endPos, System.Boolean startBothWays, System.Boolean endBothWays, System.Boolean undergroundTarget, System.Boolean isHeavyVehicle, System.Boolean hasCombustionEngine, System.Boolean ignoreBlocked)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.IVehicleRestrictionsManager
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Void AddAllowedType(System.UInt16 segmentId, NetInfo segmentInfo, System.UInt32 laneIndex, System.UInt32 laneId, NetInfo+Lane laneInfo, TrafficManager.API.Traffic.Enums.ExtVehicleType vehicleType)
+  public abstract TrafficManager.API.Traffic.Enums.ExtVehicleType GetAllowedVehicleTypes(System.UInt16 segmentId, NetInfo segmentInfo, System.UInt32 laneIndex, NetInfo+Lane laneInfo, TrafficManager.API.Traffic.Enums.VehicleRestrictionsMode busLaneMode)
+  public abstract TrafficManager.API.Traffic.Enums.ExtVehicleType GetAllowedVehicleTypes(System.UInt16 segmentId, System.UInt16 nodeId, TrafficManager.API.Traffic.Enums.VehicleRestrictionsMode busLaneMode)
+  public abstract System.Collections.Generic.IDictionary`2[[System.Byte, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] GetAllowedVehicleTypesAsDict(System.UInt16 segmentId, System.UInt16 nodeId, TrafficManager.API.Traffic.Enums.VehicleRestrictionsMode busLaneMode)
+  public abstract System.Collections.Generic.HashSet`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] GetAllowedVehicleTypesAsSet(System.UInt16 segmentId, System.UInt16 nodeId, TrafficManager.API.Traffic.Enums.VehicleRestrictionsMode busLaneMode)
+  public abstract TrafficManager.API.Traffic.Enums.ExtVehicleType GetBaseMask(NetInfo+Lane laneInfo, TrafficManager.API.Traffic.Enums.VehicleRestrictionsMode includeBusLanes)
+  public abstract TrafficManager.API.Traffic.Enums.ExtVehicleType GetBaseMask(System.UInt32 laneId, TrafficManager.API.Traffic.Enums.VehicleRestrictionsMode includeBusLanes)
+  public abstract TrafficManager.API.Traffic.Enums.ExtVehicleType GetDefaultAllowedVehicleTypes(System.UInt16 segmentId, NetInfo segmentInfo, System.UInt32 laneIndex, NetInfo+Lane laneInfo, TrafficManager.API.Traffic.Enums.VehicleRestrictionsMode busLaneMode)
+  public abstract TrafficManager.API.Traffic.Enums.ExtVehicleType GetDefaultAllowedVehicleTypes(NetInfo+Lane laneInfo, TrafficManager.API.Traffic.Enums.VehicleRestrictionsMode busLaneMode)
+  public abstract System.Boolean IsAllowed(System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] allowedTypes, TrafficManager.API.Traffic.Enums.ExtVehicleType vehicleType)
+  public abstract System.Boolean IsBicycleAllowed(System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] allowedTypes)
+  public abstract System.Boolean IsBlimpAllowed(System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] allowedTypes)
+  public abstract System.Boolean IsBusAllowed(System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] allowedTypes)
+  public abstract System.Boolean IsCableCarAllowed(System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] allowedTypes)
+  public abstract System.Boolean IsCargoTrainAllowed(System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] allowedTypes)
+  public abstract System.Boolean IsCargoTruckAllowed(System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] allowedTypes)
+  public abstract System.Boolean IsEmergencyAllowed(System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] allowedTypes)
+  public abstract System.Boolean IsFerryAllowed(System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] allowedTypes)
+  public abstract System.Boolean IsMonorailSegment(NetInfo segmentInfo)
+  public abstract System.Boolean IsPassengerCarAllowed(System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] allowedTypes)
+  public abstract System.Boolean IsPassengerTrainAllowed(System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] allowedTypes)
+  public abstract System.Boolean IsRailLane(NetInfo+Lane laneInfo)
+  public abstract System.Boolean IsRailSegment(NetInfo segmentInfo)
+  public abstract System.Boolean IsRailVehicleAllowed(System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] allowedTypes)
+  public abstract System.Boolean IsRoadLane(NetInfo+Lane laneInfo)
+  public abstract System.Boolean IsRoadSegment(NetInfo segmentInfo)
+  public abstract System.Boolean IsRoadVehicleAllowed(System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] allowedTypes)
+  public abstract System.Boolean IsServiceAllowed(System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] allowedTypes)
+  public abstract System.Boolean IsTaxiAllowed(System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] allowedTypes)
+  public abstract System.Boolean IsTramAllowed(System.Nullable`1[[TrafficManager.API.Traffic.Enums.ExtVehicleType, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] allowedTypes)
+  public abstract System.Boolean IsTramLane(NetInfo+Lane laneInfo)
+  public abstract System.Void NotifyStartEndNode(System.UInt16 segmentId)
+  public abstract System.Void OnLevelUnloading()
+  public abstract System.Void RemoveAllowedType(System.UInt16 segmentId, NetInfo segmentInfo, System.UInt32 laneIndex, System.UInt32 laneId, NetInfo+Lane laneInfo, TrafficManager.API.Traffic.Enums.ExtVehicleType vehicleType)
+  public abstract System.Void ToggleAllowedType(System.UInt16 segmentId, NetInfo segmentInfo, System.UInt32 laneIndex, System.UInt32 laneId, NetInfo+Lane laneInfo, TrafficManager.API.Traffic.Enums.ExtVehicleType vehicleType, System.Boolean add)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.LaneEndRoutingData
+KIND: struct
+ATTR: Public, SequentialLayout, Sealed, BeforeFieldInit
+
+METHODS:
+  public System.Void AddTransition(TrafficManager.API.Manager.LaneTransitionData transition)
+  public System.Void AddTransitions(TrafficManager.API.Manager.LaneTransitionData[] transitionsToAdd)
+  public System.Void RemoveTransition(System.UInt32 laneId)
+  public System.Void Reset()
+  public virtual System.String ToString()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.LaneTransitionData
+KIND: struct
+ATTR: Public, SequentialLayout, Sealed, BeforeFieldInit
+
+METHODS:
+  public System.Void Set(System.UInt32 laneId, System.Byte laneIndex, TrafficManager.API.Traffic.Enums.LaneEndTransitionType type, System.UInt16 segmentId, System.Boolean startNode, System.Byte distance, TrafficManager.API.Traffic.Enums.LaneEndTransitionGroup group)
+  public virtual System.String ToString()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Manager.SegmentRoutingData
+KIND: struct
+ATTR: Public, SequentialLayout, Sealed, BeforeFieldInit
+
+METHODS:
+  public System.Void Reset()
+  public virtual System.String ToString()
+
+
+### NAMESPACE: TrafficManager.API.Notifier
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Notifier.INotifier
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Void add_EventLevelLoaded(System.Action value)
+  public abstract System.Void add_EventModified(System.Action`1[[TrafficManager.API.Notifier.OnModifiedEventArgs, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] value)
+  public abstract System.Void remove_EventLevelLoaded(System.Action value)
+  public abstract System.Void remove_EventModified(System.Action`1[[TrafficManager.API.Notifier.OnModifiedEventArgs, TMPE.API, Version=11.9.3.477, Culture=neutral, PublicKeyToken=null]] value)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Notifier.OnModifiedEventArgs
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+
+### NAMESPACE: TrafficManager.API.Traffic
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.ApiConstants
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+
+### NAMESPACE: TrafficManager.API.Traffic.Data
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Data.ExtBuilding
+KIND: struct
+ATTR: Public, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.UInt16 buildingId)
+
+METHODS:
+  public virtual System.String ToString()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Data.ExtCitizen
+KIND: struct
+ATTR: Public, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.UInt32 citizenId)
+
+METHODS:
+  public virtual System.String ToString()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Data.ExtCitizenInstance
+KIND: struct
+ATTR: Public, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.UInt16 instanceId)
+
+METHODS:
+  public static TrafficManager.API.Traffic.Enums.ExtSoftPathState ConvertPathStateToSoftPathState(TrafficManager.API.Traffic.Enums.ExtPathState state)
+  public TrafficManager.API.Traffic.Enums.ExtPathType GetPathType()
+  public virtual System.String ToString()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Data.ExtNode
+KIND: struct
+ATTR: Public, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.UInt16 nodeId)
+
+METHODS:
+  public System.Boolean Equals(TrafficManager.API.Traffic.Data.ExtNode otherNode)
+  public virtual System.Boolean Equals(System.Object other)
+  public virtual System.Int32 GetHashCode()
+  public System.Void Reset()
+  public virtual System.String ToString()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Data.ExtSegment
+KIND: struct
+ATTR: Public, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.UInt16 segmentId)
+
+METHODS:
+  public System.Boolean Equals(TrafficManager.API.Traffic.Data.ExtSegment otherSeg)
+  public virtual System.Boolean Equals(System.Object other)
+  public virtual System.Int32 GetHashCode()
+  public System.Void Reset()
+  public virtual System.String ToString()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Data.ExtSegmentEnd
+KIND: struct
+ATTR: Public, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.UInt16 segmentId, System.Boolean startNode)
+
+METHODS:
+  public virtual System.Boolean Equals(System.Object other)
+  public System.Boolean Equals(TrafficManager.API.Traffic.Data.ExtSegmentEnd otherSegEnd)
+  public virtual System.Int32 GetHashCode()
+  public virtual System.String ToString()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Data.ExtVehicle
+KIND: struct
+ATTR: Public, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.UInt16 vehicleId)
+
+METHODS:
+  public virtual System.String ToString()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Data.KmphValue
+KIND: struct
+ATTR: Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.UInt16 kmph)
+
+METHODS:
+  public System.String ToIntegerString()
+  public virtual System.String ToString()
+  public System.UInt16 get_Kmph()
+  public static TrafficManager.API.Traffic.Data.KmphValue op_Addition(TrafficManager.API.Traffic.Data.KmphValue left, System.UInt16 right)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Data.LaneTrafficData
+KIND: struct
+ATTR: Public, Sealed, BeforeFieldInit
+
+METHODS:
+  public virtual System.String ToString()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Data.MphValue
+KIND: struct
+ATTR: Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.UInt16 mph)
+
+METHODS:
+  public virtual System.String ToString()
+  public System.UInt16 get_Mph()
+  public static TrafficManager.API.Traffic.Data.MphValue op_Addition(TrafficManager.API.Traffic.Data.MphValue left, System.UInt16 right)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Data.PathCreationArgs
+KIND: struct
+ATTR: Public, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Data.PathUnitQueueItem
+KIND: struct
+ATTR: Public, Sealed, BeforeFieldInit
+
+METHODS:
+  public virtual System.String ToString()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Data.PrioritySegment
+KIND: struct
+ATTR: Public, SequentialLayout, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(TrafficManager.API.Traffic.Enums.PriorityType startType, TrafficManager.API.Traffic.Enums.PriorityType endType)
+
+METHODS:
+  public System.Boolean HasPrioritySignAtNode(System.Boolean startNode)
+  public System.Boolean IsDefault()
+  public System.Void Reset()
+  public virtual System.String ToString()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Data.SegmentDirTrafficData
+KIND: struct
+ATTR: Public, SequentialLayout, Sealed, BeforeFieldInit
+
+METHODS:
+  public virtual System.String ToString()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Data.SpeedValue
+KIND: struct
+ATTR: Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor(System.Single gameUnits)
+
+METHODS:
+  public System.Boolean Equals(TrafficManager.API.Traffic.Data.SpeedValue other)
+  public virtual System.Boolean Equals(System.Object obj)
+  public System.String FormatStr(System.Boolean displayMph)
+  public static TrafficManager.API.Traffic.Data.SpeedValue FromKmph(TrafficManager.API.Traffic.Data.KmphValue kmph)
+  public static TrafficManager.API.Traffic.Data.SpeedValue FromKmph(System.Single kmph)
+  public static TrafficManager.API.Traffic.Data.SpeedValue FromMph(TrafficManager.API.Traffic.Data.MphValue mph)
+  public static TrafficManager.API.Traffic.Data.SpeedValue FromMph(System.Single mph)
+  public static TrafficManager.API.Traffic.Data.SpeedValue FromVelocity(System.Single vel)
+  public virtual System.Int32 GetHashCode()
+  public System.Single GetKmph()
+  public System.Single GetMph()
+  public TrafficManager.API.Traffic.Data.SpeedValue Scale(System.Single n)
+  public TrafficManager.API.Traffic.Data.KmphValue ToKmphPrecise()
+  public TrafficManager.API.Traffic.Data.KmphValue ToKmphRounded(System.Single step)
+  public TrafficManager.API.Traffic.Data.MphValue ToMphPrecise()
+  public TrafficManager.API.Traffic.Data.MphValue ToMphRounded(System.Single step)
+  public virtual System.String ToString()
+  public System.Single ToVelocity()
+  public System.Single get_GameUnits()
+  public static TrafficManager.API.Traffic.Data.SpeedValue op_Addition(TrafficManager.API.Traffic.Data.SpeedValue left, TrafficManager.API.Traffic.Data.SpeedValue right)
+  public static System.Boolean op_Equality(TrafficManager.API.Traffic.Data.SpeedValue left, TrafficManager.API.Traffic.Data.SpeedValue right)
+  public static System.Boolean op_Inequality(TrafficManager.API.Traffic.Data.SpeedValue left, TrafficManager.API.Traffic.Data.SpeedValue right)
+  public static TrafficManager.API.Traffic.Data.SpeedValue op_Subtraction(TrafficManager.API.Traffic.Data.SpeedValue x, TrafficManager.API.Traffic.Data.SpeedValue y)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Data.TurnOnRedSegments
+KIND: struct
+ATTR: Public, Sealed, BeforeFieldInit
+
+METHODS:
+  public System.Void Reset()
+  public virtual System.String ToString()
+
+
+### NAMESPACE: TrafficManager.API.Traffic.Enums
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.CarUsagePolicy
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.EmergencyBehavior
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.ExtParkingSpaceLocation
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.ExtPathMode
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.ExtPathState
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.ExtPathType
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.ExtSoftPathState
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.ExtTransportMode
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.ExtVehicleFlags
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.ExtVehicleType
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.FlowWaitCalcMode
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.GeometryCalculationMode
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.JunctionRestrictionFlags
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.LaneArrows
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.LaneEndTransitionGroup
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.LaneEndTransitionType
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.LightMode
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.LocaleKeyAttribute
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String key)
+
+METHODS:
+  public static System.String GetKey(System.Reflection.MemberInfo info)
+  public static System.String GetKey<TEnum>(System.String name)
+  private static System.Reflection.MemberInfo ToEnumMember<TEnum>(System.String name)
+  public System.String get_Key()
+  private System.Void set_Key(System.String value)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.ParkedCarApproachState
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.ParkingError
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.PriorityType
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.RecklessDrivers
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.SetLaneArrow_Result
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.SetPrioritySignError
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.SimulationAccuracy
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.StepChangeMetric
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.ToggleTrafficLightError
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.TrafficLightSimulationType
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.VehicleJunctionTransitState
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.VehicleRestrictionsAggression
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.Enums.VehicleRestrictionsMode
+KIND: enum
+ATTR: Public, Sealed
+
+
+### NAMESPACE: TrafficManager.API.Traffic
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.ISegmentEnd
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Collections.Generic.IDictionary`2[[System.UInt16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.UInt32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]][] MeasureOutgoingVehicles(System.Boolean includeStopped, System.Boolean debug)
+  public abstract System.Void Update()
+  public abstract System.UInt16 get_NodeId()
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Traffic.ISegmentEndId
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Boolean Relocate(System.UInt16 segmentId, System.Boolean startNode)
+  public abstract System.UInt16 get_SegmentId()
+  public abstract System.Boolean get_StartNode()
+
+
+### NAMESPACE: TrafficManager.API.UI
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.UI.ITheme
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract UnityEngine.Texture2D JunctionRestriction(TrafficManager.API.Traffic.Enums.JunctionRestrictionFlags rule, System.Boolean allowed)
+  public abstract UnityEngine.Texture2D Parking(System.Boolean allowed)
+  public abstract UnityEngine.Texture2D Priority(TrafficManager.API.Traffic.Enums.PriorityType p)
+  public abstract UnityEngine.Texture2D TrafficLightIcon(System.UInt16 nodeId)
+  public abstract UnityEngine.Texture2D VehicleRestriction(TrafficManager.API.Traffic.Enums.ExtVehicleType type, System.Boolean allow)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.UI.IUIFactory
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract TrafficManager.API.UI.ITheme get_ActiveTheme()
+
+
+### NAMESPACE: TrafficManager.API.Util
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Util.IObservable`1
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.IDisposable Subscribe(TrafficManager.API.Util.IObserver`1[T] observer)
+
+------------------------------------------------------------
+TYPE: TrafficManager.API.Util.IObserver`1
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+
+METHODS:
+  public abstract System.Void OnUpdate(T subject)
+
