@@ -1,0 +1,162 @@
+=== CS1 Methoden Analyse - Assembly Dump ===
+Timestamp: 2026-02-17 15:29:07
+Bucket: SYSTEM
+Assembly Simple: CSUtil.Commons
+Assembly Full: CSUtil.Commons, Version=1.0.9410.476, Culture=neutral, PublicKeyToken=null
+Assembly Path: 
+DeclaredOnly Methods: YES
+
+
+### NAMESPACE: CSUtil.Commons
+
+------------------------------------------------------------
+TYPE: CSUtil.Commons.ArrowDirection
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: CSUtil.Commons.ArrowDirectionUtil
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static CSUtil.Commons.ArrowDirection InvertLeftRight(CSUtil.Commons.ArrowDirection dir)
+
+------------------------------------------------------------
+TYPE: CSUtil.Commons.EnumUtil
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.Collections.Generic.IEnumerable`1[[T]] GetValues<T>()
+
+------------------------------------------------------------
+TYPE: CSUtil.Commons.Log
+KIND: class
+ATTR: Public, Abstract, Sealed
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  public static System.Void Error(System.String s)
+  public static System.Void ErrorFormat(System.String format, System.Object[] args)
+  public static System.Void Info(System.String s)
+  public static System.Void InfoFormat(System.String format, System.Object[] args)
+  private static System.Void LogToFile(System.String log, CSUtil.Commons.Log+LogLevel level)
+  public static System.Void NotImpl(System.String what)
+  public static System.Void Warning(System.String s)
+  public static System.Void WarningFormat(System.String format, System.Object[] args)
+  public static System.Void _Assert(System.Boolean cond, System.String s)
+  public static System.Void _Debug(System.String s)
+  public static System.Void _DebugFormat(System.String format, System.Object[] args)
+  public static System.Void _DebugIf(System.Boolean cond, System.Func`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] formatFn)
+  public static System.Void _DebugOnlyError(System.String s)
+  public static System.Void _DebugOnlyWarning(System.String s)
+  public static System.Void _DebugOnlyWarningIf(System.Boolean cond, System.Func`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] formatFn)
+  public static System.Void _Trace(System.String s)
+
+NESTED TYPES:
+  - CSUtil.Commons.Log+LogLevel
+
+------------------------------------------------------------
+TYPE: CSUtil.Commons.Log+LogLevel
+KIND: enum
+ATTR: NestedPrivate, Sealed
+
+------------------------------------------------------------
+TYPE: CSUtil.Commons.TernaryBool
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: CSUtil.Commons.TernaryBoolUtil
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.Boolean ToBool(CSUtil.Commons.TernaryBool tb)
+  public static System.Nullable`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] ToOptBool(CSUtil.Commons.TernaryBool tb)
+  public static CSUtil.Commons.TernaryBool ToTernaryBool(System.Nullable`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] b)
+
+------------------------------------------------------------
+TYPE: CSUtil.Commons.ToStringExt
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.String ArrayToString<T>(T[] elements)
+  public static System.String CollectionToString<T>(System.Collections.Generic.ICollection`1[[T]] elements)
+  public static System.String DictionaryToString<TKey, TValue>(System.Collections.Generic.IDictionary`2[[TKey],[TValue]] element)
+  public static System.String ToString(System.Object obj)
+
+NESTED TYPES:
+  - CSUtil.Commons.ToStringExt+<>c__1`1
+  - CSUtil.Commons.ToStringExt+<>c__2`1
+  - CSUtil.Commons.ToStringExt+<>c__DisplayClass0_0`2
+
+------------------------------------------------------------
+TYPE: CSUtil.Commons.ToStringExt+<>c__1`1
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.String <CollectionToString>b__1_0(T x)
+
+------------------------------------------------------------
+TYPE: CSUtil.Commons.ToStringExt+<>c__2`1
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.String <ArrayToString>b__2_0(T x)
+
+------------------------------------------------------------
+TYPE: CSUtil.Commons.ToStringExt+<>c__DisplayClass0_0`2
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.String <DictionaryToString>b__0(TKey x)
+
+------------------------------------------------------------
+TYPE: CSUtil.Commons.VectorUtil
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.Void ClampRectToScreen(ref UnityEngine.Rect rect, UnityEngine.Vector2 resolution)
+
+
+### NAMESPACE: Microsoft.CodeAnalysis
+
+------------------------------------------------------------
+TYPE: Microsoft.CodeAnalysis.EmbeddedAttribute
+KIND: class
+ATTR: Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+
+### NAMESPACE: System.Runtime.CompilerServices
+
+------------------------------------------------------------
+TYPE: System.Runtime.CompilerServices.RefSafetyRulesAttribute
+KIND: class
+ATTR: Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32)
+

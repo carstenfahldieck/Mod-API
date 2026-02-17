@@ -1,0 +1,2342 @@
+=== CS1 Methoden Analyse - Assembly Dump ===
+Timestamp: 2026-02-17 15:29:07
+Bucket: SYSTEM
+Assembly Simple: UnifiedUILib
+Assembly Full: UnifiedUILib, Version=2.2.12.31246, Culture=neutral, PublicKeyToken=null
+Assembly Path: 
+DeclaredOnly Methods: YES
+
+
+### NAMESPACE: KianCommons
+
+------------------------------------------------------------
+TYPE: KianCommons.Assertion
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  internal static System.Void Assert(System.Boolean con, System.String m)
+  internal static System.Void AssertDebug(System.Boolean con, System.String m)
+  internal static System.Void AssertEqual<T>(T a, T b, System.String m)
+  internal static System.Void AssertEqualDebug<T>(T a, T b, System.String m)
+  internal static System.Void AssertGT<T>(T a, T b, System.String m)
+  internal static System.Void AssertGTDebug<T>(T a, T b, System.String m)
+  internal static System.Void AssertGTEq<T>(T a, T b, System.String m)
+  internal static System.Void AssertGTEqDebug<T>(T a, T b, System.String m)
+  internal static System.Void AssertNeq<T>(T a, T b, System.String m)
+  internal static System.Void AssertNeqDebug<T>(T a, T b, System.String m)
+  internal static System.Void AssertNotNull(System.Object obj, System.String m)
+  internal static System.Void AssertNotNullDebug(System.Object obj, System.String m)
+  internal static System.Void AssertStack()
+  internal static System.Void Equal<T>(T a, T b, System.String m)
+  internal static System.Void GT<T>(T a, T b, System.String m)
+  internal static System.Void GTEq<T>(T a, T b, System.String m)
+  internal static System.Void InRange(System.Collections.IList list, System.Int32 index)
+  internal static System.Void Neq<T>(T a, T b, System.String m)
+  internal static System.Void NotNull(System.Object obj, System.String m)
+
+------------------------------------------------------------
+TYPE: KianCommons.AuxiluryThread
+KIND: class
+ATTR: Abstract, Sealed
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  private static System.Action DequeueAction()
+  public static System.Void End()
+  public static System.Void EnqueueAction(System.Action act)
+  public static System.Void Start()
+  private static System.Void ThreadTask()
+
+------------------------------------------------------------
+TYPE: KianCommons.EnumBitMaskExtensions
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  private static System.Void CheckEnumWithFlags<T>()
+  private static System.Void CheckEnumWithFlags(System.Type type)
+  internal static System.Boolean CheckFlags(NetSegment+Flags value, NetSegment+Flags required, NetSegment+Flags forbidden)
+  internal static System.Boolean CheckFlags(NetLane+Flags value, NetLane+Flags required, NetLane+Flags forbidden)
+  public static System.Boolean CheckFlags<T>(T value, T required, T forbidden)
+  internal static System.Boolean CheckFlags(NetNode+Flags value, NetNode+Flags required, NetNode+Flags forbidden)
+  internal static System.Boolean CheckFlags(NetInfo+Direction value, NetInfo+Direction required, NetInfo+Direction forbidden)
+  internal static System.Boolean CheckFlags(NetInfo+LaneType value, NetInfo+LaneType required, NetInfo+LaneType forbidden)
+  internal static System.Boolean CheckFlags(VehicleInfo+VehicleType value, VehicleInfo+VehicleType required, VehicleInfo+VehicleType forbidden)
+  internal static System.Void ClearBit(ref System.Byte b, System.Int32 idx)
+  public static System.Int32 CountOnes(System.Int32 value)
+  public static System.Int32 CountOnes(System.Int64 value)
+  public static System.Int32 CountOnes(System.UInt64 value)
+  public static System.Int32 CountOnes(System.UInt32 value)
+  public static System.Collections.Generic.IEnumerable`1[[System.IConvertible, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] ExtractPow2Flags(System.IConvertible flags)
+  public static System.Collections.Generic.IEnumerable`1[[T]] ExtractPow2Flags<T>(T flags)
+  internal static System.Boolean GetBit(System.Byte b, System.Int32 idx)
+  internal static System.Int32 GetEnumCount<T>()
+  public static T[] GetEnumMemberAttributes<T>(System.Enum value)
+  public static T[] GetEnumMemberAttributes<T>(System.Type enumType, System.Object value)
+  public static System.Reflection.MemberInfo GetEnumMemberInfo(System.Enum value)
+  public static System.Reflection.MemberInfo GetEnumMemberInfo(System.Type enumType, System.Object value)
+  public static T[] GetEnumValues<T>()
+  internal static T GetMaxEnumValue<T>()
+  public static System.Collections.Generic.IEnumerable`1[[System.IConvertible, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetPow2Values(System.Type enumType)
+  public static System.Collections.Generic.IEnumerable`1[[T]] GetPow2Values<T>()
+  public static System.Collections.Generic.IEnumerable`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetPow2ValuesI32(System.Type enumType)
+  public static System.Boolean IsFlagSet(System.IConvertible flags, System.IConvertible flag)
+  internal static System.Boolean IsFlagSet(VehicleInfo+VehicleType value, VehicleInfo+VehicleType flag)
+  internal static System.Boolean IsFlagSet(NetNode+Flags value, NetNode+Flags flag)
+  internal static System.Boolean IsFlagSet(NetInfo+Direction value, NetInfo+Direction flag)
+  internal static System.Boolean IsFlagSet(NetInfo+LaneType value, NetInfo+LaneType flag)
+  internal static System.Boolean IsFlagSet(NetLane+Flags value, NetLane+Flags flag)
+  internal static System.Boolean IsFlagSet(NetSegment+Flags value, NetSegment+Flags flag)
+  internal static T Max<T>()
+  internal static System.Void SetBit(ref System.Byte b, System.Int32 idx)
+  internal static System.Void SetBit(ref System.Byte b, System.Int32 idx, System.Boolean value)
+  internal static System.Int32 String2Enum<T>(System.String str)
+  internal static System.Object String2EnumValue<T>(System.String str)
+  public static System.Int64 ToInt64(System.IConvertible value)
+  public static System.UInt64 ToUInt64(System.IConvertible value)
+
+NESTED TYPES:
+  - KianCommons.EnumBitMaskExtensions+<>c
+  - KianCommons.EnumBitMaskExtensions+<>c__31`1
+  - KianCommons.EnumBitMaskExtensions+<>c__DisplayClass32_0`1
+  - KianCommons.EnumBitMaskExtensions+<>c__DisplayClass33_0
+
+------------------------------------------------------------
+TYPE: KianCommons.EnumBitMaskExtensions+<>c
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <GetPow2Values>b__30_0(System.IConvertible val)
+  internal System.Boolean <GetPow2ValuesI32>b__35_0(System.Int32 v)
+
+------------------------------------------------------------
+TYPE: KianCommons.EnumBitMaskExtensions+<>c__31`1
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <GetPow2Values>b__31_0(T val)
+
+------------------------------------------------------------
+TYPE: KianCommons.EnumBitMaskExtensions+<>c__DisplayClass32_0`1
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <ExtractPow2Flags>b__0(T flag)
+
+------------------------------------------------------------
+TYPE: KianCommons.EnumBitMaskExtensions+<>c__DisplayClass33_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <ExtractPow2Flags>b__0(System.IConvertible flag)
+
+------------------------------------------------------------
+TYPE: KianCommons.EnumerationExtensions
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  internal static System.Boolean AllEqual<T>(System.Collections.Generic.IEnumerable`1[[T]] source, System.Collections.Generic.IEqualityComparer`1[[T]] comparer)
+  internal static System.Boolean AllEqual<T, T2>(System.Collections.Generic.IEnumerable`1[[T]] source, System.Func`2[[T],[T2]] selector, System.Collections.Generic.IEqualityComparer`1[[T2]] comparer)
+  internal static System.Void AppendElement<T>(ref T[] array, T element)
+  internal static T[] AppendOrCreate<T>(T[] array, T element)
+  internal static System.Collections.Generic.List`1[[T]] Clone1<T>(System.Collections.Generic.IEnumerable`1[[T]] orig)
+  internal static System.Boolean ContainsRef<T>(System.Collections.Generic.IEnumerable`1[[T]] list, T element)
+  internal static System.Void DropElement<T>(ref T[] array, System.Int32 i)
+  internal static System.Collections.Generic.IEnumerable`1[[T]] EmptyIfNull<T>(System.Collections.Generic.IEnumerable`1[[T]] a)
+  internal static System.Collections.Generic.IEnumerable`1[[System.Nullable`1[[T]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] EmptyIfNull<T>(System.Collections.Generic.IEnumerable`1[[System.Nullable`1[[T]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] a)
+  internal static System.Int32 FindIndex<T>(System.Collections.Generic.IEnumerable`1[[T]] e, System.Func`2[[T],[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] predicate)
+  internal static TValue GetorDefault<TKey, TValue>(System.Collections.Generic.Dictionary`2[[TKey],[TValue]] dict, TKey key)
+  internal static System.Boolean IsNullorEmpty<T>(System.Collections.Generic.ICollection`1[[T]] a)
+  internal static System.Boolean IsNullorEmpty<T>(System.Collections.Generic.IEnumerable`1[[T]] a)
+  internal static T& Last<T>(T[] array)
+  internal static TItem MaxBy<TItem, TBy>(System.Collections.Generic.IEnumerable`1[[TItem]] items, System.Func`2[[TItem],[TBy]] selector)
+  internal static TItem MinBy<TItem, TBy>(System.Collections.Generic.IEnumerable`1[[TItem]] items, System.Func`2[[TItem],[TBy]] selector)
+  internal static T[] RemoveAt<T>(T[] array, System.Int32 index)
+  internal static System.Void ReplaceElement<T>(T[] array, T oldVal, T newVal)
+  internal static System.Void ReplaceElement(System.Array array, System.Object oldVal, System.Object newVal)
+  internal static System.Collections.Generic.Dictionary`2[[TKey],[TValue]] ShallowClone<TKey, TValue>(System.Collections.Generic.IDictionary`2[[TKey],[TValue]] dict)
+  internal static System.Void Swap<T>(System.Collections.Generic.IList`1[[T]] list, System.Int32 i1, System.Int32 i2)
+
+NESTED TYPES:
+  - KianCommons.EnumerationExtensions+<>c__0`1
+
+------------------------------------------------------------
+TYPE: KianCommons.EnumerationExtensions+<>c__0`1
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal T <Clone1>b__0_0(T item)
+
+------------------------------------------------------------
+TYPE: KianCommons.GridUtil
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.Int32 ConvertGrid(System.Single a)
+  public static System.Single ConvertStartPoint(System.Int32 xy)
+  public static System.Collections.Generic.IEnumerable`1[[KianCommons.GridVector, UnifiedUILib, Version=2.2.12.31246, Culture=neutral, PublicKeyToken=null]] ScaDir(UnityEngine.Vector2 start, UnityEngine.Vector2 dir, System.Single dist)
+  private static System.Collections.Generic.IEnumerable`1[[KianCommons.GridVector, UnifiedUILib, Version=2.2.12.31246, Culture=neutral, PublicKeyToken=null]] ScanArea(KianCommons.GridVector start)
+  public static System.Collections.Generic.IEnumerable`1[[System.UInt16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] ScanDirSegment(UnityEngine.Vector2 start, UnityEngine.Vector2 dir, System.Single dist)
+  public static System.Collections.Generic.IEnumerable`1[[System.UInt16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] ScanSegmentsInArea(UnityEngine.Vector2 point)
+  private static System.Collections.Generic.IEnumerable`1[[KianCommons.GridVector, UnifiedUILib, Version=2.2.12.31246, Culture=neutral, PublicKeyToken=null]] scanX(KianCommons.GridVector start, UnityEngine.Vector2 dir, System.Single dist)
+  private static System.Collections.Generic.IEnumerable`1[[KianCommons.GridVector, UnifiedUILib, Version=2.2.12.31246, Culture=neutral, PublicKeyToken=null]] scanY(KianCommons.GridVector start, UnityEngine.Vector2 dir, System.Single dist)
+
+NESTED TYPES:
+  - KianCommons.GridUtil+<ScaDir>d__5
+  - KianCommons.GridUtil+<ScanArea>d__9
+  - KianCommons.GridUtil+<ScanDirSegment>d__4
+  - KianCommons.GridUtil+<ScanSegmentsInArea>d__8
+  - KianCommons.GridUtil+<scanX>d__6
+  - KianCommons.GridUtil+<scanY>d__7
+
+------------------------------------------------------------
+TYPE: KianCommons.GridUtil+<ScaDir>d__5
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32 <>1__state)
+
+METHODS:
+  private System.Void <>m__Finally1()
+  private System.Void <>m__Finally2()
+  private System.Boolean MoveNext()
+  private System.Collections.Generic.IEnumerator`1[[KianCommons.GridVector, UnifiedUILib, Version=2.2.12.31246, Culture=neutral, PublicKeyToken=null]] System.Collections.Generic.IEnumerable<KianCommons.GridVector>.GetEnumerator()
+  private KianCommons.GridVector System.Collections.Generic.IEnumerator<KianCommons.GridVector>.get_Current()
+  private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+  private System.Void System.Collections.IEnumerator.Reset()
+  private System.Object System.Collections.IEnumerator.get_Current()
+  private System.Void System.IDisposable.Dispose()
+
+------------------------------------------------------------
+TYPE: KianCommons.GridUtil+<ScanArea>d__9
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32 <>1__state)
+
+METHODS:
+  private System.Boolean MoveNext()
+  private System.Collections.Generic.IEnumerator`1[[KianCommons.GridVector, UnifiedUILib, Version=2.2.12.31246, Culture=neutral, PublicKeyToken=null]] System.Collections.Generic.IEnumerable<KianCommons.GridVector>.GetEnumerator()
+  private KianCommons.GridVector System.Collections.Generic.IEnumerator<KianCommons.GridVector>.get_Current()
+  private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+  private System.Void System.Collections.IEnumerator.Reset()
+  private System.Object System.Collections.IEnumerator.get_Current()
+  private System.Void System.IDisposable.Dispose()
+
+------------------------------------------------------------
+TYPE: KianCommons.GridUtil+<ScanDirSegment>d__4
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32 <>1__state)
+
+METHODS:
+  private System.Void <>m__Finally1()
+  private System.Boolean MoveNext()
+  private System.Collections.Generic.IEnumerator`1[[System.UInt16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] System.Collections.Generic.IEnumerable<System.UInt16>.GetEnumerator()
+  private System.UInt16 System.Collections.Generic.IEnumerator<System.UInt16>.get_Current()
+  private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+  private System.Void System.Collections.IEnumerator.Reset()
+  private System.Object System.Collections.IEnumerator.get_Current()
+  private System.Void System.IDisposable.Dispose()
+
+------------------------------------------------------------
+TYPE: KianCommons.GridUtil+<ScanSegmentsInArea>d__8
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32 <>1__state)
+
+METHODS:
+  private System.Void <>m__Finally1()
+  private System.Boolean MoveNext()
+  private System.Collections.Generic.IEnumerator`1[[System.UInt16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] System.Collections.Generic.IEnumerable<System.UInt16>.GetEnumerator()
+  private System.UInt16 System.Collections.Generic.IEnumerator<System.UInt16>.get_Current()
+  private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+  private System.Void System.Collections.IEnumerator.Reset()
+  private System.Object System.Collections.IEnumerator.get_Current()
+  private System.Void System.IDisposable.Dispose()
+
+------------------------------------------------------------
+TYPE: KianCommons.GridUtil+<scanX>d__6
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32 <>1__state)
+
+METHODS:
+  private System.Boolean MoveNext()
+  private System.Collections.Generic.IEnumerator`1[[KianCommons.GridVector, UnifiedUILib, Version=2.2.12.31246, Culture=neutral, PublicKeyToken=null]] System.Collections.Generic.IEnumerable<KianCommons.GridVector>.GetEnumerator()
+  private KianCommons.GridVector System.Collections.Generic.IEnumerator<KianCommons.GridVector>.get_Current()
+  private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+  private System.Void System.Collections.IEnumerator.Reset()
+  private System.Object System.Collections.IEnumerator.get_Current()
+  private System.Void System.IDisposable.Dispose()
+
+------------------------------------------------------------
+TYPE: KianCommons.GridUtil+<scanY>d__7
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32 <>1__state)
+
+METHODS:
+  private System.Boolean MoveNext()
+  private System.Collections.Generic.IEnumerator`1[[KianCommons.GridVector, UnifiedUILib, Version=2.2.12.31246, Culture=neutral, PublicKeyToken=null]] System.Collections.Generic.IEnumerable<KianCommons.GridVector>.GetEnumerator()
+  private KianCommons.GridVector System.Collections.Generic.IEnumerator<KianCommons.GridVector>.get_Current()
+  private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+  private System.Void System.Collections.IEnumerator.Reset()
+  private System.Object System.Collections.IEnumerator.get_Current()
+  private System.Void System.IDisposable.Dispose()
+
+------------------------------------------------------------
+TYPE: KianCommons.GridVector
+KIND: struct
+ATTR: SequentialLayout, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor(UnityEngine.Vector3 v)
+  public .ctor(System.Int32 x, System.Int32 y)
+  public .ctor(UnityEngine.Vector2 v)
+
+METHODS:
+  public static KianCommons.GridVector CreateFromNode(System.UInt16 nodeID)
+  public static KianCommons.GridVector CreateFromSegment(System.UInt16 segmentID)
+  public UnityEngine.Vector2 GetGirdStartCorner()
+  public virtual System.String ToString()
+  public System.Int32 get_Index()
+  public System.Int32 get_MangitudeSquare()
+  public static KianCommons.GridVector op_Addition(KianCommons.GridVector lhs, KianCommons.GridVector rhs)
+  public static KianCommons.GridVector op_Subtraction(KianCommons.GridVector lhs, KianCommons.GridVector rhs)
+
+------------------------------------------------------------
+TYPE: KianCommons.Helpers
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  internal static System.Boolean InMainThread()
+  internal static System.Boolean InSimulationThread()
+  internal static System.Void Swap<T>(ref T a, ref T b)
+  internal static System.Boolean get_AltIsPressed()
+  internal static System.Boolean get_ControlIsPressed()
+  internal static System.Boolean get_InStartupMenu()
+  internal static System.Boolean get_ShiftIsPressed()
+
+------------------------------------------------------------
+TYPE: KianCommons.HelpersExtensions
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  internal static System.Boolean CheckGameMode(ICities.AppMode mode)
+  internal static System.Boolean InSimulationThread()
+  internal static System.Boolean get_AltIsPressed()
+  internal static System.Boolean get_ControlIsPressed()
+  internal static System.Boolean get_InAssetEditor()
+  internal static System.Boolean get_InGame()
+  internal static System.Boolean get_InGameOrEditor()
+  internal static System.Boolean get_InStartup()
+  internal static System.Boolean get_IsActive()
+  internal static System.Boolean get_ShiftIsPressed()
+  internal static System.Boolean get_VERBOSE()
+  internal static ICities.AppMode get_currentMode()
+  internal static System.Void set_VERBOSE(System.Boolean value)
+
+
+### NAMESPACE: KianCommons.IImplict
+
+------------------------------------------------------------
+TYPE: KianCommons.IImplict.IAwakingObject
+KIND: interface
+ATTR: ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.Void Awake()
+
+------------------------------------------------------------
+TYPE: KianCommons.IImplict.IDestroyableObject
+KIND: interface
+ATTR: ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.Void OnDestroy()
+
+------------------------------------------------------------
+TYPE: KianCommons.IImplict.IDisablablingObject
+KIND: interface
+ATTR: ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.Void OnDisable()
+
+------------------------------------------------------------
+TYPE: KianCommons.IImplict.IEnablablingObject
+KIND: interface
+ATTR: ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.Void OnEnable()
+
+------------------------------------------------------------
+TYPE: KianCommons.IImplict.IGUIObject
+KIND: interface
+ATTR: ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.Void OnGUI()
+
+------------------------------------------------------------
+TYPE: KianCommons.IImplict.ILateUpdatableObject
+KIND: interface
+ATTR: ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.Void LateUpdate()
+
+------------------------------------------------------------
+TYPE: KianCommons.IImplict.IMod
+KIND: interface
+ATTR: ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.Void OnDisabled()
+  public abstract System.Void OnEnabled()
+
+------------------------------------------------------------
+TYPE: KianCommons.IImplict.IModWithSettings
+KIND: interface
+ATTR: ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.Void OnSettingsUI(UIHelper helper)
+
+------------------------------------------------------------
+TYPE: KianCommons.IImplict.IStartingObject
+KIND: interface
+ATTR: ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.Void Start()
+
+------------------------------------------------------------
+TYPE: KianCommons.IImplict.IUpdatableObject
+KIND: interface
+ATTR: ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.Void Update()
+
+
+### NAMESPACE: KianCommons
+
+------------------------------------------------------------
+TYPE: KianCommons.LaneData
+KIND: struct
+ATTR: Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.UInt32 laneID, System.Int32 laneIndex)
+
+METHODS:
+  public virtual System.String ToString()
+  public ColossalFramework.Math.Bezier3 get_Bezier()
+  public NetLane+Flags get_Flags()
+  public NetLane& get_Lane()
+  public NetInfo+Lane get_LaneInfo()
+  public System.Boolean get_LeftSide()
+  public System.UInt16 get_NodeID()
+  public System.Boolean get_RightSide()
+  public NetSegment& get_Segment()
+  public System.UInt16 get_SegmentID()
+  public System.Void set_Flags(NetLane+Flags value)
+  public System.Void set_LaneInfo(NetInfo+Lane value)
+
+------------------------------------------------------------
+TYPE: KianCommons.LaneDataIterator
+KIND: struct
+ATTR: Public, SequentialLayout, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.UInt16 segmentID, System.Nullable`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] startNode, System.Nullable`1[[NetInfo+LaneType, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] laneType, System.Nullable`1[[VehicleInfo+VehicleType, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] vehicleType)
+
+METHODS:
+  public System.Void Dispose()
+  public KianCommons.LaneDataIterator GetEnumerator()
+  public System.Boolean MoveNext()
+  public System.Void Reset()
+  private System.Collections.Generic.IEnumerator`1[[KianCommons.LaneData, UnifiedUILib, Version=2.2.12.31246, Culture=neutral, PublicKeyToken=null]] System.Collections.Generic.IEnumerable<KianCommons.LaneData>.GetEnumerator()
+  private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+  private System.Object System.Collections.IEnumerator.get_Current()
+  public System.Int32 get_Count()
+  public KianCommons.LaneData get_Current()
+
+------------------------------------------------------------
+TYPE: KianCommons.LaneIDIterator
+KIND: struct
+ATTR: Public, SequentialLayout, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.UInt16 segmentID)
+
+METHODS:
+  public System.Void Dispose()
+  public KianCommons.LaneIDIterator GetEnumerator()
+  public System.Boolean MoveNext()
+  public System.Void Reset()
+  private System.Collections.Generic.IEnumerator`1[[System.UInt32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] System.Collections.Generic.IEnumerable<System.UInt32>.GetEnumerator()
+  private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+  private System.Object System.Collections.IEnumerator.get_Current()
+  public System.UInt32 get_Current()
+  public System.Int32 get_CurrentLaneIndex()
+
+------------------------------------------------------------
+TYPE: KianCommons.Log
+KIND: class
+ATTR: Abstract, Sealed
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  internal static System.Void Called(System.Object[] args)
+  public static System.Void Debug(System.String message, System.Boolean copyToGameLog)
+  public static System.Void DebugOnce(System.String message, System.Object id, System.Boolean copyToGameLog)
+  public static System.Void DebugWait(System.String message, System.Int32 id, System.Single seconds, System.Boolean copyToGameLog)
+  public static System.Void DebugWait(System.String message, System.Object id, System.Single seconds, System.Boolean copyToGameLog)
+  public static System.Void Error(System.String message, System.Boolean copyToGameLog)
+  internal static System.Void Exception(System.Exception ex, System.String m, System.Boolean showInPanel)
+  private static System.String ExceptionData(System.Exception ex)
+  internal static System.Void Flush()
+  public static System.Diagnostics.Stopwatch GetSharedTimer()
+  private static System.String GetStackTrace()
+  public static System.Void Info(System.String message, System.Boolean copyToGameLog)
+  private static System.Void LogImpl(System.String message, KianCommons.Log+LogLevel level, System.Boolean copyToGameLog)
+  internal static System.Void LogToFileSimple(System.String file, System.String message)
+  internal static System.Void LogUnityException(System.Exception ex, System.Boolean showInPanel)
+  public static System.String RemoveExtraNewLine(System.String str)
+  internal static System.Void ShowModalException(System.String title, System.String message, System.Boolean error)
+  internal static System.Void Succeeded(System.String m)
+  public static System.Void Warning(System.String message, System.Boolean copyToGameLog)
+  internal static System.Boolean get_Buffered()
+  internal static System.Boolean get_VERBOSE()
+  internal static System.Void set_Buffered(System.Boolean value)
+  internal static System.Void set_VERBOSE(System.Boolean value)
+
+NESTED TYPES:
+  - KianCommons.Log+<>c
+  - KianCommons.Log+FlushTread
+  - KianCommons.Log+LogLevel
+
+------------------------------------------------------------
+TYPE: KianCommons.Log+<>c
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <GetSharedTimer>b__20_0(System.Reflection.Assembly _asm)
+  internal System.Int32 <LogImpl>b__38_0(System.String str)
+
+------------------------------------------------------------
+TYPE: KianCommons.Log+FlushTread
+KIND: class
+ATTR: NestedAssembly, Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  private static System.Void FlushThread()
+  internal static System.Void Init()
+  internal static System.Void Terminate()
+
+------------------------------------------------------------
+TYPE: KianCommons.Log+LogLevel
+KIND: enum
+ATTR: NestedPrivate, Sealed
+
+------------------------------------------------------------
+TYPE: KianCommons.LogExtensions
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  internal static System.Void Log(System.Exception ex, System.Boolean showInPannel)
+  internal static System.Void Log(System.Exception ex, System.String message, System.Boolean showInPannel)
+  internal static T LogRet<T>(T a, System.String m)
+
+
+### NAMESPACE: KianCommons.Math
+
+------------------------------------------------------------
+TYPE: KianCommons.Math.BezierUtil
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.Single ArcLength(ColossalFramework.Math.Bezier2 bezier, UnityEngine.Vector2 point, System.Single step)
+  public static System.Single ArcLength(ColossalFramework.Math.Bezier2 bezier, System.Single step)
+  public static System.Single ArcLength(ColossalFramework.Math.Bezier3 beizer, System.Single step)
+  public static ColossalFramework.Math.Bezier2 Bezier2ByDir(UnityEngine.Vector2 startPos, UnityEngine.Vector2 startDir, UnityEngine.Vector2 endPos, UnityEngine.Vector2 endDir)
+  public static ColossalFramework.Math.Bezier3 Bezier3ByDir(UnityEngine.Vector3 startPos, UnityEngine.Vector3 startDir, UnityEngine.Vector3 endPos, UnityEngine.Vector3 endDir)
+  public static ColossalFramework.Math.Bezier3 CalculateParallelBezier(ColossalFramework.Math.Bezier3 bezier, System.Single sideDistance, System.Boolean bLeft)
+  public static ColossalFramework.Math.Bezier2 CalculateParallelBezier(ColossalFramework.Math.Bezier2 bezier, System.Single sideDistance, System.Boolean bLeft)
+  public static System.Single GetClosestT(ref ColossalFramework.Math.Bezier3 bezier, UnityEngine.Vector3 pos)
+  public static System.Boolean IsStraight(ColossalFramework.Math.Bezier2 beizer)
+  public static UnityEngine.Vector2 Mirror(UnityEngine.Vector2 point, ColossalFramework.Math.Bezier2 bezier)
+  public static UnityEngine.Vector3 Mirror(UnityEngine.Vector3 pos, ColossalFramework.Math.Bezier3 bezier)
+  public static System.Void NormalTangent(ref ColossalFramework.Math.Bezier3 bezier, System.Single t, System.Boolean lefSide, out UnityEngine.Vector3 normal, out UnityEngine.Vector3 tangent)
+  public static System.Void NormalTangent(ref ColossalFramework.Math.Bezier2 bezier, System.Single t, System.Boolean lefSide, out UnityEngine.Vector2 normal, out UnityEngine.Vector2 tangent)
+  public static System.String STR(ColossalFramework.Math.Bezier2 bezier)
+  public static ColossalFramework.Math.Bezier2 ToCSBezier2(ColossalFramework.Math.Bezier3 bezier)
+  public static ColossalFramework.Math.Bezier3 ToCSBezier3(ColossalFramework.Math.Bezier2 bezier, System.Single h)
+  public static ColossalFramework.Math.Bezier3 ToCSBezier3(ColossalFramework.Math.Bezier2 bezier)
+  public static UnityEngine.Vector2 Travel2(ColossalFramework.Math.Bezier2 beizer, System.Single distance, out UnityEngine.Vector2 tangent)
+  public static UnityEngine.Vector3 Travel2(ColossalFramework.Math.Bezier3 beizer, System.Single distance, out UnityEngine.Vector3 tangent)
+  private static UnityEngine.Vector2 TravelStraight(ColossalFramework.Math.Bezier2 beizer, System.Single length)
+
+------------------------------------------------------------
+TYPE: KianCommons.Math.ControlPoint3
+KIND: struct
+ATTR: SequentialLayout, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(UnityEngine.Vector3 point, UnityEngine.Vector3 dir)
+
+METHODS:
+  public KianCommons.Math.ControlPoint3 get_Reverse()
+
+------------------------------------------------------------
+TYPE: KianCommons.Math.CubicBezier3
+KIND: struct
+ATTR: SequentialLayout, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(KianCommons.Math.ControlPoint3 start, KianCommons.Math.ControlPoint3 end)
+
+METHODS:
+  public KianCommons.Math.ControlPoint3 GetCenterPointAndDir()
+
+------------------------------------------------------------
+TYPE: KianCommons.Math.Extensions
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static ColossalFramework.Math.Quad3 ToCS3D(ColossalFramework.Math.Quad2 q)
+
+------------------------------------------------------------
+TYPE: KianCommons.Math.LineUtil
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static UnityEngine.Vector3 GetClosestPoint(UnityEngine.Vector3 A, UnityEngine.Vector3 B, UnityEngine.Vector3 P)
+  public static System.Boolean Intersect(UnityEngine.Vector2 point1, UnityEngine.Vector2 dir1, UnityEngine.Vector2 point2, UnityEngine.Vector2 dir2, out UnityEngine.Vector2 center)
+  public static System.Boolean IntersectLine(UnityEngine.Vector2 A, UnityEngine.Vector2 B, UnityEngine.Vector2 C, UnityEngine.Vector2 D, out UnityEngine.Vector2 center)
+
+------------------------------------------------------------
+TYPE: KianCommons.Math.MathUtil
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  internal static System.UInt16 Clamp2U16(System.Int32 value)
+  public static System.Boolean EqualAprox(System.Single a, System.Single b, System.Single error)
+  public static System.Boolean IsPow2(System.Int16 x)
+  public static System.Boolean IsPow2(System.SByte x)
+  public static System.Boolean IsPow2(System.Int32 x)
+  public static System.Boolean IsPow2(System.IConvertible x)
+  public static System.Boolean IsPow2(System.UInt64 x)
+  public static System.Boolean IsPow2(System.Int64 x)
+
+------------------------------------------------------------
+TYPE: KianCommons.Math.Vector2D
+KIND: struct
+ATTR: SequentialLayout, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(UnityEngine.Vector2 v)
+  public .ctor(System.Single x, System.Single z)
+
+METHODS:
+  public static System.Single Determinent(KianCommons.Math.Vector2D v1, KianCommons.Math.Vector2D v2)
+  public virtual System.Boolean Equals(System.Object other)
+  public KianCommons.Math.Vector2D Extend(System.Single magnitude)
+  public virtual System.Int32 GetHashCode()
+  public KianCommons.Math.Vector2D NewMagnitude(System.Single magnitude)
+  public KianCommons.Math.Vector2D PerpendicularCC()
+  public KianCommons.Math.Vector2D PerpendicularCCW()
+  public KianCommons.Math.Vector2D Rotate90CCW()
+  public KianCommons.Math.Vector2D Rotate90CW()
+  public KianCommons.Math.Vector2D Scale(KianCommons.Math.Vector2D scale)
+  public System.Void Set(System.Single newX, System.Single newY)
+  public System.Single SignedAngleRadCCW()
+  public static System.Single SignedAngleRadCCW(KianCommons.Math.Vector2D v1, KianCommons.Math.Vector2D v2)
+  public virtual System.String ToString()
+  public System.String ToString(System.String format)
+  public KianCommons.Math.Vector3D ToVector3D(System.Single h)
+  public static System.Single UnsignedAngleRad(KianCommons.Math.Vector2D v1, KianCommons.Math.Vector2D v2)
+  public static KianCommons.Math.Vector2D Vector2ByAgnleRad(System.Single magnitude, System.Single angle)
+  public System.Single get_Item(System.Int32 index)
+  public static KianCommons.Math.Vector2D get_down()
+  public static KianCommons.Math.Vector2D get_left()
+  public System.Single get_magnitude()
+  public KianCommons.Math.Vector2D get_normalized()
+  public static KianCommons.Math.Vector2D get_one()
+  public static KianCommons.Math.Vector2D get_right()
+  public System.Single get_sqrMagnitude()
+  public static KianCommons.Math.Vector2D get_up()
+  public System.Single get_x()
+  public System.Single get_z()
+  public static KianCommons.Math.Vector2D get_zero()
+  public static KianCommons.Math.Vector2D op_Addition(KianCommons.Math.Vector2D a, KianCommons.Math.Vector2D b)
+  public static KianCommons.Math.Vector2D op_Division(KianCommons.Math.Vector2D a, System.Single d)
+  public static System.Boolean op_Equality(KianCommons.Math.Vector2D lhs, KianCommons.Math.Vector2D rhs)
+  public static KianCommons.Math.Vector2D op_Implicit(UnityEngine.Vector2 v)
+  public static UnityEngine.Vector2 op_Implicit(KianCommons.Math.Vector2D v)
+  public static System.Boolean op_Inequality(KianCommons.Math.Vector2D lhs, KianCommons.Math.Vector2D rhs)
+  public static KianCommons.Math.Vector2D op_Multiply(KianCommons.Math.Vector2D a, System.Single d)
+  public static KianCommons.Math.Vector2D op_Multiply(System.Single d, KianCommons.Math.Vector2D a)
+  public static KianCommons.Math.Vector2D op_Subtraction(KianCommons.Math.Vector2D a, KianCommons.Math.Vector2D b)
+  public static KianCommons.Math.Vector2D op_UnaryNegation(KianCommons.Math.Vector2D a)
+  public System.Void set_Item(System.Int32 index, System.Single value)
+
+------------------------------------------------------------
+TYPE: KianCommons.Math.Vector3D
+KIND: struct
+ATTR: SequentialLayout, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(UnityEngine.Vector3 v)
+  public .ctor(KianCommons.Math.Vector2D vector2d, System.Single h)
+  public .ctor(System.Single x, System.Single z, System.Single h)
+
+METHODS:
+  public static KianCommons.Math.Vector3D ClampMagnitude(KianCommons.Math.Vector3D vector, System.Single maxLength)
+  public static KianCommons.Math.Vector3D Cross(KianCommons.Math.Vector3D lhs, KianCommons.Math.Vector3D rhs)
+  public static System.Single Distance(KianCommons.Math.Vector3D a, KianCommons.Math.Vector3D b)
+  public static System.Single Dot(KianCommons.Math.Vector3D lhs, KianCommons.Math.Vector3D rhs)
+  public virtual System.Boolean Equals(System.Object other)
+  public virtual System.Int32 GetHashCode()
+  public static KianCommons.Math.Vector3D Max(KianCommons.Math.Vector3D lhs, KianCommons.Math.Vector3D rhs)
+  public static KianCommons.Math.Vector3D Min(KianCommons.Math.Vector3D lhs, KianCommons.Math.Vector3D rhs)
+  public static KianCommons.Math.Vector3D Normalize(KianCommons.Math.Vector3D value)
+  public static KianCommons.Math.Vector3D Project(KianCommons.Math.Vector3D vector, KianCommons.Math.Vector3D onNormal)
+  public static KianCommons.Math.Vector3D ProjectOnPlane(KianCommons.Math.Vector3D vector, KianCommons.Math.Vector3D planeNormal)
+  public static KianCommons.Math.Vector3D Reflect(KianCommons.Math.Vector3D inDirection, KianCommons.Math.Vector3D inNormal)
+  public static KianCommons.Math.Vector3D Scale(KianCommons.Math.Vector3D a, KianCommons.Math.Vector3D b)
+  public KianCommons.Math.Vector3D Scale(KianCommons.Math.Vector3D scale)
+  public System.Void Set(System.Single new_x, System.Single new_y, System.Single new_z)
+  public virtual System.String ToString()
+  public KianCommons.Math.Vector2D ToVector2D()
+  public static System.Single UnsighedAngleRad(KianCommons.Math.Vector3D from, KianCommons.Math.Vector3D to)
+  public static System.Single UnsignedAngleRad(KianCommons.Math.Vector3D from, KianCommons.Math.Vector3D to)
+  public System.Single get_Item(System.Int32 index)
+  public static KianCommons.Math.Vector3D get_back()
+  public static KianCommons.Math.Vector3D get_down()
+  public static KianCommons.Math.Vector3D get_forward()
+  public static KianCommons.Math.Vector3D get_fwd()
+  public static KianCommons.Math.Vector3D get_left()
+  public System.Single get_magnitude()
+  public KianCommons.Math.Vector3D get_normalized()
+  public static KianCommons.Math.Vector3D get_one()
+  public static KianCommons.Math.Vector3D get_right()
+  public System.Single get_sqrMagnitude()
+  public static KianCommons.Math.Vector3D get_up()
+  public static KianCommons.Math.Vector3D get_zero()
+  public static KianCommons.Math.Vector3D op_Addition(KianCommons.Math.Vector3D a, KianCommons.Math.Vector3D b)
+  public static KianCommons.Math.Vector3D op_Division(KianCommons.Math.Vector3D a, System.Single d)
+  public static System.Boolean op_Equality(KianCommons.Math.Vector3D lhs, KianCommons.Math.Vector3D rhs)
+  public static KianCommons.Math.Vector3D op_Implicit(UnityEngine.Vector3 v)
+  public static UnityEngine.Vector3 op_Implicit(KianCommons.Math.Vector3D v)
+  public static System.Boolean op_Inequality(KianCommons.Math.Vector3D lhs, KianCommons.Math.Vector3D rhs)
+  public static KianCommons.Math.Vector3D op_Multiply(KianCommons.Math.Vector3D a, System.Single d)
+  public static KianCommons.Math.Vector3D op_Multiply(System.Single d, KianCommons.Math.Vector3D a)
+  public static KianCommons.Math.Vector3D op_Subtraction(KianCommons.Math.Vector3D a, KianCommons.Math.Vector3D b)
+  public static KianCommons.Math.Vector3D op_UnaryNegation(KianCommons.Math.Vector3D a)
+  public System.Void set_Item(System.Int32 index, System.Single value)
+
+------------------------------------------------------------
+TYPE: KianCommons.Math.VectorUtil
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.Boolean AreApprox180(UnityEngine.Vector2 v1, UnityEngine.Vector2 v2, System.Single error)
+  public static System.Boolean CompareAngles_CCW_Right(System.Single source, System.Single target)
+  public static System.Single DetXZ(UnityEngine.Vector3 v1, UnityEngine.Vector3 v2)
+  public static System.Single Determinent(UnityEngine.Vector2 v1, UnityEngine.Vector2 v2)
+  public static UnityEngine.Vector2 Extend(UnityEngine.Vector2 v, System.Single magnitude)
+  public static System.Single Height(UnityEngine.Vector3 v3)
+  public static UnityEngine.Vector2 NewMagnitude(UnityEngine.Vector2 v, System.Single magnitude)
+  public static UnityEngine.Vector3 NormalCCW(UnityEngine.Vector3 v)
+  public static UnityEngine.Vector3 NormalCW(UnityEngine.Vector3 v)
+  public static UnityEngine.Vector2 PerpendicularCCW(UnityEngine.Vector2 v)
+  public static UnityEngine.Vector2 PerpendicularCW(UnityEngine.Vector2 v)
+  public static UnityEngine.Vector2 Rotate90CCW(UnityEngine.Vector2 v)
+  public static UnityEngine.Vector2 Rotate90CW(UnityEngine.Vector2 v)
+  public static UnityEngine.Vector2 RotateRadCCW(UnityEngine.Vector2 v, System.Single angle)
+  public static UnityEngine.Vector3 SetI(UnityEngine.Vector3 v, System.Single value, System.Int32 index)
+  public static System.Single SignedAngleRadCCW(UnityEngine.Vector2 v)
+  public static System.Single SignedAngleRadCCW(UnityEngine.Vector2 v1, UnityEngine.Vector2 v2)
+  public static UnityEngine.Vector2 ToCS2D(UnityEngine.Vector3 v3)
+  public static UnityEngine.Vector3 ToCS3D(UnityEngine.Vector2 v2, System.Single h)
+  public static System.Single UnsignedAngleRad(UnityEngine.Vector2 v1, UnityEngine.Vector2 v2)
+  public static UnityEngine.Vector2 Vector2ByAgnleRad(System.Single magnitude, System.Single angle)
+  public static UnityEngine.Vector2 Vector2ByAngleRadCCW(System.Single magnitude, System.Single angle)
+
+
+### NAMESPACE: KianCommons
+
+------------------------------------------------------------
+TYPE: KianCommons.NetServiceException
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String m, System.Exception e)
+  public .ctor()
+  public .ctor(System.String m)
+
+------------------------------------------------------------
+TYPE: KianCommons.NetUtil
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  public static System.Void AssertSegmentValid(System.UInt16 segmentId)
+  internal static System.Void CalculateCorner(System.UInt16 segmentID, System.UInt16 nodeID, System.Boolean bLeft2, out UnityEngine.Vector2 cornerPoint, out UnityEngine.Vector2 cornerDir)
+  internal static System.Void CalculateCorner(System.UInt16 segmentID, System.UInt16 nodeID, System.Boolean bLeft2, out UnityEngine.Vector3 cornerPos, out UnityEngine.Vector3 cornerDirection)
+  public static System.Boolean CalculateIsOneWay(System.UInt16 segmentId)
+  internal static System.Void CalculateOtherCorner(System.UInt16 segmentID, System.UInt16 nodeID, System.Boolean bLeft2, out UnityEngine.Vector2 cornerPoint, out UnityEngine.Vector2 cornerDir)
+  internal static System.Void CalculateSegEndCenter(System.UInt16 segmentID, System.UInt16 nodeID, out UnityEngine.Vector3 pos, out UnityEngine.Vector3 dir)
+  internal static ColossalFramework.Math.Bezier2 CalculateSegmentBezier2(System.UInt16 segmentId, System.Boolean startNode)
+  internal static ColossalFramework.Math.Bezier2 CalculateSegmentBezier2(System.UInt16 segmentId, System.UInt16 endNodeID)
+  internal static ColossalFramework.Math.Bezier3 CalculateSegmentBezier3(ref NetSegment seg, System.Boolean bStartNode)
+  public static System.Boolean CanConnectPath(ref NetSegment segment)
+  public static System.Boolean CanConnectPath(NetInfo info)
+  public static System.Boolean CanConnectPathToSegment(System.UInt16 segmentID)
+  private static System.Boolean CheckID(ref NetSegment segment1, System.UInt16 segmentId2)
+  private static System.Boolean CheckID(ref NetNode node1, System.UInt16 nodeId2)
+  public static System.Int32 CountPedestrianLanes(NetInfo info)
+  internal static NetLane+Flags Flags(ref NetLane lane)
+  public static UnityEngine.Vector3 Get3DPos(UnityEngine.Vector2 point)
+  public static System.UInt16 GetAnotherSegment(ref NetNode node, System.UInt16 segmentId0)
+  public static System.Collections.Generic.IEnumerable`1[[System.UInt16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetCCSegList(System.UInt16 nodeID)
+  public static System.Collections.Generic.IEnumerable`1[[System.UInt16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetCWSegList(System.UInt16 nodeID)
+  internal static System.Single GetClosestT(ref NetSegment segment, UnityEngine.Vector3 position)
+  public static System.UInt16 GetFirstSegment(System.UInt16 nodeID)
+  public static System.UInt16 GetFirstSegment(ref NetNode node)
+  public static System.UInt16 GetHeadNode(System.UInt16 segmentId)
+  public static System.UInt16 GetHeadNode(ref NetSegment segment)
+  public static System.UInt16 GetID(ref NetSegment segment)
+  public static System.UInt16 GetID(ref NetNode node)
+  public static KianCommons.LaneData GetLaneData(System.UInt32 laneId)
+  public static System.Int32 GetLaneIndex(System.UInt32 laneID)
+  public static NetInfo+Lane GetLaneInfo(System.UInt32 laneId)
+  public static System.UInt16 GetNode(ref NetSegment segment, System.Boolean startNode)
+  public static UnityEngine.Vector3 GetSegmentDir(System.UInt16 segmentID, System.UInt16 nodeID)
+  public static System.UInt16 GetSegmentNode(System.UInt16 segmentID, System.Boolean startNode)
+  internal static System.Collections.Generic.IEnumerable`1[[System.UInt16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetSegmentsCoroutine(System.UInt16 nodeID)
+  public static System.UInt16 GetSharedNode(System.UInt16 segmentID1, System.UInt16 segmentID2)
+  public static KianCommons.LaneData[] GetSortedLanes(System.UInt16 segmentId, System.Nullable`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] startNode, System.Nullable`1[[NetInfo+LaneType, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] laneType, System.Nullable`1[[VehicleInfo+VehicleType, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] vehicleType)
+  public static System.UInt16 GetTailNode(System.UInt16 segmentId)
+  public static System.UInt16 GetTailNode(ref NetSegment segment)
+  public static System.UInt32 GetlaneID(System.UInt16 segmentID, System.Int32 laneIndex)
+  public static System.Boolean HasNode(System.UInt16 segmentId, System.UInt16 nodeId)
+  public static ToolBase+ToolErrors InsertNode(NetTool+ControlPoint controlPoint, out System.UInt16 nodeId, System.Boolean test)
+  internal static NetInfo+Direction Invert(NetInfo+Direction direction, System.Boolean invert)
+  public static System.Boolean IsCSUR(NetInfo info)
+  public static System.Boolean IsGoingBackward(NetInfo+Direction direction)
+  public static System.Boolean IsGoingBackward(NetInfo+Lane laneInfo, System.Boolean invertDirection)
+  public static System.Boolean IsGoingForward(NetInfo+Direction direction)
+  public static System.Boolean IsGoingForward(NetInfo+Lane laneInfo, System.Boolean invertDirection)
+  internal static System.Boolean IsInvert(ref NetSegment segment)
+  internal static System.Boolean IsJunction(ref NetNode node)
+  public static System.Boolean IsLaneValid(System.UInt32 laneId)
+  public static System.Boolean IsNodeValid(System.UInt16 nodeId)
+  public static System.Boolean IsSegmentValid(System.UInt16 segmentId)
+  public static System.Boolean IsStartNode(ref NetSegment segment, System.UInt16 nodeId)
+  public static System.Boolean IsStartNode(System.UInt16 segmentId, System.UInt16 nodeId)
+  public static System.Boolean IsValid(ref NetNode node)
+  public static System.Boolean IsValid(InstanceID instance)
+  public static System.Boolean IsValid(ref NetSegment segment)
+  public static KianCommons.LaneDataIterator IterateLanes(System.UInt16 segmentId, System.Nullable`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] startNode, System.Nullable`1[[NetInfo+LaneType, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] laneType, System.Nullable`1[[VehicleInfo+VehicleType, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] vehicleType)
+  public static System.Collections.Generic.IEnumerable`1[[System.UInt32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] IterateNodeLanes(System.UInt16 nodeId)
+  public static System.Collections.Generic.IEnumerable`1[[System.UInt16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] IterateNodeSegments(System.UInt16 nodeID)
+  public static KianCommons.LaneDataIterator IterateSegmentLanes(System.UInt16 segmentId)
+  public static KianCommons.NodeSegmentIterator IterateSegments(ref NetNode node)
+  public static System.Void LaneTest(System.UInt16 segmentId)
+  internal static System.Single MaxNodeHW(System.UInt16 nodeId)
+  public static System.String PrintSegmentLanes(System.UInt16 segmentID)
+  public static System.Single SampleHeight(UnityEngine.Vector2 point)
+  public static NetInfo+Lane SortedLane(NetInfo info, System.Int32 index)
+  public static System.Collections.Generic.IEnumerable`1[[NetInfo+Lane, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] SortedLanes(NetInfo info)
+  public static NetLane& ToLane(System.UInt32 id)
+  public static NetNode& ToNode(System.UInt16 id)
+  public static NetSegment& ToSegment(System.UInt16 id)
+  public static System.Boolean get_LHT()
+  public static System.Boolean get_RHT()
+  public static System.Boolean get_TrafficDrivesOnLeft()
+  public static NetTool get_netTool()
+  public static SimulationManager get_simMan()
+  public static TerrainManager get_terrainMan()
+
+NESTED TYPES:
+  - KianCommons.NetUtil+<>c
+  - KianCommons.NetUtil+<GetCCSegList>d__74
+  - KianCommons.NetUtil+<GetCWSegList>d__75
+  - KianCommons.NetUtil+<IterateNodeLanes>d__81
+  - KianCommons.NetUtil+<IterateNodeSegments>d__76
+  - KianCommons.NetUtil+<SortedLanes>d__85
+  - KianCommons.NetUtil+NodeSegments
+
+------------------------------------------------------------
+TYPE: KianCommons.NetUtil+<>c
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <CountPedestrianLanes>b__20_0(NetInfo+Lane lane)
+  internal System.Single <GetSortedLanes>b__86_0(KianCommons.LaneData lane)
+
+------------------------------------------------------------
+TYPE: KianCommons.NetUtil+<GetCCSegList>d__74
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32 <>1__state)
+
+METHODS:
+  private System.Boolean MoveNext()
+  private System.Collections.Generic.IEnumerator`1[[System.UInt16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] System.Collections.Generic.IEnumerable<System.UInt16>.GetEnumerator()
+  private System.UInt16 System.Collections.Generic.IEnumerator<System.UInt16>.get_Current()
+  private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+  private System.Void System.Collections.IEnumerator.Reset()
+  private System.Object System.Collections.IEnumerator.get_Current()
+  private System.Void System.IDisposable.Dispose()
+
+------------------------------------------------------------
+TYPE: KianCommons.NetUtil+<GetCWSegList>d__75
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32 <>1__state)
+
+METHODS:
+  private System.Boolean MoveNext()
+  private System.Collections.Generic.IEnumerator`1[[System.UInt16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] System.Collections.Generic.IEnumerable<System.UInt16>.GetEnumerator()
+  private System.UInt16 System.Collections.Generic.IEnumerator<System.UInt16>.get_Current()
+  private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+  private System.Void System.Collections.IEnumerator.Reset()
+  private System.Object System.Collections.IEnumerator.get_Current()
+  private System.Void System.IDisposable.Dispose()
+
+------------------------------------------------------------
+TYPE: KianCommons.NetUtil+<IterateNodeLanes>d__81
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32 <>1__state)
+
+METHODS:
+  private System.Boolean MoveNext()
+  private System.Collections.Generic.IEnumerator`1[[System.UInt32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] System.Collections.Generic.IEnumerable<System.UInt32>.GetEnumerator()
+  private System.UInt32 System.Collections.Generic.IEnumerator<System.UInt32>.get_Current()
+  private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+  private System.Void System.Collections.IEnumerator.Reset()
+  private System.Object System.Collections.IEnumerator.get_Current()
+  private System.Void System.IDisposable.Dispose()
+
+------------------------------------------------------------
+TYPE: KianCommons.NetUtil+<IterateNodeSegments>d__76
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32 <>1__state)
+
+METHODS:
+  private System.Boolean MoveNext()
+  private System.Collections.Generic.IEnumerator`1[[System.UInt16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] System.Collections.Generic.IEnumerable<System.UInt16>.GetEnumerator()
+  private System.UInt16 System.Collections.Generic.IEnumerator<System.UInt16>.get_Current()
+  private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+  private System.Void System.Collections.IEnumerator.Reset()
+  private System.Object System.Collections.IEnumerator.get_Current()
+  private System.Void System.IDisposable.Dispose()
+
+------------------------------------------------------------
+TYPE: KianCommons.NetUtil+<SortedLanes>d__85
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32 <>1__state)
+
+METHODS:
+  private System.Boolean MoveNext()
+  private System.Collections.Generic.IEnumerator`1[[NetInfo+Lane, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] System.Collections.Generic.IEnumerable<NetInfo.Lane>.GetEnumerator()
+  private NetInfo+Lane System.Collections.Generic.IEnumerator<NetInfo.Lane>.get_Current()
+  private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+  private System.Void System.Collections.IEnumerator.Reset()
+  private System.Object System.Collections.IEnumerator.get_Current()
+  private System.Void System.IDisposable.Dispose()
+
+------------------------------------------------------------
+TYPE: KianCommons.NetUtil+NodeSegments
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.UInt16 nodeID)
+
+METHODS:
+  private System.Void Add(System.UInt16 segmentID)
+
+------------------------------------------------------------
+TYPE: KianCommons.NodeSegmentIterator
+KIND: struct
+ATTR: Public, SequentialLayout, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.UInt16 nodeId)
+
+METHODS:
+  public System.Void Dispose()
+  public KianCommons.NodeSegmentIterator GetEnumerator()
+  public System.Boolean MoveNext()
+  public System.Void Reset()
+  private System.Collections.Generic.IEnumerator`1[[System.UInt16, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] System.Collections.Generic.IEnumerable<System.UInt16>.GetEnumerator()
+  private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+  private System.Object System.Collections.IEnumerator.get_Current()
+  public System.UInt16 get_Current()
+
+
+### NAMESPACE: KianCommons.Plugins
+
+------------------------------------------------------------
+TYPE: KianCommons.Plugins.DelegateUtil
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  internal static TDelegate CreateDelegate<TDelegate>(System.Type type, System.String name)
+  internal static System.Reflection.MethodInfo GetMethod<TDelegate>(System.Type type, System.String name)
+  internal static System.Type[] GetParameterTypes<TDelegate>()
+
+NESTED TYPES:
+  - KianCommons.Plugins.DelegateUtil+<>c__0`1
+
+------------------------------------------------------------
+TYPE: KianCommons.Plugins.DelegateUtil+<>c__0`1
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.Type <GetParameterTypes>b__0_0(System.Reflection.ParameterInfo p)
+
+------------------------------------------------------------
+TYPE: KianCommons.Plugins.FPSBoosterSkipOptimizationsAttribute
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: KianCommons.Plugins.PluginExtensions
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.Reflection.Assembly GetMainAssembly(ColossalFramework.Plugins.PluginManager+PluginInfo plugin)
+  public static System.String GetModName(ColossalFramework.Plugins.PluginManager+PluginInfo plugin)
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetPlugin(System.Reflection.Assembly assembly)
+  public static ICities.IUserMod GetUserModInstance(ColossalFramework.Plugins.PluginManager+PluginInfo plugin)
+  public static System.UInt64 GetWorkshopID(ColossalFramework.Plugins.PluginManager+PluginInfo plugin)
+  public static System.Boolean IsActive(ColossalFramework.Plugins.PluginManager+PluginInfo plugin)
+  public static System.Boolean IsLocal(ColossalFramework.Plugins.PluginManager+PluginInfo plugin)
+
+------------------------------------------------------------
+TYPE: KianCommons.Plugins.PluginUtil
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  internal static System.Int32 <LogPlugins>g__Comparison|3_1(ColossalFramework.Plugins.PluginManager+PluginInfo a, ColossalFramework.Plugins.PluginManager+PluginInfo b)
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetAdaptiveRoads()
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetCSUR()
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetCurrentAssemblyPlugin()
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetDirectConnectRoads()
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetHideCrossings()
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetHideUnconnectedTracks()
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetIMT()
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetLoadOrderMod()
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetNetworkDetective()
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetNetworkSkins()
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetNodeController()
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetPedestrianBridge()
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetPlugin<UserModT>()
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetPlugin(ICities.IUserMod userMod)
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetPlugin(System.Reflection.Assembly assembly)
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetPlugin(System.String searchName, System.UInt64[] searchIds, KianCommons.Plugins.PluginUtil+SearchOptionT searchOptions)
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetPlugin(System.String searchName, System.UInt64 searchId, KianCommons.Plugins.PluginUtil+SearchOptionT searchOptions)
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetRAB()
+  public static ColossalFramework.Plugins.PluginManager+PluginInfo GetTrafficManager()
+  public static System.Void Init()
+  private static System.Boolean IsCSUR(ColossalFramework.Plugins.PluginManager+PluginInfo current)
+  public static System.Void LogPlugins(System.Boolean detailed)
+  public static System.Boolean Match(System.String name1, System.String name2, KianCommons.Plugins.PluginUtil+SearchOptionT searchOptions)
+  public static System.Boolean Matches(ColossalFramework.Plugins.PluginManager+PluginInfo plugin, System.UInt64[] searchIds)
+  public static System.Void ReportIncomaptibleMods(System.Collections.Generic.IEnumerable`1[[ColossalFramework.Plugins.PluginManager+PluginInfo, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null]] plugins)
+  private static ColossalFramework.Plugins.PluginManager get_man()
+
+NESTED TYPES:
+  - KianCommons.Plugins.PluginUtil+<>c__DisplayClass3_0
+  - KianCommons.Plugins.PluginUtil+SearchOptionT
+
+------------------------------------------------------------
+TYPE: KianCommons.Plugins.PluginUtil+<>c__DisplayClass3_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.String <LogPlugins>b__2(ColossalFramework.Plugins.PluginManager+PluginInfo p)
+  internal System.String <LogPlugins>g__PluginToString|0(ColossalFramework.Plugins.PluginManager+PluginInfo p)
+
+------------------------------------------------------------
+TYPE: KianCommons.Plugins.PluginUtil+SearchOptionT
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+
+### NAMESPACE: KianCommons
+
+------------------------------------------------------------
+TYPE: KianCommons.ReflectionExtension
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  internal static System.Reflection.MethodInfo GetMethod(System.Type type, System.String name, System.Type[] types, System.Reflection.BindingFlags binding, System.Boolean throwOnError)
+  internal static System.Reflection.MethodInfo GetMethod(System.Type type, System.String name, System.Reflection.BindingFlags binding, System.Boolean throwOnError)
+  internal static System.Reflection.MethodInfo GetMethod(System.Type type, System.String name, System.Boolean throwOnError)
+  internal static System.Void SetValue<TStruct>(System.Reflection.PropertyInfo propertyInfo, ref TStruct obj, System.Object value, System.Object[] index)
+  internal static System.Void SetValue<TStruct>(System.Reflection.FieldInfo fieldInfo, ref TStruct obj, System.Object val)
+
+------------------------------------------------------------
+TYPE: KianCommons.ReflectionHelpers
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  internal static System.Void CopyProperties(System.Object target, System.Object origin)
+  internal static System.Void CopyProperties<T>(System.Object target, System.Object origin)
+  internal static System.Void CopyPropertiesForced<T>(System.Object target, System.Object origin)
+  internal static System.String CurrentMethod(System.Int32 i, System.Object[] args)
+  internal static System.String CurrentMethodFull(System.Int32 i, System.Object[] args)
+  internal static T EventToDelegate<T>(System.Object instance, System.String eventName)
+  internal static T EventToDelegate<T>(System.Type type, System.String eventName)
+  internal static System.Void ExecuteDelegates(System.Delegate[] delegates, System.Boolean verbose)
+  public static System.String FullName(System.Reflection.MethodBase m)
+  internal static T GetAttribute<T>(System.Reflection.ICustomAttributeProvider memberInfo, System.Boolean inherit)
+  internal static T[] GetAttributes<T>(System.Reflection.ICustomAttributeProvider memberInfo, System.Boolean inherit)
+  internal static System.Reflection.EventInfo GetEvent(System.Type type, System.String eventName, System.Boolean throwOnError)
+  internal static System.Delegate[] GetEventDelegates(System.Type type, System.String eventName)
+  internal static System.Delegate[] GetEventDelegates(System.Object instance, System.String eventName)
+  internal static System.Reflection.FieldInfo GetField(System.Object target, System.String fieldName, System.Boolean throwOnError)
+  internal static System.Reflection.FieldInfo GetField<T>(System.String fieldName, System.Boolean throwOnError)
+  internal static System.Reflection.FieldInfo GetField(System.Type declaringType, System.String fieldName, System.Boolean throwOnError)
+  internal static System.Object GetFieldValue(System.Object target, System.String fieldName)
+  internal static System.Object GetFieldValue<T>(System.String fieldName)
+  internal static System.Object GetFieldValue(System.Type type, System.String fieldName)
+  internal static System.Collections.Generic.IEnumerable`1[[System.Reflection.FieldInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetFieldsWithAttribute<T>(System.Type type, System.Boolean inherit)
+  internal static System.Collections.Generic.IEnumerable`1[[System.Reflection.FieldInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetFieldsWithAttribute<T>(System.Object obj, System.Boolean inherit)
+  internal static System.Collections.Generic.IEnumerable`1[[System.Reflection.MemberInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetMembersWithAttribute<T>(System.Type type, System.Boolean inherit)
+  internal static System.Collections.Generic.IEnumerable`1[[System.Reflection.MemberInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] GetMembersWithAttribute<T>(System.Object obj, System.Boolean inherit)
+  internal static System.Reflection.MethodInfo GetMethod(System.Type type, System.String method, System.Boolean throwOnError)
+  internal static System.Reflection.MethodInfo GetMethod(System.Type type, System.String name, System.Reflection.BindingFlags bindingFlags, System.Boolean throwOnError)
+  internal static System.Reflection.MethodInfo GetMethod(System.Type type, System.String name, System.Reflection.BindingFlags bindingFlags, System.Type[] types, System.Boolean throwOnError)
+  internal static System.String GetPrettyFunctionName(System.Reflection.MethodInfo m)
+  internal static System.Boolean HasAttribute<T>(System.Reflection.MemberInfo member, System.Boolean inherit)
+  internal static System.Boolean HasAttribute(System.Reflection.MemberInfo member, System.Type t, System.Boolean inherit)
+  internal static System.Void InvokeEvent(System.Type type, System.String eventName, System.Boolean verbose)
+  internal static System.Void InvokeEvent(System.Object instance, System.String eventName, System.Boolean verbose)
+  internal static System.Object InvokeMethod(System.String qualifiedType, System.String method)
+  internal static System.Object InvokeMethod(System.Object instance, System.String method)
+  internal static System.Object InvokeMethod(System.Object instance, System.String method, System.Object[] args)
+  internal static System.Object InvokeMethod(System.Type type, System.String method)
+  internal static System.Object InvokeMethod<T>(System.String method)
+  internal static System.Object InvokeMethod<T>(System.String method, System.Object[] args)
+  internal static System.Object InvokeSetter(System.Object instance, System.String propertyName, System.Object value)
+  private static System.String JoinArgs(System.Object[] args)
+  internal static System.Void LogCalled(System.Object[] args)
+  internal static System.Void LogSucceeded()
+  internal static System.String Name(System.Reflection.Assembly assembly)
+  internal static System.Void SetAllDeclaredFieldsToNull(ColossalFramework.UI.UIComponent c)
+  internal static System.Void SetAllDeclaredFieldsToNull(System.Object instance)
+  internal static System.Void SetFieldValue(System.Type targetType, System.String fieldName, System.Object value)
+  internal static System.Void SetFieldValue(System.Object target, System.String fieldName, System.Object value)
+  internal static System.Void SetFieldValue<T>(System.String fieldName, System.Object value)
+  internal static T ShalowClone<T>(T source)
+  internal static System.String ToSTR(System.Reflection.BindingFlags flags)
+  internal static System.Version Version(System.Reflection.Assembly asm)
+  internal static System.Version VersionOf(System.Object obj)
+  internal static System.Version VersionOf(System.Type t)
+  internal static System.String get_ThisMethod()
+
+NESTED TYPES:
+  - KianCommons.ReflectionHelpers+<>c
+  - KianCommons.ReflectionHelpers+<>c__DisplayClass17_0`1
+  - KianCommons.ReflectionHelpers+<>c__DisplayClass18_0`1
+  - KianCommons.ReflectionHelpers+<>c__DisplayClass20_0`1
+
+------------------------------------------------------------
+TYPE: KianCommons.ReflectionHelpers+<>c
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.String <CurrentMethodFull>b__55_0(System.Reflection.ParameterInfo p)
+  internal System.String <JoinArgs>b__53_0(System.Object a)
+
+------------------------------------------------------------
+TYPE: KianCommons.ReflectionHelpers+<>c__DisplayClass17_0`1
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <GetFieldsWithAttribute>b__0(System.Reflection.FieldInfo _field)
+
+------------------------------------------------------------
+TYPE: KianCommons.ReflectionHelpers+<>c__DisplayClass18_0`1
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <GetFieldsWithAttribute>b__0(System.Reflection.FieldInfo _field)
+
+------------------------------------------------------------
+TYPE: KianCommons.ReflectionHelpers+<>c__DisplayClass20_0`1
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <GetMembersWithAttribute>b__0(System.Reflection.MemberInfo _member)
+
+------------------------------------------------------------
+TYPE: KianCommons.SingletonStrong`1
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.Void Ensure()
+  public static T get_Instance()
+
+NESTED TYPES:
+  - KianCommons.SingletonStrong`1+<>c
+
+------------------------------------------------------------
+TYPE: KianCommons.SingletonStrong`1+<>c
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <get_Instance>b__2_0(T tool)
+
+------------------------------------------------------------
+TYPE: KianCommons.StackHelpers
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.String ToStringPretty(System.Diagnostics.StackTrace st, System.Boolean fullPath, System.Boolean nameSpace, System.Boolean showArgs)
+
+------------------------------------------------------------
+TYPE: KianCommons.StringExtensions
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  internal static System.String <BIG>g__mul|5_0(System.String s, System.Int32 i)
+  internal static System.String BIG(System.String m)
+  internal static System.String CenterString(System.String stringToCenter, System.Int32 totalLength)
+  internal static System.String Join(System.Collections.Generic.IEnumerable`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] str, System.String separator)
+  internal static System.String JoinLines(System.Collections.Generic.IEnumerable`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] str)
+  public static System.String Remove(System.String s, System.String[] removes)
+  public static System.String Remove(System.String s, System.String r)
+  public static System.String RemoveChar(System.String s, System.Char c)
+  public static System.String RemoveChars(System.String s, System.Char[] chars)
+  internal static System.String RemoveEmptyLines(System.String str)
+  public static System.String RemoveExtension(System.String path)
+  internal static System.String STR(System.Object obj)
+  internal static System.String STR(InstanceID instanceID)
+  internal static System.String[] Split(System.String str, System.String separator, System.StringSplitOptions options)
+  internal static System.String[] SplitLines(System.String str, System.StringSplitOptions options)
+  internal static System.String ToSTR<T>(System.Collections.IEnumerable list, System.String format)
+  internal static System.String ToSTR(InstanceID instanceID)
+  internal static System.String ToSTR(System.String str)
+  internal static System.String ToSTR(System.Object obj)
+  internal static System.String ToSTR(System.Collections.IEnumerable list)
+  internal static System.String ToSTR(System.Collections.IDictionary dict)
+  internal static System.String ToSTR(System.Collections.Generic.KeyValuePair`2[[InstanceID, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[InstanceID, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] map)
+
+------------------------------------------------------------
+TYPE: KianCommons.TypeUtil
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.Boolean IsFloatingPoint(System.Type type)
+  public static System.Boolean IsInteger(System.Type type)
+  private static System.Boolean IsIntegerType(System.Type type)
+  public static System.Boolean IsNumeric(System.Type type)
+  public static System.Boolean IsSigned(System.Type type)
+  public static System.Boolean IsSignedInteger(System.Type type)
+
+
+### NAMESPACE: KianCommons.UI.Helpers
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.Helpers.Extensions
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  public static System.Int32 GetHoverIndex(ColossalFramework.UI.UICheckboxDropDown dd)
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.Helpers.UICheckboxDropDownExt
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  public static KianCommons.UI.Helpers.UICheckboxDropDownExt Add(ColossalFramework.UI.UIPanel panel)
+  public virtual System.Void Awake()
+  public virtual System.Void Start()
+  public System.String get_Text()
+  public System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] get_selectedIndeces()
+  public System.Void set_Text(System.String value)
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.Helpers.UIDropDownExt
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Void Awake()
+  protected virtual System.Void OnSizeChanged()
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.Helpers.UIDropDownExtensions
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  internal static System.Int32 GetHoverIndex(ColossalFramework.UI.UIDropDown dd)
+  internal static ColossalFramework.UI.UIListBox GetPopup(ColossalFramework.UI.UIDropDown dd)
+
+
+### NAMESPACE: KianCommons.UI
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.RenderUtil
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  internal static System.Boolean <DrawCutSegmentEnd>g__IsMiddle|0_0(System.UInt16 nodeId, ref KianCommons.UI.RenderUtil+<>c__DisplayClass0_0)
+  internal static System.Boolean <RenderSegmnetOverlay>g__IsMiddle|2_0(System.UInt16 nodeId, ref KianCommons.UI.RenderUtil+<>c__DisplayClass2_0)
+  public static System.Void DrawCutSegmentEnd(RenderManager+CameraInfo cameraInfo, System.UInt16 segmentId, System.Single cut, System.Boolean bStartNode, UnityEngine.Color color, System.Boolean alpha)
+  public static System.Void DrawNodeCircle(RenderManager+CameraInfo cameraInfo, UnityEngine.Color color, System.UInt16 nodeId, System.Boolean alphaBlend)
+  public static System.Void DrawOverlayCircle(RenderManager+CameraInfo cameraInfo, UnityEngine.Color color, UnityEngine.Vector3 position, System.Single raduis, System.Boolean alphaBlend)
+  public static System.Void Render(ColossalFramework.Math.Bezier3 bezier, RenderManager+CameraInfo cameraInfo, UnityEngine.Color color, System.Single hw, System.Boolean alphaBlend, System.Boolean cutEnds)
+  public static System.Void RenderArrow(ColossalFramework.Math.Bezier3 bezier, RenderManager+CameraInfo cameraInfo, UnityEngine.Color color, System.Single hw, System.Boolean alphaBlend)
+  public static System.Void RenderGrid(RenderManager+CameraInfo cameraInfo, KianCommons.GridVector grid, UnityEngine.Color color)
+  public static System.Void RenderGrids(RenderManager+CameraInfo cameraInfo, UnityEngine.Vector3 pos, UnityEngine.Color color)
+  public static System.Void RenderInstanceOverlay(RenderManager+CameraInfo cameraInfo, InstanceID instanceID, UnityEngine.Color color, System.Boolean alphaBlend)
+  public static System.Void RenderLaneOverlay(RenderManager+CameraInfo cameraInfo, KianCommons.LaneData laneData, UnityEngine.Color color, System.Boolean alphaBlend)
+  public static System.Void RenderLine(ColossalFramework.Math.Segment3 line, RenderManager+CameraInfo cameraInfo, UnityEngine.Color color)
+  public static System.Void RenderLine(UnityEngine.Vector2 a, UnityEngine.Vector2 b, RenderManager+CameraInfo cameraInfo, UnityEngine.Color color)
+  public static System.Void RenderSegmnetOverlay(RenderManager+CameraInfo cameraInfo, System.UInt16 segmentId, UnityEngine.Color color, System.Boolean alphaBlend)
+  public static System.Void RenderStripOnSegment(RenderManager+CameraInfo cameraInfo, System.UInt16 segmentId, UnityEngine.Vector3 pos, System.Single width, UnityEngine.Color color, System.Boolean alpha)
+
+NESTED TYPES:
+  - KianCommons.UI.RenderUtil+<>c__DisplayClass0_0
+  - KianCommons.UI.RenderUtil+<>c__DisplayClass2_0
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.RenderUtil+<>c__DisplayClass0_0
+KIND: struct
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.RenderUtil+<>c__DisplayClass2_0
+KIND: struct
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.TextureExtensions
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.Void Dump(UnityEngine.Texture2D tex, System.String path)
+  public static UnityEngine.Texture2D GetReadableCopy(UnityEngine.Texture2D tex, System.Boolean linear)
+  public static System.Boolean IsReadable(UnityEngine.Texture2D texture)
+  public static UnityEngine.Texture2D MakeReadable(UnityEngine.Texture texture, System.Boolean linear)
+  public static UnityEngine.Texture2D TryMakeReadable(UnityEngine.Texture2D texture)
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.TextureUtil
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  public static System.Void AddTexturesToAtlas(ColossalFramework.UI.UITextureAtlas atlas, UnityEngine.Texture2D[] newTextures)
+  public static ColossalFramework.UI.UITextureAtlas CreateTextureAtlas(System.String textureFile, System.String atlasName, System.String[] spriteNames)
+  public static ColossalFramework.UI.UITextureAtlas CreateTextureAtlas(UnityEngine.Texture2D texture2D, System.String atlasName, System.String[] spriteNames)
+  public static ColossalFramework.UI.UITextureAtlas CreateTextureAtlas(System.String atlasName, UnityEngine.Texture2D[] textures)
+  public static ColossalFramework.UI.UITextureAtlas CreateTextureAtlas(System.String textureFile, System.String atlasName, System.Int32 spriteWidth, System.Int32 spriteHeight, System.String[] spriteNames)
+  public static ColossalFramework.UI.UITextureAtlas GetAtlas(System.String name)
+  public static ColossalFramework.UI.UITextureAtlas GetAtlasOrNull(System.String name)
+  public static System.IO.Stream GetFileStream(System.String file)
+  public static System.IO.Stream GetManifestResourceStream(System.String file)
+  public static UnityEngine.Texture2D GetTextureFromAssemblyManifest(System.String file)
+  public static UnityEngine.Texture2D GetTextureFromFile(System.String file)
+  public static UnityEngine.Texture2D GetTextureFromStream(System.IO.Stream stream)
+  private static System.Byte[] ReadAllBytes(System.IO.Stream stream)
+  public static ColossalFramework.UI.UITextureAtlas get_InMapEditor()
+  public static ColossalFramework.UI.UITextureAtlas get_Ingame()
+  private static System.String get_ModPath()
+  private static System.String get_PATH()
+
+NESTED TYPES:
+  - KianCommons.UI.TextureUtil+<>c__DisplayClass18_0
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.TextureUtil+<>c__DisplayClass18_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <GetAtlasOrNull>b__0(ColossalFramework.UI.UITextureAtlas atlas)
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.UIAutoSizePanel
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Void Awake()
+  private System.Void RefreshSize()
+  public System.Void RefreshSizeRecursive()
+  public virtual System.Void Start()
+  public System.Boolean get_AutoSize2()
+  public System.Void set_AutoSize2(System.Boolean value)
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.UIButtonExt
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Void Awake()
+  public virtual System.Void Start()
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.UICheckBoxExt
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Void Awake()
+  public virtual System.Void OnCheckChanged(ColossalFramework.UI.UIComponent component, System.Boolean value)
+  public virtual System.Void OnDestroy()
+  public virtual System.String get_Label()
+  public virtual System.String get_Tooltip()
+  public virtual System.Void set_Label(System.String value)
+  public virtual System.Void set_Tooltip(System.String value)
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.UIExtensions
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static T AddUIComponent<T>(ColossalFramework.UI.UIView view)
+  public static System.Void DestroyFull(ColossalFramework.UI.UIComponent c)
+  public static System.Boolean FPSOptimisedIsVisble(ColossalFramework.UI.UIComponent c)
+  public static System.Void FitToScreen(ColossalFramework.UI.UIComponent target)
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.UIKeyMappingsExtensions
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  internal static KianCommons.UI.UIKeymappingsPanel AddKeymappingsPanel(UIHelper helper)
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.UIKeymappingsPanel
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  private System.Void <AddKeymapping>b__0_0(ColossalFramework.UI.UIComponent _, System.Boolean __)
+  internal ColossalFramework.UI.UIComponent AddKeymapping(System.String label, ColossalFramework.SavedInputKey savedInputKey)
+  private static UnityEngine.KeyCode ButtonToKeycode(ColossalFramework.UI.UIMouseButton button)
+  private static System.Boolean IsAltDown()
+  private static System.Boolean IsControlDown()
+  private static System.Boolean IsModifierKey(UnityEngine.KeyCode code)
+  private static System.Boolean IsShiftDown()
+  private static System.Boolean IsUnbindableMouseButton(ColossalFramework.UI.UIMouseButton code)
+  private System.Void OnBindingKeyDown(ColossalFramework.UI.UIComponent comp, ColossalFramework.UI.UIKeyEventParameter p)
+  private System.Void OnBindingMouseDown(ColossalFramework.UI.UIComponent comp, ColossalFramework.UI.UIMouseEventParameter p)
+  private System.Void RefreshBindableInputs()
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.UISliderExt
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  public virtual System.Void Awake()
+  protected virtual System.Void OnSizeChanged()
+  protected virtual System.Void OnValueChanged()
+  public static System.Single Round(System.Single val, System.Single step)
+  public System.Void RoundRawValue(System.Single _stepSize)
+  public System.Void RoundValue(System.Single _stepSize)
+  public virtual System.Void Start()
+  public virtual System.Boolean get_MixedValues()
+  public System.Single get_stepSize()
+  public virtual System.Void set_MixedValues(System.Boolean value)
+  public System.Void set_stepSize(System.Single value)
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.UIToolButton
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  public System.Void Activate()
+  public virtual System.Void Awake()
+  public System.Void Deactivate()
+  private static ColossalFramework.UI.UIComponent GetContainingPanel()
+  public virtual System.Void OnDestroy()
+  public virtual System.Void Start()
+  public virtual System.String ToString()
+  public System.String get_AtlasName()
+  public static KianCommons.UI.UIToolButton get_Instace()
+  private System.Reflection.AssemblyName get_assemblyName()
+  private static System.Void set_Instace(KianCommons.UI.UIToolButton value)
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.UIUtils
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public T FindComponent<T>(System.String name, ColossalFramework.UI.UIComponent parent, KianCommons.UI.UIUtils+FindOptions options)
+  private System.Void FindUIRoot()
+  public static System.Collections.Generic.IEnumerable`1[[T]] GetCompenentsWithName<T>(System.String name)
+  public System.String GetTransformPath(UnityEngine.Transform transform)
+  public static KianCommons.UI.UIUtils get_Instance()
+
+NESTED TYPES:
+  - KianCommons.UI.UIUtils+<GetCompenentsWithName>d__5`1
+  - KianCommons.UI.UIUtils+FindOptions
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.UIUtils+<GetCompenentsWithName>d__5`1
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32 <>1__state)
+
+METHODS:
+  private System.Boolean MoveNext()
+  private System.Collections.Generic.IEnumerator`1[T] System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  private T System.Collections.Generic.IEnumerator<T>.get_Current()
+  private System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+  private System.Void System.Collections.IEnumerator.Reset()
+  private System.Object System.Collections.IEnumerator.get_Current()
+  private System.Void System.IDisposable.Dispose()
+
+------------------------------------------------------------
+TYPE: KianCommons.UI.UIUtils+FindOptions
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+
+### NAMESPACE: Microsoft.CodeAnalysis
+
+------------------------------------------------------------
+TYPE: Microsoft.CodeAnalysis.EmbeddedAttribute
+KIND: class
+ATTR: Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+
+### NAMESPACE: System.Runtime.CompilerServices
+
+------------------------------------------------------------
+TYPE: System.Runtime.CompilerServices.IsReadOnlyAttribute
+KIND: class
+ATTR: Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+
+### NAMESPACE: 
+
+------------------------------------------------------------
+TYPE: ThisAssembly
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+NESTED TYPES:
+  - ThisAssembly+Git
+
+------------------------------------------------------------
+TYPE: ThisAssembly+Git
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+NESTED TYPES:
+  - ThisAssembly+Git+BaseVersion
+  - ThisAssembly+Git+SemVer
+
+------------------------------------------------------------
+TYPE: ThisAssembly+Git+BaseVersion
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: ThisAssembly+Git+SemVer
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+
+### NAMESPACE: UnifiedUI.API
+
+------------------------------------------------------------
+TYPE: UnifiedUI.API.UUIAPI
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.Void AttachAlien(ColossalFramework.UI.UIComponent alien, System.String groupName)
+  public static System.Boolean KeyActivated(ColossalFramework.SavedInputKey key)
+  public static ColossalFramework.UI.UIComponent Register(System.String name, System.String groupName, System.String tooltip, UnityEngine.Texture2D texture, System.Action`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] onToggle, System.Action`1[[ToolBase, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] onToolChanged, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+  public static System.Void Register(System.Action onToggle, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+  public static ColossalFramework.UI.UIComponent Register(System.String name, System.String groupName, System.String tooltip, System.String spritefile, System.Action`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] onToggle, System.Action`1[[ToolBase, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] onToolChanged, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+  public static ColossalFramework.UI.UIComponent Register(System.String name, System.String groupName, System.String tooltip, ToolBase tool, ColossalFramework.UI.UITextureAtlas atlas, System.String[] spriteNames, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+  public static ColossalFramework.UI.UIComponent Register(System.String name, System.String groupName, System.String tooltip, System.String spritefile, ToolBase tool, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+  public static ColossalFramework.UI.UIComponent Register(System.String name, System.String groupName, System.String tooltip, ColossalFramework.UI.UITextureAtlas atlas, System.String[] spriteNames, System.Action`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] onToggle, System.Action`1[[ToolBase, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] onToolChanged, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+  public static ColossalFramework.UI.UIComponent Register(System.String name, System.String groupName, System.String tooltip, ToolBase tool, UnityEngine.Texture2D texture, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+
+
+### NAMESPACE: UnifiedUI.GUI
+
+------------------------------------------------------------
+TYPE: UnifiedUI.GUI.ButtonBase
+KIND: class
+ATTR: Public, Abstract, BeforeFieldInit
+
+CONSTRUCTORS:
+  protected .ctor()
+
+METHODS:
+  internal static UnityEngine.Texture2D <CreateMainAtlas>g__GetTexture|30_0(System.String _spriteName)
+  public virtual System.Void Activate()
+  public static System.Void AddTextureToAtlas(ColossalFramework.UI.UITextureAtlas atlas, UnityEngine.Texture2D newTexture)
+  public System.Boolean AvoidCollision()
+  public virtual System.Void Awake()
+  public static ColossalFramework.UI.UITextureAtlas CreateMainAtlas()
+  public virtual System.Void Deactivate()
+  public static ColossalFramework.UI.UITextureAtlas GetOrCreateAtlas(System.String atlasName, System.String spriteFile, System.Boolean embeded, System.String[] spriteNames)
+  public System.Boolean HandleHotKey()
+  public virtual System.Void OnDestroy()
+  public virtual System.Void OnToolChanged(ToolBase newTool)
+  public System.Void RefreshToolTip()
+  public System.Void SetIcon(UnityEngine.Texture2D texture)
+  public static System.Void SetTool(ToolBase tool)
+  public virtual System.Void Start()
+  public virtual System.Void Toggle()
+  public static System.Void UnsetTool(ToolBase tool)
+  public System.Void UseActiveSprites()
+  public System.Void UseInactiveSprites()
+  public static DefaultTool get_DefaultTool()
+  public System.Boolean get_IsActive()
+  public static System.String get_MainAtlasName()
+  public virtual System.String get_Name()
+  public static ToolBase get_Prevtool()
+  public System.String get_SuggestedAtlasName()
+  public virtual System.String get_Tooltip()
+  public System.Void set_IsActive(System.Boolean value)
+  public static System.Void set_Prevtool(ToolBase value)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.GUI.ControlledDrag
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Void Awake()
+  protected virtual System.Void OnMouseMove(ColossalFramework.UI.UIMouseEventParameter p)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.GUI.ExternalButton
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Void Activate()
+  public static UnifiedUI.GUI.ExternalButton Create(ColossalFramework.UI.UIComponent parent, System.String name, System.String tooltip, System.String spritesFile)
+  public virtual System.Void Deactivate()
+  public virtual System.Void OnDestroy()
+  public virtual System.Void OnToolChanged(ToolBase newTool)
+  public System.Void Release()
+  private ColossalFramework.UI.UITextureAtlas SetupAtlas(System.String file)
+  public virtual System.String get_Name()
+
+------------------------------------------------------------
+TYPE: UnifiedUI.GUI.FloatingButton
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  public virtual System.Void Activate()
+  public System.Void AddUnlockRing()
+  public virtual System.Void Deactivate()
+  private System.Void Drag_eventMouseUp(ColossalFramework.UI.UIComponent component, ColossalFramework.UI.UIMouseEventParameter eventParam)
+  private System.Void LoadPosition()
+  protected virtual System.Void OnClick(ColossalFramework.UI.UIMouseEventParameter p)
+  protected virtual System.Void OnMouseDown(ColossalFramework.UI.UIMouseEventParameter p)
+  protected virtual System.Void OnPositionChanged()
+  protected virtual System.Void OnResolutionChanged(UnityEngine.Vector2 previousResolution, UnityEngine.Vector2 currentResolution)
+  public System.Void Refresh()
+  public static System.Void ResetSettings()
+  private System.Void SetTooltip(System.String text)
+  private System.Void SetupAtlas()
+  public System.Void SetupDrag()
+  public virtual System.Void Start()
+  public virtual System.Void Update()
+  public System.Boolean get_IsDragable()
+  public System.Boolean get_Responsive()
+  private ColossalFramework.UI.UIDragHandle get_drag_()
+  public System.Void set_IsDragable(System.Boolean value)
+  private System.Void set_drag_(ColossalFramework.UI.UIDragHandle value)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.GUI.MainPanel
+KIND: class
+ATTR: Public
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  public ButtonT AddButton<ButtonT>(System.String groupName)
+  public System.Void AttachAlien(ColossalFramework.UI.UIComponent alien, System.String groupName)
+  public virtual System.Void Awake()
+  private System.Void CaptureToolChanged()
+  public System.Void Close()
+  public System.Void DoRefreshButtons()
+  private System.Void DragHandle__eventMouseUp(ColossalFramework.UI.UIComponent component, ColossalFramework.UI.UIMouseEventParameter eventParam)
+  public static System.Void Ensure()
+  public System.Void HandleHotkeys()
+  private System.Void LoadPosition()
+  public virtual System.Void OnDestroy()
+  protected virtual System.Void OnResolutionChanged(UnityEngine.Vector2 previousResolution, UnityEngine.Vector2 currentResolution)
+  public System.Void Open()
+  public System.Void RearrangeIfOpen()
+  public System.Void Refresh()
+  private System.Void RefreshDragAndCaptionPos()
+  public UnifiedUI.GUI.ExternalButton Register(System.String name, System.String groupName, System.String tooltip, System.String spritefile)
+  public static System.Void Release()
+  public static System.Void ResetSettings()
+  public ColossalFramework.UI.UITextureAtlas SetupSprites()
+  public virtual System.Void Start()
+  public virtual System.Void Update()
+  public System.Void add_EventRefreshButtons(System.Action value)
+  public System.Void add_EventToolChanged(UnifiedUI.GUI.MainPanel+ToolChangedHandler value)
+  public System.String get_AtlasName()
+  public static System.Boolean get_Exists()
+  public static System.Boolean get_InLoadedGame()
+  public static UnifiedUI.GUI.MainPanel get_Instance()
+  private System.Boolean get_IsOpen()
+  private static ColossalFramework.UI.UIComponent get_PauseMenu()
+  public System.Boolean get_Responsive()
+  public static UnifiedUI.GUI.MainPanel get_RowInstance_()
+  private static System.Boolean get_ToolIsDefault()
+  public System.Void remove_EventRefreshButtons(System.Action value)
+  public System.Void remove_EventToolChanged(UnifiedUI.GUI.MainPanel+ToolChangedHandler value)
+
+NESTED TYPES:
+  - UnifiedUI.GUI.MainPanel+<>c
+  - UnifiedUI.GUI.MainPanel+ContainerPanel
+  - UnifiedUI.GUI.MainPanel+ToolChangedHandler
+
+------------------------------------------------------------
+TYPE: UnifiedUI.GUI.MainPanel+<>c
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <HandleHotkeys>b__74_0(UnifiedUI.GUI.ButtonBase b)
+  internal System.Boolean <HandleHotkeys>b__74_1(System.Collections.Generic.KeyValuePair`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] pair)
+  internal System.Boolean <RearrangeIfOpen>b__55_0(UnifiedUI.GUI.ButtonBase _b)
+  internal System.Boolean <Refresh>b__52_0(UnifiedUI.GUI.ButtonBase _b)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.GUI.MainPanel+ContainerPanel
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Void Awake()
+  public System.Void FitToChildrenWithPadding()
+
+------------------------------------------------------------
+TYPE: UnifiedUI.GUI.MainPanel+ToolChangedHandler
+KIND: class
+ATTR: NestedPublic, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(ToolBase newTool, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(System.IAsyncResult result)
+  public virtual System.Void Invoke(ToolBase newTool)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.GUI.ModButtonBase
+KIND: class
+ATTR: Public, Abstract, BeforeFieldInit
+
+CONSTRUCTORS:
+  protected .ctor()
+
+METHODS:
+  protected virtual System.Void OnClick(ColossalFramework.UI.UIMouseEventParameter p)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.GUI.MultiRowPanel
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  public System.Void AddButton(ColossalFramework.UI.UIComponent c, System.String groupName)
+  public ColossalFramework.UI.UIComponent AddSeperator(ColossalFramework.UI.UIComponent parent)
+  public System.Void Arrange()
+  public virtual System.Void Awake()
+  public System.String GroupName(ColossalFramework.UI.UIComponent button)
+  public virtual System.Void OnDestroy()
+  private System.Void Rearrange(ColossalFramework.UI.UIComponent _, System.Boolean __)
+  public System.Void RemoveButton(ColossalFramework.UI.UIComponent c)
+  public static System.Void ResetSettings()
+  public virtual System.Void Start()
+
+NESTED TYPES:
+  - UnifiedUI.GUI.MultiRowPanel+<>c
+
+------------------------------------------------------------
+TYPE: UnifiedUI.GUI.MultiRowPanel+<>c
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <Arrange>b__13_0(ColossalFramework.UI.UIComponent item)
+  internal System.String <Arrange>b__13_1(ColossalFramework.UI.UIComponent item)
+  internal System.Void <Start>b__7_0(ColossalFramework.UI.UIComponent _, UnityEngine.Vector2 __)
+
+
+### NAMESPACE: UnifiedUI.Helpers
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUICustomButton
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  internal .ctor(ColossalFramework.UI.UIComponent component)
+
+METHODS:
+  public System.Void Release()
+  public ColossalFramework.UI.UIComponent get_Button()
+  public System.Boolean get_IsPressed()
+  private System.Reflection.PropertyInfo get_pIsActive_()
+  private System.Void set_Button(ColossalFramework.UI.UIComponent value)
+  public System.Void set_IsPressed(System.Boolean value)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUIHelpers
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.Void AttachAlien(ColossalFramework.UI.UIComponent alien, System.String groupName)
+  internal static TDelegate CreateDelegate<TDelegate>(System.Type type, System.String name)
+  public static System.Void Destroy(UnityEngine.Component button)
+  public static System.String GetFullPath(ICities.IUserMod userModInstance, System.String[] paths)
+  public static System.String GetFullPath<UserModT>(System.String[] paths)
+  internal static UnifiedUI.Helpers.UUIHelpers+KeyActivatedDelegate GetKeyActivatedDelegate()
+  internal static System.Reflection.MethodInfo GetMethod<TDelegate>(System.Type type, System.String name)
+  public static System.String GetModPath(ICities.IUserMod userModInstance)
+  public static System.String GetModPath<UserModT>()
+  internal static System.Type[] GetParameterTypes<TDelegate>()
+  internal static System.Type GetUUI()
+  internal static System.Reflection.Assembly GetUUILib()
+  internal static ColossalFramework.Plugins.PluginManager+PluginInfo GetUUIPlugin()
+  public static System.Boolean IsUUIEnabled()
+  private static System.Boolean IsUUILib(System.Reflection.Assembly assembly)
+  private static System.Boolean IsUUIMod(ColossalFramework.Plugins.PluginManager+PluginInfo p)
+  public static System.Boolean KeyActivated(ColossalFramework.SavedInputKey key)
+  public static UnityEngine.Texture2D LoadTexture(System.String filePath)
+  public static UnifiedUI.Helpers.UUICustomButton RegisterCustomButton(System.String name, System.String groupName, System.String tooltip, System.String spritefile, System.Action`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] onToggle, System.Action`1[[ToolBase, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] onToolChanged, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.IEnumerable`1[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null]] activeKeys)
+  public static UnifiedUI.Helpers.UUICustomButton RegisterCustomButton(System.String name, System.String groupName, System.String tooltip, System.String spritefile, System.Action`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] onToggle, System.Action`1[[ToolBase, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] onToolChanged, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+  public static UnifiedUI.Helpers.UUICustomButton RegisterCustomButton(System.String name, System.String groupName, System.String tooltip, UnifiedUI.Helpers.UUISprites sprites, System.Action`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] onToggle, System.Action`1[[ToolBase, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] onToolChanged, UnifiedUI.Helpers.UUIHotKeys hotkeys)
+  public static UnifiedUI.Helpers.UUICustomButton RegisterCustomButton(System.String name, System.String groupName, System.String tooltip, UnityEngine.Texture2D icon, System.Action`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] onToggle, System.Action`1[[ToolBase, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] onToolChanged, UnifiedUI.Helpers.UUIHotKeys hotkeys)
+  public static System.Void RegisterHotkeys(System.Action onToggle, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+  public static ColossalFramework.UI.UIComponent RegisterToolButton(System.String name, System.String groupName, System.String tooltip, System.String spritefile, ToolBase tool, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+  internal static ColossalFramework.UI.UIComponent RegisterToolButton(System.String name, System.String groupName, System.String tooltip, UnifiedUI.Helpers.UUIHelpers+UUISprites sprites, ToolBase tool, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.IEnumerable`1[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null]] activeKeys)
+  public static ColossalFramework.UI.UIComponent RegisterToolButton(System.String name, System.String groupName, System.String tooltip, System.String spritefile, ToolBase tool, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.IEnumerable`1[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null]] activeKeys)
+  public static ColossalFramework.UI.UIComponent RegisterToolButton(System.String name, System.String groupName, System.String tooltip, ToolBase tool, UnityEngine.Texture2D icon, UnifiedUI.Helpers.UUIHotKeys hotkeys)
+  public static ColossalFramework.UI.UIComponent RegisterToolButton(System.String name, System.String groupName, System.String tooltip, ToolBase tool, UnifiedUI.Helpers.UUISprites sprites, UnifiedUI.Helpers.UUIHotKeys hotkeys)
+  private static System.Void Reset()
+  internal static System.Collections.Generic.IEnumerable`1[[ColossalFramework.Plugins.PluginManager+PluginInfo, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null]] get_Plugins()
+
+NESTED TYPES:
+  - UnifiedUI.Helpers.UUIHelpers+<>c
+  - UnifiedUI.Helpers.UUIHelpers+<>c__34`1
+  - UnifiedUI.Helpers.UUIHelpers+<>c__4`1
+  - UnifiedUI.Helpers.UUIHelpers+<>c__DisplayClass33_0
+  - UnifiedUI.Helpers.UUIHelpers+AttachAlienHandler
+  - UnifiedUI.Helpers.UUIHelpers+KeyActivatedDelegate
+  - UnifiedUI.Helpers.UUIHelpers+RegisterCustomHandler
+  - UnifiedUI.Helpers.UUIHelpers+RegisterCustomHandler2
+  - UnifiedUI.Helpers.UUIHelpers+RegisterCustomHandler3
+  - UnifiedUI.Helpers.UUIHelpers+RegisterHotkeysHandler
+  - UnifiedUI.Helpers.UUIHelpers+RegisterToolHandler
+  - UnifiedUI.Helpers.UUIHelpers+RegisterToolHandler2
+  - UnifiedUI.Helpers.UUIHelpers+RegisterToolHandler3
+  - UnifiedUI.Helpers.UUIHelpers+UUISprites
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUIHelpers+<>c
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.String <GetUUILib>b__12_0(System.Reflection.Assembly asm)
+  internal System.Boolean <GetUUIPlugin>b__9_0(ColossalFramework.Plugins.PluginManager+PluginInfo p)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUIHelpers+<>c__34`1
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <GetModPath>b__34_0(ColossalFramework.Plugins.PluginManager+PluginInfo p)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUIHelpers+<>c__4`1
+KIND: class
+ATTR: NestedPrivate, Sealed, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal System.Type <GetParameterTypes>b__4_0(System.Reflection.ParameterInfo p)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUIHelpers+<>c__DisplayClass33_0
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  internal System.Boolean <GetModPath>b__0(ColossalFramework.Plugins.PluginManager+PluginInfo p)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUIHelpers+AttachAlienHandler
+KIND: class
+ATTR: NestedAssembly, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(ColossalFramework.UI.UIComponent alien, System.String groupName, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(System.IAsyncResult result)
+  public virtual System.Void Invoke(ColossalFramework.UI.UIComponent alien, System.String groupName)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUIHelpers+KeyActivatedDelegate
+KIND: class
+ATTR: NestedAssembly, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(ColossalFramework.SavedInputKey key, System.AsyncCallback callback, System.Object object)
+  public virtual System.Boolean EndInvoke(System.IAsyncResult result)
+  public virtual System.Boolean Invoke(ColossalFramework.SavedInputKey key)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUIHelpers+RegisterCustomHandler
+KIND: class
+ATTR: NestedAssembly, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.String name, System.String groupName, System.String tooltip, System.String spritefile, System.Action`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] onToggle, System.Action`1[[ToolBase, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] onToolChanged, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys, System.AsyncCallback callback, System.Object object)
+  public virtual ColossalFramework.UI.UIComponent EndInvoke(System.IAsyncResult result)
+  public virtual ColossalFramework.UI.UIComponent Invoke(System.String name, System.String groupName, System.String tooltip, System.String spritefile, System.Action`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] onToggle, System.Action`1[[ToolBase, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] onToolChanged, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUIHelpers+RegisterCustomHandler2
+KIND: class
+ATTR: NestedAssembly, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.String name, System.String groupName, System.String tooltip, ColossalFramework.UI.UITextureAtlas atlas, System.String[] spriteNames, System.Action`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] onToggle, System.Action`1[[ToolBase, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] onToolChanged, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys, System.AsyncCallback callback, System.Object object)
+  public virtual ColossalFramework.UI.UIComponent EndInvoke(System.IAsyncResult result)
+  public virtual ColossalFramework.UI.UIComponent Invoke(System.String name, System.String groupName, System.String tooltip, ColossalFramework.UI.UITextureAtlas atlas, System.String[] spriteNames, System.Action`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] onToggle, System.Action`1[[ToolBase, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] onToolChanged, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUIHelpers+RegisterCustomHandler3
+KIND: class
+ATTR: NestedAssembly, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.String name, System.String groupName, System.String tooltip, UnityEngine.Texture2D texture, System.Action`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] onToggle, System.Action`1[[ToolBase, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] onToolChanged, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys, System.AsyncCallback callback, System.Object object)
+  public virtual ColossalFramework.UI.UIComponent EndInvoke(System.IAsyncResult result)
+  public virtual ColossalFramework.UI.UIComponent Invoke(System.String name, System.String groupName, System.String tooltip, UnityEngine.Texture2D texture, System.Action`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] onToggle, System.Action`1[[ToolBase, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] onToolChanged, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUIHelpers+RegisterHotkeysHandler
+KIND: class
+ATTR: NestedAssembly, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.Action onToggle, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(System.IAsyncResult result)
+  public virtual System.Void Invoke(System.Action onToggle, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUIHelpers+RegisterToolHandler
+KIND: class
+ATTR: NestedAssembly, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.String name, System.String groupName, System.String tooltip, System.String spritefile, ToolBase tool, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys, System.AsyncCallback callback, System.Object object)
+  public virtual ColossalFramework.UI.UIComponent EndInvoke(System.IAsyncResult result)
+  public virtual ColossalFramework.UI.UIComponent Invoke(System.String name, System.String groupName, System.String tooltip, System.String spritefile, ToolBase tool, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUIHelpers+RegisterToolHandler2
+KIND: class
+ATTR: NestedAssembly, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.String name, System.String groupName, System.String tooltip, ToolBase tool, ColossalFramework.UI.UITextureAtlas atlas, System.String[] spriteNames, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys, System.AsyncCallback callback, System.Object object)
+  public virtual ColossalFramework.UI.UIComponent EndInvoke(System.IAsyncResult result)
+  public virtual ColossalFramework.UI.UIComponent Invoke(System.String name, System.String groupName, System.String tooltip, ToolBase tool, ColossalFramework.UI.UITextureAtlas atlas, System.String[] spriteNames, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUIHelpers+RegisterToolHandler3
+KIND: class
+ATTR: NestedAssembly, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.String name, System.String groupName, System.String tooltip, ToolBase tool, UnityEngine.Texture2D texture, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys, System.AsyncCallback callback, System.Object object)
+  public virtual ColossalFramework.UI.UIComponent EndInvoke(System.IAsyncResult result)
+  public virtual ColossalFramework.UI.UIComponent Invoke(System.String name, System.String groupName, System.String tooltip, ToolBase tool, UnityEngine.Texture2D texture, ColossalFramework.SavedInputKey activationKey, System.Collections.Generic.Dictionary`2[[ColossalFramework.SavedInputKey, ColossalManaged, Version=0.3.0.0, Culture=neutral, PublicKeyToken=null],[System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] activeKeys)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUIHelpers+UUISprites
+KIND: struct
+ATTR: NestedAssembly, SequentialLayout, Sealed, BeforeFieldInit
+
+METHODS:
+  public UnifiedUI.Helpers.UUISprites Convert()
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUIHotKeys
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.Void AddInToolKey(ColossalFramework.SavedInputKey hotkey, System.Func`1[[System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] isAvailble)
+  public System.Void AddInToolKey(ColossalFramework.SavedInputKey hotkey)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UUISprites
+KIND: struct
+ATTR: Public, SequentialLayout, Sealed, BeforeFieldInit
+
+METHODS:
+  public static UnifiedUI.Helpers.UUISprites CreateFromFile(System.String filePath)
+  internal System.String[] get_SpriteNames()
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Helpers.UnsavedInputKey
+KIND: class
+ATTR: Public, Abstract, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String keyName, System.String modName, ColossalFramework.InputKey key)
+
+METHODS:
+  public abstract System.Void OnConflictResolved()
+
+
+### NAMESPACE: UnifiedUI.Util
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Util.KeyExtensions
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  public static System.Boolean IsKeyDown(ColossalFramework.SavedInputKey key)
+  public static System.Boolean KeyActivated(ColossalFramework.SavedInputKey key)
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Util.OpenToolPanelUtil
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  private static System.Collections.IEnumerator DoClick(ColossalFramework.UI.UIScrollablePanel scrollablePanel, ColossalFramework.UI.UIButton networkButton)
+  private static ColossalFramework.UI.UIButton FindButton(System.String name)
+  public static System.Void ShowInPanel(PrefabInfo info)
+  public static System.Void TryOpen()
+  private static ColossalFramework.UI.UIButton get_TSCloseButton()
+
+NESTED TYPES:
+  - UnifiedUI.Util.OpenToolPanelUtil+<DoClick>d__6
+
+------------------------------------------------------------
+TYPE: UnifiedUI.Util.OpenToolPanelUtil+<DoClick>d__6
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32 <>1__state)
+
+METHODS:
+  private System.Boolean MoveNext()
+  private System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+  private System.Void System.Collections.IEnumerator.Reset()
+  private System.Object System.Collections.IEnumerator.get_Current()
+  private System.Void System.IDisposable.Dispose()
+

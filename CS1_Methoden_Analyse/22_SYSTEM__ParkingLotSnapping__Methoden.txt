@@ -1,0 +1,281 @@
+=== CS1 Methoden Analyse - Assembly Dump ===
+Timestamp: 2026-02-17 15:29:07
+Bucket: SYSTEM
+Assembly Simple: ParkingLotSnapping
+Assembly Full: ParkingLotSnapping, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null
+Assembly Path: 
+DeclaredOnly Methods: YES
+
+
+### NAMESPACE: ParkingLotSnapping
+
+------------------------------------------------------------
+TYPE: ParkingLotSnapping.BuildingInfoInitializePrefabPatch
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public static System.Boolean Prefix(BuildingInfo __instance)
+
+------------------------------------------------------------
+TYPE: ParkingLotSnapping.LoadingFunctions
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Void OnCreated(ICities.ILoading loading)
+  public System.Void OnEnabled()
+  public virtual System.Void OnLevelLoaded(ICities.LoadMode mode)
+  public virtual System.Void OnLevelUnloading()
+  public virtual System.Void OnReleased()
+
+------------------------------------------------------------
+TYPE: ParkingLotSnapping.ModKeyBindingFunctions
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  internal static ColossalFramework.UI.UIButton AddKeyMappingUI(UIHelper uIHelper, System.String name, ColossalFramework.SavedInputKey initialBinding)
+  private static System.Boolean IsAltDown()
+  private static System.Boolean IsBindableMouseButton(ColossalFramework.UI.UIMouseButton button)
+  private static System.Boolean IsControlDown()
+  private static System.Boolean IsShiftDown()
+  private static System.Boolean IsValidKeyPressed(UnityEngine.KeyCode key)
+  private static UnityEngine.KeyCode MouseButtonToKeycode(ColossalFramework.UI.UIMouseButton button)
+  private static System.Void OnBindingKeyDown(ColossalFramework.UI.UIComponent component, ColossalFramework.UI.UIKeyEventParameter p)
+  private static System.Void OnBindingMouseDown(ColossalFramework.UI.UIComponent component, ColossalFramework.UI.UIMouseEventParameter p)
+
+------------------------------------------------------------
+TYPE: ParkingLotSnapping.ModSettings
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  public static System.Boolean DeserializeOnePLR(ParkingLotSnapping.ModSettings+PLRCustomPropertiesClass target)
+  public static System.String DeserializeXML()
+  public static System.Boolean SerializeOnePLR(ParkingLotSnapping.ModSettings+PLRCustomPropertiesClass target)
+  public static System.String SerializeXML()
+  public static System.Boolean get_AllowLocking()
+  public static System.Boolean get_AllowSnapping()
+  public static System.Boolean get_AssetCreatorMode()
+  public static System.Boolean get_BulldozeEffect()
+  public static System.Boolean get_DisableTooltips()
+  public static System.String get_FolderPath()
+  public static System.Boolean get_ImportXMLonStartUp()
+  public static System.Boolean get_KeyboardShortcutHints()
+  public static System.Boolean get_OverrideOverlapping()
+  public static System.Boolean get_OverrideWarning()
+  public static System.Boolean get_PassElectricity()
+  public static System.Int32 get_SnappingDistance()
+  public static System.Boolean get_UndoDisengagesLock()
+  public static System.Int32 get_UnlockingDistance()
+  public static System.Void resetModSettings()
+  public static System.Void set_AllowLocking(System.Boolean value)
+  public static System.Void set_AllowSnapping(System.Boolean value)
+  public static System.Void set_AssetCreatorMode(System.Boolean value)
+  public static System.Void set_BulldozeEffect(System.Boolean value)
+  public static System.Void set_DisableTooltips(System.Boolean value)
+  public static System.Void set_FolderPath(System.String value)
+  public static System.Void set_ImportXMLonStartUp(System.Boolean value)
+  public static System.Void set_KeyboardShortcutHints(System.Boolean value)
+  public static System.Void set_OverrideOverlapping(System.Boolean value)
+  public static System.Void set_OverrideWarning(System.Boolean value)
+  public static System.Void set_PassElectricity(System.Boolean value)
+  public static System.Void set_SnappingDistance(System.Int32 value)
+  public static System.Void set_UndoDisengagesLock(System.Boolean value)
+  public static System.Void set_UnlockingDistance(System.Int32 value)
+
+NESTED TYPES:
+  - ParkingLotSnapping.ModSettings+PLRCustomPropertiesClass
+  - ParkingLotSnapping.ModSettings+PSACustomPropertiesClass
+
+------------------------------------------------------------
+TYPE: ParkingLotSnapping.ModSettings+PLRCustomPropertiesClass
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Collections.Generic.List`1[[System.Single, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] symmetricAisleOffsets, System.Collections.Generic.List`1[[System.Single, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] asymmetricAisleOffsets, System.Boolean onesided, System.Boolean invertOffset, System.Boolean parallel, System.String name, System.String filename, System.Single verticalOffset)
+  public .ctor()
+
+METHODS:
+  public System.Collections.Generic.List`1[[System.Single, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] get_AsymmetricAisleOffsets()
+  public System.String get_Filename()
+  public System.Boolean get_InvertOffset()
+  public System.String get_Name()
+  public System.Boolean get_Onesided()
+  public System.Boolean get_Parallel()
+  public System.Collections.Generic.List`1[[System.Single, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] get_SymmetricAisleOffsets()
+  public System.Single get_VerticalOffset()
+  public System.Void set_AsymmetricAisleOffsets(System.Collections.Generic.List`1[[System.Single, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] value)
+  public System.Void set_Filename(System.String value)
+  public System.Void set_InvertOffset(System.Boolean value)
+  public System.Void set_Name(System.String value)
+  public System.Void set_Onesided(System.Boolean value)
+  public System.Void set_Parallel(System.Boolean value)
+  public System.Void set_SymmetricAisleOffsets(System.Collections.Generic.List`1[[System.Single, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] value)
+  public System.Void set_VerticalOffset(System.Single value)
+
+------------------------------------------------------------
+TYPE: ParkingLotSnapping.ModSettings+PSACustomPropertiesClass
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Single offset, System.Single parkingWidth, System.Boolean parallel, System.Single rotation, System.Boolean raisable, System.String name, System.String filename)
+  public .ctor()
+
+METHODS:
+  public System.String get_Filename()
+  public System.String get_Name()
+  public System.Single get_Offset()
+  public System.Boolean get_Parallel()
+  public System.Single get_ParkingWidth()
+  public System.Boolean get_Raisable()
+  public System.Single get_Rotation()
+  public System.Void set_Filename(System.String value)
+  public System.Void set_Name(System.String value)
+  public System.Void set_Offset(System.Single value)
+  public System.Void set_Parallel(System.Boolean value)
+  public System.Void set_ParkingWidth(System.Single value)
+  public System.Void set_Raisable(System.Boolean value)
+  public System.Void set_Rotation(System.Single value)
+
+------------------------------------------------------------
+TYPE: ParkingLotSnapping.ParkingLotSnap
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  private static System.Void ExportXML()
+  private static System.Void ImportXML()
+  private System.Void OnAllowLockingCheckBoxChanged(System.Boolean val)
+  private System.Void OnAllowSnappingCheckBoxChanged(System.Boolean val)
+  private System.Void OnAssetCreatorModeCheckBoxChanged(System.Boolean val)
+  private System.Void OnBulldozeEffectCheckBoxChanged(System.Boolean val)
+  private System.Void OnDisableTooltipsCheckBoxChanged(System.Boolean val)
+  private System.Void OnErrorTextChanged(System.String text)
+  private System.Void OnFolderPathChanged(System.String text)
+  private System.Void OnImportXMLonStartUpCheckBoxChanged(System.Boolean val)
+  private System.Void OnKeyboardShortcutsHintsCheckBoxChanged(System.Boolean val)
+  private System.Void OnOverrideOverlappingCheckBox(System.Boolean val)
+  private System.Void OnOverrideWarningCheckBoxChanged(System.Boolean val)
+  private System.Void OnPassElectricityCheckBoxChanged(System.Boolean val)
+  public System.Void OnSettingsUI(ICities.UIHelperBase helper)
+  private System.Void OnSnappingDistanceChanged(System.Single val)
+  private System.Void OnUndoDisengagesLockCheckBoxChanged(System.Boolean val)
+  private System.Void OnUnlockingDistanceChanged(System.Single val)
+  private static System.Void deleteAllAssets()
+  public System.String get_Description()
+  public System.String get_Name()
+  public System.Void onEnabled()
+  private System.Void resetSettings()
+  private static System.Void resetSnappingGrid()
+
+------------------------------------------------------------
+TYPE: ParkingLotSnapping.ParkingSpaceAssetAI
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  protected virtual System.Boolean CanEvacuate()
+  protected virtual System.Boolean CanSufferFromFlood(out System.Boolean onlyCollapse)
+  public virtual ToolBase+ToolErrors CheckBuildPosition(System.UInt16 relocateID, ref UnityEngine.Vector3 position, ref System.Single angle, System.Single waterHeight, System.Single elevation, ref ColossalFramework.Math.Segment3 connectionSegment, out System.Int32 productionRate, out System.Int32 constructionCost)
+  public virtual System.Void CreateBuilding(System.UInt16 buildingID, ref Building data)
+  public virtual System.Single ElectricityGridRadius()
+  private System.Void ElevateBuilding(System.UInt16 building, ref Building data, UnityEngine.Vector3 position, System.Single angle)
+  public virtual System.String GetConstructionInfo(System.Int32 productionRate)
+  public virtual System.Boolean IgnoreBuildingCollision()
+  public virtual System.Void ReleaseBuilding(System.UInt16 buildingID, ref Building data)
+  private System.Boolean SnapToOneSide(UnityEngine.Vector3 refPos, out UnityEngine.Vector3 pos, out UnityEngine.Vector3 dir, System.Single maxDistance)
+  private System.Boolean SnapToRoad(UnityEngine.Vector3 refPos, out UnityEngine.Vector3 pos, out UnityEngine.Vector3 dir, System.Single maxDistance, Building currentBuilding)
+
+------------------------------------------------------------
+TYPE: ParkingLotSnapping.ParkingSpaceGrid
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  public static System.Boolean AddToGrid(System.UInt16 id)
+  public static System.Void Awake()
+  public static System.UInt16 CheckGrid(UnityEngine.Vector3 position)
+  public static System.Boolean RemoveFromGrid(System.UInt16 id)
+  public static System.Boolean areYouAwake()
+
+------------------------------------------------------------
+TYPE: ParkingLotSnapping.Patcher
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public static System.Void PatchAll()
+  public static System.Void UnpatchAll()
+
+------------------------------------------------------------
+TYPE: ParkingLotSnapping.PositionLocking
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.Void AddParkingSpaceAsset(System.Single parkingWidth)
+  public static System.Void DisengageLock()
+  public static UnityEngine.Vector3 GetCenterDirection()
+  public static UnityEngine.Vector3 GetCenterPosition()
+  public static System.Single GetLastParkingWidth()
+  public static System.Int32 GetLastSnappedSegmentID()
+  public static NetInfo GetLockedNetInfo()
+  public static System.Boolean GetOverlapping()
+  public static System.Single GetRaisableLockedY()
+  public static System.Boolean InitiateLock(System.Single parkingWidth, System.String PSAname)
+  public static System.Boolean IsLocked()
+  public static System.Void SetCenterDirection(UnityEngine.Vector3 direction)
+  public static System.Void SetCenterPosition(UnityEngine.Vector3 position)
+  public static System.Void SetNextCenterPosition(UnityEngine.Vector3 position)
+  public static System.Void SetOverlapping(System.Boolean flag)
+  public static System.Void SetRaisableLockedY(System.Single y)
+  public static System.Void SetSnappedNetInfo(NetInfo info)
+  public static System.Void SetSnappedPosition(UnityEngine.Vector3 position)
+  public static System.Void SetSnappedSegmentId(System.Int32 id)
+  public static System.Boolean canReturnToPreviousLockPosition()
+  public static System.Boolean returnToPreviousLockPosition()
+
+------------------------------------------------------------
+TYPE: ParkingLotSnapping.Undo
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+
+METHODS:
+  public static System.Void Awake()
+  public static System.Void addLotToStack(System.UInt16 buildingID)
+  public static System.Boolean areYouAwake()
+  public static System.Void releaseLastBuilding()
+  public static System.Void removeLotFromStack(System.UInt16 buildingID)
+

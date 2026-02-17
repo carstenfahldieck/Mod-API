@@ -1,0 +1,3121 @@
+=== CS1 Methoden Analyse - Assembly Dump ===
+Timestamp: 2026-02-17 15:29:07
+Bucket: VANILLA
+Assembly Simple: PopsApiWrapper
+Assembly Full: PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly Path: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\PopsApiWrapper.dll
+DeclaredOnly Methods: YES
+
+
+### NAMESPACE: PopsApi
+
+------------------------------------------------------------
+TYPE: PopsApi.CallbackManager`1
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public T Get(System.IntPtr ptr)
+  public T Pop(System.IntPtr ptr)
+  public System.IntPtr Push(T toPush)
+
+------------------------------------------------------------
+TYPE: PopsApi.FeedEntry
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.Void AddItem(PopsApi.FeedItem item)
+  public virtual System.String ToString()
+  public System.Collections.Generic.List`1[[PopsApi.FeedItem, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_Items()
+
+------------------------------------------------------------
+TYPE: PopsApi.FeedItem
+KIND: class
+ATTR: Public, Abstract, BeforeFieldInit
+
+CONSTRUCTORS:
+  protected .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.FeedItemNumerical
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.String ToString()
+
+------------------------------------------------------------
+TYPE: PopsApi.FeedItemTextual
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.String ToString()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsAllocator
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.IntPtr Add(System.IntPtr iptr)
+  public System.IntPtr AllocHGlobal(System.Int32 size)
+  public System.IntPtr AllocHGlobal(System.IntPtr size)
+  protected virtual System.Void Finalize()
+  public System.Void Free()
+  public System.IntPtr StringToHGlobalAnsi(System.String s)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiAsyncResult
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.Void SetCompleted()
+  public System.Object get_AsyncState()
+  public System.Threading.WaitHandle get_AsyncWaitHandle()
+  public System.Boolean get_CompletedSynchronously()
+  public System.Boolean get_IsCompleted()
+  public System.Object get_Result()
+  public System.Void set_Result(System.Object value)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor(System.String gameName, System.String gameVersion, System.String userName, System.String password, System.String universe, System.String universeId, System.Boolean sandboxMode, System.Boolean sendTelemetry, System.Boolean runUpdateThread, PopsApi.PopsApiWrapper+LogCallback logFunction, System.Int32 retryAttempts, System.Boolean testModeEnabled, System.Boolean anonymousEnabled)
+
+METHODS:
+  private static System.Void AccountAddCredentialsCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SAccountAddCredentialsResult result)
+  private static System.Void AccountAddEmailCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SAccountAddEmailResult result)
+  private static System.Void AccountConnectCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SAccountLoginResult result)
+  private static System.Void AccountConnectionsImpl(System.IntPtr ctx, System.IntPtr taskId, System.IntPtr pEntries, System.Int32 nEntriesCount, ref PopsApi.PopsApiWrapper+POPS_SAccountConnectionsResult result)
+  private static System.Void AccountCreateCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SAccountCreateResult result)
+  private static System.Void AccountGetDetailsImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SAccountGetDetailsResult result)
+  private static System.Void AccountGetMergeStatusCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SAccountGetMergeStatusResult result)
+  public System.String AccountGuidRetrieve()
+  private static System.Void AccountIsOnlineCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SAccountIsOnlineResult result)
+  private static System.Void AccountLoginCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SAccountLoginResult result)
+  private static System.Void AccountMergeShadowCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SAccountMergeShadowResult result)
+  private static System.Void AccountResetPasswordImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SAccountResetPasswordResult result)
+  private static System.Void AccountUpdateDetailsCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SAccountUpdateDetailsResult result)
+  private static System.Void AchievementsGetCallbackImpl(System.IntPtr ctx, System.IntPtr pEntries, System.Int32 nEntriesCount, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SAchievementsResult result)
+  private System.IntPtr AchievementsGetEntriesToIntPtr(System.Collections.Generic.ICollection`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] entries, PopsApi.PopsAllocator alloc)
+  private static System.Void AchievementsListCallbackImpl(System.IntPtr ctx, System.IntPtr pEntries, System.Int32 nEntriesCount, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SAchievementsResult result)
+  private static System.Void AchievementsSendCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SAchievementsResult result)
+  private System.IntPtr AchievementsSendEntriesToIntPtr(System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+AchievementsSendEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] entries, PopsApi.PopsAllocator alloc)
+  private static System.Void AchievementsStoreToDiskCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SAchievementsResult result)
+  private static System.Void AppStatsCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, System.IntPtr pEntries, System.Int32 nEntriesCount, ref PopsApi.PopsApiWrapper+POPS_SAppStatsResult pResult)
+  public System.Void AppStatsDecrease(System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+AppStatsEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] entries, System.Boolean useAuthentication)
+  private static System.Void AppStatsGetCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, System.IntPtr pEntries, System.Int32 nEntriesCount, ref PopsApi.PopsApiWrapper+POPS_SAppStatsResult pResult)
+  public System.Void AppStatsIncrease(System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+AppStatsEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] entries, System.Boolean useAuthentication)
+  public System.Void AuthTokenRemove()
+  public System.String AuthTokenRetrieve()
+  public System.Int32 AuthTrustLevelRetrieve()
+  public System.IAsyncResult BeginAccountAddCredentials(System.String email, System.String password, System.String emailTemplate, System.String landingUrl, System.Boolean marketingPermission, System.Collections.Generic.List`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] newsletterGroups)
+  public System.IAsyncResult BeginAccountAddEmail(System.String email, System.String emailTemplate, System.String landingUrl, System.Boolean marketingPermission, System.Collections.Generic.List`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] newsletterGroups)
+  public System.IAsyncResult BeginAccountConnectAccountSteam(System.String appId, System.String authTicket)
+  public System.IAsyncResult BeginAccountConnectAccountTwitch(System.String accessToken, System.String clientId)
+  public System.IAsyncResult BeginAccountConnections()
+  public System.IAsyncResult BeginAccountCreate(System.String email, System.String password, System.String languageCode, System.String countryCode, System.Nullable`1[[System.DateTime, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] dateOfBirth, System.String source, System.String referer, System.String sourceService, System.String campaign, System.String medium, System.String channel, System.String firstName, System.String lastName, System.String addressLine1, System.String addressLine2, System.String city, System.String state, System.String zipCode, System.String phone, System.String emailTemplate, System.String landingUrl, System.String refererAccount, System.Boolean marketingPermission, System.Collections.Generic.List`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] newsletterGroups)
+  public System.IAsyncResult BeginAccountCreateShadow(System.String deviceId, System.String idType, System.String sourceService)
+  public System.IAsyncResult BeginAccountDisconnectAccountSteam()
+  public System.IAsyncResult BeginAccountDisconnectAccountSteamTicket(System.String appId, System.String authTicket)
+  public System.IAsyncResult BeginAccountDisconnectAccountTwitch(System.String accessToken, System.String clientId)
+  public System.IAsyncResult BeginAccountGetDetails()
+  public System.IAsyncResult BeginAccountGetMergeStatus(System.String mergeTaskId)
+  public System.IAsyncResult BeginAccountIsOnline()
+  public System.IAsyncResult BeginAccountLogin(System.String userName, System.String password)
+  public System.IAsyncResult BeginAccountLoginShadow(System.String deviceId, System.String idType)
+  public System.IAsyncResult BeginAccountLoginSteamTicket(System.String appId, System.String authTicket)
+  public System.IAsyncResult BeginAccountLoginTwitch(System.String accessToken, System.String clientId)
+  public System.IAsyncResult BeginAccountLoginWithAuthToken(System.String authToken)
+  public System.IAsyncResult BeginAccountMergeShadow(System.String shadowDeviceId, System.String shadowIdType)
+  public System.IAsyncResult BeginAccountResetPassword(System.String email, System.String templateName)
+  public System.IAsyncResult BeginAccountUpdateDetails(System.String firstName, System.String lastName, System.String addressLine1, System.String addressLine2, System.String city, System.String state, System.String zipCode, System.String country, System.String phone, System.String language, System.String dateOfBirth)
+  public System.IAsyncResult BeginAchievementsGet(System.Collections.Generic.ICollection`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] entries)
+  public System.IAsyncResult BeginAchievementsList()
+  public System.IAsyncResult BeginAchievementsSend(System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+AchievementsSendEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] entries)
+  public System.IAsyncResult BeginAchievementsStoreToDisk()
+  public System.IAsyncResult BeginAppStatsDecrease(System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+AppStatsEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] entries, System.Boolean useAuthentication)
+  public System.IAsyncResult BeginAppStatsGet(System.Collections.Generic.ICollection`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] entries, System.Boolean useAuthentication)
+  public System.IAsyncResult BeginAppStatsIncrease(System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+AppStatsEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] entries, System.Boolean useAuthentication)
+  public System.IAsyncResult BeginAuthTokenInvalidate()
+  public System.IAsyncResult BeginDownloadFile(System.String remotePath, System.String localPath)
+  public System.IAsyncResult BeginFileStorageDelete(System.String remotePath)
+  public System.IAsyncResult BeginFileStorageDownload(System.String remotePath, System.String localPath, System.String ifNoneMatch)
+  public System.IAsyncResult BeginFileStorageList()
+  public System.IAsyncResult BeginFileStorageRead(System.String remotePath, System.String localPath)
+  public System.IAsyncResult BeginFileStorageSave(System.String localPath, System.String remotePath)
+  public System.IAsyncResult BeginFileStorageUpload(System.String localPath, System.String remotePath)
+  public System.IAsyncResult BeginGameProfileCreate(System.String profileName)
+  public System.IAsyncResult BeginGameProfileDelete()
+  public System.IAsyncResult BeginGameProfileRetrieve()
+  public System.IAsyncResult BeginGameProfileUpdate(System.String profileName)
+  public System.IAsyncResult BeginGetAppChildren(System.String appName)
+  public System.IAsyncResult BeginGetOpenFriendRequests()
+  public System.IAsyncResult BeginIndexingCreate(System.String indexName, System.String doctype, System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+IndexingKeyValuePair, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] metaKeyVals, System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+IndexingKeyValuePair, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] bodyKeyVals)
+  public System.IAsyncResult BeginIndexingDelete(System.String indexName, System.String documentId, System.String doctype)
+  public System.IAsyncResult BeginIndexingUpdate(System.String indexName, System.String documentId, System.String doctype, System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+IndexingUpdateEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] updateEntries)
+  public System.IAsyncResult BeginInventoryDownloadsList()
+  public System.IAsyncResult BeginInventoryList(PopsApi.PopsApiWrapper+InventoryCategory category)
+  public System.IAsyncResult BeginInventoryOwnedProducts()
+  public System.IAsyncResult BeginKVStorageDelete(System.String key)
+  public System.IAsyncResult BeginKVStorageRead(System.String path)
+  public System.IAsyncResult BeginKVStorageWrite(System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+StorageEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] entries)
+  public System.IAsyncResult BeginLegalGetDocument(System.String type, System.String title, System.String language)
+  public System.IAsyncResult BeginLegalGetDocumentsList()
+  public System.IAsyncResult BeginLegalGetViewed()
+  public System.IAsyncResult BeginLegalSetViewed(System.String name)
+  public System.IAsyncResult BeginModsCount(PopsApi.PopsApiWrapper+ModsCountDescription modCountDesc)
+  public System.IAsyncResult BeginModsDisableMod(System.Int32 modId)
+  public System.IAsyncResult BeginModsDownloadMod(System.Int32 modsId, System.String modsVersion, System.String localPath)
+  public System.IAsyncResult BeginModsEnableMod(System.Int32 modId)
+  public System.IAsyncResult BeginModsGetContentPath(System.String modsRepoPath)
+  public System.IAsyncResult BeginModsGetDetails(System.Int32 modId)
+  public System.IAsyncResult BeginModsGetDownloadInfo(System.Int32 modsId, System.String modsVersion)
+  public System.IAsyncResult BeginModsGetInstalled()
+  public System.IAsyncResult BeginModsGetManifest(System.String modsContentPath, System.String modsVersion)
+  public System.IAsyncResult BeginModsGetRepoInfo(System.String modsContentPath)
+  public System.IAsyncResult BeginModsGetUserRating(System.Int32 modId)
+  public System.IAsyncResult BeginModsInstallMod(System.Int32 modId)
+  public System.IAsyncResult BeginModsPublishMod(PopsApi.PopsApiWrapper+ModsPublishModDescription modPublishModDesc)
+  public System.IAsyncResult BeginModsRemoveContent(System.String uuid, System.String filename)
+  public System.IAsyncResult BeginModsRemoveDescriptionImage(System.String uuid, System.String filename)
+  public System.IAsyncResult BeginModsRemoveScreenshot(System.String uuid, System.String filename)
+  public System.IAsyncResult BeginModsRemoveThumbnail(System.String uuid, System.String pFilename)
+  public System.IAsyncResult BeginModsReport(PopsApi.PopsApiWrapper+ModsReportDesc modsReportDesc)
+  public System.IAsyncResult BeginModsSearch(PopsApi.PopsApiWrapper+ModsSearchDescription modSearchDesc)
+  public System.IAsyncResult BeginModsUninstallMod(System.Int32 modId)
+  public System.IAsyncResult BeginModsUpdateUserRating(PopsApi.PopsApiWrapper+ModsUpdateUserRatingDesc modsUpdateUserRatingDesc)
+  public System.IAsyncResult BeginModsUploadContent(System.String uuid, System.String localPath)
+  public System.IAsyncResult BeginModsUploadDescriptionImage(System.String uuid, System.String localPath)
+  public System.IAsyncResult BeginModsUploadScreenshot(System.String uuid, System.String localPath)
+  public System.IAsyncResult BeginModsUploadThumbnail(System.String uuid, System.String localPath)
+  public System.IAsyncResult BeginNewsletterSubscribe(System.String newsletterName)
+  public System.IAsyncResult BeginNewsletterUnsubscribeAll()
+  public System.IAsyncResult BeginRequestFeed()
+  public System.IAsyncResult BeginSocialAddFriend(System.String friendId)
+  public System.IAsyncResult BeginSocialConnect()
+  public System.IAsyncResult BeginSocialGetFriendsList()
+  public System.IAsyncResult BeginSocialJoinRoomConnect(System.String roomName, System.String nickName)
+  public System.IAsyncResult BeginSocialLeaveRoomConnect(System.String roomName)
+  public System.IAsyncResult BeginSocialProfileCreate(System.String profileName)
+  public System.IAsyncResult BeginSocialProfileQuery(System.String profileName)
+  public System.IAsyncResult BeginSocialProfileRetrieve()
+  public System.IAsyncResult BeginSocialProfileUpdate(System.String profileName)
+  public System.IAsyncResult BeginSocialRemoveFriend(System.String friendId)
+  public System.IAsyncResult BeginSocialRemoveOutgoingFriendRequest(System.String friendId)
+  public System.IAsyncResult BeginSocialRespondToFriendRequest(System.String friendId, System.Boolean confirm)
+  private static PopsApi.PopsApiWrapper+InventoryItems ConvertInventoryList(PopsApi.PopsApiWrapper+POPS_SInventoryList toConvert)
+  public System.Void Dispose()
+  private static System.Void DownloadFileCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SDownloadFileResult result)
+  public System.Boolean EndAccountAddCredentials(System.IAsyncResult res)
+  public System.Boolean EndAccountAddEmail(System.IAsyncResult res)
+  public System.Boolean EndAccountConnectAccountSteam(System.IAsyncResult res)
+  public System.Boolean EndAccountConnectAccountTwitch(System.IAsyncResult res)
+  public System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+Connection, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndAccountConnections(System.IAsyncResult res)
+  public System.Boolean EndAccountCreate(System.IAsyncResult res)
+  public System.Boolean EndAccountCreateShadow(System.IAsyncResult res)
+  public System.Boolean EndAccountDisconnectAccountSteam(System.IAsyncResult res)
+  public System.Boolean EndAccountDisconnectAccountSteamTicket(System.IAsyncResult res)
+  public System.Boolean EndAccountDisconnectAccountTwitch(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+AccountGetDetailsResult EndAccountGetDetails(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+AccountGetMergeStatusResult EndAccountGetMergeStatus(System.IAsyncResult res)
+  public System.Boolean EndAccountIsOnline(System.IAsyncResult res)
+  public System.Boolean EndAccountLogin(System.IAsyncResult res)
+  public System.Boolean EndAccountLoginShadow(System.IAsyncResult res)
+  public System.Boolean EndAccountLoginSteamTicket(System.IAsyncResult res)
+  public System.Boolean EndAccountLoginTwitch(System.IAsyncResult res)
+  public System.Boolean EndAccountLoginWithAuthToken(System.IAsyncResult res)
+  public System.String EndAccountMergeShadow(System.IAsyncResult res)
+  public System.Boolean EndAccountResetPassword(System.IAsyncResult res)
+  public System.Boolean EndAccountUpdateDetails(System.IAsyncResult res)
+  public System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+AchievementsGetResultEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndAchievementsGet(System.IAsyncResult res)
+  public System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+AchievementsListResultEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndAchievementsList(System.IAsyncResult res)
+  public System.Boolean EndAchievementsSend(System.IAsyncResult res)
+  public System.Boolean EndAchievementsStoreToDisk(System.IAsyncResult res)
+  public System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+AppStatsChangeResult, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndAppStatsDecrease(System.IAsyncResult res)
+  public System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+AppStatsGetResult, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndAppStatsGet(System.IAsyncResult res)
+  public System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+AppStatsChangeResult, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndAppStatsIncrease(System.IAsyncResult res)
+  public System.Boolean EndAuthTokenInvalidate(System.IAsyncResult res)
+  public System.Boolean EndDownloadFile(System.IAsyncResult res)
+  public System.Boolean EndFileStorageDelete(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+FileInfo EndFileStorageDownload(System.IAsyncResult res)
+  public System.Collections.Generic.List`1[[PopsApi.PopsApiWrapper+FileListItem, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndFileStorageList(System.IAsyncResult res)
+  public System.Boolean EndFileStorageRead(System.IAsyncResult res)
+  public System.Boolean EndFileStorageSave(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+FileInfo EndFileStorageUpload(System.IAsyncResult res)
+  public System.Boolean EndGameProfileCreate(System.IAsyncResult res)
+  public System.Boolean EndGameProfileDelete(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+GameProfile EndGameProfileRetrieve(System.IAsyncResult res)
+  public System.Boolean EndGameProfileUpdate(System.IAsyncResult res)
+  private T EndGenericAsyncCall<T>(System.IAsyncResult res)
+  public System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+App, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndGetAppChildren(System.IAsyncResult res)
+  public System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+FriendRequest, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndGetOpenFriendRequests(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+IndexingResult EndIndexingCreate(System.IAsyncResult res)
+  public System.Boolean EndIndexingDelete(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+IndexingResult EndIndexingUpdate(System.IAsyncResult res)
+  public System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+DownloadsEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndInventoryDowloadsList(System.IAsyncResult res)
+  public System.Uri EndInventoryDownloadUrl(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+InventoryItems EndInventoryList(System.IAsyncResult res)
+  public System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+OwnedProduct, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndInventoryOwnedProducts(System.IAsyncResult res)
+  public System.Boolean EndKVStorageDelete(System.IAsyncResult res)
+  public System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+StorageReadEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndKVStorageRead(System.IAsyncResult res)
+  public System.Boolean EndKVStorageWrite(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+LegalDocument EndLegalGetDocument(System.IAsyncResult res)
+  public System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+LegalDocumentListEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndLegalGetDocumentsList(System.IAsyncResult res)
+  public System.Collections.Generic.ICollection`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] EndLegalGetViewed(System.IAsyncResult res)
+  public System.Boolean EndLegalSetViewed(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+ModsCountResult EndModsCount(System.IAsyncResult res)
+  public System.Boolean EndModsDisableMod(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+ModsGetDownloadInfo EndModsDownloadMod(System.IAsyncResult res)
+  public System.Boolean EndModsEnableMod(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+ModsGetContentPath EndModsGetContentPath(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+ModsDetail EndModsGetDetails(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+ModsGetDownloadInfo EndModsGetDownloadInfo(System.IAsyncResult res)
+  public System.Collections.Generic.List`1[[PopsApi.PopsApiWrapper+ModsGetInstalledEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndModsGetInstalled(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+ModsGetManifest EndModsGetManifest(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+ModsGetRepoInfo EndModsGetRepoInfo(System.IAsyncResult res)
+  public System.Int32 EndModsGetUserRating(System.IAsyncResult res)
+  public System.Boolean EndModsInstallMod(System.IAsyncResult res)
+  public System.Int32 EndModsPublishMod(System.IAsyncResult res)
+  public System.Boolean EndModsRemoveContent(System.IAsyncResult res)
+  public System.Boolean EndModsRemoveDescriptionImage(System.IAsyncResult res)
+  public System.Boolean EndModsRemoveScreenshot(System.IAsyncResult res)
+  public System.Boolean EndModsRemoveThumbnail(System.IAsyncResult res)
+  public System.Boolean EndModsReport(System.IAsyncResult res)
+  public System.Collections.Generic.List`1[[PopsApi.PopsApiWrapper+ModsSearchEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndModsSearch(System.IAsyncResult res)
+  public System.Boolean EndModsUninstallMod(System.IAsyncResult res)
+  public System.Int32 EndModsUpdateUserRating(System.IAsyncResult res)
+  public System.String EndModsUploadContent(System.IAsyncResult res)
+  public System.String EndModsUploadDescriptionImage(System.IAsyncResult res)
+  public System.String EndModsUploadScreenshot(System.IAsyncResult res)
+  public System.String EndModsUploadThumbnail(System.IAsyncResult res)
+  public System.Boolean EndNewsletterSubscribe(System.IAsyncResult res)
+  public System.Boolean EndNewsletterUnsubscribeAll(System.IAsyncResult res)
+  public System.Collections.Generic.List`1[[PopsApi.FeedEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndRequestFeed(System.IAsyncResult res)
+  public System.Boolean EndSocialAddFriend(System.IAsyncResult res)
+  public System.Boolean EndSocialConnect(System.IAsyncResult res)
+  public System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+FriendsListEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] EndSocialGetFriendsList(System.IAsyncResult res)
+  public System.String EndSocialJoinRoom(System.IAsyncResult res)
+  public System.String EndSocialLeaveRoom(System.IAsyncResult res)
+  public System.Boolean EndSocialProfileCreate(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+GameProfile EndSocialProfileQuery(System.IAsyncResult res)
+  public PopsApi.PopsApiWrapper+GameProfile EndSocialProfileRetrieve(System.IAsyncResult res)
+  public System.Boolean EndSocialProfileUpdate(System.IAsyncResult res)
+  public System.Boolean EndSocialRemoveFriend(System.IAsyncResult res)
+  public System.Boolean EndSocialRemoveOutgoingFriendRequest(System.IAsyncResult res)
+  public System.Boolean EndSocialRespondToFriendRequest(System.IAsyncResult res)
+  private PopsApi.PopsApiWrapper+POPS_SStorageEntry ExtToIntStorageEntry(PopsApi.PopsApiWrapper+StorageEntry toConvert)
+  private static System.Void FeedCallbackImpl(System.IntPtr returnCtx, System.IntPtr taskId, System.IntPtr feedEntries, System.Int32 noOfEntries)
+  private static System.Int32 FileCloseImpl(System.IntPtr filePtr)
+  private static System.IntPtr FileOpenImpl(System.String filename, System.String mode)
+  private static System.UInt64 FileReadImpl(System.IntPtr destBufPtr, System.UInt64 size, System.UInt64 count, System.IntPtr filePtr)
+  private static System.Int32 FileSeekImpl(System.IntPtr filePtr, System.UInt64 offset, PopsApi.PopsApiWrapper+EFileOrigin origin)
+  private static System.Void FileStorageDeleteCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SFileStorageResult result)
+  private static System.Void FileStorageDownloadCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SFileStorageResult result)
+  private static System.Void FileStorageListCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, System.IntPtr entries, System.Int32 nEntries)
+  private static System.Void FileStorageReadCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SFileStorageResult result)
+  private static System.Void FileStorageSaveCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SFileStorageResult result)
+  private static System.Void FileStorageUploadCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SFileStorageResult result)
+  private static System.UInt64 FileTellImpl(System.IntPtr filePtr)
+  private static System.UInt64 FileWriteImpl(System.IntPtr sourceBufPtr, System.UInt64 size, System.UInt64 count, System.IntPtr filePtr)
+  private static System.Void GameProfileCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SGameProfileResult result)
+  private static System.Void GameProfileRetrieveCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SGameProfileResult result, ref PopsApi.PopsApiWrapper+POPS_SGameProfileEntry entry)
+  private static System.Void GetAppChildrenCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, System.IntPtr pEntries, System.Int32 nEntriesCount, ref PopsApi.PopsApiWrapper+POPS_SAppGetChildrenResult result)
+  private static System.Void IndexingCreateCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SIndexingResult result)
+  private static System.Void IndexingDeleteCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SIndexingDeletionResult result)
+  private static System.Void IndexingUpdateCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SIndexingResult result)
+  private System.Void InitFileIO()
+  private static System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+AchievementsGetResultEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] IntPtrToAchievementsGetResultEntry(System.IntPtr entries, System.Int32 count)
+  private static System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+App, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] IntPtrToAppList(System.IntPtr entries, System.Int32 count)
+  private static System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+Connection, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] IntPtrToConnectionList(System.IntPtr entries, System.Int32 count)
+  private static System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+ModsGetInstalledEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] IntPtrToModsGetInstalledEntry(System.IntPtr entries, System.Int32 count)
+  private static System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+ModsManifestContentEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] IntPtrToModsManifestContent(System.IntPtr entries, System.Int32 count)
+  private static System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+ModsRepoKeyDependency, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] IntPtrToModsRepoKeyDependency(System.IntPtr entries, System.Int32 count)
+  private static System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+ModsRepoKeyPatch, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] IntPtrToModsRepoKeyPatch(System.IntPtr entries, System.Int32 count)
+  private static System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+ModsRepoKeyVersion, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] IntPtrToModsRepoKeyVersion(System.IntPtr entries, System.Int32 count)
+  private static System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+ModsRepoSubRepositoryEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] IntPtrToModsRepoSubRepositoryEntry(System.IntPtr entries, System.Int32 count)
+  private static System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+ModsSearchEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] IntPtrToModsSearchEntry(System.IntPtr entries, System.Int32 count)
+  private static System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+AchievementDescription, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] IntToExtAchievementDescription(System.UInt32 count, System.IntPtr languages, System.IntPtr descriptions, System.IntPtr titles)
+  private static PopsApi.PopsApiWrapper+BulkItem IntToExtBulkItem(PopsApi.PopsApiWrapper+POPS_SBulkItem toConvert)
+  private System.Byte[] IntToExtByteArray(System.UInt64 count, System.IntPtr arr)
+  private static System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+ModsChangeLogEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] IntToExtChangeLog(System.IntPtr entries, System.Int32 count)
+  private static System.String IntToExtCharArray(System.Byte[] toConvert)
+  private static System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+LegalDocumentListEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] IntToExtDocumentEntry(System.IntPtr entries, System.Int32 count)
+  private static PopsApi.PopsApiWrapper+DownloadsEntry IntToExtDownload(PopsApi.PopsApiWrapper+POPS_SInventoryDownloadsEntry toConvert)
+  private static PopsApi.PopsApiWrapper+FriendRequest IntToExtFriendRequest(PopsApi.PopsApiWrapper+POPS_SFriendRequest toConvert)
+  private static PopsApi.PopsApiWrapper+FriendsListEntry IntToExtFriendsListEntry(PopsApi.PopsApiWrapper+POPS_SFriendsListEntry toConvert)
+  private static System.Collections.Generic.ICollection`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] IntToExtInteger(System.IntPtr entries, System.Int32 count)
+  private static PopsApi.PopsApiWrapper+StorageReadEntry IntToExtKVStorageReadEntry(PopsApi.PopsApiWrapper+POPS_SKVStorageReadEntry toConvert)
+  private static System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+ModsKeyValue, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] IntToExtMetaData(System.IntPtr metaData, System.Int32 metaDataCount)
+  private static PopsApi.PopsApiWrapper+OwnedItem IntToExtOwnedItem(PopsApi.PopsApiWrapper+POPS_SOwnedItem toConvert)
+  private static PopsApi.PopsApiWrapper+Platform IntToExtPlatform(PopsApi.PopsApiWrapper+POPS_SInventoryPlatform toConvert)
+  private static PopsApi.PopsApiWrapper+OwnedProduct IntToExtProduct(PopsApi.PopsApiWrapper+POPS_SInventoryProduct toConvert)
+  private static System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+ModsRequirementEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] IntToExtRequirement(System.IntPtr entries, System.Int32 count)
+  private static System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+ModsScreenshotEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] IntToExtScreenshot(System.IntPtr entries, System.Int32 count)
+  private static PopsApi.PopsApiWrapper+StorageEntry IntToExtStorageEntry(PopsApi.PopsApiWrapper+POPS_SStorageEntry toConvert)
+  private static System.Collections.Generic.ICollection`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] IntToExtString(System.IntPtr entries, System.Int32 count)
+  private static System.Collections.Generic.ICollection`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] IntToExtTags(System.IntPtr tags, System.Int32 count)
+  private static PopsApi.PopsApiWrapper+TimedItem IntToExtTimedItem(PopsApi.PopsApiWrapper+POPS_STimedItem toConvert)
+  private static System.Collections.Generic.ICollection`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] IntToExtViewedDocs(System.IntPtr docs, System.Int32 count)
+  private static System.Void InvalidateLoginTokenCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SInvalidateLoginTokenResult result)
+  private static System.Void InventoryDownloadsCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SInventoryResult result, ref PopsApi.PopsApiWrapper+POPS_SInventoryDownloadsList itemList)
+  public System.IAsyncResult InventoryGetDownloadUrlAsync(System.String skuid, System.String label)
+  private static System.Void InventoryGetDownloadUrlCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SInventoryResult result, ref PopsApi.PopsApiWrapper+POPS_SInventoryDownloadUrl downloadUrl)
+  private static System.Void InventoryListCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SInventoryResult result, ref PopsApi.PopsApiWrapper+POPS_SInventoryList itemList)
+  private static System.Void InventoryOwnedProductsCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SInventoryResult result, System.IntPtr products, System.Int32 productsCount)
+  private static System.Void KVStorageCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SKVStorageResult result)
+  private static System.Void LegalGetDocumentImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SLegalGetDocumentResult result)
+  private static System.Void LegalGetDocumentsListImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SLegalGetDocumentsListResult result)
+  private static System.Void LegalGetViewedImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SLegalGetViewedResult result)
+  private static System.Void LegalSetViewedImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SLegalSetViewedResult result)
+  private static System.Void Log(System.String message)
+  private static System.Void LogCallbackImpl(System.IntPtr userData, System.IntPtr returnCtx, System.String message)
+  private PopsApi.PopsApiWrapper+ArrayAllocations MakePairsArrayPtr(System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+IndexingKeyValuePair, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] keyVals)
+  private PopsApi.PopsApiWrapper+ArrayAllocations MakeUpdateArrayPtr(System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+IndexingUpdateEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] entries)
+  private static U[] Map<T, U>(T[] source, PopsApi.PopsApiWrapper+MappableFunction`2[[T],[U]] f)
+  private static System.Void ModsCountCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsCountResult result)
+  private static System.Void ModsDisableModCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsDisableModResult result)
+  private static System.Void ModsDownloadModCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsGetDownloadInfoResult result)
+  private static System.Void ModsEnableModCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsEnableModResult result)
+  private static System.Void ModsGetContentPathCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsGetContentPathResult result)
+  private static System.Void ModsGetDetailsCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsGetDetailsResult result)
+  private static System.Void ModsGetDownloadInfoCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsGetDownloadInfoResult result)
+  private static System.Void ModsGetInstalledCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsGetInstalledResult result)
+  private static System.Void ModsGetManifestCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsGetManifestResult result)
+  private static System.Void ModsGetRepoInfoCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsGetRepoInfoResult result)
+  private static System.Void ModsGetUserRatingCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsGetUserRatingResult result)
+  private static System.Void ModsInstallModCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsInstallModResult result)
+  private static System.Void ModsPublishModCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsPublishModResult result)
+  private static System.Void ModsRemoveFileCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsRemoveFileResult result)
+  private static System.Void ModsReportCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsReportResult result)
+  private static System.Void ModsSearchCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsSearchResult result)
+  private static System.Void ModsUninstallModCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsUninstallModResult result)
+  private static System.Void ModsUpdateUserRatingCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsUpdateUserRatingResult result)
+  private static System.Void ModsUploadFileCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SModsUploadFileResult result)
+  private static System.Void NewsletterCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SNewsletterResult result)
+  private System.Void OnTimeoutUpdate(System.Object source, System.Timers.ElapsedEventArgs e)
+  private static System.Void POPS_AccountAddCredentials(System.IntPtr cxt, ref PopsApi.PopsApiWrapper+POPS_SAccountAddCredentialsDesc pDesc, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AccountAddCredentialsCallback ResultFn)
+  private static System.Void POPS_AccountAddEmail(System.IntPtr cxt, ref PopsApi.PopsApiWrapper+POPS_SAccountAddEmailDesc desc, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AccountAddEmailCallback ResultFn)
+  private static System.Void POPS_AccountConnectAccountSteam(System.IntPtr ctx, System.String appId, System.String authTicket, System.IntPtr userData, PopsApi.PopsApiWrapper+AccountConnectCallback callback)
+  private static System.Void POPS_AccountConnectAccountTwitch(System.IntPtr ctx, System.String accessToken, System.String clientId, System.IntPtr userData, PopsApi.PopsApiWrapper+AccountConnectCallback callback)
+  private static System.Void POPS_AccountConnections(System.IntPtr cxt, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AccountConnectionsCallback ResultFn)
+  private static System.Void POPS_AccountCreate(System.IntPtr cxt, ref PopsApi.PopsApiWrapper+POPS_SCreateAccountDesc pDesc, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AccountCreateCallback ResultFn)
+  private static System.Void POPS_AccountCreateShadow(System.IntPtr cxt, ref PopsApi.PopsApiWrapper+POPS_SCreateShadowAccountDesc pDesc, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AccountCreateCallback ResultFn)
+  private static System.Void POPS_AccountDisconnectAccountSteam(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+AccountConnectCallback callback)
+  private static System.Void POPS_AccountDisconnectAccountSteamTicket(System.IntPtr ctx, System.String appId, System.String authTicket, System.IntPtr userData, PopsApi.PopsApiWrapper+AccountConnectCallback callback)
+  private static System.Void POPS_AccountDisconnectAccountTwitch(System.IntPtr ctx, System.String accessToken, System.String clientId, System.IntPtr userData, PopsApi.PopsApiWrapper+AccountConnectCallback callback)
+  private static System.Void POPS_AccountGetDetails(System.IntPtr cxt, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AccountGetDetailsCallback ResultFn)
+  private static System.Void POPS_AccountGetGuid(System.IntPtr cxt, System.IntPtr tokenBufferOut)
+  private static System.Void POPS_AccountGetMergeStatus(System.IntPtr ctxt, System.String pTaskId, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AccountGetMergeStatusCallback ResultFn)
+  private static System.Void POPS_AccountIsOnline(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+AccountIsOnlineCallback callback)
+  private static System.Void POPS_AccountLogIn(System.IntPtr ctx, System.String userName, System.String password, System.IntPtr userData, PopsApi.PopsApiWrapper+AccountLoginCallback callback)
+  private static System.Void POPS_AccountLogInShadow(System.IntPtr ctx, System.String deviceId, System.String idType, System.IntPtr userData, PopsApi.PopsApiWrapper+AccountLoginCallback callback)
+  private static System.Void POPS_AccountLogInSteamTicket(System.IntPtr ctx, System.String appId, System.String authTicket, System.IntPtr userData, PopsApi.PopsApiWrapper+AccountLoginCallback callback)
+  private static System.Void POPS_AccountLogInTwitch(System.IntPtr ctx, System.String accessToken, System.String clientId, System.IntPtr userData, PopsApi.PopsApiWrapper+AccountLoginCallback callback)
+  private static System.Void POPS_AccountLogInWithAuthToken(System.IntPtr ctx, System.String authToken, System.IntPtr userData, PopsApi.PopsApiWrapper+AccountLoginCallback callback)
+  private static System.Void POPS_AccountMergeShadow(System.IntPtr ctxt, ref PopsApi.PopsApiWrapper+POPS_SAccountShadowCredentials pCred, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AccountMergeShadowCallback ResultFn)
+  private static System.Void POPS_AccountResetPassword(System.IntPtr cxt, System.String email, System.String templateName, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AccountResetPasswordCallback ResultFn)
+  private static System.Void POPS_AccountUpdateDetails(System.IntPtr ctxt, ref PopsApi.PopsApiWrapper+POPS_SAccountUpdateDetailsDesc pDesc, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AccountUpdateDetailsCallback ResultFn)
+  private static System.Void POPS_AchievementsGet(System.IntPtr ctx, System.IntPtr pEntries, System.Int32 nEntriesCount, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AchievementsGetCallback ResultFn)
+  private static System.Void POPS_AchievementsList(System.IntPtr ctx, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AchievementsListCallback ResultFn)
+  private static System.Void POPS_AchievementsSend(System.IntPtr ctx, System.IntPtr pEntries, System.Int32 nEntriesCount, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AchievementsSendCallback ResultFn)
+  private static System.Void POPS_AchievementsStoreToDisk(System.IntPtr ctx, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AchievementsStoreToDiskCallback ResultFn)
+  private static System.Void POPS_AppGetChildren(System.IntPtr ctx, System.String game, System.IntPtr userData, PopsApi.PopsApiWrapper+GetAppChildrenCallback callback)
+  private static System.Void POPS_AppStatsDecrease(System.IntPtr ctx, System.IntPtr pEntries, System.Int32 nEntriesCount, System.Byte bUseAuthentication, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AppStatsCallback ResultFn)
+  private static System.Void POPS_AppStatsGet(System.IntPtr ctx, System.IntPtr pEntries, System.Int32 nEntriesCount, System.Byte bUseAuthentication, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AppStatsGetCallback ResultFn)
+  private static System.Void POPS_AppStatsIncrease(System.IntPtr ctx, System.IntPtr pEntries, System.Int32 nEntriesCount, System.Byte bUseAuthentication, System.IntPtr pUserData, PopsApi.PopsApiWrapper+AppStatsCallback ResultFn)
+  private static System.Void POPS_DownloadFile(System.IntPtr ctx, System.String remotePath, System.String localPath, System.IntPtr userData, PopsApi.PopsApiWrapper+DownloadFileCallback callback)
+  private static System.Void POPS_FeedRequest64(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+FeedCallback callback)
+  private static System.Void POPS_FileStorageDelete(System.IntPtr ctx, System.String remotePath, System.IntPtr userData, PopsApi.PopsApiWrapper+FileStorageDeleteCallback callback)
+  private static System.Void POPS_FileStorageGet(System.IntPtr ctx, System.String remotePath, System.String localPath, System.String ifNoneMatch, System.IntPtr userData, PopsApi.PopsApiWrapper+FileStorageReadCallback callback)
+  private static System.Void POPS_FileStorageList(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+FileStorageListCallback callback)
+  private static System.Void POPS_FileStorageRead(System.IntPtr ctx, System.String remotePath, System.String localPath, System.IntPtr userData, PopsApi.PopsApiWrapper+FileStorageReadCallback callback)
+  private static System.Void POPS_FileStorageSave(System.IntPtr ctx, System.String localPath, System.String remotePath, System.IntPtr userData, PopsApi.PopsApiWrapper+FileStorageSaveCallback callback)
+  private static System.Void POPS_GameProfileCreate(System.IntPtr ctx, System.String profileName, System.IntPtr userData, PopsApi.PopsApiWrapper+GameProfileCallback callback)
+  private static System.Void POPS_GameProfileDelete(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+GameProfileCallback callback)
+  private static System.Void POPS_GameProfileRetrieve(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+GameProfileRetrieveCallback callback)
+  private static System.Void POPS_GameProfileUpdate(System.IntPtr ctx, System.String profileName, System.IntPtr userData, PopsApi.PopsApiWrapper+GameProfileCallback callback)
+  private static System.Void POPS_IndexingCreate64(System.IntPtr ctx, System.String indexName, ref PopsApi.PopsApiWrapper+POPS_SIndexingDocument doc, System.IntPtr userData, PopsApi.PopsApiWrapper+IndexingCreateCallback callback)
+  private static System.Void POPS_IndexingDelete(System.IntPtr ctxt, System.String pIndexName, System.String documentId, System.String doctype, System.IntPtr pUserData, PopsApi.PopsApiWrapper+IndexingDeleteCallback ResultFn)
+  private static System.Void POPS_IndexingUpdate(System.IntPtr ctxt, System.String pIndexName, ref PopsApi.PopsApiWrapper+POPS_SIndexingDocumentUpdate pUpdate, System.IntPtr pUserData, PopsApi.PopsApiWrapper+IndexingUpdateCallback ResultFn)
+  private static System.IntPtr POPS_Initialize(ref PopsApi.PopsApiWrapper+POPS_SConfig conf)
+  private static System.Void POPS_InvalidateLoginToken(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+InvalidateLoginTokenCallback callback)
+  private static System.Void POPS_InventoryDownloads(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+InventoryDownloadsCallback callback)
+  private static System.Void POPS_InventoryGetDownloadUrl(System.IntPtr ctx, System.String skuid, System.String label, System.IntPtr userData, PopsApi.PopsApiWrapper+InventoryGetDownloadUrlCallback callback)
+  private static System.Void POPS_InventoryList(System.IntPtr ctx, PopsApi.PopsApiWrapper+POPS_EInventoryCategory filter, System.IntPtr userData, PopsApi.PopsApiWrapper+InventoryListCallback callback)
+  private static System.Void POPS_InventoryOwnedProducts(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+InventoryOwnedProductsCallback callback)
+  private static System.Void POPS_KVStorageDelete(System.IntPtr ctx, System.String key, System.IntPtr userData, PopsApi.PopsApiWrapper+KVStorageCallback callback)
+  private static System.Void POPS_KVStorageRead(System.IntPtr ctx, System.String Path, System.IntPtr userData, PopsApi.PopsApiWrapper+KVStorageReadCallback callback)
+  private static System.Void POPS_KVStorageWrite(System.IntPtr ctx, System.IntPtr entries, System.Int32 entriesCount, System.IntPtr userData, PopsApi.PopsApiWrapper+KVStorageCallback callback)
+  private static System.Void POPS_LegalGetDocument(System.IntPtr ctx, System.String type, System.String title, System.String language, System.IntPtr userData, PopsApi.PopsApiWrapper+LegalGetDocumentCallback callback)
+  private static System.Void POPS_LegalGetDocumentsList(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+LegalGetDocumentsListCallback callback)
+  private static System.Void POPS_LegalGetViewed(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+LegalGetViewedCallback callback)
+  private static System.Void POPS_LegalSetViewed(System.IntPtr ctx, System.String name, System.IntPtr userData, PopsApi.PopsApiWrapper+LegalSetViewedCallback callback)
+  private static System.Void POPS_ModsCount(System.IntPtr ctx, ref PopsApi.PopsApiWrapper+POPS_SModsCountDesc pDesc, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsCountCallback callback)
+  private static System.Void POPS_ModsDisableMod(System.IntPtr ctx, System.Int32 modId, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsDisableModCallback callback)
+  private static System.Void POPS_ModsDownloadMod(System.IntPtr ctx, System.Int32 modsId, System.String modsVersion, System.String localPath, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsDownloadModCallback callback)
+  private static System.Void POPS_ModsEnableMod(System.IntPtr ctx, System.Int32 modId, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsEnableModCallback callback)
+  private static System.Void POPS_ModsGetContentPath(System.IntPtr ctx, System.String modsRepoPath, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsGetContentPathCallback callback)
+  private static System.Void POPS_ModsGetDetails(System.IntPtr ctx, System.Int32 modId, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsGetDetailsCallback callback)
+  private static System.Void POPS_ModsGetDownloadInfo(System.IntPtr ctx, System.Int32 modsId, System.String modsVersion, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsGetDownloadInfoCallback callback)
+  private static System.Void POPS_ModsGetInstalled(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsGetInstalledCallback callback)
+  private static System.Void POPS_ModsGetManifest(System.IntPtr ctx, System.String modsContentPath, System.String modsVersion, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsGetManifestCallback callback)
+  private static System.Void POPS_ModsGetRepoInfo(System.IntPtr ctx, System.String modsContentPath, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsGetRepoInfoCallback callback)
+  private static System.Void POPS_ModsGetUserRating(System.IntPtr ctx, System.Int32 modId, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsGetUserRatingCallback callback)
+  private static System.Void POPS_ModsInstallMod(System.IntPtr ctx, System.Int32 modId, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsInstallModCallback callback)
+  private static System.Void POPS_ModsPublishMod(System.IntPtr ctx, ref PopsApi.PopsApiWrapper+POPS_SModsPublishModDesc pDesc, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsPublishModCallback callback)
+  private static System.Void POPS_ModsRemoveContent(System.IntPtr ctx, System.String uuid, System.String filename, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsRemoveFileCallback callback)
+  private static System.Void POPS_ModsRemoveDescriptionImage(System.IntPtr ctx, System.String uuid, System.String filename, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsRemoveFileCallback callback)
+  private static System.Void POPS_ModsRemoveScreenshot(System.IntPtr ctx, System.String uuid, System.String filename, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsRemoveFileCallback callback)
+  private static System.Void POPS_ModsRemoveThumbnail(System.IntPtr ctx, System.String uuid, System.String pFilename, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsRemoveFileCallback callback)
+  private static System.Void POPS_ModsReport(System.IntPtr ctx, ref PopsApi.PopsApiWrapper+POPS_SModsReportDesc pDesc, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsReportCallback callback)
+  private static System.Void POPS_ModsSearch(System.IntPtr ctx, ref PopsApi.PopsApiWrapper+POPS_SModsSearchDesc pDesc, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsSearchCallback callback)
+  private static System.Void POPS_ModsUninstallMod(System.IntPtr ctx, System.Int32 modId, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsUninstallModCallback callback)
+  private static System.Void POPS_ModsUpdateUserRating(System.IntPtr ctx, ref PopsApi.PopsApiWrapper+POPS_SModsUpdateUserRatingDesc pDesc, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsUpdateUserRatingCallback callback)
+  private static System.Void POPS_ModsUploadContent(System.IntPtr ctx, System.String uuid, System.String localPath, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsUploadFileCallback callback)
+  private static System.Void POPS_ModsUploadDescriptionImage(System.IntPtr ctx, System.String uuid, System.String localPath, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsUploadFileCallback callback)
+  private static System.Void POPS_ModsUploadScreenshot(System.IntPtr ctx, System.String uuid, System.String localPath, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsUploadFileCallback callback)
+  private static System.Void POPS_ModsUploadThumbnail(System.IntPtr ctx, System.String uuid, System.String localPath, System.IntPtr userData, PopsApi.PopsApiWrapper+ModsUploadFileCallback callback)
+  private static System.Void POPS_NewsletterSubscribe(System.IntPtr ctx, System.String newsletterName, System.IntPtr userData, PopsApi.PopsApiWrapper+NewsletterCallback callback)
+  private static System.Void POPS_NewsletterUnsubscribeAll(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+NewsletterCallback callback)
+  private static System.Void POPS_RemoveLoginToken(System.IntPtr cxt)
+  private static System.Void POPS_RunCallbacks(System.IntPtr ctx)
+  private static System.Void POPS_SetAnonymous(System.IntPtr ctx, System.Byte bAnonymous, System.String pUniverse, System.String pUniverseId)
+  private static System.Void POPS_SetFileIO(System.IntPtr ctx, ref PopsApi.PopsApiWrapper+POPS_SFileIO fileIO)
+  private static System.Void POPS_SetRootPath(System.IntPtr ctx, System.String path)
+  private static System.Void POPS_Shutdown(System.IntPtr ctx)
+  private static System.Void POPS_SocialAddFriend(System.IntPtr ctx, System.String friendId, System.IntPtr userData, PopsApi.PopsApiWrapper+SocialAddFriendCallback callback)
+  private static System.Void POPS_SocialConnect(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+SocialCallback callback)
+  private static System.Void POPS_SocialDisconnect(System.IntPtr ctx)
+  private static System.Void POPS_SocialGetFriendsList(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+SocialGetFriendsListCallback callback)
+  private static System.Void POPS_SocialGetOpenFriendRequests(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+SocialGetOpenFriendRequestsCallback callback)
+  private static System.Void POPS_SocialJoinRoom(System.IntPtr ctx, System.String roomName, System.String nickName, System.IntPtr userData, PopsApi.PopsApiWrapper+SocialJoinRoomCallback callback)
+  private static System.Void POPS_SocialLeaveRoom(System.IntPtr ctx, System.String roomName, System.IntPtr userData, PopsApi.PopsApiWrapper+SocialLeaveRoomCallback callback)
+  private static System.Void POPS_SocialListenFriendListUpdates(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+SocialListenFriendListUpdatesCallback callback)
+  private static System.Void POPS_SocialListenMessages(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+SocialListenMessagesCallback callback)
+  private static System.Void POPS_SocialListenPresence(System.IntPtr ctx, System.IntPtr pUserData, PopsApi.PopsApiWrapper+SocialListenPresenceCallback callback)
+  private static System.Void POPS_SocialListenStatus(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+SocialListenStatusCallback callback)
+  private static System.Void POPS_SocialProfileCreate(System.IntPtr ctx, System.String profileName, System.IntPtr userData, PopsApi.PopsApiWrapper+GameProfileCallback callback)
+  private static System.Void POPS_SocialProfileQuery(System.IntPtr ctx, System.String profileName, System.IntPtr userData, PopsApi.PopsApiWrapper+GameProfileRetrieveCallback callback)
+  private static System.Void POPS_SocialProfileRetrieve(System.IntPtr ctx, System.IntPtr userData, PopsApi.PopsApiWrapper+GameProfileRetrieveCallback callback)
+  private static System.Void POPS_SocialProfileUpdate(System.IntPtr ctx, System.String profileName, System.IntPtr userData, PopsApi.PopsApiWrapper+GameProfileCallback callback)
+  private static System.Void POPS_SocialRemoveFriend(System.IntPtr ctx, System.String friendId, System.IntPtr userData, PopsApi.PopsApiWrapper+SocialRemoveFriendCallback callback)
+  private static System.Void POPS_SocialRemoveOutgoingFriendRequest(System.IntPtr ctx, System.String friendId, System.IntPtr userData, PopsApi.PopsApiWrapper+SocialRemoveOutgoingFriendRequestCallback callback)
+  private static System.Void POPS_SocialRespondToFriendRequest(System.IntPtr ctx, System.String friendId, System.Boolean confirm, System.IntPtr userData, PopsApi.PopsApiWrapper+SocialRespondToFriendRequestCallback callback)
+  private static System.Void POPS_SocialSendMessageToAccountID(System.IntPtr ctx, System.String message, System.String accountID, System.IntPtr userData)
+  private static System.Void POPS_SocialSendMessageToRoom(System.IntPtr ctx, System.String message, System.String roomName, System.IntPtr userData)
+  private static System.Void POPS_SocialSendPrivateMessageToRoom(System.IntPtr ctx, System.String message, System.String nickName, System.String roomName, System.IntPtr userData)
+  private static System.Void POPS_SocialSetPresence(System.IntPtr ctx, PopsApi.PopsApiWrapper+SocialPresenceAvailability availability)
+  private static System.Void POPS_SocialSetPresenceRoom(System.IntPtr ctx, System.String roomName, PopsApi.PopsApiWrapper+SocialPresenceAvailability availability)
+  private static System.Void POPS_SocialSetResourceSuffix(System.IntPtr ctx, System.String resourceSuffix)
+  private static System.Void POPS_SocialSetXMPPLogLevel(System.IntPtr ctx, PopsApi.PopsApiWrapper+SocialXMPPLogLevel eLogLevel)
+  private static System.Void POPS_TelemetrySend(System.IntPtr ctx, System.String eventName, PopsApi.PopsApiWrapper+POPS_STelemetryData[] pData, System.Int32 pDataCount)
+  private static System.Void POPS_TelemetrySendMultiStructs(System.IntPtr ctx, System.IntPtr entries, System.Int32 eventCount)
+  private static System.Void POPS_TokenRetrieveCurrent(System.IntPtr cxt, System.IntPtr tokenBufferOut)
+  private static System.Int32 POPS_TrustLevelRetrieveCurrent(System.IntPtr cxt)
+  private static System.Object PopTask(System.IntPtr ptr)
+  private static T[] PtrToArrayOfStructs<T>(System.IntPtr startPtr, System.Int32 count)
+  private System.IntPtr PushTask(System.Object toPush)
+  public System.Void SendTelemetry(System.String eventName, System.Collections.Generic.List`1[[System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] keyValuePairs)
+  public System.Void SendTelemetryMulti(System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+TelemetryEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] telemetryEntries)
+  public System.Void SetAnonymous(System.Boolean anonymousEnabled, System.String universe, System.String universeId)
+  public System.Void SetRootPath(System.String path)
+  private static System.Void SocialAddFriendCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialAddFriendResult result)
+  private static System.Void SocialCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialResult result)
+  public System.Void SocialDisconnect()
+  private static System.Void SocialGetFriendsListCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, System.IntPtr pEntries, System.Int32 nEntriesCount, ref PopsApi.PopsApiWrapper+POPS_SSocialGetFriendsListResult result)
+  private static System.Void SocialGetOpenFriendRequestsCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialGetOpenFriendRequestsResult result, System.IntPtr pEntries, System.Int32 nEntriesCount)
+  private static System.Void SocialJoinRoomCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialJoinRoomResult result)
+  private static System.Void SocialLeaveRoomCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialLeaveRoomResult result)
+  public System.Void SocialListenFriendListUpdates(PopsApi.PopsApiWrapper+SocialListenFriendListUpdatesCallbackDelegate callback)
+  private static System.Int32 SocialListenFriendListUpdatesCallbackWrapper(System.IntPtr context, System.IntPtr callbackId, ref PopsApi.PopsApiWrapper+POPS_SSocialListenFriendListUpdatesResult result)
+  public System.Void SocialListenMessages(PopsApi.PopsApiWrapper+SocialListenMessagesCallbackDelegate callback)
+  private static System.Int32 SocialListenMessagesCallbackWrapper(System.IntPtr context, System.IntPtr callbackId, ref PopsApi.PopsApiWrapper+POPS_SSocialListenMessagesResult result)
+  public System.Void SocialListenPresence(PopsApi.PopsApiWrapper+SocialListenPresenceCallbackDelegate callback)
+  private static System.Int32 SocialListenPresenceCallbackWrapper(System.IntPtr context, System.IntPtr callbackId, ref PopsApi.PopsApiWrapper+POPS_SSocialListenPresenceResult result)
+  public System.Void SocialListenStatus(PopsApi.PopsApiWrapper+SocialListenStatusCallbackDelegate callback)
+  private static System.Int32 SocialListenStatusCallbackWrapper(System.IntPtr context, System.IntPtr callbackId, ref PopsApi.PopsApiWrapper+SocialListenStatusResult result)
+  private static System.Void SocialRemoveFriendCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialRemoveFriendResult result)
+  private System.Void SocialRemoveOutgoingFriendRequestCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialRemoveOutgoingFriendRequestResult result)
+  private static System.Void SocialRespondToFriendRequestCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialRespondToFriendRequestResult result)
+  public System.Void SocialSendMessageToAccountID(System.String message, System.String accountID)
+  public System.Void SocialSendMessageToRoom(System.String message, System.String roomName)
+  public System.Void SocialSendPrivateMessageToRoom(System.String message, System.String nickName, System.String roomName)
+  public System.Void SocialSetPresence(PopsApi.PopsApiWrapper+SocialPresenceAvailability availability)
+  public System.Void SocialSetPresenceRoom(PopsApi.PopsApiWrapper+SocialPresenceAvailability availability, System.String roomName)
+  public System.Void SocialSetResourceSuffix(System.String resourceSuffix)
+  public System.Void SocialSetXMPPLogLevel(PopsApi.PopsApiWrapper+SocialXMPPLogLevel logLevel)
+  private System.Void StartTimer()
+  private System.Void StopTimer()
+  private static System.Void StorageReadCallbackImpl(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SKVStorageReadResult result, ref PopsApi.PopsApiWrapper+POPS_SKVStorageReadList storageList)
+  public System.Void Update()
+  private System.IntPtr extDependencyEntryToIntPtr(System.Collections.Generic.ICollection`1[[System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] dataEntries, System.Collections.Generic.ICollection`1[[System.IntPtr, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] memToFree)
+  private System.IntPtr extImageToIntPtr(System.Collections.Generic.ICollection`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] imageNames)
+  private System.IntPtr extTagsToIntPtr(System.Collections.Generic.ICollection`1[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] tags)
+  private System.IntPtr extTelemetryDataEntryToIntPtr(System.Collections.Generic.ICollection`1[[System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] dataEntries, PopsApi.PopsAllocator alloc)
+  private System.IntPtr extTelemetryEntriesToIntPtr(System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+TelemetryEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] telemetryEntries, PopsApi.PopsAllocator alloc)
+  private System.IntPtr makeAppStatsArrayPointer(System.Collections.Generic.ICollection`1[[PopsApi.PopsApiWrapper+AppStatsEntry, PopsApiWrapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] entries, PopsApi.PopsAllocator alloc)
+  private static System.Byte[] makeArray(System.String s, System.Int32 len)
+
+NESTED TYPES:
+  - PopsApi.PopsApiWrapper+AccountAddCredentialsCallback
+  - PopsApi.PopsApiWrapper+AccountAddEmailCallback
+  - PopsApi.PopsApiWrapper+AccountConnectCallback
+  - PopsApi.PopsApiWrapper+AccountConnectionsCallback
+  - PopsApi.PopsApiWrapper+AccountCreateCallback
+  - PopsApi.PopsApiWrapper+AccountGetDetailsAccount
+  - PopsApi.PopsApiWrapper+AccountGetDetailsAccountDetails
+  - PopsApi.PopsApiWrapper+AccountGetDetailsCallback
+  - PopsApi.PopsApiWrapper+AccountGetDetailsResult
+  - PopsApi.PopsApiWrapper+AccountGetMergeStatusCallback
+  - PopsApi.PopsApiWrapper+AccountGetMergeStatusResult
+  - PopsApi.PopsApiWrapper+AccountIsOnlineCallback
+  - PopsApi.PopsApiWrapper+AccountLoginCallback
+  - PopsApi.PopsApiWrapper+AccountMergeShadowCallback
+  - PopsApi.PopsApiWrapper+AccountResetPasswordCallback
+  - PopsApi.PopsApiWrapper+AccountUpdateDetailsCallback
+  - PopsApi.PopsApiWrapper+AchievementDescription
+  - PopsApi.PopsApiWrapper+AchievementsGetCallback
+  - PopsApi.PopsApiWrapper+AchievementsGetResultEntry
+  - PopsApi.PopsApiWrapper+AchievementsListCallback
+  - PopsApi.PopsApiWrapper+AchievementsListResultEntry
+  - PopsApi.PopsApiWrapper+AchievementsSendCallback
+  - PopsApi.PopsApiWrapper+AchievementsSendEntry
+  - PopsApi.PopsApiWrapper+AchievementsStoreToDiskCallback
+  - PopsApi.PopsApiWrapper+App
+  - PopsApi.PopsApiWrapper+AppStatsCallback
+  - PopsApi.PopsApiWrapper+AppStatsChangeResult
+  - PopsApi.PopsApiWrapper+AppStatsEntry
+  - PopsApi.PopsApiWrapper+AppStatsGetCallback
+  - PopsApi.PopsApiWrapper+AppStatsGetResult
+  - PopsApi.PopsApiWrapper+ArrayAllocations
+  - PopsApi.PopsApiWrapper+BulkItem
+  - PopsApi.PopsApiWrapper+Connection
+  - PopsApi.PopsApiWrapper+DownloadFileCallback
+  - PopsApi.PopsApiWrapper+DownloadsEntry
+  - PopsApi.PopsApiWrapper+EFileOrigin
+  - PopsApi.PopsApiWrapper+FeedCallback
+  - PopsApi.PopsApiWrapper+FileClose
+  - PopsApi.PopsApiWrapper+FileInfo
+  - PopsApi.PopsApiWrapper+FileListItem
+  - PopsApi.PopsApiWrapper+FileOpen
+  - PopsApi.PopsApiWrapper+FileRead
+  - PopsApi.PopsApiWrapper+FileSeek
+  - PopsApi.PopsApiWrapper+FileStorageDeleteCallback
+  - PopsApi.PopsApiWrapper+FileStorageListCallback
+  - PopsApi.PopsApiWrapper+FileStorageReadCallback
+  - PopsApi.PopsApiWrapper+FileStorageSaveCallback
+  - PopsApi.PopsApiWrapper+FileTell
+  - PopsApi.PopsApiWrapper+FileWrite
+  - PopsApi.PopsApiWrapper+FriendRequest
+  - PopsApi.PopsApiWrapper+FriendsListEntry
+  - PopsApi.PopsApiWrapper+GameProfile
+  - PopsApi.PopsApiWrapper+GameProfileCallback
+  - PopsApi.PopsApiWrapper+GameProfileRetrieveCallback
+  - PopsApi.PopsApiWrapper+GetAppChildrenCallback
+  - PopsApi.PopsApiWrapper+IndexingCreateCallback
+  - PopsApi.PopsApiWrapper+IndexingDeleteCallback
+  - PopsApi.PopsApiWrapper+IndexingKeyValuePair
+  - PopsApi.PopsApiWrapper+IndexingResult
+  - PopsApi.PopsApiWrapper+IndexingUpdateCallback
+  - PopsApi.PopsApiWrapper+IndexingUpdateEntry
+  - PopsApi.PopsApiWrapper+InternalLogCallback
+  - PopsApi.PopsApiWrapper+InvalidateLoginTokenCallback
+  - PopsApi.PopsApiWrapper+InventoryCategory
+  - PopsApi.PopsApiWrapper+InventoryDownloadsCallback
+  - PopsApi.PopsApiWrapper+InventoryGetDownloadUrlCallback
+  - PopsApi.PopsApiWrapper+InventoryItem
+  - PopsApi.PopsApiWrapper+InventoryItems
+  - PopsApi.PopsApiWrapper+InventoryListCallback
+  - PopsApi.PopsApiWrapper+InventoryOwnedProductsCallback
+  - PopsApi.PopsApiWrapper+KVStorageCallback
+  - PopsApi.PopsApiWrapper+KVStorageReadCallback
+  - PopsApi.PopsApiWrapper+LegalDocument
+  - PopsApi.PopsApiWrapper+LegalDocumentListEntry
+  - PopsApi.PopsApiWrapper+LegalGetDocumentCallback
+  - PopsApi.PopsApiWrapper+LegalGetDocumentsListCallback
+  - PopsApi.PopsApiWrapper+LegalGetViewedCallback
+  - PopsApi.PopsApiWrapper+LegalSetViewedCallback
+  - PopsApi.PopsApiWrapper+LogCallback
+  - PopsApi.PopsApiWrapper+MappableFunction`2
+  - PopsApi.PopsApiWrapper+ModsChangeLogEntry
+  - PopsApi.PopsApiWrapper+ModsCountCallback
+  - PopsApi.PopsApiWrapper+ModsCountDescription
+  - PopsApi.PopsApiWrapper+ModsCountResult
+  - PopsApi.PopsApiWrapper+ModsDetail
+  - PopsApi.PopsApiWrapper+ModsDisableModCallback
+  - PopsApi.PopsApiWrapper+ModsDownloadModCallback
+  - PopsApi.PopsApiWrapper+ModsEnableModCallback
+  - PopsApi.PopsApiWrapper+ModsGetContentPath
+  - PopsApi.PopsApiWrapper+ModsGetContentPathCallback
+  - PopsApi.PopsApiWrapper+ModsGetDetailsCallback
+  - PopsApi.PopsApiWrapper+ModsGetDownloadInfo
+  - PopsApi.PopsApiWrapper+ModsGetDownloadInfoCallback
+  - PopsApi.PopsApiWrapper+ModsGetInstalledCallback
+  - PopsApi.PopsApiWrapper+ModsGetInstalledEntry
+  - PopsApi.PopsApiWrapper+ModsGetManifest
+  - PopsApi.PopsApiWrapper+ModsGetManifestCallback
+  - PopsApi.PopsApiWrapper+ModsGetRepoInfo
+  - PopsApi.PopsApiWrapper+ModsGetRepoInfoCallback
+  - PopsApi.PopsApiWrapper+ModsGetUserRatingCallback
+  - PopsApi.PopsApiWrapper+ModsInstallModCallback
+  - PopsApi.PopsApiWrapper+ModsKeyValue
+  - PopsApi.PopsApiWrapper+ModsManifestContentEntry
+  - PopsApi.PopsApiWrapper+ModsPublishModCallback
+  - PopsApi.PopsApiWrapper+ModsPublishModDescription
+  - PopsApi.PopsApiWrapper+ModsRemoveFileCallback
+  - PopsApi.PopsApiWrapper+ModsRepoDependencyEntry
+  - PopsApi.PopsApiWrapper+ModsRepoKeyDependency
+  - PopsApi.PopsApiWrapper+ModsRepoKeyPatch
+  - PopsApi.PopsApiWrapper+ModsRepoKeyVersion
+  - PopsApi.PopsApiWrapper+ModsRepoPatchEntry
+  - PopsApi.PopsApiWrapper+ModsRepoSubRepositoryEntry
+  - PopsApi.PopsApiWrapper+ModsRepoVersionEntry
+  - PopsApi.PopsApiWrapper+ModsReportCallback
+  - PopsApi.PopsApiWrapper+ModsReportDesc
+  - PopsApi.PopsApiWrapper+ModsRequirementEntry
+  - PopsApi.PopsApiWrapper+ModsScreenshotEntry
+  - PopsApi.PopsApiWrapper+ModsSearchCallback
+  - PopsApi.PopsApiWrapper+ModsSearchDescription
+  - PopsApi.PopsApiWrapper+ModsSearchEntry
+  - PopsApi.PopsApiWrapper+ModsUninstallModCallback
+  - PopsApi.PopsApiWrapper+ModsUpdateUserRatingCallback
+  - PopsApi.PopsApiWrapper+ModsUpdateUserRatingDesc
+  - PopsApi.PopsApiWrapper+ModsUploadFileCallback
+  - PopsApi.PopsApiWrapper+NewsletterCallback
+  - PopsApi.PopsApiWrapper+OwnedItem
+  - PopsApi.PopsApiWrapper+OwnedProduct
+  - PopsApi.PopsApiWrapper+POPS_EInventoryCategory
+  - PopsApi.PopsApiWrapper+POPS_IndexingPropertyUpdate
+  - PopsApi.PopsApiWrapper+POPS_SAccountAddCredentialsDesc
+  - PopsApi.PopsApiWrapper+POPS_SAccountAddCredentialsResult
+  - PopsApi.PopsApiWrapper+POPS_SAccountAddEmailDesc
+  - PopsApi.PopsApiWrapper+POPS_SAccountAddEmailResult
+  - PopsApi.PopsApiWrapper+POPS_SAccountConnectResult
+  - PopsApi.PopsApiWrapper+POPS_SAccountConnectionsResult
+  - PopsApi.PopsApiWrapper+POPS_SAccountCreateResult
+  - PopsApi.PopsApiWrapper+POPS_SAccountGetDetailsAccount
+  - PopsApi.PopsApiWrapper+POPS_SAccountGetDetailsAccountDetails
+  - PopsApi.PopsApiWrapper+POPS_SAccountGetDetailsResult
+  - PopsApi.PopsApiWrapper+POPS_SAccountGetMergeStatusResult
+  - PopsApi.PopsApiWrapper+POPS_SAccountIsOnlineResult
+  - PopsApi.PopsApiWrapper+POPS_SAccountLoginResult
+  - PopsApi.PopsApiWrapper+POPS_SAccountMergeShadowResult
+  - PopsApi.PopsApiWrapper+POPS_SAccountResetPasswordResult
+  - PopsApi.PopsApiWrapper+POPS_SAccountShadowCredentials
+  - PopsApi.PopsApiWrapper+POPS_SAccountUpdateDetailsDesc
+  - PopsApi.PopsApiWrapper+POPS_SAccountUpdateDetailsResult
+  - PopsApi.PopsApiWrapper+POPS_SAchievementsGetResultEntry
+  - PopsApi.PopsApiWrapper+POPS_SAchievementsListResultEntry
+  - PopsApi.PopsApiWrapper+POPS_SAchievementsResult
+  - PopsApi.PopsApiWrapper+POPS_SAchievementsSendEntry
+  - PopsApi.PopsApiWrapper+POPS_SAppEntry
+  - PopsApi.PopsApiWrapper+POPS_SAppGetChildrenResult
+  - PopsApi.PopsApiWrapper+POPS_SAppStatsChangeResultEntry
+  - PopsApi.PopsApiWrapper+POPS_SAppStatsEntry
+  - PopsApi.PopsApiWrapper+POPS_SAppStatsGetResultEntry
+  - PopsApi.PopsApiWrapper+POPS_SAppStatsResult
+  - PopsApi.PopsApiWrapper+POPS_SBulkItem
+  - PopsApi.PopsApiWrapper+POPS_SConfig
+  - PopsApi.PopsApiWrapper+POPS_SConnectionEntry
+  - PopsApi.PopsApiWrapper+POPS_SCreateAccountDesc
+  - PopsApi.PopsApiWrapper+POPS_SCreateShadowAccountDesc
+  - PopsApi.PopsApiWrapper+POPS_SDownloadFileResult
+  - PopsApi.PopsApiWrapper+POPS_SFeedEntry64
+  - PopsApi.PopsApiWrapper+POPS_SFeedItem64
+  - PopsApi.PopsApiWrapper+POPS_SFileEntry
+  - PopsApi.PopsApiWrapper+POPS_SFileIO
+  - PopsApi.PopsApiWrapper+POPS_SFileStorageResult
+  - PopsApi.PopsApiWrapper+POPS_SFriendRequest
+  - PopsApi.PopsApiWrapper+POPS_SFriendsListEntry
+  - PopsApi.PopsApiWrapper+POPS_SGameProfileEntry
+  - PopsApi.PopsApiWrapper+POPS_SGameProfileResult
+  - PopsApi.PopsApiWrapper+POPS_SIndexingBlock
+  - PopsApi.PopsApiWrapper+POPS_SIndexingDeletionResult
+  - PopsApi.PopsApiWrapper+POPS_SIndexingDocument
+  - PopsApi.PopsApiWrapper+POPS_SIndexingDocumentUpdate
+  - PopsApi.PopsApiWrapper+POPS_SIndexingKeyValuePair64
+  - PopsApi.PopsApiWrapper+POPS_SIndexingResult
+  - PopsApi.PopsApiWrapper+POPS_SInvalidateLoginTokenResult
+  - PopsApi.PopsApiWrapper+POPS_SInventoryDownloadUrl
+  - PopsApi.PopsApiWrapper+POPS_SInventoryDownloadsEntry
+  - PopsApi.PopsApiWrapper+POPS_SInventoryDownloadsList
+  - PopsApi.PopsApiWrapper+POPS_SInventoryList
+  - PopsApi.PopsApiWrapper+POPS_SInventoryPlatform
+  - PopsApi.PopsApiWrapper+POPS_SInventoryProduct
+  - PopsApi.PopsApiWrapper+POPS_SInventoryResult
+  - PopsApi.PopsApiWrapper+POPS_SKVStorageReadEntry
+  - PopsApi.PopsApiWrapper+POPS_SKVStorageReadList
+  - PopsApi.PopsApiWrapper+POPS_SKVStorageReadResult
+  - PopsApi.PopsApiWrapper+POPS_SKVStorageResult
+  - PopsApi.PopsApiWrapper+POPS_SLegalGetDocumentResult
+  - PopsApi.PopsApiWrapper+POPS_SLegalGetDocumentsListEntry
+  - PopsApi.PopsApiWrapper+POPS_SLegalGetDocumentsListResult
+  - PopsApi.PopsApiWrapper+POPS_SLegalGetViewedResult
+  - PopsApi.PopsApiWrapper+POPS_SLegalSetViewedResult
+  - PopsApi.PopsApiWrapper+POPS_SModsChangeLog
+  - PopsApi.PopsApiWrapper+POPS_SModsChangeLogEntry
+  - PopsApi.PopsApiWrapper+POPS_SModsCountDesc
+  - PopsApi.PopsApiWrapper+POPS_SModsCountResult
+  - PopsApi.PopsApiWrapper+POPS_SModsDisableModResult
+  - PopsApi.PopsApiWrapper+POPS_SModsEnableModResult
+  - PopsApi.PopsApiWrapper+POPS_SModsGetContentPathResult
+  - PopsApi.PopsApiWrapper+POPS_SModsGetDetailsResult
+  - PopsApi.PopsApiWrapper+POPS_SModsGetDownloadInfoResult
+  - PopsApi.PopsApiWrapper+POPS_SModsGetInstalledEntry
+  - PopsApi.PopsApiWrapper+POPS_SModsGetInstalledResult
+  - PopsApi.PopsApiWrapper+POPS_SModsGetManifestResult
+  - PopsApi.PopsApiWrapper+POPS_SModsGetRepoInfoResult
+  - PopsApi.PopsApiWrapper+POPS_SModsGetUserRatingResult
+  - PopsApi.PopsApiWrapper+POPS_SModsInstallModResult
+  - PopsApi.PopsApiWrapper+POPS_SModsKeyValue
+  - PopsApi.PopsApiWrapper+POPS_SModsManifestContentEntry
+  - PopsApi.PopsApiWrapper+POPS_SModsMetaDataValue
+  - PopsApi.PopsApiWrapper+POPS_SModsPublishDependencyEntry
+  - PopsApi.PopsApiWrapper+POPS_SModsPublishModDesc
+  - PopsApi.PopsApiWrapper+POPS_SModsPublishModResult
+  - PopsApi.PopsApiWrapper+POPS_SModsRemoveFileResult
+  - PopsApi.PopsApiWrapper+POPS_SModsRepoDependencyEntry
+  - PopsApi.PopsApiWrapper+POPS_SModsRepoKeyDependency
+  - PopsApi.PopsApiWrapper+POPS_SModsRepoKeyPatch
+  - PopsApi.PopsApiWrapper+POPS_SModsRepoKeyVersion
+  - PopsApi.PopsApiWrapper+POPS_SModsRepoPatchEntry
+  - PopsApi.PopsApiWrapper+POPS_SModsRepoSubRepositoryEntry
+  - PopsApi.PopsApiWrapper+POPS_SModsRepoVersionEntry
+  - PopsApi.PopsApiWrapper+POPS_SModsReportDesc
+  - PopsApi.PopsApiWrapper+POPS_SModsReportResult
+  - PopsApi.PopsApiWrapper+POPS_SModsRequirement
+  - PopsApi.PopsApiWrapper+POPS_SModsScreenshot
+  - PopsApi.PopsApiWrapper+POPS_SModsSearchDesc
+  - PopsApi.PopsApiWrapper+POPS_SModsSearchEntry
+  - PopsApi.PopsApiWrapper+POPS_SModsSearchResult
+  - PopsApi.PopsApiWrapper+POPS_SModsUninstallModResult
+  - PopsApi.PopsApiWrapper+POPS_SModsUpdateUserRatingDesc
+  - PopsApi.PopsApiWrapper+POPS_SModsUpdateUserRatingResult
+  - PopsApi.PopsApiWrapper+POPS_SModsUploadFileResult
+  - PopsApi.PopsApiWrapper+POPS_SNewsletterResult
+  - PopsApi.PopsApiWrapper+POPS_SOwnedItem
+  - PopsApi.PopsApiWrapper+POPS_SSocialAddFriendResult
+  - PopsApi.PopsApiWrapper+POPS_SSocialGetFriendsListResult
+  - PopsApi.PopsApiWrapper+POPS_SSocialGetOpenFriendRequestsResult
+  - PopsApi.PopsApiWrapper+POPS_SSocialJoinRoomResult
+  - PopsApi.PopsApiWrapper+POPS_SSocialLeaveRoomResult
+  - PopsApi.PopsApiWrapper+POPS_SSocialListenFriendListUpdatesResult
+  - PopsApi.PopsApiWrapper+POPS_SSocialListenMessagesResult
+  - PopsApi.PopsApiWrapper+POPS_SSocialListenPresenceResult
+  - PopsApi.PopsApiWrapper+POPS_SSocialRemoveFriendResult
+  - PopsApi.PopsApiWrapper+POPS_SSocialRemoveOutgoingFriendRequestResult
+  - PopsApi.PopsApiWrapper+POPS_SSocialRespondToFriendRequestResult
+  - PopsApi.PopsApiWrapper+POPS_SSocialResult
+  - PopsApi.PopsApiWrapper+POPS_SStorageEntry
+  - PopsApi.PopsApiWrapper+POPS_STelemetryData
+  - PopsApi.PopsApiWrapper+POPS_STelemetryEntry
+  - PopsApi.PopsApiWrapper+POPS_STimedItem
+  - PopsApi.PopsApiWrapper+Platform
+  - PopsApi.PopsApiWrapper+SocialAddFriendCallback
+  - PopsApi.PopsApiWrapper+SocialCallback
+  - PopsApi.PopsApiWrapper+SocialConnectionStatus
+  - PopsApi.PopsApiWrapper+SocialFriendListUpdatesType
+  - PopsApi.PopsApiWrapper+SocialFriendRequestType
+  - PopsApi.PopsApiWrapper+SocialGetFriendsListCallback
+  - PopsApi.PopsApiWrapper+SocialGetOpenFriendRequestsCallback
+  - PopsApi.PopsApiWrapper+SocialJoinRoomCallback
+  - PopsApi.PopsApiWrapper+SocialLeaveRoomCallback
+  - PopsApi.PopsApiWrapper+SocialListenFriendListUpdatesCallback
+  - PopsApi.PopsApiWrapper+SocialListenFriendListUpdatesCallbackDelegate
+  - PopsApi.PopsApiWrapper+SocialListenFriendListUpdatesResult
+  - PopsApi.PopsApiWrapper+SocialListenMessagesCallback
+  - PopsApi.PopsApiWrapper+SocialListenMessagesCallbackDelegate
+  - PopsApi.PopsApiWrapper+SocialListenMessagesResult
+  - PopsApi.PopsApiWrapper+SocialListenPresenceCallback
+  - PopsApi.PopsApiWrapper+SocialListenPresenceCallbackDelegate
+  - PopsApi.PopsApiWrapper+SocialListenPresenceResult
+  - PopsApi.PopsApiWrapper+SocialListenStatusCallback
+  - PopsApi.PopsApiWrapper+SocialListenStatusCallbackDelegate
+  - PopsApi.PopsApiWrapper+SocialListenStatusResult
+  - PopsApi.PopsApiWrapper+SocialMessageType
+  - PopsApi.PopsApiWrapper+SocialPresenceAvailability
+  - PopsApi.PopsApiWrapper+SocialRemoveFriendCallback
+  - PopsApi.PopsApiWrapper+SocialRemoveOutgoingFriendRequestCallback
+  - PopsApi.PopsApiWrapper+SocialRespondToFriendRequestCallback
+  - PopsApi.PopsApiWrapper+SocialXMPPLogLevel
+  - PopsApi.PopsApiWrapper+StorageEntry
+  - PopsApi.PopsApiWrapper+StorageReadEntry
+  - PopsApi.PopsApiWrapper+TelemetryEntry
+  - PopsApi.PopsApiWrapper+TimedItem
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AccountAddCredentialsCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountAddCredentialsResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAccountAddCredentialsResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountAddCredentialsResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AccountAddEmailCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountAddEmailResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAccountAddEmailResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountAddEmailResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AccountConnectCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountLoginResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAccountLoginResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountLoginResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AccountConnectionsCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, System.IntPtr pEntries, System.Int32 nEntriesCount, ref PopsApi.PopsApiWrapper+POPS_SAccountConnectionsResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAccountConnectionsResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, System.IntPtr pEntries, System.Int32 nEntriesCount, ref PopsApi.PopsApiWrapper+POPS_SAccountConnectionsResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AccountCreateCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountCreateResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAccountCreateResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountCreateResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AccountGetDetailsAccount
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AccountGetDetailsAccountDetails
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AccountGetDetailsCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountGetDetailsResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAccountGetDetailsResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountGetDetailsResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AccountGetDetailsResult
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AccountGetMergeStatusCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctxt, System.IntPtr pUserData, ref PopsApi.PopsApiWrapper+POPS_SAccountGetMergeStatusResult pResult, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAccountGetMergeStatusResult pResult, System.IAsyncResult result)
+  public virtual System.Void Invoke(System.IntPtr ctxt, System.IntPtr pUserData, ref PopsApi.PopsApiWrapper+POPS_SAccountGetMergeStatusResult pResult)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AccountGetMergeStatusResult
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AccountIsOnlineCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountIsOnlineResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAccountIsOnlineResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountIsOnlineResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AccountLoginCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountLoginResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAccountLoginResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountLoginResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AccountMergeShadowCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountMergeShadowResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAccountMergeShadowResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountMergeShadowResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AccountResetPasswordCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountResetPasswordResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAccountResetPasswordResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountResetPasswordResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AccountUpdateDetailsCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountUpdateDetailsResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAccountUpdateDetailsResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SAccountUpdateDetailsResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AchievementDescription
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AchievementsGetCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr pEntries, System.Int32 nEntriesCount, System.IntPtr pUserData, ref PopsApi.PopsApiWrapper+POPS_SAchievementsResult pResult, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAchievementsResult pResult, System.IAsyncResult result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr pEntries, System.Int32 nEntriesCount, System.IntPtr pUserData, ref PopsApi.PopsApiWrapper+POPS_SAchievementsResult pResult)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AchievementsGetResultEntry
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AchievementsListCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr pEntries, System.Int32 nEntriesCount, System.IntPtr pUserData, ref PopsApi.PopsApiWrapper+POPS_SAchievementsResult pResult, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAchievementsResult pResult, System.IAsyncResult result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr pEntries, System.Int32 nEntriesCount, System.IntPtr pUserData, ref PopsApi.PopsApiWrapper+POPS_SAchievementsResult pResult)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AchievementsListResultEntry
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AchievementsSendCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr pUserData, ref PopsApi.PopsApiWrapper+POPS_SAchievementsResult pResult, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAchievementsResult pResult, System.IAsyncResult result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr pUserData, ref PopsApi.PopsApiWrapper+POPS_SAchievementsResult pResult)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AchievementsSendEntry
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AchievementsStoreToDiskCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr pUserData, ref PopsApi.PopsApiWrapper+POPS_SAchievementsResult pResult, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAchievementsResult pResult, System.IAsyncResult result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr pUserData, ref PopsApi.PopsApiWrapper+POPS_SAchievementsResult pResult)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+App
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AppStatsCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr pUserData, System.IntPtr pEntries, System.Int32 nEntriesCount, ref PopsApi.PopsApiWrapper+POPS_SAppStatsResult pResult, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAppStatsResult pResult, System.IAsyncResult result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr pUserData, System.IntPtr pEntries, System.Int32 nEntriesCount, ref PopsApi.PopsApiWrapper+POPS_SAppStatsResult pResult)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AppStatsChangeResult
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AppStatsEntry
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AppStatsGetCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr pUserData, System.IntPtr entries, System.Int32 nEntriesCount, ref PopsApi.PopsApiWrapper+POPS_SAppStatsResult pResult, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAppStatsResult pResult, System.IAsyncResult result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr pUserData, System.IntPtr entries, System.Int32 nEntriesCount, ref PopsApi.PopsApiWrapper+POPS_SAppStatsResult pResult)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+AppStatsGetResult
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ArrayAllocations
+KIND: class
+ATTR: NestedPrivate, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.Void Dispose()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+BulkItem
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+Connection
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+DownloadFileCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SDownloadFileResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SDownloadFileResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SDownloadFileResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+DownloadsEntry
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+EFileOrigin
+KIND: enum
+ATTR: NestedPrivate, Sealed
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+FeedCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, System.IntPtr feedEntries, System.Int32 noOfEntries, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(System.IAsyncResult result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, System.IntPtr feedEntries, System.Int32 noOfEntries)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+FileClose
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr filePtr, System.AsyncCallback callback, System.Object object)
+  public virtual System.Int32 EndInvoke(System.IAsyncResult result)
+  public virtual System.Int32 Invoke(System.IntPtr filePtr)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+FileInfo
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+FileListItem
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+FileOpen
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.String filename, System.String mode, System.AsyncCallback callback, System.Object object)
+  public virtual System.IntPtr EndInvoke(System.IAsyncResult result)
+  public virtual System.IntPtr Invoke(System.String filename, System.String mode)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+FileRead
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr destBufPtr, System.UInt64 size, System.UInt64 count, System.IntPtr filePtr, System.AsyncCallback callback, System.Object object)
+  public virtual System.UInt64 EndInvoke(System.IAsyncResult result)
+  public virtual System.UInt64 Invoke(System.IntPtr destBufPtr, System.UInt64 size, System.UInt64 count, System.IntPtr filePtr)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+FileSeek
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr filePtr, System.UInt64 offset, PopsApi.PopsApiWrapper+EFileOrigin origin, System.AsyncCallback callback, System.Object object)
+  public virtual System.Int32 EndInvoke(System.IAsyncResult result)
+  public virtual System.Int32 Invoke(System.IntPtr filePtr, System.UInt64 offset, PopsApi.PopsApiWrapper+EFileOrigin origin)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+FileStorageDeleteCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SFileStorageResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SFileStorageResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SFileStorageResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+FileStorageListCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, System.IntPtr entries, System.Int32 nEntries, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(System.IAsyncResult result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, System.IntPtr entries, System.Int32 nEntries)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+FileStorageReadCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SFileStorageResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SFileStorageResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SFileStorageResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+FileStorageSaveCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SFileStorageResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SFileStorageResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SFileStorageResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+FileTell
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr filePtr, System.AsyncCallback callback, System.Object object)
+  public virtual System.UInt64 EndInvoke(System.IAsyncResult result)
+  public virtual System.UInt64 Invoke(System.IntPtr filePtr)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+FileWrite
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr sourceBufPtr, System.UInt64 size, System.UInt64 count, System.IntPtr filePtr, System.AsyncCallback callback, System.Object object)
+  public virtual System.UInt64 EndInvoke(System.IAsyncResult result)
+  public virtual System.UInt64 Invoke(System.IntPtr sourceBufPtr, System.UInt64 size, System.UInt64 count, System.IntPtr filePtr)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+FriendRequest
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+FriendsListEntry
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+GameProfile
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+GameProfileCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SGameProfileResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SGameProfileResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SGameProfileResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+GameProfileRetrieveCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SGameProfileResult result, ref PopsApi.PopsApiWrapper+POPS_SGameProfileEntry entry, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SGameProfileResult result, ref PopsApi.PopsApiWrapper+POPS_SGameProfileEntry entry, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SGameProfileResult result, ref PopsApi.PopsApiWrapper+POPS_SGameProfileEntry entry)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+GetAppChildrenCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, System.IntPtr pEntries, System.Int32 nEntriesCount, ref PopsApi.PopsApiWrapper+POPS_SAppGetChildrenResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SAppGetChildrenResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, System.IntPtr pEntries, System.Int32 nEntriesCount, ref PopsApi.PopsApiWrapper+POPS_SAppGetChildrenResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+IndexingCreateCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SIndexingResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SIndexingResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SIndexingResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+IndexingDeleteCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SIndexingDeletionResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SIndexingDeletionResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SIndexingDeletionResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+IndexingKeyValuePair
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String key, System.Double value)
+  public .ctor(System.String key, System.Boolean value)
+  public .ctor(System.String key, System.String value)
+
+METHODS:
+  public System.Boolean get_BoolValue()
+  public System.String get_Key()
+  public System.Double get_NumberValue()
+  public System.String get_StringValue()
+  public PopsApi.PopsApiWrapper+IndexingKeyValuePair+VALUE_TYPE get_ValueType()
+
+NESTED TYPES:
+  - PopsApi.PopsApiWrapper+IndexingKeyValuePair+VALUE_TYPE
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+IndexingKeyValuePair+VALUE_TYPE
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+IndexingResult
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+IndexingUpdateCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SIndexingResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SIndexingResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SIndexingResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+IndexingUpdateEntry
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+NESTED TYPES:
+  - PopsApi.PopsApiWrapper+IndexingUpdateEntry+ACTION
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+IndexingUpdateEntry+ACTION
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+InternalLogCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr userData, System.IntPtr ctx, System.String message, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(System.IAsyncResult result)
+  public virtual System.Void Invoke(System.IntPtr userData, System.IntPtr ctx, System.String message)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+InvalidateLoginTokenCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SInvalidateLoginTokenResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SInvalidateLoginTokenResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SInvalidateLoginTokenResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+InventoryCategory
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+InventoryDownloadsCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SInventoryResult result, ref PopsApi.PopsApiWrapper+POPS_SInventoryDownloadsList downloadList, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SInventoryResult result, ref PopsApi.PopsApiWrapper+POPS_SInventoryDownloadsList downloadList, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SInventoryResult result, ref PopsApi.PopsApiWrapper+POPS_SInventoryDownloadsList downloadList)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+InventoryGetDownloadUrlCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SInventoryResult result, ref PopsApi.PopsApiWrapper+POPS_SInventoryDownloadUrl downloadUrl, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SInventoryResult result, ref PopsApi.PopsApiWrapper+POPS_SInventoryDownloadUrl downloadUrl, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SInventoryResult result, ref PopsApi.PopsApiWrapper+POPS_SInventoryDownloadUrl downloadUrl)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+InventoryItem
+KIND: class
+ATTR: NestedPublic, Abstract, BeforeFieldInit
+
+CONSTRUCTORS:
+  protected .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+InventoryItems
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+InventoryListCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SInventoryResult result, ref PopsApi.PopsApiWrapper+POPS_SInventoryList itemlList, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SInventoryResult result, ref PopsApi.PopsApiWrapper+POPS_SInventoryList itemlList, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SInventoryResult result, ref PopsApi.PopsApiWrapper+POPS_SInventoryList itemlList)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+InventoryOwnedProductsCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SInventoryResult result, System.IntPtr products, System.Int32 productsCount, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SInventoryResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SInventoryResult result, System.IntPtr products, System.Int32 productsCount)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+KVStorageCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SKVStorageResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SKVStorageResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SKVStorageResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+KVStorageReadCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SKVStorageReadResult result, ref PopsApi.PopsApiWrapper+POPS_SKVStorageReadList storageList, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SKVStorageReadResult result, ref PopsApi.PopsApiWrapper+POPS_SKVStorageReadList storageList, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SKVStorageReadResult result, ref PopsApi.PopsApiWrapper+POPS_SKVStorageReadList storageList)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+LegalDocument
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+LegalDocumentListEntry
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+LegalGetDocumentCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SLegalGetDocumentResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SLegalGetDocumentResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SLegalGetDocumentResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+LegalGetDocumentsListCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SLegalGetDocumentsListResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SLegalGetDocumentsListResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SLegalGetDocumentsListResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+LegalGetViewedCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SLegalGetViewedResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SLegalGetViewedResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SLegalGetViewedResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+LegalSetViewedCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SLegalSetViewedResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SLegalSetViewedResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SLegalSetViewedResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+LogCallback
+KIND: class
+ATTR: NestedPublic, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.String message, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(System.IAsyncResult result)
+  public virtual System.Void Invoke(System.String message)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+MappableFunction`2
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(T1 val, System.AsyncCallback callback, System.Object object)
+  public virtual T2 EndInvoke(System.IAsyncResult result)
+  public virtual T2 Invoke(T1 val)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsChangeLogEntry
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsCountCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsCountResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsCountResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsCountResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsCountDescription
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsCountResult
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsDetail
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsDisableModCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsDisableModResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsDisableModResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsDisableModResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsDownloadModCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsGetDownloadInfoResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsGetDownloadInfoResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsGetDownloadInfoResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsEnableModCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsEnableModResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsEnableModResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsEnableModResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsGetContentPath
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsGetContentPathCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsGetContentPathResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsGetContentPathResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsGetContentPathResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsGetDetailsCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsGetDetailsResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsGetDetailsResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsGetDetailsResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsGetDownloadInfo
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsGetDownloadInfoCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsGetDownloadInfoResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsGetDownloadInfoResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsGetDownloadInfoResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsGetInstalledCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsGetInstalledResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsGetInstalledResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsGetInstalledResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsGetInstalledEntry
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsGetManifest
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsGetManifestCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsGetManifestResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsGetManifestResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsGetManifestResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsGetRepoInfo
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsGetRepoInfoCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsGetRepoInfoResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsGetRepoInfoResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsGetRepoInfoResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsGetUserRatingCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsGetUserRatingResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsGetUserRatingResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsGetUserRatingResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsInstallModCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsInstallModResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsInstallModResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsInstallModResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsKeyValue
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String key, System.Int32 value)
+  public .ctor(System.String key, System.String value)
+
+METHODS:
+  public System.String get_Key()
+  public System.Int32 get_NumberValue()
+  public System.String get_StringValue()
+  public PopsApi.PopsApiWrapper+ModsKeyValue+VALUE_TYPE get_ValueType()
+
+NESTED TYPES:
+  - PopsApi.PopsApiWrapper+ModsKeyValue+VALUE_TYPE
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsKeyValue+VALUE_TYPE
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsManifestContentEntry
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsPublishModCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsPublishModResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsPublishModResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsPublishModResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsPublishModDescription
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsRemoveFileCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsRemoveFileResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsRemoveFileResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsRemoveFileResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsRepoDependencyEntry
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsRepoKeyDependency
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsRepoKeyPatch
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsRepoKeyVersion
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsRepoPatchEntry
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsRepoSubRepositoryEntry
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsRepoVersionEntry
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsReportCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsReportResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsReportResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsReportResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsReportDesc
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsRequirementEntry
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsScreenshotEntry
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsSearchCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsSearchResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsSearchResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsSearchResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsSearchDescription
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsSearchEntry
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsUninstallModCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsUninstallModResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsUninstallModResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsUninstallModResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsUpdateUserRatingCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsUpdateUserRatingResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsUpdateUserRatingResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsUpdateUserRatingResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsUpdateUserRatingDesc
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+ModsUploadFileCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsUploadFileResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SModsUploadFileResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SModsUploadFileResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+NewsletterCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SNewsletterResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SNewsletterResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SNewsletterResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+OwnedItem
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+OwnedProduct
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_EInventoryCategory
+KIND: enum
+ATTR: NestedPrivate, Sealed
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_IndexingPropertyUpdate
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountAddCredentialsDesc
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountAddCredentialsResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountAddEmailDesc
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountAddEmailResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountConnectResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountConnectionsResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountCreateResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountGetDetailsAccount
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountGetDetailsAccountDetails
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountGetDetailsResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountGetMergeStatusResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountIsOnlineResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountLoginResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountMergeShadowResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountResetPasswordResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountShadowCredentials
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountUpdateDetailsDesc
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAccountUpdateDetailsResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAchievementsGetResultEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAchievementsListResultEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAchievementsResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAchievementsSendEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAppEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAppGetChildrenResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAppStatsChangeResultEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAppStatsEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAppStatsGetResultEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SAppStatsResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SBulkItem
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SConfig
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SConnectionEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SCreateAccountDesc
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SCreateShadowAccountDesc
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SDownloadFileResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SFeedEntry64
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+METHODS:
+  public PopsApi.PopsApiWrapper+POPS_SFeedItem64[] GetItems()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SFeedItem64
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+METHODS:
+  public System.String GetString()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SFileEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SFileIO
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SFileStorageResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SFriendRequest
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SFriendsListEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SGameProfileEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SGameProfileResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SIndexingBlock
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SIndexingDeletionResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SIndexingDocument
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SIndexingDocumentUpdate
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SIndexingKeyValuePair64
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SIndexingResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SInvalidateLoginTokenResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SInventoryDownloadUrl
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SInventoryDownloadsEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SInventoryDownloadsList
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SInventoryList
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SInventoryPlatform
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SInventoryProduct
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SInventoryResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SKVStorageReadEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SKVStorageReadList
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SKVStorageReadResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SKVStorageResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SLegalGetDocumentResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SLegalGetDocumentsListEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SLegalGetDocumentsListResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SLegalGetViewedResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SLegalSetViewedResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsChangeLog
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsChangeLogEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsCountDesc
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsCountResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsDisableModResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsEnableModResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsGetContentPathResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsGetDetailsResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsGetDownloadInfoResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsGetInstalledEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsGetInstalledResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsGetManifestResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsGetRepoInfoResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsGetUserRatingResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsInstallModResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsKeyValue
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsManifestContentEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsMetaDataValue
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsPublishDependencyEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] keyValue)
+  public .ctor(System.String key, System.String value)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsPublishModDesc
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsPublishModResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsRemoveFileResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsRepoDependencyEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsRepoKeyDependency
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsRepoKeyPatch
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsRepoKeyVersion
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsRepoPatchEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsRepoSubRepositoryEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsRepoVersionEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsReportDesc
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsReportResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsRequirement
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsScreenshot
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsSearchDesc
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsSearchEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsSearchResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsUninstallModResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsUpdateUserRatingDesc
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsUpdateUserRatingResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SModsUploadFileResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SNewsletterResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SOwnedItem
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SSocialAddFriendResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SSocialGetFriendsListResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SSocialGetOpenFriendRequestsResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SSocialJoinRoomResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SSocialLeaveRoomResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SSocialListenFriendListUpdatesResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SSocialListenMessagesResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SSocialListenPresenceResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SSocialRemoveFriendResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SSocialRemoveOutgoingFriendRequestResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SSocialRespondToFriendRequestResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SSocialResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_SStorageEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_STelemetryData
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] keyValue)
+  public .ctor(System.String key, System.String value)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_STelemetryEntry
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+POPS_STimedItem
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+Platform
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialAddFriendCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialAddFriendResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SSocialAddFriendResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialAddFriendResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SSocialResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SSocialResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SSocialResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialConnectionStatus
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialFriendListUpdatesType
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialFriendRequestType
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialGetFriendsListCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr taskId, System.IntPtr pEntries, System.Int32 nEntriesCount, ref PopsApi.PopsApiWrapper+POPS_SSocialGetFriendsListResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SSocialGetFriendsListResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr taskId, System.IntPtr pEntries, System.Int32 nEntriesCount, ref PopsApi.PopsApiWrapper+POPS_SSocialGetFriendsListResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialGetOpenFriendRequestsCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialGetOpenFriendRequestsResult result, System.IntPtr pEntries, System.Int32 nEntriesCount, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SSocialGetOpenFriendRequestsResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialGetOpenFriendRequestsResult result, System.IntPtr pEntries, System.Int32 nEntriesCount)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialJoinRoomCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SSocialJoinRoomResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SSocialJoinRoomResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SSocialJoinRoomResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialLeaveRoomCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SSocialLeaveRoomResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SSocialLeaveRoomResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SSocialLeaveRoomResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialListenFriendListUpdatesCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SSocialListenFriendListUpdatesResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Int32 EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SSocialListenFriendListUpdatesResult result, System.IAsyncResult __result)
+  public virtual System.Int32 Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SSocialListenFriendListUpdatesResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialListenFriendListUpdatesCallbackDelegate
+KIND: class
+ATTR: NestedPublic, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(PopsApi.PopsApiWrapper+SocialListenFriendListUpdatesResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Int32 EndInvoke(System.IAsyncResult result)
+  public virtual System.Int32 Invoke(PopsApi.PopsApiWrapper+SocialListenFriendListUpdatesResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialListenFriendListUpdatesResult
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialListenMessagesCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SSocialListenMessagesResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Int32 EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SSocialListenMessagesResult result, System.IAsyncResult __result)
+  public virtual System.Int32 Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+POPS_SSocialListenMessagesResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialListenMessagesCallbackDelegate
+KIND: class
+ATTR: NestedPublic, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(PopsApi.PopsApiWrapper+SocialListenMessagesResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Int32 EndInvoke(System.IAsyncResult result)
+  public virtual System.Int32 Invoke(PopsApi.PopsApiWrapper+SocialListenMessagesResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialListenMessagesResult
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialListenPresenceCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr pUserData, ref PopsApi.PopsApiWrapper+POPS_SSocialListenPresenceResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Int32 EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SSocialListenPresenceResult result, System.IAsyncResult __result)
+  public virtual System.Int32 Invoke(System.IntPtr ctx, System.IntPtr pUserData, ref PopsApi.PopsApiWrapper+POPS_SSocialListenPresenceResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialListenPresenceCallbackDelegate
+KIND: class
+ATTR: NestedPublic, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(PopsApi.PopsApiWrapper+SocialListenPresenceResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Int32 EndInvoke(System.IAsyncResult result)
+  public virtual System.Int32 Invoke(PopsApi.PopsApiWrapper+SocialListenPresenceResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialListenPresenceResult
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialListenStatusCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+SocialListenStatusResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Int32 EndInvoke(ref PopsApi.PopsApiWrapper+SocialListenStatusResult result, System.IAsyncResult __result)
+  public virtual System.Int32 Invoke(System.IntPtr ctx, System.IntPtr userData, ref PopsApi.PopsApiWrapper+SocialListenStatusResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialListenStatusCallbackDelegate
+KIND: class
+ATTR: NestedPublic, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(PopsApi.PopsApiWrapper+SocialConnectionStatus result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Int32 EndInvoke(System.IAsyncResult result)
+  public virtual System.Int32 Invoke(PopsApi.PopsApiWrapper+SocialConnectionStatus result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialListenStatusResult
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialMessageType
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialPresenceAvailability
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialRemoveFriendCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialRemoveFriendResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SSocialRemoveFriendResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialRemoveFriendResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialRemoveOutgoingFriendRequestCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialRemoveOutgoingFriendRequestResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SSocialRemoveOutgoingFriendRequestResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialRemoveOutgoingFriendRequestResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialRespondToFriendRequestCallback
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialRespondToFriendRequestResult result, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(ref PopsApi.PopsApiWrapper+POPS_SSocialRespondToFriendRequestResult result, System.IAsyncResult __result)
+  public virtual System.Void Invoke(System.IntPtr ctx, System.IntPtr taskId, ref PopsApi.PopsApiWrapper+POPS_SSocialRespondToFriendRequestResult result)
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+SocialXMPPLogLevel
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+StorageEntry
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+StorageReadEntry
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+TelemetryEntry
+KIND: struct
+ATTR: NestedPublic, SequentialLayout, Sealed, BeforeFieldInit
+
+------------------------------------------------------------
+TYPE: PopsApi.PopsApiWrapper+TimedItem
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+

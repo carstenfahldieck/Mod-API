@@ -1,0 +1,774 @@
+=== CS1 Methoden Analyse - Assembly Dump ===
+Timestamp: 2026-02-17 15:29:07
+Bucket: VANILLA
+Assembly Simple: Assembly-CSharp-firstpass
+Assembly Full: Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly Path: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\Assembly-CSharp-firstpass.dll
+DeclaredOnly Methods: YES
+
+
+### NAMESPACE: UnityStandardAssets.ImageEffects
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.AAMode
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Antialiasing
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  public UnityEngine.Material CurrentAAMaterial()
+  public System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Bloom
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  private System.Void AddTo(System.Single intensity_, UnityEngine.RenderTexture from, UnityEngine.RenderTexture to)
+  private System.Void BlendFlares(UnityEngine.RenderTexture from, UnityEngine.RenderTexture to)
+  private System.Void BrightFilter(System.Single thresh, UnityEngine.RenderTexture from, UnityEngine.RenderTexture to)
+  private System.Void BrightFilter(UnityEngine.Color threshColor, UnityEngine.RenderTexture from, UnityEngine.RenderTexture to)
+  public virtual System.Boolean CheckResources()
+  private System.Void OnDisable()
+  public System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+  private System.Void Vignette(System.Single amount, UnityEngine.RenderTexture from, UnityEngine.RenderTexture to)
+
+NESTED TYPES:
+  - UnityStandardAssets.ImageEffects.Bloom+BloomQuality
+  - UnityStandardAssets.ImageEffects.Bloom+BloomScreenBlendMode
+  - UnityStandardAssets.ImageEffects.Bloom+HDRBloomMode
+  - UnityStandardAssets.ImageEffects.Bloom+LensFlareStyle
+  - UnityStandardAssets.ImageEffects.Bloom+TweakMode
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Bloom+BloomQuality
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Bloom+BloomScreenBlendMode
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Bloom+HDRBloomMode
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Bloom+LensFlareStyle
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Bloom+TweakMode
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.BloomAndFlares
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  private System.Void AddTo(System.Single intensity_, UnityEngine.RenderTexture from, UnityEngine.RenderTexture to)
+  private System.Void BlendFlares(UnityEngine.RenderTexture from, UnityEngine.RenderTexture to)
+  private System.Void BrightFilter(System.Single thresh, System.Single useAlphaAsMask, UnityEngine.RenderTexture from, UnityEngine.RenderTexture to)
+  public virtual System.Boolean CheckResources()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+  private System.Void Vignette(System.Single amount, UnityEngine.RenderTexture from, UnityEngine.RenderTexture to)
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.BloomOptimized
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  private System.Void OnDisable()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+NESTED TYPES:
+  - UnityStandardAssets.ImageEffects.BloomOptimized+BlurType
+  - UnityStandardAssets.ImageEffects.BloomOptimized+Resolution
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.BloomOptimized+BlurType
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.BloomOptimized+Resolution
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.BloomScreenBlendMode
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Blur
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  private System.Void DownSample4x(UnityEngine.RenderTexture source, UnityEngine.RenderTexture dest)
+  public System.Void FourTapCone(UnityEngine.RenderTexture source, UnityEngine.RenderTexture dest, System.Int32 iteration)
+  protected System.Void OnDisable()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+  protected System.Void Start()
+  protected UnityEngine.Material get_material()
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.BlurOptimized
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  public System.Void OnDisable()
+  public System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+NESTED TYPES:
+  - UnityStandardAssets.ImageEffects.BlurOptimized+BlurType
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.BlurOptimized+BlurType
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.CameraMotionBlur
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  private System.Void CalculateViewProjection()
+  public virtual System.Boolean CheckResources()
+  private UnityEngine.Camera GetTmpCam()
+  private System.Void OnDisable()
+  private System.Void OnEnable()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+  private System.Void Remember()
+  private System.Void Start()
+  private System.Void StartFrame()
+  private static System.Int32 divRoundUp(System.Int32 x, System.Int32 d)
+
+NESTED TYPES:
+  - UnityStandardAssets.ImageEffects.CameraMotionBlur+MotionBlurFilter
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.CameraMotionBlur+MotionBlurFilter
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.ColorCorrectionCurves
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  private System.Void Awake()
+  public virtual System.Boolean CheckResources()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+  private System.Void Start()
+  public System.Void UpdateParameters()
+  private System.Void UpdateTextures()
+
+NESTED TYPES:
+  - UnityStandardAssets.ImageEffects.ColorCorrectionCurves+ColorCorrectionMode
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.ColorCorrectionCurves+ColorCorrectionMode
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.ColorCorrectionLookup
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  public System.Void Convert(UnityEngine.Texture2D temp2DTex, System.String path)
+  private System.Void OnDestroy()
+  private System.Void OnDisable()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+  public System.Void SetIdentityLut()
+  public System.Boolean ValidDimensions(UnityEngine.Texture2D tex2d)
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.ColorCorrectionRamp
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.ContrastEnhance
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.ContrastStretch
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  private System.Void CalculateAdaptation(UnityEngine.Texture curTexture)
+  private System.Void OnDisable()
+  private System.Void OnEnable()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+  private System.Void Start()
+  protected UnityEngine.Material get_materialAdapt()
+  protected UnityEngine.Material get_materialApply()
+  protected UnityEngine.Material get_materialLum()
+  protected UnityEngine.Material get_materialReduce()
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.CreaseShading
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.DepthOfField
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  private System.Void CreateComputeResources()
+  private System.Single FocalDistance01(System.Single worldDist)
+  private System.Void OnDisable()
+  private System.Void OnEnable()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+  private System.Void ReleaseComputeResources()
+  private System.Void WriteCoc(UnityEngine.RenderTexture fromTo, System.Boolean fgDilate)
+
+NESTED TYPES:
+  - UnityStandardAssets.ImageEffects.DepthOfField+BlurSampleCount
+  - UnityStandardAssets.ImageEffects.DepthOfField+BlurType
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.DepthOfField+BlurSampleCount
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.DepthOfField+BlurType
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  private System.Void AddBokeh(UnityEngine.RenderTexture bokehInfo, UnityEngine.RenderTexture tempTex, UnityEngine.RenderTexture finalTarget)
+  private System.Void AllocateTextures(System.Boolean blurForeground, UnityEngine.RenderTexture source, System.Int32 divider, System.Int32 lowTexDivider)
+  private System.Void Blur(UnityEngine.RenderTexture from, UnityEngine.RenderTexture to, UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated+DofBlurriness iterations, System.Int32 blurPass, System.Single spread)
+  private System.Void BlurFg(UnityEngine.RenderTexture from, UnityEngine.RenderTexture to, UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated+DofBlurriness iterations, System.Int32 blurPass, System.Single spread)
+  private System.Void BlurHex(UnityEngine.RenderTexture from, UnityEngine.RenderTexture to, System.Int32 blurPass, System.Single spread, UnityEngine.RenderTexture tmp)
+  public virtual System.Boolean CheckResources()
+  private System.Void CreateMaterials()
+  private System.Void Downsample(UnityEngine.RenderTexture from, UnityEngine.RenderTexture to)
+  private System.Single FocalDistance01(System.Single worldDist)
+  private System.Int32 GetDividerBasedOnQuality()
+  private System.Int32 GetLowResolutionDividerBasedOnQuality(System.Int32 baseDivider)
+  private System.Void OnDisable()
+  private System.Void OnEnable()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+  private System.Void ReleaseTextures()
+
+NESTED TYPES:
+  - UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated+BokehDestination
+  - UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated+Dof34QualitySetting
+  - UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated+DofBlurriness
+  - UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated+DofResolution
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated+BokehDestination
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated+Dof34QualitySetting
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated+DofBlurriness
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated+DofResolution
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.EdgeDetection
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  private System.Void OnEnable()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+  private System.Void SetCameraFlag()
+  private System.Void Start()
+
+NESTED TYPES:
+  - UnityStandardAssets.ImageEffects.EdgeDetection+EdgeDetectMode
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.EdgeDetection+EdgeDetectMode
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Fisheye
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.GlobalFog
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  private static System.Void CustomGraphicsBlit(UnityEngine.RenderTexture source, UnityEngine.RenderTexture dest, UnityEngine.Material fxMaterial, System.Int32 passNr)
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Grayscale
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.HDRBloomMode
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.ImageEffectBase
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  protected virtual System.Void OnDisable()
+  protected virtual System.Void Start()
+  protected UnityEngine.Material get_material()
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.ImageEffects
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public static System.Void Blit(UnityEngine.RenderTexture source, UnityEngine.RenderTexture dest)
+  public static System.Void BlitWithMaterial(UnityEngine.Material material, UnityEngine.RenderTexture source, UnityEngine.RenderTexture dest)
+  public static System.Void RenderDistortion(UnityEngine.Material material, UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination, System.Single angle, UnityEngine.Vector2 center, UnityEngine.Vector2 radius)
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.LensflareStyle34
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.MotionBlur
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  protected virtual System.Void OnDisable()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+  protected virtual System.Void Start()
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.NoiseAndGrain
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  private static System.Void DrawNoiseQuadGrid(UnityEngine.RenderTexture source, UnityEngine.RenderTexture dest, UnityEngine.Material fxMaterial, UnityEngine.Texture2D noise, System.Int32 passNr)
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.NoiseAndScratches
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  protected System.Void OnDisable()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+  private System.Void SanitizeParameters()
+  protected System.Void Start()
+  protected UnityEngine.Material get_material()
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.PostEffectsBase
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  private System.Boolean CheckShader(UnityEngine.Shader s)
+  protected UnityEngine.Material CheckShaderAndCreateMaterial(UnityEngine.Shader s, UnityEngine.Material m2Create)
+  protected System.Boolean CheckSupport(System.Boolean needDepth)
+  protected System.Boolean CheckSupport(System.Boolean needDepth, System.Boolean needHdr)
+  protected System.Boolean CheckSupport()
+  protected UnityEngine.Material CreateMaterial(UnityEngine.Shader s, UnityEngine.Material m2Create)
+  protected System.Void DrawBorder(UnityEngine.RenderTexture dest, UnityEngine.Material material)
+  public System.Boolean Dx11Support()
+  protected System.Void NotSupported()
+  private System.Void OnEnable()
+  protected System.Void ReportAutoDisable()
+  protected System.Void Start()
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.PostEffectsHelper
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  private static System.Void DrawBorder(UnityEngine.RenderTexture dest, UnityEngine.Material material)
+  private static System.Void DrawLowLevelPlaneAlignedWithCamera(System.Single dist, UnityEngine.RenderTexture source, UnityEngine.RenderTexture dest, UnityEngine.Material material, UnityEngine.Camera cameraForProjectionMatrix)
+  private static System.Void DrawLowLevelQuad(System.Single x1, System.Single x2, System.Single y1, System.Single y2, UnityEngine.RenderTexture source, UnityEngine.RenderTexture dest, UnityEngine.Material material)
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Quads
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  public static System.Void Cleanup()
+  private static UnityEngine.Mesh GetMesh(System.Int32 triCount, System.Int32 triOffset, System.Int32 totalWidth, System.Int32 totalHeight)
+  public static UnityEngine.Mesh[] GetMeshes(System.Int32 totalWidth, System.Int32 totalHeight)
+  private static System.Boolean HasMeshes()
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.ScreenOverlay
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+NESTED TYPES:
+  - UnityStandardAssets.ImageEffects.ScreenOverlay+OverlayBlendMode
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.ScreenOverlay+OverlayBlendMode
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.ScreenSpaceAmbientObscurance
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  private System.Void OnDisable()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.ScreenSpaceAmbientOcclusion
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  private static UnityEngine.Material CreateMaterial(UnityEngine.Shader shader)
+  private System.Void CreateMaterials()
+  private static System.Void DestroyMaterial(UnityEngine.Material mat)
+  private System.Void OnDisable()
+  private System.Void OnEnable()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+  private System.Void Start()
+
+NESTED TYPES:
+  - UnityStandardAssets.ImageEffects.ScreenSpaceAmbientOcclusion+SSAOSamples
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.ScreenSpaceAmbientOcclusion+SSAOSamples
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.SepiaTone
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.SunShafts
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+NESTED TYPES:
+  - UnityStandardAssets.ImageEffects.SunShafts+ShaftsScreenBlendMode
+  - UnityStandardAssets.ImageEffects.SunShafts+SunShaftsResolution
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.SunShafts+ShaftsScreenBlendMode
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.SunShafts+SunShaftsResolution
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.TiltShift
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+NESTED TYPES:
+  - UnityStandardAssets.ImageEffects.TiltShift+TiltShiftMode
+  - UnityStandardAssets.ImageEffects.TiltShift+TiltShiftQuality
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.TiltShift+TiltShiftMode
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.TiltShift+TiltShiftQuality
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Tonemapping
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  private System.Boolean CreateInternalRenderTexture()
+  private System.Void OnDisable()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+  public System.Single UpdateCurve()
+
+NESTED TYPES:
+  - UnityStandardAssets.ImageEffects.Tonemapping+AdaptiveTexSize
+  - UnityStandardAssets.ImageEffects.Tonemapping+TonemapperType
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Tonemapping+AdaptiveTexSize
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Tonemapping+TonemapperType
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Triangles
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  private static System.Void Cleanup()
+  private static UnityEngine.Mesh GetMesh(System.Int32 triCount, System.Int32 triOffset, System.Int32 totalWidth, System.Int32 totalHeight)
+  private static UnityEngine.Mesh[] GetMeshes(System.Int32 totalWidth, System.Int32 totalHeight)
+  private static System.Boolean HasMeshes()
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.TweakMode34
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Twirl
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Boolean CheckResources()
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+
+NESTED TYPES:
+  - UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration+AberrationMode
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.VignetteAndChromaticAberration+AberrationMode
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: UnityStandardAssets.ImageEffects.Vortex
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  private System.Void OnRenderImage(UnityEngine.RenderTexture source, UnityEngine.RenderTexture destination)
+

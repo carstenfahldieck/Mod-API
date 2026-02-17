@@ -1,0 +1,56 @@
+=== CS1 Methoden Analyse - Assembly Dump ===
+Timestamp: 2026-02-17 15:29:07
+Bucket: SYSTEM
+Assembly Simple: AutoWaterPipes
+Assembly Full: AutoWaterPipes, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly Path: 
+DeclaredOnly Methods: YES
+
+
+### NAMESPACE: AutoWaterPipes
+
+------------------------------------------------------------
+TYPE: AutoWaterPipes.AutoWaterPipesLoading
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  private static System.UInt16 CreatePipeNode(NetManager nm, UnityEngine.Vector3 pos)
+  private static System.Void CreateSegmentPostfix(System.Boolean __result, ref System.UInt16 segment, ref ColossalFramework.Math.Randomizer randomizer, NetInfo info, System.UInt16 startNode, System.UInt16 endNode, UnityEngine.Vector3 startDirection, UnityEngine.Vector3 endDirection, System.UInt32 buildIndex, System.UInt32 modifiedIndex, System.Boolean invert)
+  private static System.Void CreateSegmentPostfixWithTree(System.Boolean __result, ref System.UInt16 segment, ref ColossalFramework.Math.Randomizer randomizer, NetInfo info, TreeInfo treeInfo, System.UInt16 startNode, System.UInt16 endNode, UnityEngine.Vector3 startDirection, UnityEngine.Vector3 endDirection, System.UInt32 buildIndex, System.UInt32 modifiedIndex, System.Boolean invert)
+  private static System.Reflection.MethodInfo FindCreateNodeMethod()
+  private static NetInfo FindWaterPipePrefab()
+  private static System.UInt16 GetOrCreatePipeNode(NetManager nm, System.UInt16 roadNode, UnityEngine.Vector3 pos)
+  private static System.Void HandleRoad(System.Boolean success, NetInfo info, System.UInt16 startNode, System.UInt16 endNode)
+  private static System.UInt32 NextBuildIndex()
+  public virtual System.Void OnLevelLoaded(ICities.LoadMode mode)
+  public virtual System.Void OnLevelUnloading()
+  private System.Void PatchWithTree()
+  private System.Void PatchWithoutTree()
+
+------------------------------------------------------------
+TYPE: AutoWaterPipes.AutoWaterPipesMod
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.Void OnSettingsUI(ICities.UIHelperBase helper)
+  private System.Void OnToggle(System.Boolean value)
+  public System.String get_Description()
+  public System.String get_Name()
+
+------------------------------------------------------------
+TYPE: AutoWaterPipes.ModSettings
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+

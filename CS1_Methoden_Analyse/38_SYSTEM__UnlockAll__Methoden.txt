@@ -1,0 +1,35 @@
+=== CS1 Methoden Analyse - Assembly Dump ===
+Timestamp: 2026-02-17 15:29:07
+Bucket: SYSTEM
+Assembly Simple: UnlockAll
+Assembly Full: UnlockAll, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly Path: 
+DeclaredOnly Methods: YES
+
+
+### NAMESPACE: UnlockAllMod
+
+------------------------------------------------------------
+TYPE: UnlockAllMod.UnlockAll
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.String get_Description()
+  public System.String get_Name()
+
+------------------------------------------------------------
+TYPE: UnlockAllMod.UnlockAllMilestones
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Int32 OnGetPopulationTarget(System.Int32 originalTarget, System.Int32 scaledTarget)
+  public virtual System.Void OnRefreshMilestones()
+

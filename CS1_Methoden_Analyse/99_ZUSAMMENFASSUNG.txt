@@ -1,0 +1,12 @@
+=== CS1 Methoden Analyse - ZUSAMMENFASSUNG ===
+Timestamp: 2026-02-17 15:29:07
+Output Folder: C:\Users\carst\Desktop\CS1_Methoden_Analyse
+
+Assemblies: 39
+Total Types: 16026
+Total Declared Methods: 112242
+
+Hinweis: DeclaredOnly=TRUE, damit nicht jede geerbte Methode in jedem Typ mehrfach auftaucht.
+Filter-Dateien befinden sich im selben Ordner (Lane/Junction/TrafficLight/Parking/Path/AI/Net...).
+
+TMPE erkannt: JA
