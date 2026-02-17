@@ -1,0 +1,106 @@
+CS1 – TM:PE MODDING CHEATSHEET Erstellt: 2026-02-17 15:26:56
+
+============================================================ Ziel
+============================================================ Schnelle
+Referenz für eigene Mods, die mit TM:PE arbeiten. Basierend auf deinem
+Dump v2 (TMPE.API + TrafficManager).
+
+============================================================ 1)
+Einstiegspunkt (immer zuerst prüfen!)
+============================================================
+
+Type: TrafficManager.API.Implementations
+
+Wichtig: ManagerFactory liefert dir alle Manager.
+
+Beispiel (Konzept): var factory =
+TrafficManager.API.Implementations.ManagerFactory;
+
+============================================================ 2) Ampeln
+ein-/ausschalten
+============================================================
+
+Interface: ITrafficLightManager
+
+Typischer Ablauf: 1) Prüfen ob Node Ampel hat: HasTrafficLight(nodeId)
+
+2)  Prüfen ob togglen erlaubt: CanToggleTrafficLight(nodeId)
+
+3)  Umschalten: ToggleTrafficLight(nodeId)
+
+Timed Lights: ITrafficLightSimulationManager HasTimedSimulation(nodeId)
+HasActiveTimedSimulation(nodeId)
+
+============================================================ 3) Junction
+Restrictions (Kreuzungsregeln)
+============================================================
+
+Interface: IJunctionRestrictionsManager
+
+Typische Regeln: - U-Turn erlauben/verbieten - Fußgängerüberweg -
+Spurwechsel bei Geradeaus - Blockierte Kreuzung befahren - Turn on Red
+
+Wichtige Methoden: SetUturnAllowed(segmentId, startNode, value)
+SetPedestrianCrossingAllowed(segmentId, startNode, value)
+SetEnteringBlockedJunctionAllowed(segmentId, startNode, value)
+
+Hinweis: value ist meist TernaryBool (True / False / Undefined)
+
+============================================================ 4) Parking
+Restrictions
+============================================================
+
+Interface: IParkingRestrictionsManager
+
+Wichtige Methoden: IsParkingAllowed(segmentId, direction)
+SetParkingAllowed(segmentId, direction, flag)
+ToggleParkingAllowed(segmentId, direction)
+
+============================================================ 5) Vehicle
+Restrictions (Fahrzeugtypen)
+============================================================
+
+Interface: IVehicleRestrictionsManager
+
+Wichtige Methoden: GetAllowedVehicleTypes(segmentId, nodeId,
+busLaneMode) AddAllowedType(…) RemoveAllowedType(…) ToggleAllowedType(…)
+
+============================================================ 6) Lane
+Connector (Spur-zu-Spur)
+============================================================
+
+Interface: ILaneConnectionManager
+
+Wichtig: API bietet vor allem Abfragefunktionen: AreLanesConnected(…)
+HasConnections(…)
+
+Für komplexes Setzen muss ggf. TrafficManager Core analysiert werden.
+
+============================================================ 7) Speed
+Limits ============================================================
+
+Interface: ISpeedLimitManager
+
+GetGameSpeedLimit(laneId)
+
+============================================================ 8)
+Strategie für eigene Mods
+============================================================
+
+Option A: Referenz auf TMPE.API.dll - Einfach - Mod benötigt TM:PE
+
+Option B: Reflection (empfohlen für öffentliche Mods) - Kein harter
+Verweis - Mod läuft auch ohne TM:PE
+
+============================================================
+Dateiquellen im Dump
+============================================================
+
+API: Assemblies\28_MOD__TMPE.API__Methoden.txt
+
+Core: Assemblies\30_MOD__TrafficManager__Methoden.txt
+
+Filter: Topics*.txt TMPE__*.txt
+
+============================================================ Ende
+============================================================
