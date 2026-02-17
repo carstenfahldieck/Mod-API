@@ -1,0 +1,322 @@
+VOLLSTÄNDIGER DATEI-INDEX: carstenfahldieck/Mod-API – CS1_Methoden_Analyse_v2
+Erstellt: 2026-02-17 16:06:37
+
+Basis-Adressen:
+- Repo: https://github.com/carstenfahldieck/Mod-API
+- Raw-Basis: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main
+
+Hinweis (wichtig für später):
+Für schnelles Lesen/Download nutze immer die RAW-URL.
+RAW-Formel: https://raw.githubusercontent.com/<USER>/<REPO>/main/<PFAD>/<DATEI>
+
+============================================================
+ORDNER (Web)
+============================================================
+- CS1_Methoden_Analyse_v2/
+  Web: https://github.com/carstenfahldieck/Mod-API/tree/main/CS1_Methoden_Analyse_v2
+
+- CS1_Methoden_Analyse_v2/Assemblies/
+  Web: https://github.com/carstenfahldieck/Mod-API/tree/main/CS1_Methoden_Analyse_v2/Assemblies
+
+- CS1_Methoden_Analyse_v2/Mods/
+  Web: https://github.com/carstenfahldieck/Mod-API/tree/main/CS1_Methoden_Analyse_v2/Mods
+
+- CS1_Methoden_Analyse_v2/TMPE/
+  Web: https://github.com/carstenfahldieck/Mod-API/tree/main/CS1_Methoden_Analyse_v2/TMPE
+
+- CS1_Methoden_Analyse_v2/Topics/
+  Web: https://github.com/carstenfahldieck/Mod-API/tree/main/CS1_Methoden_Analyse_v2/Topics
+
+============================================================
+ROOT-DATEIEN
+============================================================
+- CS1_Methoden_Analyse_v2/00_INDEX_Assemblies.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/00_INDEX_Assemblies.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/00_INDEX_Assemblies.txt
+
+- CS1_Methoden_Analyse_v2/01_INDEX_Mods.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/01_INDEX_Mods.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/01_INDEX_Mods.txt
+
+- CS1_Methoden_Analyse_v2/99_ZUSAMMENFASSUNG.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/99_ZUSAMMENFASSUNG.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/99_ZUSAMMENFASSUNG.txt
+
+============================================================
+TOPICS (globale Filter)
+============================================================
+- CS1_Methoden_Analyse_v2/Topics/10_TOPIC_Lane.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Topics/10_TOPIC_Lane.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Topics/10_TOPIC_Lane.txt
+
+- CS1_Methoden_Analyse_v2/Topics/11_TOPIC_Junction.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Topics/11_TOPIC_Junction.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Topics/11_TOPIC_Junction.txt
+
+- CS1_Methoden_Analyse_v2/Topics/12_TOPIC_TrafficLights.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Topics/12_TOPIC_TrafficLights.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Topics/12_TOPIC_TrafficLights.txt
+
+- CS1_Methoden_Analyse_v2/Topics/13_TOPIC_Parking.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Topics/13_TOPIC_Parking.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Topics/13_TOPIC_Parking.txt
+
+- CS1_Methoden_Analyse_v2/Topics/14_TOPIC_Pathfinding.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Topics/14_TOPIC_Pathfinding.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Topics/14_TOPIC_Pathfinding.txt
+
+- CS1_Methoden_Analyse_v2/Topics/15_TOPIC_AI.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Topics/15_TOPIC_AI.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Topics/15_TOPIC_AI.txt
+
+- CS1_Methoden_Analyse_v2/Topics/16_TOPIC_NetManager_NetInfo.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Topics/16_TOPIC_NetManager_NetInfo.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Topics/16_TOPIC_NetManager_NetInfo.txt
+
+- CS1_Methoden_Analyse_v2/Topics/17_TOPIC_TMPE_Hints.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Topics/17_TOPIC_TMPE_Hints.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Topics/17_TOPIC_TMPE_Hints.txt
+
+============================================================
+TMPE (TM:PE Filter)
+============================================================
+- CS1_Methoden_Analyse_v2/TMPE/TMPE__10_TOPIC_Lane.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/TMPE/TMPE__10_TOPIC_Lane.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/TMPE/TMPE__10_TOPIC_Lane.txt
+
+- CS1_Methoden_Analyse_v2/TMPE/TMPE__11_TOPIC_Junction.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/TMPE/TMPE__11_TOPIC_Junction.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/TMPE/TMPE__11_TOPIC_Junction.txt
+
+- CS1_Methoden_Analyse_v2/TMPE/TMPE__12_TOPIC_TrafficLights.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/TMPE/TMPE__12_TOPIC_TrafficLights.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/TMPE/TMPE__12_TOPIC_TrafficLights.txt
+
+- CS1_Methoden_Analyse_v2/TMPE/TMPE__13_TOPIC_Parking.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/TMPE/TMPE__13_TOPIC_Parking.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/TMPE/TMPE__13_TOPIC_Parking.txt
+
+- CS1_Methoden_Analyse_v2/TMPE/TMPE__14_TOPIC_Pathfinding.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/TMPE/TMPE__14_TOPIC_Pathfinding.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/TMPE/TMPE__14_TOPIC_Pathfinding.txt
+
+- CS1_Methoden_Analyse_v2/TMPE/TMPE__15_TOPIC_AI.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/TMPE/TMPE__15_TOPIC_AI.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/TMPE/TMPE__15_TOPIC_AI.txt
+
+- CS1_Methoden_Analyse_v2/TMPE/TMPE__16_TOPIC_NetManager_NetInfo.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/TMPE/TMPE__16_TOPIC_NetManager_NetInfo.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/TMPE/TMPE__16_TOPIC_NetManager_NetInfo.txt
+
+- CS1_Methoden_Analyse_v2/TMPE/TMPE__17_TOPIC_TMPE_Hints.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/TMPE/TMPE__17_TOPIC_TMPE_Hints.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/TMPE/TMPE__17_TOPIC_TMPE_Hints.txt
+
+============================================================
+ASSEMBLIES (39 Dateien)
+============================================================
+- CS1_Methoden_Analyse_v2/Assemblies/01_MOD__0Harmony__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/01_MOD__0Harmony__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/01_MOD__0Harmony__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/02_MOD__0Harmony__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/02_MOD__0Harmony__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/02_MOD__0Harmony__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/03_MOD__0Harmony__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/03_MOD__0Harmony__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/03_MOD__0Harmony__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/04_SYSTEM__Anonymously
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/04_SYSTEM__Anonymously
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/04_SYSTEM__Anonymously
+
+- CS1_Methoden_Analyse_v2/Assemblies/05_VANILLA__Assembly-CSharp__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/05_VANILLA__Assembly-CSharp__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/05_VANILLA__Assembly-CSharp__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/06_VANILLA__Assembly-CSharp-firstpass__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/06_VANILLA__Assembly-CSharp-firstpass__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/06_VANILLA__Assembly-CSharp-firstpass__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/07_MOD__AutoWaterPipes__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/07_MOD__AutoWaterPipes__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/07_MOD__AutoWaterPipes__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/08_SYSTEM__CHSharedState__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/08_SYSTEM__CHSharedState__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/08_SYSTEM__CHSharedState__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/09_MOD__CSUtil.CameraControl__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/09_MOD__CSUtil.CameraControl__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/09_MOD__CSUtil.CameraControl__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/10_MOD__CSUtil.Commons__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/10_MOD__CSUtil.Commons__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/10_MOD__CSUtil.Commons__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/11_MOD__CitiesHarmony__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/11_MOD__CitiesHarmony__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/11_MOD__CitiesHarmony__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/12_MOD__CitiesHarmony.API__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/12_MOD__CitiesHarmony.API__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/12_MOD__CitiesHarmony.API__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/13_MOD__CitiesHarmony.API__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/13_MOD__CitiesHarmony.API__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/13_MOD__CitiesHarmony.API__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/14_MOD__CitiesHarmony.Harmony__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/14_MOD__CitiesHarmony.Harmony__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/14_MOD__CitiesHarmony.Harmony__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/15_MOD__CityVitalsWatch__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/15_MOD__CityVitalsWatch__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/15_MOD__CityVitalsWatch__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/16_VANILLA__ColossalManaged__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/16_VANILLA__ColossalManaged__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/16_VANILLA__ColossalManaged__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/17_MOD__HardMode0__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/17_MOD__HardMode0__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/17_MOD__HardMode0__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/18_VANILLA__ICSharpCode.SharpZipLib__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/18_VANILLA__ICSharpCode.SharpZipLib__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/18_VANILLA__ICSharpCode.SharpZipLib__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/19_VANILLA__ICities__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/19_VANILLA__ICities__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/19_VANILLA__ICities__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/20_VANILLA__Mono.Security__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/20_VANILLA__Mono.Security__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/20_VANILLA__Mono.Security__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/21_MOD__MoveItIntegration__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/21_MOD__MoveItIntegration__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/21_MOD__MoveItIntegration__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/22_MOD__ParkingLotSnapping__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/22_MOD__ParkingLotSnapping__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/22_MOD__ParkingLotSnapping__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/23_VANILLA__PopsApiWrapper__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/23_VANILLA__PopsApiWrapper__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/23_VANILLA__PopsApiWrapper__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/24_VANILLA__System__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/24_VANILLA__System__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/24_VANILLA__System__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/25_VANILLA__System.Configuration__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/25_VANILLA__System.Configuration__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/25_VANILLA__System.Configuration__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/26_VANILLA__System.Core__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/26_VANILLA__System.Core__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/26_VANILLA__System.Core__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/27_VANILLA__System.Xml__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/27_VANILLA__System.Xml__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/27_VANILLA__System.Xml__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/28_MOD__TMPE.API__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/28_MOD__TMPE.API__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/28_MOD__TMPE.API__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/29_MOD__Test__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/29_MOD__Test__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/29_MOD__Test__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/30_MOD__TrafficManager__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/30_MOD__TrafficManager__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/30_MOD__TrafficManager__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/31_MOD__UnifiedUILib__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/31_MOD__UnifiedUILib__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/31_MOD__UnifiedUILib__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/32_VANILLA__UnityEngine__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/32_VANILLA__UnityEngine__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/32_VANILLA__UnityEngine__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/33_VANILLA__UnityEngine.Networking__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/33_VANILLA__UnityEngine.Networking__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/33_VANILLA__UnityEngine.Networking__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/34_VANILLA__UnityEngine.UI__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/34_VANILLA__UnityEngine.UI__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/34_VANILLA__UnityEngine.UI__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/35_MOD__UnlimitedMoney2__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/35_MOD__UnlimitedMoney2__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/35_MOD__UnlimitedMoney2__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/36_MOD__UnlimitedOilAndOre__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/36_MOD__UnlimitedOilAndOre__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/36_MOD__UnlimitedOilAndOre__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/37_MOD__UnlimitedSoil__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/37_MOD__UnlimitedSoil__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/37_MOD__UnlimitedSoil__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/38_MOD__UnlockAll__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/38_MOD__UnlockAll__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/38_MOD__UnlockAll__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Assemblies/39_VANILLA__mscorlib__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Assemblies/39_VANILLA__mscorlib__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Assemblies/39_VANILLA__mscorlib__Methoden.txt
+
+============================================================
+MODS (Dateinamen aus Dump v2 abgeleitet)
+============================================================
+Ich habe die Mod-Dateinamen aus den im Assemblies-Index enthaltenen Mod-IDs/Namen abgeleitet.
+Wenn du im Mods-Ordner noch weitere Dateien hast, sag mir einfach den Dateinamen – dann ergänze ich den Index.
+
+- CS1_Methoden_Analyse_v2/Mods/MOD__1637663252__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Mods/MOD__1637663252__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Mods/MOD__1637663252__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Mods/MOD__2040656402__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Mods/MOD__2040656402__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Mods/MOD__2040656402__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Mods/MOD__2594569657__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Mods/MOD__2594569657__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Mods/MOD__2594569657__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Mods/MOD__3664545564__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Mods/MOD__3664545564__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Mods/MOD__3664545564__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Mods/MOD__410151616__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Mods/MOD__410151616__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Mods/MOD__410151616__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Mods/MOD__HardMode__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Mods/MOD__HardMode__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Mods/MOD__HardMode__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Mods/MOD__UnlimitedMoney__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Mods/MOD__UnlimitedMoney__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Mods/MOD__UnlimitedMoney__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Mods/MOD__UnlimitedOilAndOre__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Mods/MOD__UnlimitedOilAndOre__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Mods/MOD__UnlimitedOilAndOre__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Mods/MOD__UnlimitedSoil__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Mods/MOD__UnlimitedSoil__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Mods/MOD__UnlimitedSoil__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Mods/MOD__UnlockAll__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Mods/MOD__UnlockAll__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Mods/MOD__UnlockAll__Methoden.txt
+
+- CS1_Methoden_Analyse_v2/Mods/MOD__taxi__Methoden.txt
+  Web: https://github.com/carstenfahldieck/Mod-API/blob/main/CS1_Methoden_Analyse_v2/Mods/MOD__taxi__Methoden.txt
+  Raw: https://raw.githubusercontent.com/carstenfahldieck/Mod-API/main/CS1_Methoden_Analyse_v2/Mods/MOD__taxi__Methoden.txt
