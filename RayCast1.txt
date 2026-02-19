@@ -1,0 +1,13 @@
+﻿=== CS1 RayCast Deep Scan ===
+2026-02-19 00:59:01
+
+Type: ToolBase
+  Boolean RayCast(RaycastInput, RaycastOutput ByRef)
+
+Type: WaterTool
+  Boolean RayCastSource(WaterSource ByRef, Single ByRef, Boolean ByRef, Vector3 ByRef)
+
+Type: WaterTool
+  Boolean RayCastSea(Vector3 ByRef)
+
+=== END ===
