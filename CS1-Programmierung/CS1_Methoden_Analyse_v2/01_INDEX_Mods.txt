@@ -1,0 +1,72 @@
+=== CS1 Methoden Analyse v2 - INDEX Mods ===
+Timestamp: 2026-02-17 16:06:38
+Output: C:\Users\carst\Desktop\CS1_Methoden_Analyse_v2
+
+Plugins (via PluginManager) gefunden: 22
+
+MOD: HardMode
+PATH: G:\SteamLibrary\steamapps\common\Cities_Skylines\Files\Mods\HardMode
+ASSEMBLIES:
+  - HardMode0
+
+MOD: UnlimitedMoney
+PATH: G:\SteamLibrary\steamapps\common\Cities_Skylines\Files\Mods\UnlimitedMoney
+ASSEMBLIES:
+  - UnlimitedMoney2
+
+MOD: UnlimitedOilAndOre
+PATH: G:\SteamLibrary\steamapps\common\Cities_Skylines\Files\Mods\UnlimitedOilAndOre
+ASSEMBLIES:
+  - UnlimitedOilAndOre
+
+MOD: UnlimitedSoil
+PATH: G:\SteamLibrary\steamapps\common\Cities_Skylines\Files\Mods\UnlimitedSoil
+ASSEMBLIES:
+  - UnlimitedSoil
+
+MOD: UnlockAll
+PATH: G:\SteamLibrary\steamapps\common\Cities_Skylines\Files\Mods\UnlockAll
+ASSEMBLIES:
+  - UnlockAll
+
+MOD: taxi
+PATH: C:\Users\carst\AppData\Local\Colossal Order\Cities_Skylines\Addons\Mods\taxi
+ASSEMBLIES:
+  - Test
+
+MOD: 3664545564
+PATH: G:\SteamLibrary\steamapps\workshop\content\255710\3664545564
+ASSEMBLIES:
+  - AutoWaterPipes
+
+MOD: 2040656402
+PATH: G:\SteamLibrary\steamapps\workshop\content\255710\2040656402
+ASSEMBLIES:
+  - 0Harmony
+  - 0Harmony
+  - 0Harmony
+  - CitiesHarmony.Harmony
+  - CitiesHarmony
+
+MOD: 2594569657
+PATH: G:\SteamLibrary\steamapps\workshop\content\255710\2594569657
+ASSEMBLIES:
+  - CitiesHarmony.API
+  - ParkingLotSnapping
+
+MOD: 410151616
+PATH: G:\SteamLibrary\steamapps\workshop\content\255710\410151616
+ASSEMBLIES:
+  - CityVitalsWatch
+
+MOD: 1637663252
+PATH: G:\SteamLibrary\steamapps\workshop\content\255710\1637663252
+ASSEMBLIES:
+  - CitiesHarmony.API
+  - CSUtil.CameraControl
+  - CSUtil.Commons
+  - MoveItIntegration
+  - TMPE.API
+  - UnifiedUILib
+  - TrafficManager
+

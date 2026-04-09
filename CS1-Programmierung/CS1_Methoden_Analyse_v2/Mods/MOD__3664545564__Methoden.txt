@@ -1,0 +1,24 @@
+=== CS1 Methoden Analyse v2 - MOD Aggregation ===
+Mod: 3664545564
+Enthält Treffer aus allen Assemblies dieser Mod (via PluginManager).
+
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesLoading ::   private static .cctor()
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesLoading ::   public .ctor()
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesLoading ::   private static System.UInt16 CreatePipeNode(NetManager nm, UnityEngine.Vector3 pos)
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesLoading ::   private static System.Void CreateSegmentPostfix(System.Boolean __result, ref System.UInt16 segment, ref ColossalFramework.Math.Randomizer randomizer, NetInfo info, System.UInt16 startNode, System.UInt16 endNode, UnityEngine.Vector3 startDirection, UnityEngine.Vector3 endDirection, System.UInt32 buildIndex, System.UInt32 modifiedIndex, System.Boolean invert)
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesLoading ::   private static System.Void CreateSegmentPostfixWithTree(System.Boolean __result, ref System.UInt16 segment, ref ColossalFramework.Math.Randomizer randomizer, NetInfo info, TreeInfo treeInfo, System.UInt16 startNode, System.UInt16 endNode, UnityEngine.Vector3 startDirection, UnityEngine.Vector3 endDirection, System.UInt32 buildIndex, System.UInt32 modifiedIndex, System.Boolean invert)
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesLoading ::   private static System.Reflection.MethodInfo FindCreateNodeMethod()
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesLoading ::   private static NetInfo FindWaterPipePrefab()
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesLoading ::   private static System.UInt16 GetOrCreatePipeNode(NetManager nm, System.UInt16 roadNode, UnityEngine.Vector3 pos)
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesLoading ::   private static System.Void HandleRoad(System.Boolean success, NetInfo info, System.UInt16 startNode, System.UInt16 endNode)
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesLoading ::   private static System.UInt32 NextBuildIndex()
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesLoading ::   public virtual System.Void OnLevelLoaded(ICities.LoadMode mode)
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesLoading ::   public virtual System.Void OnLevelUnloading()
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesLoading ::   private System.Void PatchWithTree()
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesLoading ::   private System.Void PatchWithoutTree()
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesMod ::   public .ctor()
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesMod ::   public System.Void OnSettingsUI(ICities.UIHelperBase helper)
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesMod ::   private System.Void OnToggle(System.Boolean value)
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesMod ::   public System.String get_Description()
+[AutoWaterPipes] AutoWaterPipes.AutoWaterPipesMod ::   public System.String get_Name()
+[AutoWaterPipes] AutoWaterPipes.ModSettings ::   private static .cctor()

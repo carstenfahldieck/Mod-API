@@ -1,0 +1,14 @@
+=== CS1 Methoden Analyse v2 - ZUSAMMENFASSUNG ===
+Timestamp: 2026-02-17 16:06:38
+Output Folder: C:\Users\carst\Desktop\CS1_Methoden_Analyse_v2
+
+Total Types: 16028
+Total Declared Methods: 112249
+
+TMPE erkannt: JA
+
+Ordner:
+ - Assemblies\  (pro Assembly eine Datei)
+ - Mods\        (pro Mod-Plugin eine Datei, aggregiert)
+ - Topics\      (globale Themen-Filter)
+ - TMPE\        (TMPE Themen-Filter, falls erkannt)

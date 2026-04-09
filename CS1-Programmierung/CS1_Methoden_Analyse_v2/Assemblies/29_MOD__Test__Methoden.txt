@@ -1,0 +1,116 @@
+=== CS1 Methoden Analyse v2 - Assembly Dump ===
+Timestamp: 2026-02-17 16:06:38
+Bucket: MOD
+Assembly Simple: Test
+Assembly Full: Test, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly Location: 
+Plugin/Mod Name: taxi
+Plugin/Mod Path: C:\Users\carst\AppData\Local\Colossal Order\Cities_Skylines\Addons\Mods\taxi
+DeclaredOnly Methods: YES
+
+
+### NAMESPACE: CS1_MethodenAnalyse_v2
+
+------------------------------------------------------------
+TYPE: CS1_MethodenAnalyse_v2.CS1Log
+KIND: class
+ATTR: Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  internal static System.Void Err(System.String s)
+  internal static System.Void Msg(System.String s)
+
+------------------------------------------------------------
+TYPE: CS1_MethodenAnalyse_v2.Loader
+KIND: class
+ATTR: Public, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Void OnLevelLoaded(ICities.LoadMode mode)
+  public virtual System.Void OnLevelUnloading()
+
+------------------------------------------------------------
+TYPE: CS1_MethodenAnalyse_v2.MethodenAnalyseController
+KIND: class
+ATTR: Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  private static System.Int32 CompareAssemblyByName(System.Reflection.Assembly a, System.Reflection.Assembly b)
+  private static System.Int32 CompareMemberByName(System.Reflection.MemberInfo a, System.Reflection.MemberInfo b)
+  private static System.Int32 CompareTypeByFullName(System.Type a, System.Type b)
+  private static System.Boolean ContainsI(System.String hay, System.String needle)
+  private static System.IO.StreamWriter CreateWriter(System.String path)
+  private static System.String CtorSig(System.Reflection.ConstructorInfo c)
+  private static System.String EnsureDir(System.String baseDir, System.String name)
+  private static System.String GetTypeKind(System.Type t)
+  private static System.Boolean HasAny(System.String hay, System.String[] needles)
+  private static System.Boolean IsLikelyVanillaByName(System.String asmSimple)
+  private static System.String MakeSafeFileName(System.String s)
+  private static System.String MethodBaseModifiers(System.Reflection.MethodBase mb)
+  private static System.String MethodSig(System.Reflection.MethodInfo m)
+  private static System.String ParamsSig(System.Reflection.ParameterInfo[] ps)
+  private static System.String PrepareOutputFolder()
+  private System.Void RunDump()
+  private static System.String SafeAssemblyFullName(System.Reflection.Assembly asm)
+  private static System.String SafeAssemblyLocation(System.Reflection.Assembly asm)
+  private static System.String SafeAssemblySimpleName(System.Reflection.Assembly asm)
+  private static System.String SafeTypeName(System.Type t)
+  public System.Void Start()
+  private static System.Void WriteToMod(System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.IO.StreamWriter, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]] modWriters, System.String dirMods, System.String modName, System.String asmSimple, System.Type t, System.String line)
+
+------------------------------------------------------------
+TYPE: CS1_MethodenAnalyse_v2.MethodenAnalyseController+PluginAssemblyInfo
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String pluginName, System.String pluginPath, System.String asmSimple)
+
+------------------------------------------------------------
+TYPE: CS1_MethodenAnalyse_v2.MethodenAnalyseController+PluginAssemblyMap
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.Void Build()
+  private static System.String SafePluginName(ColossalFramework.Plugins.PluginManager+PluginInfo pi)
+  private static System.String SafePluginPath(ColossalFramework.Plugins.PluginManager+PluginInfo pi)
+  public CS1_MethodenAnalyse_v2.MethodenAnalyseController+PluginAssemblyInfo TryGetByAssemblySimpleName(System.String asmSimple)
+  public System.Void WritePluginList(System.IO.StreamWriter w)
+
+------------------------------------------------------------
+TYPE: CS1_MethodenAnalyse_v2.MethodenAnalyseController+TopicWriters
+KIND: class
+ATTR: NestedPrivate, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String dir, System.String prefix)
+
+METHODS:
+  private System.Void Close(System.IO.StreamWriter w)
+  public System.Void Dispose()
+  private System.Void Header(System.IO.StreamWriter w, System.String name)
+  public System.Void TryWriteMatches(System.String bucket, System.String asmSimple, System.String modName, System.Type t, System.Reflection.MethodBase mb, System.String line)
+
+------------------------------------------------------------
+TYPE: CS1_MethodenAnalyse_v2.Mod
+KIND: class
+ATTR: Public, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.String get_Description()
+  public System.String get_Name()
+

@@ -1,0 +1,11 @@
+=== CS1 Methoden Analyse v2 - MOD Aggregation ===
+Mod: UnlimitedMoney
+Enthält Treffer aus allen Assemblies dieser Mod (via PluginManager).
+
+[UnlimitedMoney2] UnlimitedMoneyMod.UnlimitedMoney ::   public .ctor()
+[UnlimitedMoney2] UnlimitedMoneyMod.UnlimitedMoney ::   public System.String get_Description()
+[UnlimitedMoney2] UnlimitedMoneyMod.UnlimitedMoney ::   public System.String get_Name()
+[UnlimitedMoney2] UnlimitedMoneyMod.UnlimitedMoneyEconomy ::   public .ctor()
+[UnlimitedMoney2] UnlimitedMoneyMod.UnlimitedMoneyEconomy ::   public virtual System.Int32 OnPeekResource(ICities.EconomyResource resource, System.Int32 amount)
+[UnlimitedMoney2] UnlimitedMoneyMod.UnlimitedMoneyEconomy ::   public virtual System.Int64 OnUpdateMoneyAmount(System.Int64 internalMoneyAmount)
+[UnlimitedMoney2] UnlimitedMoneyMod.UnlimitedMoneyEconomy ::   public virtual System.Boolean get_OverrideDefaultPeekResource()

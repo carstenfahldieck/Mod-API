@@ -1,0 +1,2363 @@
+=== CS1 Methoden Analyse v2 - Assembly Dump ===
+Timestamp: 2026-02-17 16:06:38
+Bucket: VANILLA
+Assembly Simple: ICSharpCode.SharpZipLib
+Assembly Full: ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=null
+Assembly Location: G:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\ICSharpCode.SharpZipLib.dll
+Plugin/Mod Name: (none)
+Plugin/Mod Path: (none)
+DeclaredOnly Methods: YES
+
+
+### NAMESPACE: 
+
+------------------------------------------------------------
+TYPE: <PrivateImplementationDetails>{D9FB63B0-8900-49CA-B50C-005F7ECC1ADC}
+KIND: class
+ATTR: NotPublic
+
+------------------------------------------------------------
+TYPE: <PrivateImplementationDetails>{D9FB63B0-8900-49CA-B50C-005F7ECC1ADC}+__StaticArrayInitTypeSize=10
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+
+------------------------------------------------------------
+TYPE: <PrivateImplementationDetails>{D9FB63B0-8900-49CA-B50C-005F7ECC1ADC}+__StaticArrayInitTypeSize=1024
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+
+------------------------------------------------------------
+TYPE: <PrivateImplementationDetails>{D9FB63B0-8900-49CA-B50C-005F7ECC1ADC}+__StaticArrayInitTypeSize=116
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+
+------------------------------------------------------------
+TYPE: <PrivateImplementationDetails>{D9FB63B0-8900-49CA-B50C-005F7ECC1ADC}+__StaticArrayInitTypeSize=12
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+
+------------------------------------------------------------
+TYPE: <PrivateImplementationDetails>{D9FB63B0-8900-49CA-B50C-005F7ECC1ADC}+__StaticArrayInitTypeSize=120
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+
+------------------------------------------------------------
+TYPE: <PrivateImplementationDetails>{D9FB63B0-8900-49CA-B50C-005F7ECC1ADC}+__StaticArrayInitTypeSize=16
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+
+------------------------------------------------------------
+TYPE: <PrivateImplementationDetails>{D9FB63B0-8900-49CA-B50C-005F7ECC1ADC}+__StaticArrayInitTypeSize=2048
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+
+------------------------------------------------------------
+TYPE: <PrivateImplementationDetails>{D9FB63B0-8900-49CA-B50C-005F7ECC1ADC}+__StaticArrayInitTypeSize=40
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+
+------------------------------------------------------------
+TYPE: <PrivateImplementationDetails>{D9FB63B0-8900-49CA-B50C-005F7ECC1ADC}+__StaticArrayInitTypeSize=56
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+
+------------------------------------------------------------
+TYPE: <PrivateImplementationDetails>{D9FB63B0-8900-49CA-B50C-005F7ECC1ADC}+__StaticArrayInitTypeSize=76
+KIND: struct
+ATTR: NestedPrivate, ExplicitLayout, Sealed
+
+
+### NAMESPACE: ICSharpCode.SharpZipLib.BZip2
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.BZip2.BZip2
+KIND: class
+ATTR: Public, Abstract, Sealed, BeforeFieldInit
+
+METHODS:
+  public static System.Void Compress(System.IO.Stream inStream, System.IO.Stream outStream, System.Boolean isStreamOwner, System.Int32 level)
+  public static System.Void Decompress(System.IO.Stream inStream, System.IO.Stream outStream, System.Boolean isStreamOwner)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.BZip2.BZip2Constants
+KIND: class
+ATTR: Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  private .ctor()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.BZip2.BZip2Exception
+KIND: class
+ATTR: Public, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String message)
+  public .ctor(System.String message, System.Exception exception)
+  protected .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.BZip2.BZip2InputStream
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.IO.Stream stream)
+
+METHODS:
+  private static System.Void BadBlockHeader()
+  private static System.Void BlockOverrun()
+  private System.Int32 BsGetInt32()
+  private System.Int32 BsGetIntVS(System.Int32 numBits)
+  private System.Char BsGetUChar()
+  private System.Int32 BsR(System.Int32 n)
+  private System.Void BsSetStream(System.IO.Stream stream)
+  public virtual System.Void Close()
+  private System.Void Complete()
+  private static System.Void CompressedStreamEOF()
+  private static System.Void CrcError()
+  private System.Void EndBlock()
+  private System.Void FillBuffer()
+  public virtual System.Void Flush()
+  private System.Void GetAndMoveToFrontDecode()
+  private static System.Void HbCreateDecodeTables(System.Int32[] limit, System.Int32[] baseArray, System.Int32[] perm, System.Char[] length, System.Int32 minLen, System.Int32 maxLen, System.Int32 alphaSize)
+  private System.Void InitBlock()
+  private System.Void Initialize()
+  private System.Void MakeMaps()
+  public virtual System.Int32 Read(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Int32 ReadByte()
+  private System.Void RecvDecodingTables()
+  public virtual System.Int64 Seek(System.Int64 offset, System.IO.SeekOrigin origin)
+  private System.Void SetDecompressStructureSizes(System.Int32 newSize100k)
+  public virtual System.Void SetLength(System.Int64 value)
+  private System.Void SetupBlock()
+  private System.Void SetupNoRandPartA()
+  private System.Void SetupNoRandPartB()
+  private System.Void SetupNoRandPartC()
+  private System.Void SetupRandPartA()
+  private System.Void SetupRandPartB()
+  private System.Void SetupRandPartC()
+  public virtual System.Void Write(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Void WriteByte(System.Byte value)
+  public virtual System.Boolean get_CanRead()
+  public virtual System.Boolean get_CanSeek()
+  public virtual System.Boolean get_CanWrite()
+  public System.Boolean get_IsStreamOwner()
+  public virtual System.Int64 get_Length()
+  public virtual System.Int64 get_Position()
+  public System.Void set_IsStreamOwner(System.Boolean value)
+  public virtual System.Void set_Position(System.Int64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.BZip2.BZip2OutputStream
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.IO.Stream stream, System.Int32 blockSize)
+  public .ctor(System.IO.Stream stream)
+
+METHODS:
+  private System.Void AllocateCompressStructures()
+  private System.Void BsFinishedWithStream()
+  private System.Void BsPutIntVS(System.Int32 numBits, System.Int32 c)
+  private System.Void BsPutUChar(System.Int32 c)
+  private System.Void BsPutint(System.Int32 u)
+  private System.Void BsSetStream(System.IO.Stream stream)
+  private System.Void BsW(System.Int32 n, System.Int32 v)
+  public virtual System.Void Close()
+  protected virtual System.Void Dispose(System.Boolean disposing)
+  private System.Void DoReversibleTransformation()
+  private System.Void EndBlock()
+  private System.Void EndCompression()
+  protected virtual System.Void Finalize()
+  public virtual System.Void Flush()
+  private System.Boolean FullGtU(System.Int32 i1, System.Int32 i2)
+  private System.Void GenerateMTFValues()
+  private static System.Void HbAssignCodes(System.Int32[] code, System.Char[] length, System.Int32 minLen, System.Int32 maxLen, System.Int32 alphaSize)
+  private static System.Void HbMakeCodeLengths(System.Char[] len, System.Int32[] freq, System.Int32 alphaSize, System.Int32 maxLen)
+  private System.Void InitBlock()
+  private System.Void Initialize()
+  private System.Void MainSort()
+  private System.Void MakeMaps()
+  private static System.Byte Med3(System.Byte a, System.Byte b, System.Byte c)
+  private System.Void MoveToFrontCodeAndSend()
+  private static System.Void Panic()
+  private System.Void QSort3(System.Int32 loSt, System.Int32 hiSt, System.Int32 dSt)
+  private System.Void RandomiseBlock()
+  public virtual System.Int32 Read(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Int32 ReadByte()
+  public virtual System.Int64 Seek(System.Int64 offset, System.IO.SeekOrigin origin)
+  private System.Void SendMTFValues()
+  public virtual System.Void SetLength(System.Int64 value)
+  private System.Void SimpleSort(System.Int32 lo, System.Int32 hi, System.Int32 d)
+  private System.Void Vswap(System.Int32 p1, System.Int32 p2, System.Int32 n)
+  public virtual System.Void Write(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Void WriteByte(System.Byte value)
+  private System.Void WriteRun()
+  public System.Int32 get_BytesWritten()
+  public virtual System.Boolean get_CanRead()
+  public virtual System.Boolean get_CanSeek()
+  public virtual System.Boolean get_CanWrite()
+  public System.Boolean get_IsStreamOwner()
+  public virtual System.Int64 get_Length()
+  public virtual System.Int64 get_Position()
+  public System.Void set_IsStreamOwner(System.Boolean value)
+  public virtual System.Void set_Position(System.Int64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.BZip2.BZip2OutputStream+StackElement
+KIND: struct
+ATTR: NestedPrivate, SequentialLayout, Sealed, BeforeFieldInit
+
+
+### NAMESPACE: ICSharpCode.SharpZipLib.Checksums
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Checksums.Adler32
+KIND: class
+ATTR: Public, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.Void Reset()
+  public System.Void Update(System.Byte[] buffer)
+  public System.Void Update(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public System.Void Update(System.Int32 value)
+  public System.Int64 get_Value()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Checksums.Crc32
+KIND: class
+ATTR: Public, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  internal static System.UInt32 ComputeCrc32(System.UInt32 oldCrc, System.Byte value)
+  public System.Void Reset()
+  public System.Void Update(System.Byte[] buffer)
+  public System.Void Update(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public System.Void Update(System.Int32 value)
+  public System.Int64 get_Value()
+  public System.Void set_Value(System.Int64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Checksums.IChecksum
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.Void Reset()
+  public abstract System.Void Update(System.Byte[] buffer)
+  public abstract System.Void Update(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public abstract System.Void Update(System.Int32 value)
+  public abstract System.Int64 get_Value()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Checksums.StrangeCRC
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  public System.Void Reset()
+  public System.Void Update(System.Byte[] buffer)
+  public System.Void Update(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public System.Void Update(System.Int32 value)
+  public System.Int64 get_Value()
+
+
+### NAMESPACE: ICSharpCode.SharpZipLib.Core
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.CompletedFileHandler
+KIND: class
+ATTR: Public, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.Object sender, ICSharpCode.SharpZipLib.Core.ScanEventArgs e, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(System.IAsyncResult result)
+  public virtual System.Void Invoke(System.Object sender, ICSharpCode.SharpZipLib.Core.ScanEventArgs e)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.DirectoryEventArgs
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String name, System.Boolean hasMatchingFiles)
+
+METHODS:
+  public System.Boolean get_HasMatchingFiles()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.DirectoryFailureHandler
+KIND: class
+ATTR: Public, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.Object sender, ICSharpCode.SharpZipLib.Core.ScanFailureEventArgs e, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(System.IAsyncResult result)
+  public virtual System.Void Invoke(System.Object sender, ICSharpCode.SharpZipLib.Core.ScanFailureEventArgs e)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.ExtendedPathFilter
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String filter, System.Int64 minSize, System.Int64 maxSize, System.DateTime minDate, System.DateTime maxDate)
+  public .ctor(System.String filter, System.DateTime minDate, System.DateTime maxDate)
+  public .ctor(System.String filter, System.Int64 minSize, System.Int64 maxSize)
+
+METHODS:
+  public virtual System.Boolean IsMatch(System.String name)
+  public System.DateTime get_MaxDate()
+  public System.Int64 get_MaxSize()
+  public System.DateTime get_MinDate()
+  public System.Int64 get_MinSize()
+  public System.Void set_MaxDate(System.DateTime value)
+  public System.Void set_MaxSize(System.Int64 value)
+  public System.Void set_MinDate(System.DateTime value)
+  public System.Void set_MinSize(System.Int64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.FileFailureHandler
+KIND: class
+ATTR: Public, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.Object sender, ICSharpCode.SharpZipLib.Core.ScanFailureEventArgs e, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(System.IAsyncResult result)
+  public virtual System.Void Invoke(System.Object sender, ICSharpCode.SharpZipLib.Core.ScanFailureEventArgs e)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.FileSystemScanner
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(ICSharpCode.SharpZipLib.Core.IScanFilter fileFilter)
+  public .ctor(ICSharpCode.SharpZipLib.Core.IScanFilter fileFilter, ICSharpCode.SharpZipLib.Core.IScanFilter directoryFilter)
+  public .ctor(System.String filter)
+  public .ctor(System.String fileFilter, System.String directoryFilter)
+
+METHODS:
+  private System.Void OnCompleteFile(System.String file)
+  private System.Boolean OnDirectoryFailure(System.String directory, System.Exception e)
+  private System.Boolean OnFileFailure(System.String file, System.Exception e)
+  private System.Void OnProcessDirectory(System.String directory, System.Boolean hasMatchingFiles)
+  private System.Void OnProcessFile(System.String file)
+  public System.Void Scan(System.String directory, System.Boolean recurse)
+  private System.Void ScanDir(System.String directory, System.Boolean recurse)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.INameTransform
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.String TransformDirectory(System.String name)
+  public abstract System.String TransformFile(System.String name)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.IScanFilter
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.Boolean IsMatch(System.String name)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.NameAndSizeFilter
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String filter, System.Int64 minSize, System.Int64 maxSize)
+
+METHODS:
+  public virtual System.Boolean IsMatch(System.String name)
+  public System.Int64 get_MaxSize()
+  public System.Int64 get_MinSize()
+  public System.Void set_MaxSize(System.Int64 value)
+  public System.Void set_MinSize(System.Int64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.NameFilter
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String filter)
+
+METHODS:
+  private System.Void Compile()
+  public System.Boolean IsExcluded(System.String name)
+  public System.Boolean IsIncluded(System.String name)
+  public System.Boolean IsMatch(System.String name)
+  public static System.Boolean IsValidExpression(System.String expression)
+  public static System.Boolean IsValidFilterExpression(System.String toTest)
+  public static System.String[] SplitQuoted(System.String original)
+  public virtual System.String ToString()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.PathFilter
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String filter)
+
+METHODS:
+  public virtual System.Boolean IsMatch(System.String name)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.ProcessDirectoryHandler
+KIND: class
+ATTR: Public, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.Object sender, ICSharpCode.SharpZipLib.Core.DirectoryEventArgs e, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(System.IAsyncResult result)
+  public virtual System.Void Invoke(System.Object sender, ICSharpCode.SharpZipLib.Core.DirectoryEventArgs e)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.ProcessFileHandler
+KIND: class
+ATTR: Public, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.Object sender, ICSharpCode.SharpZipLib.Core.ScanEventArgs e, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(System.IAsyncResult result)
+  public virtual System.Void Invoke(System.Object sender, ICSharpCode.SharpZipLib.Core.ScanEventArgs e)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.ProgressEventArgs
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String name, System.Int64 processed, System.Int64 target)
+
+METHODS:
+  public System.Boolean get_ContinueRunning()
+  public System.String get_Name()
+  public System.Single get_PercentComplete()
+  public System.Int64 get_Processed()
+  public System.Int64 get_Target()
+  public System.Void set_ContinueRunning(System.Boolean value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.ProgressHandler
+KIND: class
+ATTR: Public, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.Object sender, ICSharpCode.SharpZipLib.Core.ProgressEventArgs e, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(System.IAsyncResult result)
+  public virtual System.Void Invoke(System.Object sender, ICSharpCode.SharpZipLib.Core.ProgressEventArgs e)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.ScanEventArgs
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String name)
+
+METHODS:
+  public System.Boolean get_ContinueRunning()
+  public System.String get_Name()
+  public System.Void set_ContinueRunning(System.Boolean value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.ScanFailureEventArgs
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String name, System.Exception e)
+
+METHODS:
+  public System.Boolean get_ContinueRunning()
+  public System.Exception get_Exception()
+  public System.String get_Name()
+  public System.Void set_ContinueRunning(System.Boolean value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.StreamUtils
+KIND: class
+ATTR: Public, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private .ctor()
+
+METHODS:
+  public static System.Void Copy(System.IO.Stream source, System.IO.Stream destination, System.Byte[] buffer, ICSharpCode.SharpZipLib.Core.ProgressHandler progressHandler, System.TimeSpan updateInterval, System.Object sender, System.String name)
+  public static System.Void Copy(System.IO.Stream source, System.IO.Stream destination, System.Byte[] buffer, ICSharpCode.SharpZipLib.Core.ProgressHandler progressHandler, System.TimeSpan updateInterval, System.Object sender, System.String name, System.Int64 fixedTarget)
+  public static System.Void Copy(System.IO.Stream source, System.IO.Stream destination, System.Byte[] buffer)
+  public static System.Void ReadFully(System.IO.Stream stream, System.Byte[] buffer)
+  public static System.Void ReadFully(System.IO.Stream stream, System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Core.WindowsPathUtils
+KIND: class
+ATTR: Public, Abstract, BeforeFieldInit
+
+CONSTRUCTORS:
+  internal .ctor()
+
+METHODS:
+  public static System.String DropPathRoot(System.String path)
+
+
+### NAMESPACE: ICSharpCode.SharpZipLib.Encryption
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Encryption.PkzipClassic
+KIND: class
+ATTR: Public, Abstract, BeforeFieldInit
+
+CONSTRUCTORS:
+  protected .ctor()
+
+METHODS:
+  public static System.Byte[] GenerateKeys(System.Byte[] seed)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Encryption.PkzipClassicCryptoBase
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  protected System.Void Reset()
+  protected System.Void SetKeys(System.Byte[] keyData)
+  protected System.Byte TransformByte()
+  protected System.Void UpdateKeys(System.Byte ch)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Encryption.PkzipClassicDecryptCryptoTransform
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  internal .ctor(System.Byte[] keyBlock)
+
+METHODS:
+  public System.Void Dispose()
+  public System.Int32 TransformBlock(System.Byte[] inputBuffer, System.Int32 inputOffset, System.Int32 inputCount, System.Byte[] outputBuffer, System.Int32 outputOffset)
+  public System.Byte[] TransformFinalBlock(System.Byte[] inputBuffer, System.Int32 inputOffset, System.Int32 inputCount)
+  public System.Boolean get_CanReuseTransform()
+  public System.Boolean get_CanTransformMultipleBlocks()
+  public System.Int32 get_InputBlockSize()
+  public System.Int32 get_OutputBlockSize()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Encryption.PkzipClassicEncryptCryptoTransform
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  internal .ctor(System.Byte[] keyBlock)
+
+METHODS:
+  public System.Void Dispose()
+  public System.Int32 TransformBlock(System.Byte[] inputBuffer, System.Int32 inputOffset, System.Int32 inputCount, System.Byte[] outputBuffer, System.Int32 outputOffset)
+  public System.Byte[] TransformFinalBlock(System.Byte[] inputBuffer, System.Int32 inputOffset, System.Int32 inputCount)
+  public System.Boolean get_CanReuseTransform()
+  public System.Boolean get_CanTransformMultipleBlocks()
+  public System.Int32 get_InputBlockSize()
+  public System.Int32 get_OutputBlockSize()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Encryption.PkzipClassicManaged
+KIND: class
+ATTR: Public, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public virtual System.Security.Cryptography.ICryptoTransform CreateDecryptor(System.Byte[] rgbKey, System.Byte[] rgbIV)
+  public virtual System.Security.Cryptography.ICryptoTransform CreateEncryptor(System.Byte[] rgbKey, System.Byte[] rgbIV)
+  public virtual System.Void GenerateIV()
+  public virtual System.Void GenerateKey()
+  public virtual System.Int32 get_BlockSize()
+  public virtual System.Byte[] get_Key()
+  public virtual System.Security.Cryptography.KeySizes[] get_LegalBlockSizes()
+  public virtual System.Security.Cryptography.KeySizes[] get_LegalKeySizes()
+  public virtual System.Void set_BlockSize(System.Int32 value)
+  public virtual System.Void set_Key(System.Byte[] value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Encryption.ZipAESStream
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.IO.Stream stream, ICSharpCode.SharpZipLib.Encryption.ZipAESTransform transform, System.Security.Cryptography.CryptoStreamMode mode)
+
+METHODS:
+  public virtual System.Int32 Read(System.Byte[] outBuffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Void Write(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Encryption.ZipAESTransform
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String key, System.Byte[] saltBytes, System.Int32 blockSize, System.Boolean writeMode)
+
+METHODS:
+  public System.Void Dispose()
+  public System.Byte[] GetAuthCode()
+  public System.Int32 TransformBlock(System.Byte[] inputBuffer, System.Int32 inputOffset, System.Int32 inputCount, System.Byte[] outputBuffer, System.Int32 outputOffset)
+  public System.Byte[] TransformFinalBlock(System.Byte[] inputBuffer, System.Int32 inputOffset, System.Int32 inputCount)
+  public System.Boolean get_CanReuseTransform()
+  public System.Boolean get_CanTransformMultipleBlocks()
+  public System.Int32 get_InputBlockSize()
+  public System.Int32 get_OutputBlockSize()
+  public System.Byte[] get_PwdVerifier()
+
+
+### NAMESPACE: ICSharpCode.SharpZipLib.GZip
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.GZip.GZipConstants
+KIND: class
+ATTR: Public, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private .ctor()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.GZip.GZipException
+KIND: class
+ATTR: Public, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String message)
+  public .ctor(System.String message, System.Exception innerException)
+  protected .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.GZip.GZipInputStream
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.IO.Stream baseInputStream, System.Int32 size)
+  public .ctor(System.IO.Stream baseInputStream)
+
+METHODS:
+  public virtual System.Int32 Read(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  private System.Void ReadFooter()
+  private System.Boolean ReadHeader()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.GZip.GZipOutputStream
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.IO.Stream baseOutputStream, System.Int32 size)
+  public .ctor(System.IO.Stream baseOutputStream)
+
+METHODS:
+  public virtual System.Void Close()
+  public virtual System.Void Finish()
+  public System.Int32 GetLevel()
+  public System.Void SetLevel(System.Int32 level)
+  public virtual System.Void Write(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  private System.Void WriteHeader()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.GZip.GZipOutputStream+OutputState
+KIND: enum
+ATTR: NestedPrivate, Sealed
+
+
+### NAMESPACE: ICSharpCode.SharpZipLib
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.SharpZipBaseException
+KIND: class
+ATTR: Public, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String message)
+  public .ctor(System.String message, System.Exception innerException)
+  protected .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
+  public .ctor()
+
+
+### NAMESPACE: ICSharpCode.SharpZipLib.Tar
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Tar.InvalidHeaderException
+KIND: class
+ATTR: Public, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String message)
+  public .ctor(System.String message, System.Exception exception)
+  protected .ctor(System.Runtime.Serialization.SerializationInfo information, System.Runtime.Serialization.StreamingContext context)
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Tar.ProgressMessageHandler
+KIND: class
+ATTR: Public, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(ICSharpCode.SharpZipLib.Tar.TarArchive archive, ICSharpCode.SharpZipLib.Tar.TarEntry entry, System.String message, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(System.IAsyncResult result)
+  public virtual System.Void Invoke(ICSharpCode.SharpZipLib.Tar.TarArchive archive, ICSharpCode.SharpZipLib.Tar.TarEntry entry, System.String message)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Tar.TarArchive
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  protected .ctor(ICSharpCode.SharpZipLib.Tar.TarOutputStream stream)
+  protected .ctor(ICSharpCode.SharpZipLib.Tar.TarInputStream stream)
+  protected .ctor()
+
+METHODS:
+  public virtual System.Void Close()
+  public System.Void CloseArchive()
+  public static ICSharpCode.SharpZipLib.Tar.TarArchive CreateInputTarArchive(System.IO.Stream inputStream, System.Int32 blockFactor)
+  public static ICSharpCode.SharpZipLib.Tar.TarArchive CreateInputTarArchive(System.IO.Stream inputStream)
+  public static ICSharpCode.SharpZipLib.Tar.TarArchive CreateOutputTarArchive(System.IO.Stream outputStream, System.Int32 blockFactor)
+  public static ICSharpCode.SharpZipLib.Tar.TarArchive CreateOutputTarArchive(System.IO.Stream outputStream)
+  public System.Void Dispose()
+  protected virtual System.Void Dispose(System.Boolean disposing)
+  private static System.Void EnsureDirectoryExists(System.String directoryName)
+  public System.Void ExtractContents(System.String destinationDirectory)
+  private System.Void ExtractEntry(System.String destDir, ICSharpCode.SharpZipLib.Tar.TarEntry entry)
+  protected virtual System.Void Finalize()
+  private static System.Boolean IsBinary(System.String filename)
+  public System.Void ListContents()
+  protected virtual System.Void OnProgressMessageEvent(ICSharpCode.SharpZipLib.Tar.TarEntry entry, System.String message)
+  public System.Void SetAsciiTranslation(System.Boolean translateAsciiFiles)
+  public System.Void SetKeepOldFiles(System.Boolean keepExistingFiles)
+  public System.Void SetUserInfo(System.Int32 userId, System.String userName, System.Int32 groupId, System.String groupName)
+  public System.Void WriteEntry(ICSharpCode.SharpZipLib.Tar.TarEntry sourceEntry, System.Boolean recurse)
+  private System.Void WriteEntryCore(ICSharpCode.SharpZipLib.Tar.TarEntry sourceEntry, System.Boolean recurse)
+  public System.Void add_ProgressMessageEvent(ICSharpCode.SharpZipLib.Tar.ProgressMessageHandler value)
+  public System.Boolean get_ApplyUserInfoOverrides()
+  public System.Boolean get_AsciiTranslate()
+  public System.Int32 get_GroupId()
+  public System.String get_GroupName()
+  public System.String get_PathPrefix()
+  public System.Int32 get_RecordSize()
+  public System.String get_RootPath()
+  public System.Int32 get_UserId()
+  public System.String get_UserName()
+  public System.Void remove_ProgressMessageEvent(ICSharpCode.SharpZipLib.Tar.ProgressMessageHandler value)
+  public System.Void set_ApplyUserInfoOverrides(System.Boolean value)
+  public System.Void set_AsciiTranslate(System.Boolean value)
+  public System.Void set_IsStreamOwner(System.Boolean value)
+  public System.Void set_PathPrefix(System.String value)
+  public System.Void set_RootPath(System.String value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Tar.TarBuffer
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  protected .ctor()
+
+METHODS:
+  public System.Void Close()
+  public static ICSharpCode.SharpZipLib.Tar.TarBuffer CreateInputTarBuffer(System.IO.Stream inputStream)
+  public static ICSharpCode.SharpZipLib.Tar.TarBuffer CreateInputTarBuffer(System.IO.Stream inputStream, System.Int32 blockFactor)
+  public static ICSharpCode.SharpZipLib.Tar.TarBuffer CreateOutputTarBuffer(System.IO.Stream outputStream)
+  public static ICSharpCode.SharpZipLib.Tar.TarBuffer CreateOutputTarBuffer(System.IO.Stream outputStream, System.Int32 blockFactor)
+  public System.Int32 GetBlockFactor()
+  public System.Int32 GetCurrentBlockNum()
+  public System.Int32 GetCurrentRecordNum()
+  public System.Int32 GetRecordSize()
+  private System.Void Initialize(System.Int32 archiveBlockFactor)
+  public System.Boolean IsEOFBlock(System.Byte[] block)
+  public static System.Boolean IsEndOfArchiveBlock(System.Byte[] block)
+  public System.Byte[] ReadBlock()
+  private System.Boolean ReadRecord()
+  public System.Void SkipBlock()
+  public System.Void WriteBlock(System.Byte[] buffer, System.Int32 offset)
+  public System.Void WriteBlock(System.Byte[] block)
+  private System.Void WriteFinalRecord()
+  private System.Void WriteRecord()
+  public System.Int32 get_BlockFactor()
+  public System.Int32 get_CurrentBlock()
+  public System.Int32 get_CurrentRecord()
+  public System.Boolean get_IsStreamOwner()
+  public System.Int32 get_RecordSize()
+  public System.Void set_IsStreamOwner(System.Boolean value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Tar.TarEntry
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(ICSharpCode.SharpZipLib.Tar.TarHeader header)
+  public .ctor(System.Byte[] headerBuffer)
+  private .ctor()
+
+METHODS:
+  public static System.Void AdjustEntryName(System.Byte[] buffer, System.String newName)
+  public System.Object Clone()
+  public static ICSharpCode.SharpZipLib.Tar.TarEntry CreateEntryFromFile(System.String fileName)
+  public static ICSharpCode.SharpZipLib.Tar.TarEntry CreateTarEntry(System.String name)
+  public virtual System.Boolean Equals(System.Object obj)
+  public ICSharpCode.SharpZipLib.Tar.TarEntry[] GetDirectoryEntries()
+  public System.Void GetFileTarHeader(ICSharpCode.SharpZipLib.Tar.TarHeader header, System.String file)
+  public virtual System.Int32 GetHashCode()
+  public System.Boolean IsDescendent(ICSharpCode.SharpZipLib.Tar.TarEntry toTest)
+  public static System.Void NameTarHeader(ICSharpCode.SharpZipLib.Tar.TarHeader header, System.String name)
+  public System.Void SetIds(System.Int32 userId, System.Int32 groupId)
+  public System.Void SetNames(System.String userName, System.String groupName)
+  public System.Void WriteEntryHeader(System.Byte[] outBuffer)
+  public System.String get_File()
+  public System.Int32 get_GroupId()
+  public System.String get_GroupName()
+  public System.Boolean get_IsDirectory()
+  public System.DateTime get_ModTime()
+  public System.String get_Name()
+  public System.Int64 get_Size()
+  public ICSharpCode.SharpZipLib.Tar.TarHeader get_TarHeader()
+  public System.Int32 get_UserId()
+  public System.String get_UserName()
+  public System.Void set_GroupId(System.Int32 value)
+  public System.Void set_GroupName(System.String value)
+  public System.Void set_ModTime(System.DateTime value)
+  public System.Void set_Name(System.String value)
+  public System.Void set_Size(System.Int64 value)
+  public System.Void set_UserId(System.Int32 value)
+  public System.Void set_UserName(System.String value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Tar.TarException
+KIND: class
+ATTR: Public, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String message)
+  public .ctor(System.String message, System.Exception exception)
+  protected .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Tar.TarHeader
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  public System.Object Clone()
+  private static System.Int32 ComputeCheckSum(System.Byte[] buffer)
+  public virtual System.Boolean Equals(System.Object obj)
+  public static System.Int32 GetAsciiBytes(System.String toAdd, System.Int32 nameOffset, System.Byte[] buffer, System.Int32 bufferOffset, System.Int32 length)
+  private static System.Int32 GetBinaryOrOctalBytes(System.Int64 value, System.Byte[] buffer, System.Int32 offset, System.Int32 length)
+  private static System.Int32 GetCTime(System.DateTime dateTime)
+  private static System.Void GetCheckSumOctalBytes(System.Int64 value, System.Byte[] buffer, System.Int32 offset, System.Int32 length)
+  private static System.DateTime GetDateTimeFromCTime(System.Int64 ticks)
+  public virtual System.Int32 GetHashCode()
+  public System.String GetName()
+  public static System.Int32 GetNameBytes(System.String name, System.Byte[] buffer, System.Int32 offset, System.Int32 length)
+  public static System.Int32 GetNameBytes(System.Text.StringBuilder name, System.Int32 nameOffset, System.Byte[] buffer, System.Int32 bufferOffset, System.Int32 length)
+  public static System.Int32 GetNameBytes(System.String name, System.Int32 nameOffset, System.Byte[] buffer, System.Int32 bufferOffset, System.Int32 length)
+  public static System.Int32 GetNameBytes(System.Text.StringBuilder name, System.Byte[] buffer, System.Int32 offset, System.Int32 length)
+  public static System.Int32 GetOctalBytes(System.Int64 value, System.Byte[] buffer, System.Int32 offset, System.Int32 length)
+  private static System.Int32 MakeCheckSum(System.Byte[] buffer)
+  private static System.Int64 ParseBinaryOrOctal(System.Byte[] header, System.Int32 offset, System.Int32 length)
+  public System.Void ParseBuffer(System.Byte[] header)
+  public static System.Text.StringBuilder ParseName(System.Byte[] header, System.Int32 offset, System.Int32 length)
+  public static System.Int64 ParseOctal(System.Byte[] header, System.Int32 offset, System.Int32 length)
+  internal static System.Void RestoreSetValues()
+  internal static System.Void SetValueDefaults(System.Int32 userId, System.String userName, System.Int32 groupId, System.String groupName)
+  public System.Void WriteHeader(System.Byte[] outBuffer)
+  public System.Int32 get_Checksum()
+  public System.Int32 get_DevMajor()
+  public System.Int32 get_DevMinor()
+  public System.Int32 get_GroupId()
+  public System.String get_GroupName()
+  public System.Boolean get_IsChecksumValid()
+  public System.String get_LinkName()
+  public System.String get_Magic()
+  public System.DateTime get_ModTime()
+  public System.Int32 get_Mode()
+  public System.String get_Name()
+  public System.Int64 get_Size()
+  public System.Byte get_TypeFlag()
+  public System.Int32 get_UserId()
+  public System.String get_UserName()
+  public System.String get_Version()
+  public System.Void set_DevMajor(System.Int32 value)
+  public System.Void set_DevMinor(System.Int32 value)
+  public System.Void set_GroupId(System.Int32 value)
+  public System.Void set_GroupName(System.String value)
+  public System.Void set_LinkName(System.String value)
+  public System.Void set_Magic(System.String value)
+  public System.Void set_ModTime(System.DateTime value)
+  public System.Void set_Mode(System.Int32 value)
+  public System.Void set_Name(System.String value)
+  public System.Void set_Size(System.Int64 value)
+  public System.Void set_TypeFlag(System.Byte value)
+  public System.Void set_UserId(System.Int32 value)
+  public System.Void set_UserName(System.String value)
+  public System.Void set_Version(System.String value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Tar.TarInputStream
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.IO.Stream inputStream, System.Int32 blockFactor)
+  public .ctor(System.IO.Stream inputStream)
+
+METHODS:
+  public virtual System.Void Close()
+  public System.Void CopyEntryContents(System.IO.Stream outputStream)
+  public virtual System.Void Flush()
+  public ICSharpCode.SharpZipLib.Tar.TarEntry GetNextEntry()
+  public System.Int32 GetRecordSize()
+  public System.Void Mark(System.Int32 markLimit)
+  public virtual System.Int32 Read(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Int32 ReadByte()
+  public System.Void Reset()
+  public virtual System.Int64 Seek(System.Int64 offset, System.IO.SeekOrigin origin)
+  public System.Void SetEntryFactory(ICSharpCode.SharpZipLib.Tar.TarInputStream+IEntryFactory factory)
+  public virtual System.Void SetLength(System.Int64 value)
+  public System.Void Skip(System.Int64 skipCount)
+  private System.Void SkipToNextEntry()
+  public virtual System.Void Write(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Void WriteByte(System.Byte value)
+  public System.Int64 get_Available()
+  public virtual System.Boolean get_CanRead()
+  public virtual System.Boolean get_CanSeek()
+  public virtual System.Boolean get_CanWrite()
+  public System.Boolean get_IsMarkSupported()
+  public System.Boolean get_IsStreamOwner()
+  public virtual System.Int64 get_Length()
+  public virtual System.Int64 get_Position()
+  public System.Int32 get_RecordSize()
+  public System.Void set_IsStreamOwner(System.Boolean value)
+  public virtual System.Void set_Position(System.Int64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Tar.TarInputStream+EntryFactoryAdapter
+KIND: class
+ATTR: NestedPublic, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public ICSharpCode.SharpZipLib.Tar.TarEntry CreateEntry(System.Byte[] headerBuffer)
+  public ICSharpCode.SharpZipLib.Tar.TarEntry CreateEntry(System.String name)
+  public ICSharpCode.SharpZipLib.Tar.TarEntry CreateEntryFromFile(System.String fileName)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Tar.TarInputStream+IEntryFactory
+KIND: interface
+ATTR: NestedPublic, ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract ICSharpCode.SharpZipLib.Tar.TarEntry CreateEntry(System.Byte[] headerBuffer)
+  public abstract ICSharpCode.SharpZipLib.Tar.TarEntry CreateEntry(System.String name)
+  public abstract ICSharpCode.SharpZipLib.Tar.TarEntry CreateEntryFromFile(System.String fileName)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Tar.TarOutputStream
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.IO.Stream outputStream, System.Int32 blockFactor)
+  public .ctor(System.IO.Stream outputStream)
+
+METHODS:
+  public virtual System.Void Close()
+  public System.Void CloseEntry()
+  public System.Void Finish()
+  public virtual System.Void Flush()
+  public System.Int32 GetRecordSize()
+  public System.Void PutNextEntry(ICSharpCode.SharpZipLib.Tar.TarEntry entry)
+  public virtual System.Int32 Read(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Int32 ReadByte()
+  public virtual System.Int64 Seek(System.Int64 offset, System.IO.SeekOrigin origin)
+  public virtual System.Void SetLength(System.Int64 value)
+  public virtual System.Void Write(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Void WriteByte(System.Byte value)
+  private System.Void WriteEofBlock()
+  public virtual System.Boolean get_CanRead()
+  public virtual System.Boolean get_CanSeek()
+  public virtual System.Boolean get_CanWrite()
+  private System.Boolean get_IsEntryOpen()
+  public System.Boolean get_IsStreamOwner()
+  public virtual System.Int64 get_Length()
+  public virtual System.Int64 get_Position()
+  public System.Int32 get_RecordSize()
+  public System.Void set_IsStreamOwner(System.Boolean value)
+  public virtual System.Void set_Position(System.Int64 value)
+
+
+### NAMESPACE: ICSharpCode.SharpZipLib.Zip
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.BaseArchiveStorage
+KIND: class
+ATTR: Public, Abstract, BeforeFieldInit
+
+CONSTRUCTORS:
+  protected .ctor(ICSharpCode.SharpZipLib.Zip.FileUpdateMode updateMode)
+
+METHODS:
+  public abstract System.IO.Stream ConvertTemporaryToFinal()
+  public abstract System.Void Dispose()
+  public abstract System.IO.Stream GetTemporaryOutput()
+  public abstract System.IO.Stream MakeTemporaryCopy(System.IO.Stream stream)
+  public abstract System.IO.Stream OpenForDirectUpdate(System.IO.Stream stream)
+  public ICSharpCode.SharpZipLib.Zip.FileUpdateMode get_UpdateMode()
+
+
+### NAMESPACE: ICSharpCode.SharpZipLib.Zip.Compression
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.Compression.DeflateStrategy
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.Compression.Deflater
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32 level, System.Boolean noZlibHeaderOrFooter)
+  public .ctor(System.Int32 level)
+  public .ctor()
+
+METHODS:
+  public System.Int32 Deflate(System.Byte[] output, System.Int32 offset, System.Int32 length)
+  public System.Int32 Deflate(System.Byte[] output)
+  public System.Void Finish()
+  public System.Void Flush()
+  public System.Int32 GetLevel()
+  public System.Void Reset()
+  public System.Void SetDictionary(System.Byte[] dictionary)
+  public System.Void SetDictionary(System.Byte[] dictionary, System.Int32 index, System.Int32 count)
+  public System.Void SetInput(System.Byte[] input, System.Int32 offset, System.Int32 count)
+  public System.Void SetInput(System.Byte[] input)
+  public System.Void SetLevel(System.Int32 level)
+  public System.Void SetStrategy(ICSharpCode.SharpZipLib.Zip.Compression.DeflateStrategy strategy)
+  public System.Int32 get_Adler()
+  public System.Boolean get_IsFinished()
+  public System.Boolean get_IsNeedingInput()
+  public System.Int64 get_TotalIn()
+  public System.Int64 get_TotalOut()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.Compression.DeflaterConstants
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.Compression.DeflaterEngine
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(ICSharpCode.SharpZipLib.Zip.Compression.DeflaterPending pending)
+
+METHODS:
+  public System.Boolean Deflate(System.Boolean flush, System.Boolean finish)
+  private System.Boolean DeflateFast(System.Boolean flush, System.Boolean finish)
+  private System.Boolean DeflateSlow(System.Boolean flush, System.Boolean finish)
+  private System.Boolean DeflateStored(System.Boolean flush, System.Boolean finish)
+  public System.Void FillWindow()
+  private System.Boolean FindLongestMatch(System.Int32 curMatch)
+  private System.Int32 InsertString()
+  public System.Boolean NeedsInput()
+  public System.Void Reset()
+  public System.Void ResetAdler()
+  public System.Void SetDictionary(System.Byte[] buffer, System.Int32 offset, System.Int32 length)
+  public System.Void SetInput(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public System.Void SetLevel(System.Int32 level)
+  private System.Void SlideWindow()
+  private System.Void UpdateHash()
+  public System.Int32 get_Adler()
+  public ICSharpCode.SharpZipLib.Zip.Compression.DeflateStrategy get_Strategy()
+  public System.Int64 get_TotalIn()
+  public System.Void set_Strategy(ICSharpCode.SharpZipLib.Zip.Compression.DeflateStrategy value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.Compression.DeflaterHuffman
+KIND: class
+ATTR: Public
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor(ICSharpCode.SharpZipLib.Zip.Compression.DeflaterPending pending)
+
+METHODS:
+  public static System.Int16 BitReverse(System.Int32 toReverse)
+  public System.Void CompressBlock()
+  private static System.Int32 Dcode(System.Int32 distance)
+  public System.Void FlushBlock(System.Byte[] stored, System.Int32 storedOffset, System.Int32 storedLength, System.Boolean lastBlock)
+  public System.Void FlushStoredBlock(System.Byte[] stored, System.Int32 storedOffset, System.Int32 storedLength, System.Boolean lastBlock)
+  public System.Boolean IsFull()
+  private static System.Int32 Lcode(System.Int32 length)
+  public System.Void Reset()
+  public System.Void SendAllTrees(System.Int32 blTreeCodes)
+  public System.Boolean TallyDist(System.Int32 distance, System.Int32 length)
+  public System.Boolean TallyLit(System.Int32 literal)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.Compression.DeflaterHuffman+Tree
+KIND: class
+ATTR: NestedPrivate, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(ICSharpCode.SharpZipLib.Zip.Compression.DeflaterHuffman dh, System.Int32 elems, System.Int32 minCodes, System.Int32 maxLength)
+
+METHODS:
+  public System.Void BuildCodes()
+  private System.Void BuildLength(System.Int32[] childs)
+  public System.Void BuildTree()
+  public System.Void CalcBLFreq(ICSharpCode.SharpZipLib.Zip.Compression.DeflaterHuffman+Tree blTree)
+  public System.Void CheckEmpty()
+  public System.Int32 GetEncodedLength()
+  public System.Void Reset()
+  public System.Void SetStaticCodes(System.Int16[] staticCodes, System.Byte[] staticLengths)
+  public System.Void WriteSymbol(System.Int32 code)
+  public System.Void WriteTree(ICSharpCode.SharpZipLib.Zip.Compression.DeflaterHuffman+Tree blTree)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.Compression.DeflaterPending
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.Compression.Inflater
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor(System.Boolean noHeader)
+  public .ctor()
+
+METHODS:
+  private System.Boolean Decode()
+  private System.Boolean DecodeChksum()
+  private System.Boolean DecodeDict()
+  private System.Boolean DecodeHeader()
+  private System.Boolean DecodeHuffman()
+  public System.Int32 Inflate(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public System.Int32 Inflate(System.Byte[] buffer)
+  public System.Void Reset()
+  public System.Void SetDictionary(System.Byte[] buffer)
+  public System.Void SetDictionary(System.Byte[] buffer, System.Int32 index, System.Int32 count)
+  public System.Void SetInput(System.Byte[] buffer)
+  public System.Void SetInput(System.Byte[] buffer, System.Int32 index, System.Int32 count)
+  public System.Int32 get_Adler()
+  public System.Boolean get_IsFinished()
+  public System.Boolean get_IsNeedingDictionary()
+  public System.Boolean get_IsNeedingInput()
+  public System.Int32 get_RemainingInput()
+  public System.Int64 get_TotalIn()
+  public System.Int64 get_TotalOut()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.Compression.InflaterDynHeader
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+
+METHODS:
+  public ICSharpCode.SharpZipLib.Zip.Compression.InflaterHuffmanTree BuildDistTree()
+  public ICSharpCode.SharpZipLib.Zip.Compression.InflaterHuffmanTree BuildLitLenTree()
+  public System.Boolean Decode(ICSharpCode.SharpZipLib.Zip.Compression.Streams.StreamManipulator input)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.Compression.InflaterHuffmanTree
+KIND: class
+ATTR: Public
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor(System.Byte[] codeLengths)
+
+METHODS:
+  private System.Void BuildTree(System.Byte[] codeLengths)
+  public System.Int32 GetSymbol(ICSharpCode.SharpZipLib.Zip.Compression.Streams.StreamManipulator input)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.Compression.PendingBuffer
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int32 bufferSize)
+  public .ctor()
+
+METHODS:
+  public System.Void AlignToByte()
+  public System.Int32 Flush(System.Byte[] output, System.Int32 offset, System.Int32 length)
+  public System.Void Reset()
+  public System.Byte[] ToByteArray()
+  public System.Void WriteBits(System.Int32 b, System.Int32 count)
+  public System.Void WriteBlock(System.Byte[] block, System.Int32 offset, System.Int32 length)
+  public System.Void WriteByte(System.Int32 value)
+  public System.Void WriteInt(System.Int32 value)
+  public System.Void WriteShort(System.Int32 value)
+  public System.Void WriteShortMSB(System.Int32 s)
+  public System.Int32 get_BitCount()
+  public System.Boolean get_IsFlushed()
+
+
+### NAMESPACE: ICSharpCode.SharpZipLib.Zip.Compression.Streams
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.Compression.Streams.DeflaterOutputStream
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.IO.Stream baseOutputStream, ICSharpCode.SharpZipLib.Zip.Compression.Deflater deflater, System.Int32 bufferSize)
+  public .ctor(System.IO.Stream baseOutputStream, ICSharpCode.SharpZipLib.Zip.Compression.Deflater deflater)
+  public .ctor(System.IO.Stream baseOutputStream)
+
+METHODS:
+  public virtual System.IAsyncResult BeginRead(System.Byte[] buffer, System.Int32 offset, System.Int32 count, System.AsyncCallback callback, System.Object state)
+  public virtual System.IAsyncResult BeginWrite(System.Byte[] buffer, System.Int32 offset, System.Int32 count, System.AsyncCallback callback, System.Object state)
+  public virtual System.Void Close()
+  protected System.Void Deflate()
+  protected System.Void EncryptBlock(System.Byte[] buffer, System.Int32 offset, System.Int32 length)
+  public virtual System.Void Finish()
+  public virtual System.Void Flush()
+  private System.Void GetAuthCodeIfAES()
+  protected System.Void InitializeAESPassword(ICSharpCode.SharpZipLib.Zip.ZipEntry entry, System.String rawPassword, out System.Byte[] salt, out System.Byte[] pwdVerifier)
+  protected System.Void InitializePassword(System.String password)
+  public virtual System.Int32 Read(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Int32 ReadByte()
+  public virtual System.Int64 Seek(System.Int64 offset, System.IO.SeekOrigin origin)
+  public virtual System.Void SetLength(System.Int64 value)
+  public virtual System.Void Write(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Void WriteByte(System.Byte value)
+  public System.Boolean get_CanPatchEntries()
+  public virtual System.Boolean get_CanRead()
+  public virtual System.Boolean get_CanSeek()
+  public virtual System.Boolean get_CanWrite()
+  public System.Boolean get_IsStreamOwner()
+  public virtual System.Int64 get_Length()
+  public System.String get_Password()
+  public virtual System.Int64 get_Position()
+  public System.Void set_IsStreamOwner(System.Boolean value)
+  public System.Void set_Password(System.String value)
+  public virtual System.Void set_Position(System.Int64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.Compression.Streams.InflaterInputBuffer
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.IO.Stream stream, System.Int32 bufferSize)
+  public .ctor(System.IO.Stream stream)
+
+METHODS:
+  public System.Void Fill()
+  public System.Int32 ReadClearTextBuffer(System.Byte[] outBuffer, System.Int32 offset, System.Int32 length)
+  public System.Int32 ReadLeByte()
+  public System.Int32 ReadLeInt()
+  public System.Int64 ReadLeLong()
+  public System.Int32 ReadLeShort()
+  public System.Int32 ReadRawBuffer(System.Byte[] buffer)
+  public System.Int32 ReadRawBuffer(System.Byte[] outBuffer, System.Int32 offset, System.Int32 length)
+  public System.Void SetInflaterInput(ICSharpCode.SharpZipLib.Zip.Compression.Inflater inflater)
+  public System.Int32 get_Available()
+  public System.Byte[] get_ClearText()
+  public System.Int32 get_ClearTextLength()
+  public System.Byte[] get_RawData()
+  public System.Int32 get_RawLength()
+  public System.Void set_Available(System.Int32 value)
+  public System.Void set_CryptoTransform(System.Security.Cryptography.ICryptoTransform value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.Compression.Streams.InflaterInputStream
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.IO.Stream baseInputStream, ICSharpCode.SharpZipLib.Zip.Compression.Inflater inflater, System.Int32 bufferSize)
+  public .ctor(System.IO.Stream baseInputStream, ICSharpCode.SharpZipLib.Zip.Compression.Inflater inf)
+  public .ctor(System.IO.Stream baseInputStream)
+
+METHODS:
+  public virtual System.IAsyncResult BeginWrite(System.Byte[] buffer, System.Int32 offset, System.Int32 count, System.AsyncCallback callback, System.Object state)
+  public virtual System.Void Close()
+  protected System.Void Fill()
+  public virtual System.Void Flush()
+  public virtual System.Int32 Read(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Int64 Seek(System.Int64 offset, System.IO.SeekOrigin origin)
+  public virtual System.Void SetLength(System.Int64 value)
+  public System.Int64 Skip(System.Int64 count)
+  protected System.Void StopDecrypting()
+  public virtual System.Void Write(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Void WriteByte(System.Byte value)
+  public virtual System.Int32 get_Available()
+  public virtual System.Boolean get_CanRead()
+  public virtual System.Boolean get_CanSeek()
+  public virtual System.Boolean get_CanWrite()
+  public System.Boolean get_IsStreamOwner()
+  public virtual System.Int64 get_Length()
+  public virtual System.Int64 get_Position()
+  public System.Void set_IsStreamOwner(System.Boolean value)
+  public virtual System.Void set_Position(System.Int64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.Compression.Streams.OutputWindow
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.Void CopyDict(System.Byte[] dictionary, System.Int32 offset, System.Int32 length)
+  public System.Int32 CopyOutput(System.Byte[] output, System.Int32 offset, System.Int32 len)
+  public System.Int32 CopyStored(ICSharpCode.SharpZipLib.Zip.Compression.Streams.StreamManipulator input, System.Int32 length)
+  public System.Int32 GetAvailable()
+  public System.Int32 GetFreeSpace()
+  public System.Void Repeat(System.Int32 length, System.Int32 distance)
+  public System.Void Reset()
+  private System.Void SlowRepeat(System.Int32 repStart, System.Int32 length, System.Int32 distance)
+  public System.Void Write(System.Int32 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.Compression.Streams.StreamManipulator
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.Int32 CopyBytes(System.Byte[] output, System.Int32 offset, System.Int32 length)
+  public System.Void DropBits(System.Int32 bitCount)
+  public System.Int32 GetBits(System.Int32 bitCount)
+  public System.Int32 PeekBits(System.Int32 bitCount)
+  public System.Void Reset()
+  public System.Void SetInput(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public System.Void SkipToByteBoundary()
+  public System.Int32 get_AvailableBits()
+  public System.Int32 get_AvailableBytes()
+  public System.Boolean get_IsNeedingInput()
+
+
+### NAMESPACE: ICSharpCode.SharpZipLib.Zip
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.CompressionMethod
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.DescriptorData
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.Int64 get_CompressedSize()
+  public System.Int64 get_Crc()
+  public System.Int64 get_Size()
+  public System.Void set_CompressedSize(System.Int64 value)
+  public System.Void set_Crc(System.Int64 value)
+  public System.Void set_Size(System.Int64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.DiskArchiveStorage
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(ICSharpCode.SharpZipLib.Zip.ZipFile file)
+  public .ctor(ICSharpCode.SharpZipLib.Zip.ZipFile file, ICSharpCode.SharpZipLib.Zip.FileUpdateMode updateMode)
+
+METHODS:
+  public virtual System.IO.Stream ConvertTemporaryToFinal()
+  public virtual System.Void Dispose()
+  private static System.String GetTempFileName(System.String original, System.Boolean makeTempFile)
+  public virtual System.IO.Stream GetTemporaryOutput()
+  public virtual System.IO.Stream MakeTemporaryCopy(System.IO.Stream stream)
+  public virtual System.IO.Stream OpenForDirectUpdate(System.IO.Stream stream)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.DynamicDiskDataSource
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.IO.Stream GetSource(ICSharpCode.SharpZipLib.Zip.ZipEntry entry, System.String name)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.EncryptionAlgorithm
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.EntryPatchData
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.Int64 get_CrcPatchOffset()
+  public System.Int64 get_SizePatchOffset()
+  public System.Void set_CrcPatchOffset(System.Int64 value)
+  public System.Void set_SizePatchOffset(System.Int64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ExtendedUnixData
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.Byte[] GetData()
+  public static System.Boolean IsValidValue(System.DateTime value)
+  public System.Void SetData(System.Byte[] data, System.Int32 index, System.Int32 count)
+  public System.DateTime get_AccessTime()
+  public System.DateTime get_CreateTime()
+  private ICSharpCode.SharpZipLib.Zip.ExtendedUnixData+Flags get_Include()
+  public System.DateTime get_ModificationTime()
+  public System.Int16 get_TagID()
+  public System.Void set_AccessTime(System.DateTime value)
+  public System.Void set_CreateTime(System.DateTime value)
+  private System.Void set_Include(ICSharpCode.SharpZipLib.Zip.ExtendedUnixData+Flags value)
+  public System.Void set_ModificationTime(System.DateTime value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ExtendedUnixData+Flags
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.FastZip
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(ICSharpCode.SharpZipLib.Zip.FastZipEvents events)
+  public .ctor()
+
+METHODS:
+  private System.Void AddFileContents(System.String name, System.IO.Stream stream)
+  public System.Void CreateZip(System.String zipFileName, System.String sourceDirectory, System.Boolean recurse, System.String fileFilter, System.String directoryFilter)
+  public System.Void CreateZip(System.String zipFileName, System.String sourceDirectory, System.Boolean recurse, System.String fileFilter)
+  public System.Void CreateZip(System.IO.Stream outputStream, System.String sourceDirectory, System.Boolean recurse, System.String fileFilter, System.String directoryFilter)
+  private System.Void ExtractEntry(ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  private System.Void ExtractFileEntry(ICSharpCode.SharpZipLib.Zip.ZipEntry entry, System.String targetName)
+  public System.Void ExtractZip(System.IO.Stream inputStream, System.String targetDirectory, ICSharpCode.SharpZipLib.Zip.FastZip+Overwrite overwrite, ICSharpCode.SharpZipLib.Zip.FastZip+ConfirmOverwriteDelegate confirmDelegate, System.String fileFilter, System.String directoryFilter, System.Boolean restoreDateTime, System.Boolean isStreamOwner)
+  public System.Void ExtractZip(System.String zipFileName, System.String targetDirectory, ICSharpCode.SharpZipLib.Zip.FastZip+Overwrite overwrite, ICSharpCode.SharpZipLib.Zip.FastZip+ConfirmOverwriteDelegate confirmDelegate, System.String fileFilter, System.String directoryFilter, System.Boolean restoreDateTime)
+  public System.Void ExtractZip(System.String zipFileName, System.String targetDirectory, System.String fileFilter)
+  private static System.Int32 MakeExternalAttributes(System.IO.FileInfo info)
+  private static System.Boolean NameIsValid(System.String name)
+  private System.Void ProcessDirectory(System.Object sender, ICSharpCode.SharpZipLib.Core.DirectoryEventArgs e)
+  private System.Void ProcessFile(System.Object sender, ICSharpCode.SharpZipLib.Core.ScanEventArgs e)
+  public System.Boolean get_CreateEmptyDirectories()
+  public ICSharpCode.SharpZipLib.Zip.IEntryFactory get_EntryFactory()
+  public ICSharpCode.SharpZipLib.Core.INameTransform get_NameTransform()
+  public System.String get_Password()
+  public System.Boolean get_RestoreAttributesOnExtract()
+  public System.Boolean get_RestoreDateTimeOnExtract()
+  public ICSharpCode.SharpZipLib.Zip.UseZip64 get_UseZip64()
+  public System.Void set_CreateEmptyDirectories(System.Boolean value)
+  public System.Void set_EntryFactory(ICSharpCode.SharpZipLib.Zip.IEntryFactory value)
+  public System.Void set_NameTransform(ICSharpCode.SharpZipLib.Core.INameTransform value)
+  public System.Void set_Password(System.String value)
+  public System.Void set_RestoreAttributesOnExtract(System.Boolean value)
+  public System.Void set_RestoreDateTimeOnExtract(System.Boolean value)
+  public System.Void set_UseZip64(ICSharpCode.SharpZipLib.Zip.UseZip64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.FastZip+ConfirmOverwriteDelegate
+KIND: class
+ATTR: NestedPublic, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.String fileName, System.AsyncCallback callback, System.Object object)
+  public virtual System.Boolean EndInvoke(System.IAsyncResult result)
+  public virtual System.Boolean Invoke(System.String fileName)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.FastZip+Overwrite
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.FastZipEvents
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.Boolean OnCompletedFile(System.String file)
+  public System.Boolean OnDirectoryFailure(System.String directory, System.Exception e)
+  public System.Boolean OnFileFailure(System.String file, System.Exception e)
+  public System.Boolean OnProcessDirectory(System.String directory, System.Boolean hasMatchingFiles)
+  public System.Boolean OnProcessFile(System.String file)
+  public System.TimeSpan get_ProgressInterval()
+  public System.Void set_ProgressInterval(System.TimeSpan value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.FileUpdateMode
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.GeneralBitFlags
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.HostSystemID
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.IArchiveStorage
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.IO.Stream ConvertTemporaryToFinal()
+  public abstract System.Void Dispose()
+  public abstract System.IO.Stream GetTemporaryOutput()
+  public abstract System.IO.Stream MakeTemporaryCopy(System.IO.Stream stream)
+  public abstract System.IO.Stream OpenForDirectUpdate(System.IO.Stream stream)
+  public abstract ICSharpCode.SharpZipLib.Zip.FileUpdateMode get_UpdateMode()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.IDynamicDataSource
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.IO.Stream GetSource(ICSharpCode.SharpZipLib.Zip.ZipEntry entry, System.String name)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.IEntryFactory
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract ICSharpCode.SharpZipLib.Zip.ZipEntry MakeDirectoryEntry(System.String directoryName)
+  public abstract ICSharpCode.SharpZipLib.Zip.ZipEntry MakeDirectoryEntry(System.String directoryName, System.Boolean useFileSystem)
+  public abstract ICSharpCode.SharpZipLib.Zip.ZipEntry MakeFileEntry(System.String fileName)
+  public abstract ICSharpCode.SharpZipLib.Zip.ZipEntry MakeFileEntry(System.String fileName, System.Boolean useFileSystem)
+  public abstract ICSharpCode.SharpZipLib.Zip.ZipEntry MakeFileEntry(System.String fileName, System.String entryName, System.Boolean useFileSystem)
+  public abstract ICSharpCode.SharpZipLib.Core.INameTransform get_NameTransform()
+  public abstract System.Void set_NameTransform(ICSharpCode.SharpZipLib.Core.INameTransform value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.IStaticDataSource
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.IO.Stream GetSource()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ITaggedData
+KIND: interface
+ATTR: Public, ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract System.Byte[] GetData()
+  public abstract System.Void SetData(System.Byte[] data, System.Int32 offset, System.Int32 count)
+  public abstract System.Int16 get_TagID()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ITaggedDataFactory
+KIND: interface
+ATTR: ClassSemanticsMask, Abstract
+
+METHODS:
+  public abstract ICSharpCode.SharpZipLib.Zip.ITaggedData Create(System.Int16 tag, System.Byte[] data, System.Int32 offset, System.Int32 count)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.KeysRequiredEventArgs
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String name, System.Byte[] keyValue)
+  public .ctor(System.String name)
+
+METHODS:
+  public System.String get_FileName()
+  public System.Byte[] get_Key()
+  public System.Void set_Key(System.Byte[] value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.MemoryArchiveStorage
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(ICSharpCode.SharpZipLib.Zip.FileUpdateMode updateMode)
+  public .ctor()
+
+METHODS:
+  public virtual System.IO.Stream ConvertTemporaryToFinal()
+  public virtual System.Void Dispose()
+  public virtual System.IO.Stream GetTemporaryOutput()
+  public virtual System.IO.Stream MakeTemporaryCopy(System.IO.Stream stream)
+  public virtual System.IO.Stream OpenForDirectUpdate(System.IO.Stream stream)
+  public System.IO.MemoryStream get_FinalStream()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.NTTaggedData
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.Byte[] GetData()
+  public static System.Boolean IsValidValue(System.DateTime value)
+  public System.Void SetData(System.Byte[] data, System.Int32 index, System.Int32 count)
+  public System.DateTime get_CreateTime()
+  public System.DateTime get_LastAccessTime()
+  public System.DateTime get_LastModificationTime()
+  public System.Int16 get_TagID()
+  public System.Void set_CreateTime(System.DateTime value)
+  public System.Void set_LastAccessTime(System.DateTime value)
+  public System.Void set_LastModificationTime(System.DateTime value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.RawTaggedData
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Int16 tag)
+
+METHODS:
+  public System.Byte[] GetData()
+  public System.Void SetData(System.Byte[] data, System.Int32 offset, System.Int32 count)
+  public System.Byte[] get_Data()
+  public System.Int16 get_TagID()
+  public System.Void set_Data(System.Byte[] value)
+  public System.Void set_TagID(System.Int16 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.StaticDiskDataSource
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String fileName)
+
+METHODS:
+  public System.IO.Stream GetSource()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.TestOperation
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.TestStatus
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(ICSharpCode.SharpZipLib.Zip.ZipFile file)
+
+METHODS:
+  internal System.Void AddError()
+  internal System.Void SetBytesTested(System.Int64 value)
+  internal System.Void SetEntry(ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  internal System.Void SetOperation(ICSharpCode.SharpZipLib.Zip.TestOperation operation)
+  public System.Int64 get_BytesTested()
+  public ICSharpCode.SharpZipLib.Zip.ZipEntry get_Entry()
+  public System.Boolean get_EntryValid()
+  public System.Int32 get_ErrorCount()
+  public ICSharpCode.SharpZipLib.Zip.ZipFile get_File()
+  public ICSharpCode.SharpZipLib.Zip.TestOperation get_Operation()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.TestStrategy
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.UseZip64
+KIND: enum
+ATTR: Public, Sealed
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.WindowsNameTransform
+KIND: class
+ATTR: Public
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor()
+  public .ctor(System.String baseDirectory)
+
+METHODS:
+  public static System.Boolean IsValidName(System.String name)
+  public static System.String MakeValidName(System.String name, System.Char replacement)
+  public System.String TransformDirectory(System.String name)
+  public System.String TransformFile(System.String name)
+  public System.String get_BaseDirectory()
+  public System.Char get_Replacement()
+  public System.Boolean get_TrimIncomingPaths()
+  public System.Void set_BaseDirectory(System.String value)
+  public System.Void set_Replacement(System.Char value)
+  public System.Void set_TrimIncomingPaths(System.Boolean value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipConstants
+KIND: class
+ATTR: Public, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  private static .cctor()
+  private .ctor()
+
+METHODS:
+  public static System.Byte[] ConvertToArray(System.String str)
+  public static System.Byte[] ConvertToArray(System.Int32 flags, System.String str)
+  public static System.String ConvertToString(System.Byte[] data)
+  public static System.String ConvertToString(System.Byte[] data, System.Int32 count)
+  public static System.String ConvertToStringExt(System.Int32 flags, System.Byte[] data)
+  public static System.String ConvertToStringExt(System.Int32 flags, System.Byte[] data, System.Int32 count)
+  public static System.Int32 get_DefaultCodePage()
+  public static System.Void set_DefaultCodePage(System.Int32 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipEntry
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  internal .ctor(System.String name, System.Int32 versionRequiredToExtract, System.Int32 madeByInfo, ICSharpCode.SharpZipLib.Zip.CompressionMethod method)
+  public .ctor(ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  public .ctor(System.String name)
+  internal .ctor(System.String name, System.Int32 versionRequiredToExtract)
+
+METHODS:
+  public static System.String CleanName(System.String name)
+  public System.Object Clone()
+  public System.Void ForceZip64()
+  private System.Boolean HasDosAttributes(System.Int32 attributes)
+  public static System.Boolean IsCompressionMethodSupported(ICSharpCode.SharpZipLib.Zip.CompressionMethod method)
+  public System.Boolean IsCompressionMethodSupported()
+  public System.Boolean IsZip64Forced()
+  private System.Void ProcessAESExtraData(ICSharpCode.SharpZipLib.Zip.ZipExtraData extraData)
+  internal System.Void ProcessExtraData(System.Boolean localHeader)
+  public virtual System.String ToString()
+  internal System.Byte get_AESEncryptionStrength()
+  public System.Int32 get_AESKeySize()
+  internal System.Int32 get_AESOverheadSize()
+  internal System.Int32 get_AESSaltLen()
+  public System.Boolean get_CanDecompress()
+  public System.Boolean get_CentralHeaderRequiresZip64()
+  public System.String get_Comment()
+  public System.Int64 get_CompressedSize()
+  public ICSharpCode.SharpZipLib.Zip.CompressionMethod get_CompressionMethod()
+  internal ICSharpCode.SharpZipLib.Zip.CompressionMethod get_CompressionMethodForHeader()
+  public System.Int64 get_Crc()
+  internal System.Byte get_CryptoCheckValue()
+  public System.DateTime get_DateTime()
+  public System.Int64 get_DosTime()
+  public System.Int32 get_ExternalFileAttributes()
+  public System.Byte[] get_ExtraData()
+  public System.Int32 get_Flags()
+  public System.Boolean get_HasCrc()
+  public System.Int32 get_HostSystem()
+  public System.Boolean get_IsCrypted()
+  public System.Boolean get_IsDOSEntry()
+  public System.Boolean get_IsDirectory()
+  public System.Boolean get_IsFile()
+  public System.Boolean get_IsUnicodeText()
+  public System.Boolean get_LocalHeaderRequiresZip64()
+  public System.String get_Name()
+  public System.Int64 get_Offset()
+  public System.Int64 get_Size()
+  public System.Int32 get_Version()
+  public System.Int32 get_VersionMadeBy()
+  public System.Int64 get_ZipFileIndex()
+  public System.Void set_AESKeySize(System.Int32 value)
+  public System.Void set_Comment(System.String value)
+  public System.Void set_CompressedSize(System.Int64 value)
+  public System.Void set_CompressionMethod(ICSharpCode.SharpZipLib.Zip.CompressionMethod value)
+  public System.Void set_Crc(System.Int64 value)
+  internal System.Void set_CryptoCheckValue(System.Byte value)
+  public System.Void set_DateTime(System.DateTime value)
+  public System.Void set_DosTime(System.Int64 value)
+  public System.Void set_ExternalFileAttributes(System.Int32 value)
+  public System.Void set_ExtraData(System.Byte[] value)
+  public System.Void set_Flags(System.Int32 value)
+  public System.Void set_HostSystem(System.Int32 value)
+  public System.Void set_IsCrypted(System.Boolean value)
+  public System.Void set_IsUnicodeText(System.Boolean value)
+  public System.Void set_Offset(System.Int64 value)
+  public System.Void set_Size(System.Int64 value)
+  public System.Void set_ZipFileIndex(System.Int64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipEntry+Known
+KIND: enum
+ATTR: NestedPrivate, Sealed
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipEntryFactory
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.DateTime time)
+  public .ctor(ICSharpCode.SharpZipLib.Zip.ZipEntryFactory+TimeSetting timeSetting)
+  public .ctor()
+
+METHODS:
+  public ICSharpCode.SharpZipLib.Zip.ZipEntry MakeDirectoryEntry(System.String directoryName)
+  public ICSharpCode.SharpZipLib.Zip.ZipEntry MakeDirectoryEntry(System.String directoryName, System.Boolean useFileSystem)
+  public ICSharpCode.SharpZipLib.Zip.ZipEntry MakeFileEntry(System.String fileName, System.Boolean useFileSystem)
+  public ICSharpCode.SharpZipLib.Zip.ZipEntry MakeFileEntry(System.String fileName, System.String entryName, System.Boolean useFileSystem)
+  public ICSharpCode.SharpZipLib.Zip.ZipEntry MakeFileEntry(System.String fileName)
+  public System.DateTime get_FixedDateTime()
+  public System.Int32 get_GetAttributes()
+  public System.Boolean get_IsUnicodeText()
+  public ICSharpCode.SharpZipLib.Core.INameTransform get_NameTransform()
+  public System.Int32 get_SetAttributes()
+  public ICSharpCode.SharpZipLib.Zip.ZipEntryFactory+TimeSetting get_Setting()
+  public System.Void set_FixedDateTime(System.DateTime value)
+  public System.Void set_GetAttributes(System.Int32 value)
+  public System.Void set_IsUnicodeText(System.Boolean value)
+  public System.Void set_NameTransform(ICSharpCode.SharpZipLib.Core.INameTransform value)
+  public System.Void set_SetAttributes(System.Int32 value)
+  public System.Void set_Setting(ICSharpCode.SharpZipLib.Zip.ZipEntryFactory+TimeSetting value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipEntryFactory+TimeSetting
+KIND: enum
+ATTR: NestedPublic, Sealed
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipException
+KIND: class
+ATTR: Public, Serializable, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.String message)
+  public .ctor(System.String message, System.Exception exception)
+  protected .ctor(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
+  public .ctor()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipExtraData
+KIND: class
+ATTR: Public, Sealed, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Byte[] data)
+  public .ctor()
+
+METHODS:
+  public System.Void AddData(System.Byte data)
+  public System.Void AddData(System.Byte[] data)
+  public System.Void AddEntry(ICSharpCode.SharpZipLib.Zip.ITaggedData taggedData)
+  public System.Void AddEntry(System.Int32 headerID, System.Byte[] fieldData)
+  public System.Void AddLeInt(System.Int32 toAdd)
+  public System.Void AddLeLong(System.Int64 toAdd)
+  public System.Void AddLeShort(System.Int32 toAdd)
+  public System.Void AddNewEntry(System.Int32 headerID)
+  public System.Void Clear()
+  private static ICSharpCode.SharpZipLib.Zip.ITaggedData Create(System.Int16 tag, System.Byte[] data, System.Int32 offset, System.Int32 count)
+  public System.Boolean Delete(System.Int32 headerID)
+  public System.Void Dispose()
+  public System.Boolean Find(System.Int32 headerID)
+  private ICSharpCode.SharpZipLib.Zip.ITaggedData GetData(System.Int16 tag)
+  public System.Byte[] GetEntryData()
+  public System.IO.Stream GetStreamForTag(System.Int32 tag)
+  public System.Int32 ReadByte()
+  private System.Void ReadCheck(System.Int32 length)
+  public System.Int32 ReadInt()
+  public System.Int64 ReadLong()
+  public System.Int32 ReadShort()
+  private System.Int32 ReadShortInternal()
+  private System.Void SetShort(ref System.Int32 index, System.Int32 source)
+  public System.Void Skip(System.Int32 amount)
+  public System.Void StartNewEntry()
+  public System.Int32 get_CurrentReadIndex()
+  public System.Int32 get_Length()
+  public System.Int32 get_UnreadCount()
+  public System.Int32 get_ValueLength()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipFile
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.IO.Stream stream)
+  internal .ctor()
+  public .ctor(System.String name)
+  public .ctor(System.IO.FileStream file)
+
+METHODS:
+  public System.Void AbortUpdate()
+  public System.Void Add(System.String fileName)
+  public System.Void Add(System.String fileName, ICSharpCode.SharpZipLib.Zip.CompressionMethod compressionMethod)
+  public System.Void Add(System.String fileName, ICSharpCode.SharpZipLib.Zip.CompressionMethod compressionMethod, System.Boolean useUnicodeText)
+  public System.Void Add(System.String fileName, System.String entryName)
+  public System.Void Add(ICSharpCode.SharpZipLib.Zip.IStaticDataSource dataSource, System.String entryName, ICSharpCode.SharpZipLib.Zip.CompressionMethod compressionMethod, System.Boolean useUnicodeText)
+  public System.Void Add(ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  public System.Void Add(ICSharpCode.SharpZipLib.Zip.IStaticDataSource dataSource, System.String entryName)
+  public System.Void Add(ICSharpCode.SharpZipLib.Zip.IStaticDataSource dataSource, System.String entryName, ICSharpCode.SharpZipLib.Zip.CompressionMethod compressionMethod)
+  public System.Void AddDirectory(System.String directoryName)
+  private System.Void AddEntry(ICSharpCode.SharpZipLib.Zip.ZipFile workFile, ICSharpCode.SharpZipLib.Zip.ZipFile+ZipUpdate update)
+  private System.Void AddUpdate(ICSharpCode.SharpZipLib.Zip.ZipFile+ZipUpdate update)
+  public System.Void BeginUpdate()
+  public System.Void BeginUpdate(ICSharpCode.SharpZipLib.Zip.IArchiveStorage archiveStorage, ICSharpCode.SharpZipLib.Zip.IDynamicDataSource dataSource)
+  public System.Void BeginUpdate(ICSharpCode.SharpZipLib.Zip.IArchiveStorage archiveStorage)
+  private static System.Void CheckClassicPassword(System.Security.Cryptography.CryptoStream classicCryptoStream, ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  private System.Void CheckUpdating()
+  public System.Void Close()
+  public System.Void CommitUpdate()
+  private System.Void CopyBytes(ICSharpCode.SharpZipLib.Zip.ZipFile+ZipUpdate update, System.IO.Stream destination, System.IO.Stream source, System.Int64 bytesToCopy, System.Boolean updateCrc)
+  private System.Void CopyDescriptorBytes(ICSharpCode.SharpZipLib.Zip.ZipFile+ZipUpdate update, System.IO.Stream dest, System.IO.Stream source)
+  private System.Void CopyDescriptorBytesDirect(ICSharpCode.SharpZipLib.Zip.ZipFile+ZipUpdate update, System.IO.Stream stream, ref System.Int64 destinationPosition, System.Int64 sourcePosition)
+  private System.Void CopyEntry(ICSharpCode.SharpZipLib.Zip.ZipFile workFile, ICSharpCode.SharpZipLib.Zip.ZipFile+ZipUpdate update)
+  private System.Void CopyEntryDataDirect(ICSharpCode.SharpZipLib.Zip.ZipFile+ZipUpdate update, System.IO.Stream stream, System.Boolean updateCrc, ref System.Int64 destinationPosition, ref System.Int64 sourcePosition)
+  private System.Void CopyEntryDirect(ICSharpCode.SharpZipLib.Zip.ZipFile workFile, ICSharpCode.SharpZipLib.Zip.ZipFile+ZipUpdate update, ref System.Int64 destinationPosition)
+  public static ICSharpCode.SharpZipLib.Zip.ZipFile Create(System.String fileName)
+  public static ICSharpCode.SharpZipLib.Zip.ZipFile Create(System.IO.Stream outStream)
+  private System.IO.Stream CreateAndInitDecryptionStream(System.IO.Stream baseStream, ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  private System.IO.Stream CreateAndInitEncryptionStream(System.IO.Stream baseStream, ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  public System.Boolean Delete(System.String fileName)
+  public System.Void Delete(ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  protected virtual System.Void Dispose(System.Boolean disposing)
+  private System.Void DisposeInternal(System.Boolean disposing)
+  protected virtual System.Void Finalize()
+  public System.Int32 FindEntry(System.String name, System.Boolean ignoreCase)
+  private System.Int32 FindExistingUpdate(System.String fileName)
+  private System.Int32 FindExistingUpdate(ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  private System.Byte[] GetBuffer()
+  private System.Int32 GetDescriptorSize(ICSharpCode.SharpZipLib.Zip.ZipFile+ZipUpdate update)
+  public ICSharpCode.SharpZipLib.Zip.ZipEntry GetEntry(System.String name)
+  public System.Collections.IEnumerator GetEnumerator()
+  public System.IO.Stream GetInputStream(ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  public System.IO.Stream GetInputStream(System.Int64 entryIndex)
+  private System.IO.Stream GetOutputStream(ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  private System.String GetTransformedDirectoryName(System.String name)
+  private System.String GetTransformedFileName(System.String name)
+  private System.Int64 LocateBlockWithSignature(System.Int32 signature, System.Int64 endLocation, System.Int32 minimumBlockSize, System.Int32 maximumVariableData)
+  private System.Int64 LocateEntry(ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  private System.Void ModifyEntry(ICSharpCode.SharpZipLib.Zip.ZipFile workFile, ICSharpCode.SharpZipLib.Zip.ZipFile+ZipUpdate update)
+  private System.Void OnKeysRequired(System.String fileName)
+  private System.Void PostUpdateCleanup()
+  private System.Void ReadEntries()
+  private System.UInt32 ReadLEUint()
+  private System.UInt64 ReadLEUlong()
+  private System.UInt16 ReadLEUshort()
+  private System.Void Reopen()
+  private System.Void Reopen(System.IO.Stream source)
+  private System.Void RunUpdates()
+  public System.Void SetComment(System.String comment)
+  private System.Void System.IDisposable.Dispose()
+  public System.Boolean TestArchive(System.Boolean testData, ICSharpCode.SharpZipLib.Zip.TestStrategy strategy, ICSharpCode.SharpZipLib.Zip.ZipTestResultHandler resultHandler)
+  public System.Boolean TestArchive(System.Boolean testData)
+  private System.Int64 TestLocalHeader(ICSharpCode.SharpZipLib.Zip.ZipEntry entry, ICSharpCode.SharpZipLib.Zip.ZipFile+HeaderTest tests)
+  private System.Void UpdateCommentOnly()
+  private System.Int32 WriteCentralDirectoryHeader(ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  private static System.Void WriteEncryptionHeader(System.IO.Stream stream, System.Int64 crcValue)
+  private System.Void WriteLEInt(System.Int32 value)
+  private System.Void WriteLEShort(System.Int32 value)
+  private System.Void WriteLEUint(System.UInt32 value)
+  private System.Void WriteLEUlong(System.UInt64 value)
+  private System.Void WriteLEUshort(System.UInt16 value)
+  private System.Void WriteLeLong(System.Int64 value)
+  private System.Void WriteLocalEntryHeader(ICSharpCode.SharpZipLib.Zip.ZipFile+ZipUpdate update)
+  public System.Int32 get_BufferSize()
+  public System.Int64 get_Count()
+  public ICSharpCode.SharpZipLib.Zip.ZipEntry get_EntryByIndex(System.Int32 index)
+  public ICSharpCode.SharpZipLib.Zip.IEntryFactory get_EntryFactory()
+  private System.Boolean get_HaveKeys()
+  public System.Boolean get_IsEmbeddedArchive()
+  public System.Boolean get_IsNewArchive()
+  public System.Boolean get_IsStreamOwner()
+  public System.Boolean get_IsUpdating()
+  private System.Byte[] get_Key()
+  public System.String get_Name()
+  public ICSharpCode.SharpZipLib.Core.INameTransform get_NameTransform()
+  public System.Int32 get_Size()
+  public ICSharpCode.SharpZipLib.Zip.UseZip64 get_UseZip64()
+  public System.String get_ZipFileComment()
+  public System.Void set_BufferSize(System.Int32 value)
+  public System.Void set_EntryFactory(ICSharpCode.SharpZipLib.Zip.IEntryFactory value)
+  public System.Void set_IsStreamOwner(System.Boolean value)
+  private System.Void set_Key(System.Byte[] value)
+  public System.Void set_NameTransform(ICSharpCode.SharpZipLib.Core.INameTransform value)
+  public System.Void set_Password(System.String value)
+  public System.Void set_UseZip64(ICSharpCode.SharpZipLib.Zip.UseZip64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipFile+HeaderTest
+KIND: enum
+ATTR: NestedPrivate, Sealed
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipFile+KeysRequiredEventHandler
+KIND: class
+ATTR: NestedPublic, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.Object sender, ICSharpCode.SharpZipLib.Zip.KeysRequiredEventArgs e, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(System.IAsyncResult result)
+  public virtual System.Void Invoke(System.Object sender, ICSharpCode.SharpZipLib.Zip.KeysRequiredEventArgs e)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipFile+PartialInputStream
+KIND: class
+ATTR: NestedPrivate, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(ICSharpCode.SharpZipLib.Zip.ZipFile zipFile, System.Int64 start, System.Int64 length)
+
+METHODS:
+  public virtual System.Void Close()
+  public virtual System.Void Flush()
+  public virtual System.Int32 Read(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Int32 ReadByte()
+  public virtual System.Int64 Seek(System.Int64 offset, System.IO.SeekOrigin origin)
+  public virtual System.Void SetLength(System.Int64 value)
+  public virtual System.Void Write(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Boolean get_CanRead()
+  public virtual System.Boolean get_CanSeek()
+  public virtual System.Boolean get_CanTimeout()
+  public virtual System.Boolean get_CanWrite()
+  public virtual System.Int64 get_Length()
+  public virtual System.Int64 get_Position()
+  public virtual System.Void set_Position(System.Int64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipFile+UncompressedStream
+KIND: class
+ATTR: NestedPrivate, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.IO.Stream baseStream)
+
+METHODS:
+  public virtual System.Void Close()
+  public virtual System.Void Flush()
+  public virtual System.Int32 Read(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Int64 Seek(System.Int64 offset, System.IO.SeekOrigin origin)
+  public virtual System.Void SetLength(System.Int64 value)
+  public virtual System.Void Write(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Boolean get_CanRead()
+  public virtual System.Boolean get_CanSeek()
+  public virtual System.Boolean get_CanWrite()
+  public virtual System.Int64 get_Length()
+  public virtual System.Int64 get_Position()
+  public virtual System.Void set_Position(System.Int64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipFile+UpdateCommand
+KIND: enum
+ATTR: NestedPrivate, Sealed
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipFile+UpdateComparer
+KIND: class
+ATTR: NestedPrivate, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor()
+
+METHODS:
+  public System.Int32 Compare(System.Object x, System.Object y)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipFile+ZipEntryEnumerator
+KIND: class
+ATTR: NestedPrivate, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(ICSharpCode.SharpZipLib.Zip.ZipEntry[] entries)
+
+METHODS:
+  public System.Boolean MoveNext()
+  public System.Void Reset()
+  public System.Object get_Current()
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipFile+ZipString
+KIND: class
+ATTR: NestedPrivate, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.Byte[] rawString)
+  public .ctor(System.String comment)
+
+METHODS:
+  private System.Void MakeBytesAvailable()
+  private System.Void MakeTextAvailable()
+  public System.Void Reset()
+  public System.Boolean get_IsSourceString()
+  public System.Byte[] get_RawComment()
+  public System.Int32 get_RawLength()
+  public static System.String op_Implicit(ICSharpCode.SharpZipLib.Zip.ZipFile+ZipString zipString)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipFile+ZipUpdate
+KIND: class
+ATTR: NestedPrivate, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(ICSharpCode.SharpZipLib.Zip.ZipEntry original, ICSharpCode.SharpZipLib.Zip.ZipEntry updated)
+  public .ctor(ICSharpCode.SharpZipLib.Zip.IStaticDataSource dataSource, ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  public .ctor(ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  public .ctor(ICSharpCode.SharpZipLib.Zip.ZipFile+UpdateCommand command, ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  public .ctor(System.String fileName, System.String entryName, ICSharpCode.SharpZipLib.Zip.CompressionMethod compressionMethod)
+  public .ctor(System.String fileName, ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  public .ctor(ICSharpCode.SharpZipLib.Zip.IStaticDataSource dataSource, System.String entryName, ICSharpCode.SharpZipLib.Zip.CompressionMethod compressionMethod)
+  public .ctor(System.String fileName, System.String entryName)
+
+METHODS:
+  public System.IO.Stream GetSource()
+  public ICSharpCode.SharpZipLib.Zip.ZipFile+UpdateCommand get_Command()
+  public System.Int64 get_CrcPatchOffset()
+  public ICSharpCode.SharpZipLib.Zip.ZipEntry get_Entry()
+  public System.String get_Filename()
+  public System.Int64 get_OffsetBasedSize()
+  public ICSharpCode.SharpZipLib.Zip.ZipEntry get_OutEntry()
+  public System.Int64 get_SizePatchOffset()
+  public System.Void set_CrcPatchOffset(System.Int64 value)
+  public System.Void set_OffsetBasedSize(System.Int64 value)
+  public System.Void set_SizePatchOffset(System.Int64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipHelperStream
+KIND: class
+ATTR: BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.IO.Stream stream)
+  public .ctor(System.String name)
+
+METHODS:
+  public virtual System.Void Close()
+  public virtual System.Void Flush()
+  public System.Int64 LocateBlockWithSignature(System.Int32 signature, System.Int64 endLocation, System.Int32 minimumBlockSize, System.Int32 maximumVariableData)
+  public virtual System.Int32 Read(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public System.Void ReadDataDescriptor(System.Boolean zip64, ICSharpCode.SharpZipLib.Zip.DescriptorData data)
+  public System.Int32 ReadLEInt()
+  public System.Int64 ReadLELong()
+  public System.Int32 ReadLEShort()
+  public virtual System.Int64 Seek(System.Int64 offset, System.IO.SeekOrigin origin)
+  public virtual System.Void SetLength(System.Int64 value)
+  public virtual System.Void Write(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public System.Int32 WriteDataDescriptor(ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  public System.Void WriteEndOfCentralDirectory(System.Int64 noOfEntries, System.Int64 sizeEntries, System.Int64 startOfCentralDirectory, System.Byte[] comment)
+  public System.Void WriteLEInt(System.Int32 value)
+  public System.Void WriteLELong(System.Int64 value)
+  public System.Void WriteLEShort(System.Int32 value)
+  public System.Void WriteLEUint(System.UInt32 value)
+  public System.Void WriteLEUlong(System.UInt64 value)
+  public System.Void WriteLEUshort(System.UInt16 value)
+  private System.Void WriteLocalHeader(ICSharpCode.SharpZipLib.Zip.ZipEntry entry, ICSharpCode.SharpZipLib.Zip.EntryPatchData patchData)
+  public System.Void WriteZip64EndOfCentralDirectory(System.Int64 noOfEntries, System.Int64 sizeEntries, System.Int64 centralDirOffset)
+  public virtual System.Boolean get_CanRead()
+  public virtual System.Boolean get_CanSeek()
+  public virtual System.Boolean get_CanTimeout()
+  public virtual System.Boolean get_CanWrite()
+  public System.Boolean get_IsStreamOwner()
+  public virtual System.Int64 get_Length()
+  public virtual System.Int64 get_Position()
+  public System.Void set_IsStreamOwner(System.Boolean value)
+  public virtual System.Void set_Position(System.Int64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipInputStream
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.IO.Stream baseInputStream, System.Int32 bufferSize)
+  public .ctor(System.IO.Stream baseInputStream)
+
+METHODS:
+  private System.Int32 BodyRead(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Void Close()
+  public System.Void CloseEntry()
+  private System.Void CompleteCloseEntry(System.Boolean testCrc)
+  public ICSharpCode.SharpZipLib.Zip.ZipEntry GetNextEntry()
+  private System.Int32 InitialRead(System.Byte[] destination, System.Int32 offset, System.Int32 count)
+  public virtual System.Int32 Read(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Int32 ReadByte()
+  private System.Void ReadDataDescriptor()
+  private System.Int32 ReadingNotAvailable(System.Byte[] destination, System.Int32 offset, System.Int32 count)
+  private System.Int32 ReadingNotSupported(System.Byte[] destination, System.Int32 offset, System.Int32 count)
+  public virtual System.Int32 get_Available()
+  public System.Boolean get_CanDecompressEntry()
+  public virtual System.Int64 get_Length()
+  public System.String get_Password()
+  public System.Void set_Password(System.String value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipInputStream+ReadDataHandler
+KIND: class
+ATTR: NestedPrivate, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(System.Byte[] b, System.Int32 offset, System.Int32 length, System.AsyncCallback callback, System.Object object)
+  public virtual System.Int32 EndInvoke(System.IAsyncResult result)
+  public virtual System.Int32 Invoke(System.Byte[] b, System.Int32 offset, System.Int32 length)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipNameTransform
+KIND: class
+ATTR: Public
+
+CONSTRUCTORS:
+  private static .cctor()
+  public .ctor(System.String trimPrefix)
+  public .ctor()
+
+METHODS:
+  public static System.Boolean IsValidName(System.String name, System.Boolean relaxed)
+  public static System.Boolean IsValidName(System.String name)
+  private static System.String MakeValidName(System.String name, System.Char replacement)
+  public System.String TransformDirectory(System.String name)
+  public System.String TransformFile(System.String name)
+  public System.String get_TrimPrefix()
+  public System.Void set_TrimPrefix(System.String value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipOutputStream
+KIND: class
+ATTR: Public, BeforeFieldInit
+
+CONSTRUCTORS:
+  public .ctor(System.IO.Stream baseOutputStream, System.Int32 bufferSize)
+  public .ctor(System.IO.Stream baseOutputStream)
+
+METHODS:
+  private static System.Void AddExtraDataAES(ICSharpCode.SharpZipLib.Zip.ZipEntry entry, ICSharpCode.SharpZipLib.Zip.ZipExtraData extraData)
+  public System.Void CloseEntry()
+  private System.Void CopyAndEncrypt(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  public virtual System.Void Finish()
+  public System.Int32 GetLevel()
+  public System.Void PutNextEntry(ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  public System.Void SetComment(System.String comment)
+  public System.Void SetLevel(System.Int32 level)
+  public virtual System.Void Write(System.Byte[] buffer, System.Int32 offset, System.Int32 count)
+  private System.Void WriteAESHeader(ICSharpCode.SharpZipLib.Zip.ZipEntry entry)
+  private System.Void WriteEncryptionHeader(System.Int64 crcValue)
+  private System.Void WriteLeInt(System.Int32 value)
+  private System.Void WriteLeLong(System.Int64 value)
+  private System.Void WriteLeShort(System.Int32 value)
+  public System.Boolean get_IsFinished()
+  public ICSharpCode.SharpZipLib.Zip.UseZip64 get_UseZip64()
+  public System.Void set_UseZip64(ICSharpCode.SharpZipLib.Zip.UseZip64 value)
+
+------------------------------------------------------------
+TYPE: ICSharpCode.SharpZipLib.Zip.ZipTestResultHandler
+KIND: class
+ATTR: Public, Sealed
+
+CONSTRUCTORS:
+  public .ctor(System.Object object, System.IntPtr method)
+
+METHODS:
+  public virtual System.IAsyncResult BeginInvoke(ICSharpCode.SharpZipLib.Zip.TestStatus status, System.String message, System.AsyncCallback callback, System.Object object)
+  public virtual System.Void EndInvoke(System.IAsyncResult result)
+  public virtual System.Void Invoke(ICSharpCode.SharpZipLib.Zip.TestStatus status, System.String message)
+

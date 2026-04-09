@@ -1,0 +1,10 @@
+=== CS1 Methoden Analyse v2 - Assembly Dump ===
+Timestamp: 2026-02-17 16:06:38
+Bucket: SYSTEM
+Assembly Simple: Anonymously Hosted DynamicMethods Assembly
+Assembly Full: Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly Location: 
+Plugin/Mod Name: (none)
+Plugin/Mod Path: (none)
+DeclaredOnly Methods: YES
+

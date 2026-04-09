@@ -1,0 +1,57 @@
+﻿=== CS1 RayCast Analyzer ===
+2026-02-19 00:54:13
+
+=== ToolBase+RaycastInput ===
+
+  PrefabInfo m_buildObject
+  Ray m_ray
+  Vector3 m_rayRight
+  RaycastService m_netService
+  RaycastService m_netService2
+  RaycastService m_buildingService
+  RaycastService m_propService
+  RaycastService m_treeService
+  Single m_length
+  Single m_netSnap
+  Boolean m_ignoreTerrain
+  Boolean m_currentEditObject
+  Boolean m_districtNameOnly
+  Boolean m_segmentNameOnly
+  Flags m_ignoreNodeFlags
+  Flags m_ignoreSegmentFlags
+  Flags m_ignoreBuildingFlags
+  Flags m_ignorePropFlags
+  Flags m_ignoreTreeFlags
+  Flags m_ignoreVehicleFlags
+  Flags m_ignoreParkedVehicleFlags
+  Flags m_ignoreCitizenFlags
+  Flags m_ignoreTransportFlags
+  Flags m_ignoreDistrictFlags
+  Flags m_ignoreParkFlags
+  Flags m_ignoreDisasterFlags
+  Int32 m_transportTypes
+
+=== ToolBase+RaycastOutput ===
+
+  Vector3 m_hitPos
+  Int32 m_transportStopIndex
+  Int32 m_transportSegmentIndex
+  Int32 m_overlayButtonIndex
+  UInt32 m_treeInstance
+  UInt16 m_netNode
+  UInt16 m_netSegment
+  UInt16 m_building
+  UInt16 m_propInstance
+  UInt16 m_vehicle
+  UInt16 m_parkedVehicle
+  UInt16 m_citizenInstance
+  UInt16 m_transportLine
+  UInt16 m_disaster
+  Byte m_district
+  Byte m_park
+  Boolean m_currentEditObject
+
+
+=== ToolBase RayCast Methods ===
+
+=== END ===

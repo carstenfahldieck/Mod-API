@@ -1,0 +1,10 @@
+=== CS1 Methoden Analyse v2 - MOD Aggregation ===
+Mod: UnlockAll
+Enthält Treffer aus allen Assemblies dieser Mod (via PluginManager).
+
+[UnlockAll] UnlockAllMod.UnlockAll ::   public .ctor()
+[UnlockAll] UnlockAllMod.UnlockAll ::   public System.String get_Description()
+[UnlockAll] UnlockAllMod.UnlockAll ::   public System.String get_Name()
+[UnlockAll] UnlockAllMod.UnlockAllMilestones ::   public .ctor()
+[UnlockAll] UnlockAllMod.UnlockAllMilestones ::   public virtual System.Int32 OnGetPopulationTarget(System.Int32 originalTarget, System.Int32 scaledTarget)
+[UnlockAll] UnlockAllMod.UnlockAllMilestones ::   public virtual System.Void OnRefreshMilestones()
